@@ -86,7 +86,16 @@ npm run build                                             # 严格校验 + 类�
 
 然后用浏览器预览确认（`.claude/launch.json` 里有 `airank`，端口 5188；预览面板隐藏时动画会停，用 DOM 检查代替截图）：各类别 SSS 是否正确、新模型卡片、详情面板中英文都正常。
 
-提交：`git add -A && git commit -m "第 N 期：<摘要>"`（本仓库是作者本地仓库，提交前不需要再问；不要 push，除非作者要求）。
+提交、推送、上线（作者触发更新即包含这三步）：
+
+```bash
+git add -A && git commit -m "第 N 期：<摘要>"
+git push                     # 公开仓库 github.com/AGIHunt/aitier
+npm run deploy               # 构建并 rsync 到 claw，https://aitier.agihunt.info（nginx 配置见 deploy/）
+curl -sI https://aitier.agihunt.info | head -1
+```
+
+注意仓库是公开的：不要把第三方图片、密钥、未公开的内部资料提交进来（参考图类文件放本地并 .gitignore）。
 
 ## 8. 汇报
 
