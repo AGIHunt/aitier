@@ -26,8 +26,7 @@ export function TopBar() {
   }
   const toggleMute = () => {
     const m = !muted
-    audio.init()
-    audio.startAmbient()
+    audio.unlock().then(() => audio.startAmbient())
     audio.setMuted(m)
     set({ muted: m })
     try {

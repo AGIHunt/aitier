@@ -19,6 +19,74 @@ class AudioEngine {
   private ambientNodes: AudioNode[] = []
   muted = false
 
+  /**
+   * 在用户手势里调用：创建 / 恢复 AudioContext，并处理移动端的两个坑
+   * - iOS 静音拨片会把 Web Audio 一起静音：声明为「媒体播放」会话（audioSession），
+   *   老版本 iOS 退而求其次，播放一段无声 <audio> 把会话切到 playback
+   * - 必须在手势回调里同步调用 resume()，否则上下文一直是 suspended
+   * 返回是否已经可以出声
+   */
+  async unlock(): Promise<boolean> {
+    const nav = navigator as Navigator & { audioSession?: { type: string } }
+    try {
+      const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+      if (nav.audioSession) nav.audioSession.type = 'playback'
+      else if (ios) this.playSilentElement()
+    } catch {
+      /* ignore */
+    }
+    this.init()
+    const ctx = this.ctx!
+    // 播一个 1 帧的空 buffer：部分 WebKit 版本要求手势里真的「发声」一次才算解锁
+    try {
+      const b = ctx.createBuffer(1, 1, 22050)
+      const src = ctx.createBufferSource()
+      src.buffer = b
+      src.connect(ctx.destination)
+      src.start(0)
+    } catch {
+      /* ignore */
+    }
+    try {
+      await ctx.resume()
+    } catch {
+      /* ignore */
+    }
+    return ctx.state === 'running'
+  }
+
+  private silentEl: HTMLAudioElement | null = null
+  private playSilentElement() {
+    if (this.silentEl) {
+      this.silentEl.play().catch(() => {})
+      return
+    }
+    // 0.1 秒的静音 WAV
+    const rate = 8000
+    const n = rate / 10
+    const buf = new ArrayBuffer(44 + n)
+    const v = new DataView(buf)
+    const w = (o: number, str: string) => [...str].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)))
+    w(0, 'RIFF')
+    v.setUint32(4, 36 + n, true)
+    w(8, 'WAVEfmt ')
+    v.setUint32(16, 16, true)
+    v.setUint16(20, 1, true)
+    v.setUint16(22, 1, true)
+    v.setUint32(24, rate, true)
+    v.setUint32(28, rate, true)
+    v.setUint16(32, 1, true)
+    v.setUint16(34, 8, true)
+    w(36, 'data')
+    v.setUint32(40, n, true)
+    for (let i = 0; i < n; i++) v.setUint8(44 + i, 128)
+    const el = new Audio(URL.createObjectURL(new Blob([buf], { type: 'audio/wav' })))
+    el.setAttribute('playsinline', '')
+    el.loop = true
+    this.silentEl = el
+    el.play().catch(() => {})
+  }
+
   init() {
     if (this.ctx) {
       if (this.ctx.state === 'suspended') this.ctx.resume()

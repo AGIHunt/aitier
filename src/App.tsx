@@ -13,18 +13,26 @@ import { Versus } from './ui/Versus'
 
 const Experience = lazy(() => import('./scene/Experience').then((m) => ({ default: m.Experience })))
 
-/** 浏览器要求用户先有一次交互才能出声：第一次点击 / 触摸 / 按键时解锁音频 */
+/**
+ * 浏览器要求用户先有一次交互才能出声。注意移动端触摸的 pointerdown 不算「用户激活」，
+ * 只有 touchend / click 才算，所以每种事件都尝试，直到音频真正跑起来才移除监听。
+ */
 function useAudioUnlock() {
   useEffect(() => {
+    const EVENTS = ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'] as const
+    let done = false
     const unlock = () => {
-      const s = useStore.getState()
-      audio.init()
-      audio.setMuted(s.muted)
-      audio.startAmbient()
-      s.set({ audioOn: true })
-      for (const ev of EVENTS) window.removeEventListener(ev, unlock, true)
+      if (done) return
+      audio.unlock().then((ok) => {
+        if (!ok || done) return
+        done = true
+        const s = useStore.getState()
+        audio.setMuted(s.muted)
+        audio.startAmbient()
+        s.set({ audioOn: true })
+        for (const ev of EVENTS) window.removeEventListener(ev, unlock, true)
+      })
     }
-    const EVENTS = ['pointerdown', 'keydown', 'touchend'] as const
     for (const ev of EVENTS) window.addEventListener(ev, unlock, true)
     return () => {
       for (const ev of EVENTS) window.removeEventListener(ev, unlock, true)
