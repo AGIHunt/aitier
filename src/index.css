@@ -259,7 +259,8 @@ kbd {
 }
 .intro__mute {
   display: block;
-  margin: 18px auto 0;
+  margin: 10px auto 0;
+  padding: 10px 18px;
   font-size: 12px;
   color: var(--ink-3);
   text-decoration: underline;
