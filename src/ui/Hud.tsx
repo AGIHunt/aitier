@@ -210,3 +210,23 @@ export function LangButton({ className = '' }: { className?: string }) {
     </button>
   )
 }
+
+/** 音频未解锁时的轻提示：点任意处即可开声 */
+export function SoundPill() {
+  const audioOn = useStore((s) => s.audioOn)
+  const muted = useStore((s) => s.muted)
+  const intro = useStore((s) => s.intro)
+  const T = useT()
+  if (audioOn || muted) return null
+  return (
+    <div className={`sound-pill ${intro ? 'sound-pill--intro' : ''}`}>
+      <span className="eq eq--pill">
+        <i />
+        <i />
+        <i />
+        <i />
+      </span>
+      {T('soundPill')}
+    </div>
+  )
+}

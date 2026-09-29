@@ -11,6 +11,8 @@ interface State {
   hoveredId: string | null
   vendorFilter: string | null
   view: ViewMode
+  /** 音频是否已被用户手势解锁 */
+  audioOn: boolean
   lang: Lang
   muted: boolean
   /** 相机聚焦的档位（连续值，0 = SSS） */
@@ -26,8 +28,9 @@ interface State {
 }
 
 export const useStore = create<State>((set) => ({
-  entered: false,
-  intro: false,
+  entered: true,
+  intro: true,
+  audioOn: false,
   category: 'llm',
   selectedId: null,
   hoveredId: null,

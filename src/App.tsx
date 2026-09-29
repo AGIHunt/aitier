@@ -5,14 +5,32 @@ import { TIER_BY_ID, TIERS } from './data/tiers'
 import { useT } from './i18n'
 import { useStore } from './store'
 import { DetailPanel } from './ui/DetailPanel'
-import { Ticker, TierRail, TopBar, VendorBar } from './ui/Hud'
-import { Intro } from './ui/Intro'
+import { SoundPill, Ticker, TierRail, TopBar, VendorBar } from './ui/Hud'
 import { Palette } from './ui/Palette'
 import { Slam } from './ui/Slam'
 import { TableView } from './ui/TableView'
 import { Versus } from './ui/Versus'
 
 const Experience = lazy(() => import('./scene/Experience').then((m) => ({ default: m.Experience })))
+
+/** 浏览器要求用户先有一次交互才能出声：第一次点击 / 触摸 / 按键时解锁音频 */
+function useAudioUnlock() {
+  useEffect(() => {
+    const unlock = () => {
+      const s = useStore.getState()
+      audio.init()
+      audio.setMuted(s.muted)
+      audio.startAmbient()
+      s.set({ audioOn: true })
+      for (const ev of EVENTS) window.removeEventListener(ev, unlock, true)
+    }
+    const EVENTS = ['pointerdown', 'keydown', 'touchend'] as const
+    for (const ev of EVENTS) window.addEventListener(ev, unlock, true)
+    return () => {
+      for (const ev of EVENTS) window.removeEventListener(ev, unlock, true)
+    }
+  }, [])
+}
 
 function useKeys() {
   useEffect(() => {
@@ -93,6 +111,7 @@ export default function App() {
   const view = useStore((s) => s.view)
   const T = useT()
   useKeys()
+  useAudioUnlock()
 
   return (
     <div className={`app ${entered ? 'app--in' : ''} ${intro ? 'app--intro' : ''} app--${view}`}>
@@ -125,7 +144,7 @@ export default function App() {
       <Slam />
       <Palette />
       <Versus />
-      <Intro />
+      <SoundPill />
     </div>
   )
 }
