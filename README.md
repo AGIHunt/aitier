@@ -1,11 +1,16 @@
-# AI 天梯 · airank
+# AI 天梯 · AI Tier
 
-3D 交互式 AI 模型天梯榜：LLM / 图像 / 视频三大类，SSS → E 八档。
+**🔗 [aitier.agihunt.info](https://aitier.agihunt.info)** · 3D 交互式 AI 模型天梯榜 / An interactive 3D tier list of frontier AI models
 
-- **3D 光之塔**：每一档是一层悬浮平台，模型卡片环绕排列；中央光柱、星云背景、上升光尘、Bloom / 色差 / 胶片颗粒后期
-- **开场演出**：boot log → 螺旋上升穿过八层（每层一个音）→ 抵达塔顶冲击 + 「SSS」逐字砸入揭晓第一名
-- **程序化声音**：零音频文件，全部 Web Audio 实时合成。104 BPM 音序器，越靠近塔顶编制越满（pad → bass → kick → 琶音 → hats → clap）；hover 音高 = 分数映射五声音阶，开源模型是木质拨弦、闭源是玻璃钟；传闻模型带故障风
-- **交互**：拖动旋转 · 滚轮升降（自动吸附到档位）· 点卡片镜头飞入 + 详情面板 · ⚔ 对决模式 · ⌘K 搜索 · 厂商筛选 · 表格视图（手机默认）
+LLM / 图像 / 视频三大类，SSS → E 八档，数据来自 Artificial Analysis、LMArena、Agent Arena 等榜单的双向对照，由 [AGI Hunt](https://agihunt.info) 维护、按期更新。
+
+LLMs, image and video models ranked SSS → E, cross-checked across Artificial Analysis, LMArena, Agent Arena and more. Maintained by [AGI Hunt](https://agihunt.info), updated in issues. Chinese browsers get Chinese, everyone else gets English (toggle top-right).
+
+- **3D 光之塔 / Tower of light**：每一档是一层悬浮平台，模型卡片环绕排列；中央光柱、星云背景、上升光尘、Bloom / 色差 / 胶片颗粒后期
+- **开场演出 / Intro**：打开即螺旋登塔，逐层点亮，抵达塔顶「SSS」逐字砸入揭晓第一名
+- **程序化声音 / Procedural audio**：零音频文件，全部 Web Audio 实时合成。104 BPM 音序器，越靠近塔顶编制越满；hover 音高 = 分数映射五声音阶，开源模型是木质拨弦、闭源是玻璃钟；传闻模型带故障风。首次点击后出声（浏览器限制）
+- **交互 / Interaction**：拖动 / 横滑旋转 · 滚轮 / 竖滑升降 · 点卡片镜头飞入 + 详情面板 · ⚔ 对决模式 · ⌘K 搜索 · 厂商筛选 · 表格视图
+- 技术栈 / Stack：React 19 · Vite · three.js / react-three-fiber · postprocessing · framer-motion · zustand
 
 ## 开发
 
@@ -36,7 +41,7 @@ npm run build      # 校验 + 类型检查 + 打包到 dist/
 
 字段定义见 `src/types.ts`。分档：SSS 97–100 · SS 93–96 · S 88–92 · A 80–87 · B 72–79 · C 64–71 · D 55–63 · E <55。
 
-`research/` 是更新过程的工作区：`EDITORIAL.md`（作者拍板过的判断，更新时不能推翻）、`runs/<日期>/`（每次更新的子 agent 报告与 patch 文件）、`showcase_inspiration.md`、`tier_ref_jp.png`。
+`research/` 是更新过程的工作区：`EDITORIAL.md`（作者拍板过的判断，更新时不能推翻）、`runs/<日期>/`（每次更新的子 agent 报告、原始证据与 patch 文件）、`showcase_inspiration.md`（视觉灵感调研）。
 
 ## 怎么更新
 
@@ -52,6 +57,13 @@ npm run validate [-- --strict]                  # 校验；--strict 时缺英文
 npm run edition log "<中文>" "<English>"         # 追加本期更新日志
 npm run edition publish                         # 快照本期（可重复执行覆盖）
 npm run build
+npm run deploy                                  # 构建并 rsync 到服务器（见 scripts/deploy.sh 与 deploy/ 下的 nginx 配置）
 ```
 
 数据来源：LMArena、Artificial Analysis、Agent Arena、Design Arena、Bug Hunt Bench、Terminal-Bench、各家官方发布，以及 [AGI HUNT](https://agihunt.info)。
+
+## License
+
+代码 MIT。模型名称与商标归各自厂商所有；榜单数据引用自上述公开来源，定档为 AGI Hunt 编辑判断。
+
+Code: MIT. Model names and trademarks belong to their owners; leaderboard figures are cited from the public sources above, and tier placements are AGI Hunt's editorial judgement.

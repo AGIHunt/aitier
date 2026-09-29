@@ -88,7 +88,7 @@
 | D | 55–63 | 明显落后 |
 | E | <55 | 边缘 |
 
-首期参考过的外部天梯图（`research/tier_ref_jp.png`，2026-09-28）：SSS Opus 5.5；SS GPT-6 Astra；S Fable 5.1、GPT-6 Sol；A Opus 5、Fable 5、GPT-5.6 Sol、Kimi K3、Grok 4.6、Qwen3.8 Max、GLM-5.3、GPT-6 Luna、Muse Spark 1.3、DeepSeek V4.1 Flash、Hy-4 Preview、Grok 4.7；B GPT-5.6 Terra、Qwen3.8-Flash-Next、GLM-5.3 Flash、Sonnet 5、K2 Horizon；C GPT-5.6 Luna、Grok 4.5、Qwen3.8 27B、Muse Spark 1.2、MiMo V2.5 Pro、Hy-3、MiniMax M3；D Inkling、Nemotron 3 Ultra、Muse Glimmer；E Haiku 4.5、Mistral Medium 3.5、Nemotron 3.5 Lightning。这是个人向图，带玩梗成分，**作为参照而非真理**——要结合榜单数据独立判断；它没收录的新模型（如 Sonnet 5.5、Kimi K3.1、M3.1）你来补。图像/视频类要自己按 LMArena / Artificial Analysis 的图像、视频榜定档。
+首期参考过的外部天梯图（`research/tier_ref_jp.png`（本地参考图，未入库），2026-09-28）：SSS Opus 5.5；SS GPT-6 Astra；S Fable 5.1、GPT-6 Sol；A Opus 5、Fable 5、GPT-5.6 Sol、Kimi K3、Grok 4.6、Qwen3.8 Max、GLM-5.3、GPT-6 Luna、Muse Spark 1.3、DeepSeek V4.1 Flash、Hy-4 Preview、Grok 4.7；B GPT-5.6 Terra、Qwen3.8-Flash-Next、GLM-5.3 Flash、Sonnet 5、K2 Horizon；C GPT-5.6 Luna、Grok 4.5、Qwen3.8 27B、Muse Spark 1.2、MiMo V2.5 Pro、Hy-3、MiniMax M3；D Inkling、Nemotron 3 Ultra、Muse Glimmer；E Haiku 4.5、Mistral Medium 3.5、Nemotron 3.5 Lightning。这是个人向图，带玩梗成分，**作为参照而非真理**——要结合榜单数据独立判断；它没收录的新模型（如 Sonnet 5.5、Kimi K3.1、M3.1）你来补。图像/视频类要自己按 LMArena / Artificial Analysis 的图像、视频榜定档。
 
 ## 最终回复
 

@@ -8,7 +8,7 @@
 
 - 当前排名：`npm run -s report <category> -- --bench`（在 /Users/john/workspace/airank 下运行）
 - 原始数据：`src/data/vendors/*.json`（只读，不要改）
-- 参照：`research/tier_ref_jp.png`（网友天梯图，只覆盖 LLM）
+- 参照：`research/tier_ref_jp.png`（本地参考图，未入库）（网友天梯图，只覆盖 LLM）
 
 ## 数据源（双向对比，任何单一来源都不是权威）
 
