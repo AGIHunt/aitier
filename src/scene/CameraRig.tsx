@@ -25,7 +25,7 @@ function easeInOutCubic(x: number) {
 }
 
 export function CameraRig() {
-  const { camera, gl } = useThree()
+  const { camera, gl, size } = useThree()
   const orbit = useRef({ theta: -0.9, phi: 0.2, lastWheel: 0 })
   const cur = useRef({ pos: new THREE.Vector3(0, -14, 40), look: new THREE.Vector3(0, -4, 0) })
   const intro = useRef({ t: -1, pinged: new Set<number>(), impacted: false })
@@ -38,8 +38,13 @@ export function CameraRig() {
     let sy = 0
     let lx = 0
     let ly = 0
+    let touch = false
+    // 触屏手势锁轴：横向 = 旋转，纵向 = 升降档位
+    let axis: 'x' | 'y' | null = null
     const onDown = (e: PointerEvent) => {
       down = true
+      touch = e.pointerType !== 'mouse'
+      axis = null
       sx = lx = e.clientX
       sy = ly = e.clientY
       runtime.dragged = false
@@ -55,6 +60,17 @@ export function CameraRig() {
       runtime.lastInteract = performance.now()
       const s = useStore.getState()
       if (s.selectedId && Math.hypot(e.clientX - sx, e.clientY - sy) > 40) s.select(null)
+      if (touch) {
+        if (!axis) axis = Math.abs(e.clientX - sx) > Math.abs(e.clientY - sy) ? 'x' : 'y'
+        if (axis === 'x') orbit.current.theta -= dx * 0.008
+        else {
+          orbit.current.lastWheel = performance.now()
+          const patch: Partial<typeof s> = { focus: THREE.MathUtils.clamp(s.focus - dy * 0.012, 0, TIERS.length - 1) }
+          if (s.overview) patch.overview = false
+          s.set(patch)
+        }
+        return
+      }
       orbit.current.theta -= dx * 0.0055
       orbit.current.phi = THREE.MathUtils.clamp(orbit.current.phi + dy * 0.003, -0.15, 0.75)
     }
@@ -88,6 +104,9 @@ export function CameraRig() {
 
   useFrame((_, rawDt) => {
     const dt = Math.min(rawDt, 0.05)
+    // 竖屏时水平视野窄，把相机拉远一些
+    const aspect = size.width / Math.max(1, size.height)
+    const far = aspect < 1 ? 1 + (1 - aspect) * 0.75 : 1
     const s = useStore.getState()
     const o = orbit.current
     const targetPos = new THREE.Vector3()
@@ -122,7 +141,7 @@ export function CameraRig() {
         s.set({ shock: s.shock + 1 })
       }
       o.theta = -2.2 + k * 2.2 + Math.max(0, I.t - INTRO_RISE) * 0.08
-      const R = THREE.MathUtils.lerp(34, radiusAt(0) * 1.25 + 10, k)
+      const R = THREE.MathUtils.lerp(34 * far, (radiusAt(0) * 1.25 + 10) * far, k)
       o.phi = THREE.MathUtils.lerp(-0.08, 0.16, k)
       targetLook.set(0, tierY(Math.max(0, f)) + 1.8 + (1 - k) * 4, 0)
       targetPos.set(Math.sin(o.theta) * Math.cos(o.phi) * R, targetLook.y + Math.sin(o.phi) * R, Math.cos(o.theta) * Math.cos(o.phi) * R)
@@ -142,8 +161,8 @@ export function CameraRig() {
         dir.normalize()
         const right = new THREE.Vector3().crossVectors(dir.clone().negate(), UP).normalize()
         const wide = window.innerWidth > 900
-        targetLook.copy(sel).addScaledVector(right, wide ? 1.55 : 0).add(new THREE.Vector3(0, wide ? 0 : -0.8, 0))
-        targetPos.copy(sel).addScaledVector(dir, wide ? 6.6 : 8.5).add(new THREE.Vector3(0, 0.7, 0))
+        targetLook.copy(sel).addScaledVector(right, wide ? 1.55 : 0).add(new THREE.Vector3(0, wide ? 0 : -2.3, 0))
+        targetPos.copy(sel).addScaledVector(dir, wide ? 6.6 : 5.2 + 3.2 / Math.max(aspect, 0.45)).add(new THREE.Vector3(0, 0.7, 0))
         lambda = 3.2
         o.theta = Math.atan2(cur.current.pos.x, cur.current.pos.z)
         const m = MODEL_BY_ID.get(s.selectedId!)
@@ -152,7 +171,7 @@ export function CameraRig() {
         // ─── 全景 ───
         if (performance.now() - runtime.lastInteract > 2500) o.theta += dt * 0.08
         targetLook.set(0, TOWER_TOP / 2 + 4, 0)
-        const R = 64
+        const R = 64 * far
         targetPos.set(Math.sin(o.theta) * R, targetLook.y + 4 + o.phi * 30, Math.cos(o.theta) * R)
         audio.setEnergy(0.55)
       } else {
@@ -163,7 +182,7 @@ export function CameraRig() {
           const snapped = Math.round(s.focus)
           if (Math.abs(snapped - s.focus) > 0.001) s.set({ focus: THREE.MathUtils.damp(s.focus, snapped, 6, dt) })
         }
-        const R = radiusAt(s.focus) * 1.25 + 10
+        const R = (radiusAt(s.focus) * 1.25 + 10) * far
         targetLook.set(0, tierY(s.focus) + 2.6, 0)
         targetPos.set(
           Math.sin(o.theta) * Math.cos(o.phi) * R,

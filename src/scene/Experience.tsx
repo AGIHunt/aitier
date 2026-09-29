@@ -32,7 +32,7 @@ export function Experience() {
   const [quality, setQuality] = useState<'high' | 'low'>('high')
   return (
     <Canvas
-      dpr={[1, 1.75]}
+      dpr={[1, typeof window !== 'undefined' && window.innerWidth < 760 ? 1.5 : 1.75]}
       gl={{ antialias: false, powerPreference: 'high-performance', stencil: false }}
       camera={{ fov: 50, near: 0.1, far: 1500, position: [0, -14, 40] }}
       onPointerMissed={() => {

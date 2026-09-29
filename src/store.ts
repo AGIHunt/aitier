@@ -32,7 +32,7 @@ export const useStore = create<State>((set) => ({
   selectedId: null,
   hoveredId: null,
   vendorFilter: null,
-  view: typeof window !== 'undefined' && window.innerWidth < 760 ? 'table' : '3d',
+  view: '3d',
   muted: false,
   lang: 'zh',
   focus: 3,

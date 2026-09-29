@@ -112,6 +112,7 @@ export default function App() {
             <VendorBar />
             <Ticker />
           </div>
+          {view === '3d' && <div className="hint-touch">{T('hintTouch')}</div>}
           {view === '3d' && (
             <div className="hint">
               {T('hint')} <kbd>←</kbd>
