@@ -1,0 +1,47 @@
+{
+  "vendor": {
+    "id": "sandai",
+    "name": "Sand.ai",
+    "nameZh": "Sand.ai",
+    "country": "CN",
+    "color": "#D9B26F",
+    "accent": "#1C1C1C",
+    "monogram": "Sa",
+    "blurb": "北京视频创业公司，MAGI-2 以 6B 激活参数开源进入 AA 视频榜前十"
+  },
+  "models": [
+    {
+      "id": "magi-2-preview",
+      "name": "MAGI-2 Preview",
+      "category": "video",
+      "family": "MAGI",
+      "released": "2026-08-05",
+      "status": "preview",
+      "openWeights": true,
+      "params": "114B MoE / 6B 激活",
+      "context": "1080p·10s",
+      "pricing": null,
+      "tier": "A",
+      "score": 82,
+      "tags": ["开源", "音画同出", "文生视频", "图生视频"],
+      "tagline": "6B 激活参数的开源音画模型，挤进 AA 前十",
+      "highlights": [
+        "AA 文生视频 1156，第 6",
+        "AA 图生视频 1094，约第 9",
+        "一次前向同时生成画面和声音，自带口型",
+        "官方称 10 秒 1080p 的成本约为主流闭源模型的 1/10，Apache 2.0"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video", "value": "1156", "note": "第 6", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Image-to-Video", "value": "1094", "note": "约第 9", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+      ],
+      "notes": "开源视频模型中榜单排名最靠前的之一。AA 上的 API 定价显示为 Coming soon。",
+      "sources": [
+        "https://sand.ai/blog/magi-2-preview",
+        "https://huggingface.co/sand-ai/MAGI-2-preview",
+        "https://comfyui-wiki.com/en/news/2026-08-05-magi-2-preview"
+      ]
+    }
+  ],
+  "tierRationale": "只收 MAGI-2 Preview。它在 AA 文生视频排第 6（1156），略高于 Wan2.7（1149，A 81），图生视频约第 9，但没有进入 LMArena 视频榜前 30，定 A（82）。"
+}

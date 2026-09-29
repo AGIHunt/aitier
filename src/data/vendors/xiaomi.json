@@ -1,0 +1,110 @@
+{
+  "vendor": {
+    "id": "xiaomi",
+    "name": "Xiaomi MiMo",
+    "nameZh": "小米·MiMo",
+    "country": "CN",
+    "color": "#FF6900",
+    "accent": "#FFFFFF",
+    "monogram": "Mi",
+    "blurb": "万亿参数 MoE 全开源，MiMo-V2.6-Pro 登顶 AA 开源权重榜，RL 数据与环境一并公开"
+  },
+  "models": [
+    {
+      "id": "mimo-v2.6-pro",
+      "name": "MiMo-V2.6-Pro",
+      "category": "llm",
+      "family": "MiMo-V2.6",
+      "released": "2026-09-21",
+      "status": "released",
+      "openWeights": true,
+      "params": "1.02T MoE / 42B 激活",
+      "context": "1M",
+      "pricing": "$0.435 / $0.87 每百万 token（缓存命中 99% 折扣）",
+      "tier": "A",
+      "score": 86,
+      "tags": ["开源", "Agent", "编程", "全模态"],
+      "tagline": "当下最强开源权重模型，价格还是白菜价",
+      "highlights": [
+        "AA 智能指数 46，开源权重第一，与 Grok 4.7 持平",
+        "LMArena Text 1480，总榜约第 23",
+        "DeepSWE 71.9、Terminal-Bench 2.1 89.9（官方）",
+        "Vals Index 开源权重榜第一，MIT 许可，原生支持图/音/视频输入"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "46", "note": "开源权重第一，总榜约第 21", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1480", "note": "约第 23", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "DeepSWE v1.1", "value": "71.9", "note": "官方", "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"},
+        {"name": "Terminal-Bench 2.1", "value": "89.9", "note": "官方", "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"}
+      ],
+      "notes": "架构沿用 V2.5，新增 1M 上下文与 MTP drafter；RL 训练过程公开直播。首发用户反馈表现波动较大。",
+      "sources": [
+        "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d",
+        "https://siliconangle.com/2026/09/22/xiaomi-introduces-mimo-v2-6-series-open-source-ai-model-family/",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "name": "MiMo-V2.6-Flash",
+      "category": "llm",
+      "family": "MiMo-V2.6",
+      "released": "2026-09-21",
+      "status": "released",
+      "openWeights": true,
+      "params": "310B MoE / 15B 激活",
+      "context": null,
+      "pricing": null,
+      "tier": "B",
+      "score": 78,
+      "tags": ["开源", "性价比", "编程"],
+      "tagline": "便宜到能拿来刷量的编程 Flash",
+      "highlights": [
+        "AA 智能指数 38，接近 DeepSeek V4.1 Flash（39）",
+        "Vals Index 开源权重榜第二，仅次于自家 Pro",
+        "opencode $10 套餐下 5 小时约可跑 3 万次请求"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "38", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1454", "note": "约第 71", "source": "https://arena.ai/leaderboard/text"}
+      ],
+      "notes": "另有 Flash-RL、Flash-MOPD 等变体权重；社区反馈状态好时强于 DeepSeek，但稳定性欠佳。",
+      "sources": [
+        "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d",
+        "https://agihunt.info/e/1a0e6d3fc548be5083b4c339188",
+        "https://agihunt.info/e/1a0cd411acee4020f7cd7238bc1"
+      ]
+    },
+    {
+      "id": "mimo-v2.5-pro",
+      "name": "MiMo-V2.5-Pro",
+      "category": "llm",
+      "family": "MiMo-V2.5",
+      "released": "2026-04-22",
+      "status": "released",
+      "openWeights": true,
+      "params": "1.02T MoE / 42B 激活",
+      "context": "1M",
+      "pricing": "$0.435 / $0.87 每百万 token",
+      "tier": "C",
+      "score": 66,
+      "tags": ["开源", "Agent", "编程"],
+      "tagline": "上一代万亿开源旗舰，已被 V2.6 全面替代",
+      "highlights": [
+        "AA 智能指数 26，V2.6-Pro 较其提升 20 分",
+        "LMArena Text 1467，累计近 7 万票",
+        "发布时称 GDPVal-AA、ClawEval 开源第一，MIT 许可"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "26", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1467", "note": "约第 46", "source": "https://arena.ai/leaderboard/text"}
+      ],
+      "notes": "日本网友天梯图将其放在 C 档。",
+      "sources": [
+        "https://mimo.mi.com/docs/en-US/news/latest/v2.5-open-sourced",
+        "https://artificialanalysis.ai/models/mimo-v2-5-pro"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 以 Artificial Analysis 智能指数为主、LMArena Text 为辅。MiMo-V2.6-Pro 以 46 分拿下开源权重第一，与 Grok 4.7、Qwen3.8 Max、GLM-5.3 同一区间，定 A 高位（86）。V2.6-Flash 得 38 分，和 Qwen3.8-Flash-Next、DeepSeek V4.1 Flash 相近，定 B（78）。V2.5-Pro 只有 26 分，和参照天梯图一样放 C。小米目前没有进入图像或视频榜单前列的模型，所以不收这两类。"
+}

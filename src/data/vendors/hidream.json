@@ -1,0 +1,75 @@
+{
+  "vendor": {
+    "id": "hidream",
+    "name": "HiDream.ai",
+    "nameZh": "智象未来",
+    "country": "CN",
+    "color": "#4B4BF0",
+    "accent": "#9FE7FF",
+    "monogram": "Hi",
+    "blurb": "做原生全模态生成的国内创业公司，新视频模型首发即进 AA 图生视频前五"
+  },
+  "models": [
+    {
+      "id": "hidream-o1-video-1.0",
+      "name": "HiDream-O1-Video-1.0",
+      "category": "video",
+      "family": "HiDream-O1",
+      "released": "2026-09-17",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·20s",
+      "pricing": "约 $5.8/分钟",
+      "tier": "A",
+      "score": 86,
+      "tags": ["图生视频", "全模态", "物理一致性", "音画同出"],
+      "tagline": "黑马级图生视频，首发就进全球前五",
+      "highlights": [
+        "AA 图生视频 1174，第 5",
+        "LMArena 图生视频 1456，约第 7，与 Grok Imagine Video 1.5 并列",
+        "文本、图像、视频多模态输入，生成 5–20 秒 1080p 视频",
+        "主打叙事规划、角色一致性和物理合理性"
+      ],
+      "benchmarks": [
+        {"name": "AA Image-to-Video", "value": "1174", "note": "第 5", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
+        {"name": "LMArena Image-to-Video", "value": "1456", "note": "约第 7", "source": "https://arena.ai/leaderboard/image-to-video"}
+      ],
+      "notes": "亦称 HiDream V1。AA 显示的上线时间为 2026-08，官方 9/17 正式发布。两个榜的文生视频前 30 都没有它。",
+      "sources": [
+        "https://www.media-outreach.com/news/china/2026/09/17/488140/hidream-unveils-hidream-o1-video-1-0-a-native-omnimodal-video-model-built-for-physical-consistency/",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "hidream-o1-image-1.5",
+      "name": "HiDream-O1-Image-1.5",
+      "category": "image",
+      "family": "HiDream-O1",
+      "released": "2026-06",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "约 $0.08/张",
+      "tier": "C",
+      "score": 66,
+      "tags": ["文生图", "全模态"],
+      "tagline": "O1 全模态体系里的生图模型",
+      "highlights": [
+        "AA 文生图 1021，约第 28",
+        "前代 HiDream-O1-Image 在 Hugging Face 开放了权重"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Image", "value": "1021", "note": "约第 28", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"}
+      ],
+      "notes": "1.5 版本是否开源未核实。",
+      "sources": [
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://huggingface.co/HiDream-ai/HiDream-O1-Image"
+      ]
+    }
+  ],
+  "tierRationale": "HiDream-O1-Video 在 AA 图生视频排第 5（1174，距榜首 20 分），LMArena 图生视频 1456，与 Grok Imagine Video 1.5（S 89）同分，但它没有进入文生视频前 30，定 A 高位（86）。O1-Image-1.5 在 AA 文生图约第 28，与 FLUX.2 [max] 同一区间，定 C。"
+}

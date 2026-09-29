@@ -1,0 +1,357 @@
+{
+  "vendor": {
+    "id": "zhipu",
+    "name": "Z.ai (Zhipu AI)",
+    "nameZh": "智谱",
+    "country": "CN",
+    "color": "#3B5BFD",
+    "accent": "#FFFFFF",
+    "monogram": "Z",
+    "blurb": "开源编程旗舰厂商，GLM-5.3 居开源第一梯队，主推 Coding Plan"
+  },
+  "models": [
+    {
+      "id": "glm-5-3",
+      "name": "GLM-5.3",
+      "category": "llm",
+      "family": "GLM-5",
+      "released": "2026-08-14",
+      "status": "released",
+      "openWeights": true,
+      "params": "744B MoE / 40B 激活",
+      "context": "1M",
+      "pricing": "$1.40 / $4.40 每百万 token",
+      "tier": "A",
+      "score": 86,
+      "tags": [
+        "编程",
+        "Agent",
+        "网络安全",
+        "开源"
+      ],
+      "tagline": "开源权重里最能打的编程 Agent 之一",
+      "highlights": [
+        "AA 智能指数 45，开源权重第 2，与 Qwen3.8 Max 同分",
+        "LMArena Text 第 24（1480），Code 第 18（1619）",
+        "DeepSWE 66.9（5.2 为 46.2），TB 3.0 28.3",
+        "CyberGym 84.5%，官方称在真实项目中挖出 2436 个漏洞"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "45",
+          "note": "max 档；开源权重第 2",
+          "source": "https://artificialanalysis.ai/models/glm-5-3"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "第 24（glm-5.3-max）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1619",
+          "note": "第 18（glm-5.3-max）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "66.9",
+          "note": "Kimi K3 67.5，Fable 5 69.7",
+          "source": "https://decrypt.co/375684/china-z-ai-glm-5-3-top-open-weight-coding-model"
+        },
+        {
+          "name": "Terminal-Bench 3.0",
+          "value": "28.3",
+          "note": "GPT-5.6 Sol 34.6",
+          "source": "https://decrypt.co/375684/china-z-ai-glm-5-3-top-open-weight-coding-model"
+        }
+      ],
+      "notes": "与 5.2 同底座纯后训练；8/14 上 Coding Plan、8/18 开 API、8/28 放权重（非 MIT）。9 月 ZCode 陷代码上传争议",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released",
+        "https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/",
+        "https://kingy.ai/blog/glm-5-3-specs-benchmarks-api-how-to-use/",
+        "https://artificialanalysis.ai/models/glm-5-3",
+        "https://agihunt.info/e/1a0e8192727efaca901d8e9e05c"
+      ]
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM-5.3-Flash",
+      "category": "llm",
+      "family": "GLM-5",
+      "released": "2026-08-26",
+      "status": "released",
+      "openWeights": true,
+      "params": "320B MoE / 18B 激活",
+      "context": "1M",
+      "pricing": "$0.15 / $0.50 每百万 token（AA 口径）",
+      "tier": "B",
+      "score": 79,
+      "tags": [
+        "性价比",
+        "多模态",
+        "本地部署",
+        "编程"
+      ],
+      "tagline": "白菜价的原生多模态主力，本地党新宠",
+      "highlights": [
+        "GLM-5 系列首个原生多模态，支持图像、视频、文档输入",
+        "AA 智能指数 42，仅比满血 GLM-5.3 低 3 分",
+        "LMArena Code 1613 排第 21，Text 1474 排第 35",
+        "MIT 许可；Sentdex 称本地已跑超 40 亿 token"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "42",
+          "note": null,
+          "source": "https://artificialanalysis.ai/models/comparisons/glm-5-3-flash-vs-minimax-m3"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1613",
+          "note": "第 21",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1474",
+          "note": "第 35",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ],
+      "notes": "匿名代号 Ox Alpha。提速版 GLM-5.3-FlashX（最高 200 tok/s，价格 2.5 倍）并入此条。有用户吐槽比标准版还慢",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released",
+        "https://technode.com/2026/08/27/zhipu-identifies-ox-alpha-as-glm-5-3-flash-and-releases-model-weights/",
+        "https://artificialanalysis.ai/models/comparisons/glm-5-3-flash-vs-minimax-m3",
+        "https://agihunt.info/e/1a0c4c2b1b3b446831af14b8e33",
+        "https://agihunt.info/e/1a0e99152ddc4d8d48d3b882828"
+      ]
+    },
+    {
+      "id": "glm-5-2",
+      "name": "GLM-5.2",
+      "category": "llm",
+      "family": "GLM-5",
+      "released": "2026-06-16",
+      "status": "released",
+      "openWeights": true,
+      "params": "744B MoE / 40B 激活",
+      "context": "1M",
+      "pricing": "$1.40 / $4.40 每百万 token",
+      "tier": "B",
+      "score": 77,
+      "tags": [
+        "编程",
+        "长上下文",
+        "开源"
+      ],
+      "tagline": "把 GLM 上下文拉到 1M 的上一代旗舰",
+      "highlights": [
+        "发布时 AA 指数 51（v4.1），登顶开源权重第一",
+        "上下文从 GLM-5.1 的 200K 扩到 1M",
+        "LMArena Code 1602 排第 22，Text 1476 排第 31"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index v4.1",
+          "value": "51",
+          "note": "发布时开源第一（旧版指数）",
+          "source": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1602",
+          "note": "第 22",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1476",
+          "note": "第 31",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ],
+      "notes": "GLM-5.3 与其共用底座；官方称长程编码介于 Opus 4.7 与 4.8 之间。单任务 token 消耗偏高（约 43k）。",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released",
+        "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+        "https://agihunt.info/e/1a0e3ed79c8e00b09f788b6cc6e"
+      ]
+    },
+    {
+      "id": "glm-5-1",
+      "name": "GLM-5.1",
+      "category": "llm",
+      "family": "GLM-5",
+      "released": "2026-04-07",
+      "status": "released",
+      "openWeights": true,
+      "params": "754B MoE / 40B 激活",
+      "context": "200K",
+      "pricing": null,
+      "tier": "C",
+      "score": 70,
+      "tags": [
+        "编程",
+        "长程 Agent",
+        "开源"
+      ],
+      "tagline": "单次可自主干 8 小时的开源老将",
+      "highlights": [
+        "SWE-Bench Pro 58.4，发布时胜 GPT-5.4、Opus 4.6",
+        "MIT 许可，官方称单次可连续自主工作 8 小时",
+        "LMArena Code 1508，已排到第 49"
+      ],
+      "benchmarks": [
+        {
+          "name": "SWE-Bench Pro",
+          "value": "58.4",
+          "note": "发布时开源第一",
+          "source": "https://www.buildfastwithai.com/blogs/glm-5-1-open-source-review-2026"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1508",
+          "note": "第 49",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "半年内被 5.2/5.3 两代迭代，现主要作为开源对比基准。",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released",
+        "https://www.buildfastwithai.com/blogs/glm-5-1-open-source-review-2026"
+      ]
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "category": "llm",
+      "family": "GLM-5",
+      "released": "2026-02-12",
+      "status": "released",
+      "openWeights": true,
+      "params": "744B MoE / 40B 激活",
+      "context": "200K",
+      "pricing": null,
+      "tier": "C",
+      "score": 64,
+      "tags": [
+        "开源",
+        "稀疏注意力",
+        "编程"
+      ],
+      "tagline": "GLM-5 家族的起点底座",
+      "highlights": [
+        "首次引入 DeepSeek 稀疏注意力（DSA），提升长文 token 效率",
+        "官方对标 Claude Opus 4.5 的代码逻辑密度",
+        "LMArena Text 1457 排第 61，Code 1434 排第 72"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1457",
+          "note": "第 61",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1434",
+          "note": "第 72",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "MIT 许可开源；后续 5.1/5.2/5.3 均沿用同规模 MoE。",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released"
+      ]
+    },
+    {
+      "id": "glm-5v-turbo",
+      "name": "GLM-5V-Turbo",
+      "category": "llm",
+      "family": "GLM-V",
+      "released": "2026-04-01",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": "744B（官方口径，多模态）",
+      "context": null,
+      "pricing": null,
+      "tier": "D",
+      "score": 58,
+      "tags": [
+        "视觉",
+        "视觉编程",
+        "GUI Agent"
+      ],
+      "tagline": "看图写代码的视觉 Agent，已退役",
+      "highlights": [
+        "智谱首个原生多模态 Agent 基座，支持图像、视频、文本输入",
+        "主打截图/设计稿转代码与浏览器 Agent",
+        "LMArena Code 1400，排第 81"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Code",
+          "value": "1400",
+          "note": "第 81",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "闭源仅 API；截至 2026-09 已从 Z.ai 价目表下架。视觉能力已并入原生多模态的 GLM-5.3-Flash。",
+      "sources": [
+        "https://winbuzzer.com/2026/04/02/zai-launches-glm-5v-turbo-multimodal-vision-model-xcxwbn/",
+        "https://www.buildfastwithai.com/blogs/glm-5v-turbo-vision-coding-model"
+      ]
+    },
+    {
+      "id": "glm-image",
+      "name": "GLM-Image",
+      "category": "image",
+      "family": "GLM-Image",
+      "released": "2026-01-14",
+      "status": "released",
+      "openWeights": true,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "E",
+      "score": 48,
+      "tags": [
+        "文生图",
+        "开源",
+        "知识密集"
+      ],
+      "tagline": "自回归加扩散的开源生图，胜在懂知识",
+      "highlights": [
+        "自回归语义理解 + 扩散解码的混合架构",
+        "官方主打知识密集型场景与图中文字",
+        "MIT 许可开源；LMArena 文生图 1012 排第 74"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1012",
+          "note": "第 74",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "Artificial Analysis Text-to-Image",
+          "value": "889",
+          "note": "第 104 / 166",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        }
+      ],
+      "notes": "与前沿生图差距明显，收录主要因其是智谱现役唯一图像模型且开源。",
+      "sources": [
+        "https://docs.z.ai/release-notes/new-released",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 以 Artificial Analysis 智能指数 v4.3.2 和 LMArena Text/Code 为主：GLM-5.3（max）AA 45、Code Arena 第 18，与参考图一致给 A；GLM-5.3-Flash AA 42、Code 1613 其实紧贴旗舰，但参考图放 B，且同榜 Qwen3.8-Flash-Next 在 B，保持口径给 B 顶格 79。GLM-5.2/5.1/5 按代际和 Code Arena（1602/1508/1434）逐级降到 B/C；GLM-5V-Turbo 已下架给 D。GLM-Image 在 LMArena 排第 74、AA 排第 104，只能给 E。CogView-4、CogVideoX-3（2025-07）已无榜单存在感，智谱 2026 年也没有新的视频模型，因此不收。"
+}

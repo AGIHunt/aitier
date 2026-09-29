@@ -1,0 +1,541 @@
+{
+  "vendor": {
+    "id": "bytedance",
+    "name": "ByteDance Seed",
+    "nameZh": "字节跳动·豆包",
+    "country": "CN",
+    "color": "#1664FF",
+    "accent": "#00C8D2",
+    "monogram": "字",
+    "blurb": "Token 调用量国内第一，视频 Seedance 稳居第一梯队，LLM 仍在追赶前沿"
+  },
+  "models": [
+    {
+      "id": "doubao-seed-2-1-pro",
+      "name": "Doubao-Seed-2.1-Pro",
+      "category": "llm",
+      "family": "Seed 2.1",
+      "released": "2026-06-23",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "256K",
+      "pricing": "¥6 / ¥30 每百万 token（约 $0.88 / $4.42），缓存命中 ¥1.2",
+      "tier": "B",
+      "score": 76,
+      "tags": [
+        "编程",
+        "Agent",
+        "多模态理解"
+      ],
+      "tagline": "豆包现役旗舰，主打 Coding 与 Agent 性价比",
+      "highlights": [
+        "官方称 GDPVal、MobileWorld 最高分，CharXiv-RQ 等视觉榜第一",
+        "预览版 Code Arena 前端榜发布时第 8（1539），与 Opus 4.6 持平",
+        "官方称同类负载总成本比 Opus 4.6 低近 80%",
+        "9/15 推出 0915 版本，强化可信搜索、VLM 与 3D 空间理解"
+      ],
+      "benchmarks": [
+        {
+          "name": "Code Arena",
+          "value": "1518",
+          "note": "seed-2.1-pro-preview，第 44（榜首 Opus 5.5 为 1827）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Code Arena Frontend",
+          "value": "1539",
+          "note": "发布时第 8（官方口径）",
+          "source": "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"
+        },
+        {
+          "name": "MathVision",
+          "value": "94.5",
+          "note": "官方口径",
+          "source": "https://datanorth.ai/news/bytedance-releases-seed-2-1-pro-and-seed-2-1-turbo"
+        },
+        {
+          "name": "Video-MME",
+          "value": "89.2",
+          "note": "官方口径",
+          "source": "https://datanorth.ai/news/bytedance-releases-seed-2-1-pro-and-seed-2-1-turbo"
+        }
+      ],
+      "notes": "深度思考模型；未进 AA 智能指数与 LMArena Text 榜。原定 8 月的 2.2 跳票，2.1 Pro 以 0915 版本续命",
+      "sources": [
+        "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity",
+        "https://www.ithome.com/0/967/314.htm",
+        "https://news.qq.com/rain/a/20260917A09KYR00",
+        "https://zenmux.ai/bytedance/doubao-seed-2.1-pro",
+        "https://arena.ai/leaderboard/code"
+      ]
+    },
+    {
+      "id": "doubao-seed-2-1-turbo",
+      "name": "Doubao-Seed-2.1-Turbo",
+      "category": "llm",
+      "family": "Seed 2.1",
+      "released": "2026-06-23",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "256K",
+      "pricing": "¥3 / ¥15 每百万 token，缓存命中 ¥0.6",
+      "tier": "B",
+      "score": 72,
+      "tags": [
+        "性价比",
+        "Agent",
+        "规模化调用"
+      ],
+      "tagline": "能力贴近 Pro，价格砍半的走量款",
+      "highlights": [
+        "官方称能力与 2.1 Pro 相近、价格减半",
+        "256K 上下文，最大输出同为 256K",
+        "面向企业规模化调用的默认选项"
+      ],
+      "benchmarks": [],
+      "notes": "无独立第三方榜单成绩，定档参照 2.1 Pro 下调",
+      "sources": [
+        "https://news.qq.com/rain/a/20260623A02RQB00",
+        "https://apizero.cn/ai/models/doubao-seed-21-turbo"
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-pro",
+      "name": "Doubao-Seed-2.0-Pro",
+      "category": "llm",
+      "family": "Seed 2.0",
+      "released": "2026-02-14",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "$0.47 / $2.37 每百万 token",
+      "tier": "C",
+      "score": 68,
+      "tags": [
+        "推理",
+        "数学",
+        "视频理解"
+      ],
+      "tagline": "春晚前夜上线的上一代旗舰",
+      "highlights": [
+        "AIME 2025 98.3、GPQA Diamond 88.9、Codeforces 3020（官方口径）",
+        "SWE-bench Verified 76.5，BrowseComp 77.3",
+        "LMArena Text 1456，目前字节在文本榜唯一上榜模型"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1456",
+          "note": "dola-seed-2.0-pro，第 64",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "LMArena Vision",
+          "value": "1256",
+          "note": "第 43",
+          "source": "https://arena.ai/leaderboard/vision"
+        },
+        {
+          "name": "SWE-bench Verified",
+          "value": "76.5",
+          "note": "官方口径",
+          "source": "https://evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing"
+        }
+      ],
+      "notes": "同期有 Seed 2.0 Code 编程版（定价同 Pro），未单独收录",
+      "sources": [
+        "https://www.caixinglobal.com/2026-02-15/bytedance-unveils-doubao-20-ai-model-to-tackle-complex-tasks-102414865.html",
+        "https://evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "doubao-seed-2-0-lite",
+      "name": "Doubao-Seed-2.0-Lite",
+      "category": "llm",
+      "family": "Seed 2.0",
+      "released": "2026-02-14",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "$0.09 / $0.53 每百万 token",
+      "tier": "D",
+      "score": 62,
+      "tags": [
+        "轻量",
+        "性价比",
+        "对话"
+      ],
+      "tagline": "豆包 App 日常对话的主力轻量档",
+      "highlights": [
+        "AIME 2025 93、GPQA Diamond 85.1（官方口径）",
+        "LiveCodeBench v6 81.7，价格约为 Pro 的 1/5"
+      ],
+      "benchmarks": [
+        {
+          "name": "GPQA Diamond",
+          "value": "85.1",
+          "note": "官方口径",
+          "source": "https://evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing"
+        }
+      ],
+      "notes": "同代还有更便宜的 Mini（$0.03/$0.31，GPQA 79），未单列",
+      "sources": [
+        "https://evolink.ai/blog/doubao-seed-2-0-review-benchmarks-pricing"
+      ]
+    },
+    {
+      "id": "seed-oss-36b",
+      "name": "Seed-OSS-36B",
+      "category": "llm",
+      "family": "Seed-OSS",
+      "released": "2025-08-20",
+      "status": "released",
+      "openWeights": true,
+      "params": "36B Dense",
+      "context": "512K",
+      "pricing": null,
+      "tier": "E",
+      "score": 52,
+      "tags": [
+        "开源",
+        "长上下文",
+        "可控思考"
+      ],
+      "tagline": "字节至今唯一的开源权重 LLM",
+      "highlights": [
+        "Apache-2.0 开源，含 Base / Instruct 等三个变体",
+        "仅用 12T token 训练，原生 512K 上下文",
+        "支持按需设定思考预算（thinking budget）"
+      ],
+      "benchmarks": [],
+      "notes": "发布已一年多，此后字节未再开源新一代 LLM",
+      "sources": [
+        "https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct",
+        "https://github.com/ByteDance-Seed/seed-oss"
+      ]
+    },
+    {
+      "id": "doubao-seed-2-2",
+      "name": "Doubao-Seed-2.2",
+      "category": "llm",
+      "family": "Seed 2.2",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "B",
+      "score": 78,
+      "tags": [
+        "编程",
+        "Agent",
+        "传闻"
+      ],
+      "tagline": "原定 8 月，为死磕编程而跳票",
+      "highlights": [
+        "原计划 2026 年 8 月发布，8/30 传出正式延期",
+        "延期主因是继续打磨 Coding、工具调用与 Agent 架构"
+      ],
+      "benchmarks": [],
+      "notes": "未发布，档位为占位估计；另传字节在攻坚代号「Atlas」的下一代超大模型",
+      "sources": [
+        "https://m.sohu.com/a/1069709541_122066679/?pvid=000115_3w_a"
+      ]
+    },
+    {
+      "id": "seedream-5-0-pro",
+      "name": "Seedream 5.0 Pro",
+      "category": "image",
+      "family": "Seedream 5",
+      "released": "2026-07-08",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "2K",
+      "pricing": "$0.09/张（AA 口径）",
+      "tier": "A",
+      "score": 83,
+      "tags": [
+        "商业设计",
+        "图像编辑",
+        "文字渲染"
+      ],
+      "tagline": "懂设计的商用出图旗舰",
+      "highlights": [
+        "LMArena 文生图第 10（1256），图像编辑第 8（1394）",
+        "支持点选、套索、框选、涂鸦等像素级交互编辑与图层分离",
+        "最多 10 张参考图多图融合，主打广告、电商、品牌物料"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1256",
+          "note": "第 10（榜首 GPT Image 2.5 Sunburst 1424）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1394",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1080",
+          "note": "第 15",
+          "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"
+        }
+      ],
+      "notes": "官方自承细粒度文字渲染与编辑一致性仍有提升空间；与 GPT Image 2.5 差距明显",
+      "sources": [
+        "https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro",
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"
+      ]
+    },
+    {
+      "id": "seedream-5-0-lite",
+      "name": "Seedream 5.0 Lite",
+      "category": "image",
+      "family": "Seedream 5",
+      "released": "2026-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "2K",
+      "pricing": "$0.035/张（AA 口径）",
+      "tier": "C",
+      "score": 65,
+      "tags": [
+        "快速出图",
+        "日常创作"
+      ],
+      "tagline": "日常快速出图的轻量版",
+      "highlights": [
+        "LMArena 文生图第 38（1138），图像编辑第 27（1294）",
+        "AA 文生图第 37（1010），价格约为 Pro 的 4 成"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1138",
+          "note": "第 38",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1294",
+          "note": "第 27",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ],
+      "notes": "发布时间各源说法不一：春节前（2026-02）首发，OpenRouter 记为 8/13 上架",
+      "sources": [
+        "https://openrouter.ai/bytedance-seed/seedream-5-0-lite",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "seedream-4-5",
+      "name": "Seedream 4.5",
+      "category": "image",
+      "family": "Seedream 4",
+      "released": "2025-12",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": "$0.04/张（AA 口径）",
+      "tier": "C",
+      "score": 67,
+      "tags": [
+        "图像编辑",
+        "多图参考"
+      ],
+      "tagline": "上一代主力，编辑榜仍比 5.0 Lite 高",
+      "highlights": [
+        "LMArena 图像编辑第 25（1302），略高于 5.0 Lite",
+        "LMArena 文生图第 35（1147）"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1147",
+          "note": "第 35",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1302",
+          "note": "第 25",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1022",
+          "note": "第 25",
+          "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"
+        }
+      ],
+      "notes": "Seedream 4.0（2025-09）仍在 AA 第 21（1028），未单列",
+      "sources": [
+        "https://www.mindstudio.ai/blog/what-is-bytedance-seedream-4-5",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "seedance-2-5",
+      "name": "Seedance 2.5",
+      "category": "video",
+      "family": "Seedance 2",
+      "released": "2026-07-31",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·30s",
+      "pricing": "约 $0.23/秒（720p，ModelArk）；1080p 约 $0.6/秒",
+      "tier": "S",
+      "score": 91,
+      "tags": [
+        "长镜头",
+        "多模态参考",
+        "音画同出"
+      ],
+      "tagline": "一镜 30 秒，50 份素材同台指挥",
+      "highlights": [
+        "单次原生生成 30 秒，可多轮续写成数分钟连贯内容",
+        "一次最多吃 30 图 + 10 视频 + 10 音频参考",
+        "LMArena 图生视频第 4（1477）、文生视频第 7（1474）",
+        "支持局部重生成、绿幕、时间戳级控制；fal 已上原生 1080p"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1477",
+          "note": "第 4（榜首 MiniMax H3 1495）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1474",
+          "note": "第 7（榜首 Gemini Omni 1.1 Flash 1516）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
+      ],
+      "notes": "6/23 FORCE 大会亮相，7/31 上线即梦/豆包；社区口碑常称其为视频王者，但尚未进入 AA 视频榜",
+      "sources": [
+        "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://www.cometapi.com/seedance-2-5-api-pricing/",
+        "https://agihunt.info/e/1a0ded6d9bd068ce6658c657203",
+        "https://agihunt.info/e/1a0cf99aba15c8b99291537e643"
+      ]
+    },
+    {
+      "id": "seedance-2-0",
+      "name": "Seedance 2.0",
+      "category": "video",
+      "family": "Seedance 2",
+      "released": "2026-02-12",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K·15s",
+      "pricing": "$9.07/分钟（AA 口径，720p）",
+      "tier": "S",
+      "score": 89,
+      "tags": [
+        "写实",
+        "音画同出",
+        "人物表演"
+      ],
+      "tagline": "把好莱坞吓出律师函的那一代",
+      "highlights": [
+        "AA 文生视频第 5（1210），图生视频第 4（1176）",
+        "LMArena 文生视频第 5（1479），分数反超自家 2.5",
+        "因 IP 与肖像问题收到迪士尼、派拉蒙、Netflix 等律师函"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1479",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1475",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Text-to-Video",
+          "value": "1210",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1176",
+          "note": "第 4",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
+      ],
+      "notes": "另有 Seedance 2.0 Fast 低价档；榜单均为 720p 版本成绩",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seedance_2.0",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "seedance-1-5-pro",
+      "name": "Seedance 1.5 Pro",
+      "category": "video",
+      "family": "Seedance 1",
+      "released": "2025-12",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p",
+      "pricing": null,
+      "tier": "C",
+      "score": 66,
+      "tags": [
+        "音画同出",
+        "口型同步"
+      ],
+      "tagline": "字节第一款音画同出视频模型",
+      "highlights": [
+        "首次加入多语种口型同步与音效生成",
+        "LMArena 文生视频第 22（1256），图生视频第 24（1307）"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1256",
+          "note": "第 22",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1307",
+          "note": "第 24",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
+      ],
+      "notes": "已被 2.0/2.5 取代，但低价 API 仍有调用",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seedance_2.0",
+        "https://arena.ai/leaderboard/text-to-video"
+      ]
+    }
+  ],
+  "tierRationale": "LLM：Seed 2.x 均未进入 AA 智能指数，LMArena 文本榜仅 Seed 2.0 Pro 上榜（1456，第 64，低于 Kimi K3 的 1488），Code Arena 上 Seed 2.1 Pro 预览版 1518 排第 44，距榜首 1827 差距大，故 2.1 Pro 只给 B，2.0 系列降到 C/D，开源的 Seed-OSS-36B 已一年多给 E。图像：Seedream 5.0 Pro 在 LMArena 文生图第 10、图像编辑第 8、AA 第 15，定 A；5.0 Lite 与 4.5 排在 25–38 名，给 C。视频是字节强项：Seedance 2.0/2.5 在 LMArena 文生/图生视频均排第 4–7、与第一差约 20–40 分，AA 上 2.0 排第 4–5，结合社区口碑定 S；2.5 胜在 30 秒长镜头与多参考，略高于 2.0。Seed 2.2 为跳票传闻，档位是占位估计。"
+}

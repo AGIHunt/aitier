@@ -1,0 +1,192 @@
+{
+  "vendor": {
+    "id": "tencent",
+    "name": "Tencent Hunyuan",
+    "nameZh": "腾讯·混元",
+    "country": "CN",
+    "color": "#0052D9",
+    "accent": "#00A3FF",
+    "monogram": "Hy",
+    "blurb": "混元重建后改名 Hy，大模型全线 Apache 开源，靠元宝、微信等自家业务落地"
+  },
+  "models": [
+    {
+      "id": "hy4-preview",
+      "name": "Hy4 Preview",
+      "category": "llm",
+      "family": "Hy4",
+      "released": "2026-08-28",
+      "status": "preview",
+      "openWeights": true,
+      "params": "770B MoE / 49B 激活",
+      "context": "1M",
+      "pricing": "$0.834 / $2.501 每百万 token（缓存 $0.042）",
+      "tier": "A",
+      "score": 82,
+      "tags": ["开源", "编程", "Agent", "办公"],
+      "tagline": "腾讯首个参与优化自身训练的旗舰",
+      "highlights": [
+        "内部 163 名专家盲评 2.99/4，略高于 Kimi K3、GLM-5.3",
+        "Terminal-Bench 2.1 85.4、DeepSWE 64.3",
+        "自主优化推理系统，端到端吞吐提升 31.8%",
+        "旗舰级开源权重里价格最低之一，上架 OpenRouter"
+      ],
+      "benchmarks": [
+        {"name": "Terminal-Bench 2.1", "value": "85.4", "note": "第三方整理", "source": "https://iadecider.com/articles/tencent-hy-review"},
+        {"name": "DeepSWE", "value": "64.3", "note": "第三方整理", "source": "https://iadecider.com/articles/tencent-hy-review"},
+        {"name": "腾讯内部盲评（203 个工程任务）", "value": "2.99/4", "note": "GLM-5.3 2.92，Kimi K3 2.94", "source": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"}
+      ],
+      "notes": "尚未见 AA 智能指数和 LMArena 成绩。领先的对比来自腾讯自家盲评，公开基准上大体落后 Opus 5、GPT-5.6。参照天梯图放在 A 档。",
+      "sources": [
+        "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+        "https://openrouter.ai/compare/tencent/hy4-preview",
+        "https://iadecider.com/articles/tencent-hy-review"
+      ]
+    },
+    {
+      "id": "hy3",
+      "name": "Hy3",
+      "category": "llm",
+      "family": "Hy3",
+      "released": "2026-07-06",
+      "status": "released",
+      "openWeights": true,
+      "params": "295B MoE / 21B 激活",
+      "context": "256K",
+      "pricing": null,
+      "tier": "C",
+      "score": 66,
+      "tags": ["开源", "快慢思考", "性价比"],
+      "tagline": "腾讯全家桶的主力底座",
+      "highlights": [
+        "AA 智能指数 25",
+        "LMArena Text 1457，约第 62",
+        "已接入元宝、ima、QQ 浏览器、微信公众号、CodeBuddy 等",
+        "Apache 2.0，快慢思考融合"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "25", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1457", "note": "约第 62", "source": "https://arena.ai/leaderboard/text"}
+      ],
+      "notes": "4 月底先发 Hy3 preview，7 月转正式版。参照天梯图放在 C 档。",
+      "sources": [
+        "https://www.ithome.com/0/973/106.htm",
+        "https://github.com/Tencent-Hunyuan",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "hy3-preview",
+      "name": "Hy3 Preview",
+      "category": "llm",
+      "family": "Hy3",
+      "released": "2026-04",
+      "status": "deprecated",
+      "openWeights": true,
+      "params": "295B MoE / 21B 激活",
+      "context": "256K",
+      "pricing": null,
+      "tier": "D",
+      "score": 57,
+      "tags": ["开源", "Agent"],
+      "tagline": "混元团队重建后的首作",
+      "highlights": [
+        "腾讯混元重组后的第一个模型，主打实用性和 Agent 能力",
+        "LMArena Text 1409，约第 145",
+        "3 个月后被 Hy3 正式版取代"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1409", "note": "约第 145", "source": "https://arena.ai/leaderboard/text"}
+      ],
+      "notes": "已被 Hy3 正式版替代，收录只为展示版本演进。",
+      "sources": [
+        "https://cloud.tencent.com/developer/article/2660040",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "hy-image-3.5-preview",
+      "name": "Hy Image 3.5 Preview",
+      "category": "image",
+      "family": "Hy Image",
+      "released": "2026-09-22",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "2K",
+      "pricing": "$0.024/张（GMI Cloud）；官方 API ¥0.15/张",
+      "tier": "C",
+      "score": 70,
+      "tags": ["文生图", "图像编辑", "文字渲染"],
+      "tagline": "先推理再画，主打便宜",
+      "highlights": [
+        "官方人评胜率较 Hy Image 3.0 提升 30%",
+        "文生图与图生图共用一个模型，最多 5 张参考图，输出 2K",
+        "官方称价格仅为 GPT Image 2 的 1/8.8",
+        "已上 ComfyUI、OnSolo、GMI Cloud"
+      ],
+      "benchmarks": [],
+      "notes": "暂未进入 LMArena、AA 图像榜前 30。定档参考上一代在榜成绩，加上官方自报的提升幅度，不拔高。",
+      "sources": [
+        "https://agihunt.info/e/1a0c707257b1d6fc829c3dd7844",
+        "https://agihunt.info/e/1a0d2aa3d6773507047524bb517"
+      ]
+    },
+    {
+      "id": "hunyuanimage-3.0",
+      "name": "HunyuanImage 3.0 (Instruct)",
+      "category": "image",
+      "family": "Hy Image",
+      "released": "2025-09-28",
+      "status": "released",
+      "openWeights": true,
+      "params": "80B MoE / 13B 激活",
+      "context": null,
+      "pricing": null,
+      "tier": "C",
+      "score": 66,
+      "tags": ["开源", "文生图", "图像编辑"],
+      "tagline": "最大的开源原生多模态生图模型之一",
+      "highlights": [
+        "80B MoE 原生多模态架构，权重开源",
+        "Instruct 版（2026-01）加入思维链推理和图生图",
+        "LMArena Image Edit 1302，约第 23，累计超 30 万票"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image Edit", "value": "1302", "note": "hunyuan-image-3.0-instruct，约第 23", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "文生图未进 LMArena、AA 前 30。编辑分与 Seedream 4.5 相当。",
+      "sources": [
+        "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "hunyuanvideo-1.5",
+      "name": "HunyuanVideo 1.5",
+      "category": "video",
+      "family": "HunyuanVideo",
+      "released": "2025-11-20",
+      "status": "released",
+      "openWeights": true,
+      "params": "8.3B",
+      "context": "1080p（超分）·10s",
+      "pricing": null,
+      "tier": "D",
+      "score": 55,
+      "tags": ["开源", "文生视频", "图生视频", "轻量"],
+      "tagline": "消费级显卡能跑的开源视频模型",
+      "highlights": [
+        "8.3B 参数，480p/720p 原生，经超分可到 1080p",
+        "步数蒸馏版 I2V 在 RTX 4090 上提速 75%",
+        "开源训练代码与 LoRA 微调脚本"
+      ],
+      "benchmarks": [],
+      "notes": "未进入 LMArena、AA 视频榜前 30。腾讯目前没有能跟 Seedance、Veo 一线闭源模型竞争的视频模型，传闻中的 HunyuanVideo 2.0 未证实。",
+      "sources": [
+        "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5"
+      ]
+    }
+  ],
+  "tierRationale": "LLM：Hy4 Preview 还没有 AA 和 LMArena 成绩。它的公开基准（Terminal-Bench 2.1 85.4、DeepSWE 64.3）低于 MiMo-V2.6-Pro，领先 Kimi K3 的说法来自腾讯内部盲评，因此参照天梯图定 A，但放在低位（82）。Hy3 的 AA 智能指数为 25，LMArena 约第 62，与 MiMo-V2.5-Pro 相当，定 C（66）。Hy3 Preview 已被替代，定 D。图像与视频按用户要求如实定档：HunyuanImage 3.0 Instruct 在 LMArena 编辑榜约第 23，定 C；Hy Image 3.5 刚发布、尚未上榜，只凭官方 +30% 胜率给到 C 高位（70）。HunyuanVideo 1.5 不在任何视频榜前 30，定 D。"
+}

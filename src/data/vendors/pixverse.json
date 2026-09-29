@@ -1,0 +1,72 @@
+{
+  "vendor": {
+    "id": "pixverse",
+    "name": "PixVerse",
+    "nameZh": "爱诗科技·PixVerse",
+    "country": "CN",
+    "color": "#7B5CFF",
+    "accent": "#FF4FD8",
+    "monogram": "Pv",
+    "blurb": "出海做得最好的国产 C 端视频应用之一，模型长期守在第二梯队"
+  },
+  "models": [
+    {
+      "id": "pixverse-v6",
+      "name": "PixVerse V6",
+      "category": "video",
+      "family": "PixVerse",
+      "released": "2026-03-30",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·15s",
+      "pricing": "约 $0.115/秒",
+      "tier": "C",
+      "score": 70,
+      "tags": ["文生视频", "图生视频", "运镜控制", "多镜头"],
+      "tagline": "20 多种电影运镜加多镜头引擎",
+      "highlights": [
+        "AA 图生视频 1070，约第 15；文生视频 1076，约第 21",
+        "20 多种电影级运镜控制，支持原生音频",
+        "多镜头引擎，按秒计费，最长 15 秒 1080p"
+      ],
+      "benchmarks": [
+        {"name": "AA Image-to-Video", "value": "1070", "note": "约第 15", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
+        {"name": "AA Text-to-Video", "value": "1076", "note": "约第 21", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+      ],
+      "notes": "LMArena 目前只收录了上一代 V5.6（文生视频 1240，图生视频 1299）。",
+      "sources": [
+        "https://pixverse.ai/en/blog/pixverse-launches-v6-advancing-ai-video-generation",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "pixverse-v5.6",
+      "name": "PixVerse V5.6",
+      "category": "video",
+      "family": "PixVerse",
+      "released": "2026-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "约 $0.072/秒",
+      "tier": "D",
+      "score": 60,
+      "tags": ["图生视频", "性价比"],
+      "tagline": "上一代主力，LMArena 票数很多",
+      "highlights": [
+        "LMArena 图生视频 1299，约第 25，累计超 12 万票",
+        "今年 2 月 AA 图生视频曾排在 Kling 3.0 之前"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image-to-Video", "value": "1299", "note": "约第 25", "source": "https://arena.ai/leaderboard/image-to-video"}
+      ],
+      "notes": "",
+      "sources": [
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    }
+  ],
+  "tierRationale": "PixVerse V6 在 AA 图生视频和文生视频分别排第 15、21，分数与 Vidu Q3 Pro、Veo 3.1 Fast 接近，定 C 高位（70）。V5.6 在 LMArena 只有 1299，略高于 Sora 2（D 61），定 D（60）。"
+}

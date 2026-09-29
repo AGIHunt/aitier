@@ -1,0 +1,45 @@
+{
+  "vendor": {
+    "id": "runway",
+    "name": "Runway",
+    "nameZh": "Runway",
+    "country": "US",
+    "color": "#0A0A0A",
+    "accent": "#FFFFFF",
+    "monogram": "R",
+    "blurb": "AI 视频最早的一批玩家，Gen-4.5 之后近 10 个月没有新旗舰，榜单持续下滑"
+  },
+  "models": [
+    {
+      "id": "runway-gen-4.5",
+      "name": "Runway Gen-4.5",
+      "category": "video",
+      "family": "Gen-4",
+      "released": "2025-12-01",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p",
+      "pricing": null,
+      "tier": "D",
+      "score": 58,
+      "tags": ["文生视频", "图生视频", "影视工作流"],
+      "tagline": "曾经的 AA 榜首，如今掉到二十名开外",
+      "highlights": [
+        "发布时以 1247 分登顶 AA 文生视频",
+        "LMArena 文生视频 1225，约第 27，累计超 4.8 万票",
+        "2026-05 通过接入 ElevenLabs 补上原生音频"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Video", "value": "1225", "note": "约第 27", "source": "https://arena.ai/leaderboard/text-to-video"}
+      ],
+      "notes": "已跌出 AA 视频榜前 30。Runway 的重心转向世界模型、编辑工具等产品线，截至 9 月没有 Gen-5。",
+      "sources": [
+        "https://runway.com/research/introducing-runway-gen-4.5",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://releasebot.io/updates/runwayai"
+      ]
+    }
+  ],
+  "tierRationale": "Gen-4.5 在 LMArena 文生视频只有 1225（约第 27），低于 Sora 2（1343，D 61），AA 前 30 也没有它，定 D（58）。收录是因为它仍是行业参照、使用面广，并非仍在前列。"
+}

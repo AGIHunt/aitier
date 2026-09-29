@@ -1,0 +1,130 @@
+{
+  "vendor": {
+    "id": "kuaishou",
+    "name": "Kuaishou Kling",
+    "nameZh": "快手·可灵",
+    "country": "CN",
+    "color": "#FF4906",
+    "accent": "#111111",
+    "monogram": "KL",
+    "blurb": "可灵曾在 AA 视频榜登顶，目前被 Seedance、Wan 等超过，押注 Kling 4.0 在 10 月回归"
+  },
+  "models": [
+    {
+      "id": "kling-4.0",
+      "name": "Kling 4.0",
+      "category": "video",
+      "family": "Kling 4",
+      "released": "2026-10",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "4K·10-bit HDR·30s",
+      "pricing": null,
+      "tier": "A",
+      "score": 82,
+      "tags": ["文生视频", "音画同出", "长镜头", "多参考"],
+      "tagline": "原生 30 秒 4K HDR，可灵的翻身之作",
+      "highlights": [
+        "原生 30 秒生成，最多 10 个关键帧控制",
+        "最高 4K 输出和 10-bit HDR，支持 21:9 画幅",
+        "Omni Reference 最多支持 15 个多模态参考",
+        "双通道立体声，口型更准，支持多语言和方言"
+      ],
+      "benchmarks": [],
+      "notes": "9/28 官宣，完整版 10 月上线，目前内测中。AA 上匿名测试的 Cello 被疑为此模型。还没有公开榜单成绩，定档是暂定。",
+      "sources": [
+        "https://agihunt.info/e/1a0e8a8bf630d376fc95e5597c2",
+        "https://agihunt.info/e/1a0dd81448059859b56f6edaf6d",
+        "https://agihunt.info/e/1a0cec8eac88249b36c26a166cd"
+      ]
+    },
+    {
+      "id": "kling-4.0-flash",
+      "name": "Kling 4.0 Flash",
+      "category": "video",
+      "family": "Kling 4",
+      "released": "2026-09-28",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "B",
+      "score": 75,
+      "tags": ["文生视频", "快速", "音画同出"],
+      "tagline": "4.0 的先行快速版，仅 Ultra 年费用户可用",
+      "highlights": [
+        "9/28 起向 Ultra 年费订阅用户开放（国内最高档会员 ¥916/月起）",
+        "比 4.0 完整版更快、更便宜",
+        "早期试用者称提示词理解能力突出"
+      ],
+      "benchmarks": [],
+      "notes": "尚无榜单成绩，按轻量版惯例暂定 B。",
+      "sources": [
+        "https://agihunt.info/e/1a0e8a8bf630d376fc95e5597c2",
+        "https://agihunt.info/e/1a0e8aa8b4e2e2b9a75a068b094"
+      ]
+    },
+    {
+      "id": "kling-3.0",
+      "name": "Kling 3.0",
+      "category": "video",
+      "family": "Kling 3",
+      "released": "2026-02-05",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·15s",
+      "pricing": "约 $0.34/秒（1080p Pro）",
+      "tier": "B",
+      "score": 72,
+      "tags": ["文生视频", "图生视频", "音画同出"],
+      "tagline": "今年 2 月的 AA 文生视频榜首",
+      "highlights": [
+        "发布时在 AA 文生视频榜（有声、无声）均排第一",
+        "目前 AA 文生视频 1095，约第 12",
+        "LMArena 图生视频 1354，约第 19，累计超 20 万票",
+        "分 Standard 720p 和 Pro 1080p 两档，另有 Omni 版本"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video", "value": "1095", "note": "1080p Pro，约第 12", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Image-to-Video", "value": "1055", "note": "1080p Pro，约第 19", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
+        {"name": "LMArena Image-to-Video", "value": "1354", "note": "kling-v3-pro，约第 19", "source": "https://arena.ai/leaderboard/image-to-video"}
+      ],
+      "notes": "Kling 3.0 Omni（多参考与编辑）合并在本条，其 AA 文生视频分为 1075–1082。",
+      "sources": [
+        "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be",
+        "https://x.com/ArtificialAnlys/status/2027453094322442420",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "kling-image-3.0",
+      "name": "Kling Image 3.0",
+      "category": "image",
+      "family": "Kling Image",
+      "released": "2026-02-05",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": null,
+      "tier": "C",
+      "score": 64,
+      "tags": ["文生图", "4K", "角色一致"],
+      "tagline": "给可灵视频做首帧的配套生图",
+      "highlights": [
+        "与 Video 3.0 同日发布，另有 Image 3.0 Omni",
+        "原生 2K/4K 输出，引入视觉思维链推理",
+        "主打为视频生成提供一致的角色和首帧"
+      ],
+      "benchmarks": [],
+      "notes": "未进入 LMArena、AA 图像榜前 30。前身可图 Kolors 已基本退出主流，不单独收录。Kling Image 4.0 已被曝光，尚未发布。",
+      "sources": [
+        "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be"
+      ]
+    }
+  ],
+  "tierRationale": "视频榜以 AA Video Arena 和 LMArena 文生视频、图生视频为准。Kling 3.0 在今年 2 月登顶 AA，现已被 Gemini Omni、Wan 3.0、MiniMax H3、Seedance 2.x 超过：AA 文生视频约第 12，LMArena 图生视频 1354，低于 Grok Imagine Video（1415，已定 B 74），因此定 B 低位（72）。Kling 4.0 官宣参数很强，但只有匿名测试的传闻，没有榜单成绩，暂定 A（82），上榜后需复核；4.0 Flash 暂定 B。Kling Image 3.0 不在任何图像榜前 30，定 C。"
+}

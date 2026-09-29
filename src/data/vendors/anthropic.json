@@ -1,0 +1,450 @@
+{
+  "vendor": {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "nameZh": "Anthropic",
+    "country": "US",
+    "color": "#d97757",
+    "accent": "#f5f0e8",
+    "monogram": "A",
+    "blurb": "Opus 5.5 包揽 Text/Code Arena 第一，Fable/Mythos 顶配层压阵，编程与 Agent 最强一极"
+  },
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "category": "llm",
+      "family": "Claude 5.5",
+      "released": "2026-09-22",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$4 / $20 每百万 token（缓存读 $0.20）",
+      "tier": "SSS",
+      "score": 98,
+      "tags": ["编程", "Agent", "知识工作", "电脑操作"],
+      "tagline": "Fable 级智力，Opus 价格再砍四成",
+      "highlights": [
+        "LMArena Text Arena 1509 分空降第一，Anthropic 包揽前六",
+        "Code Arena WebDev 1818 分第一，领先 GPT-6 Astra 26 分",
+        "AA 智能指数 58 分第一，领先 Fable 5.1 / GPT-6 Astra 5 分",
+        "官方称典型负载成本比 Opus 5 低 40%，输出快 30% 以上"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1509", "note": "第 1（High 档）", "source": "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"},
+        {"name": "Code Arena WebDev", "value": "1818", "note": "第 1（Max 档）", "source": "https://agihunt.info/e/1a0d1f26389003f0e8e4c2bd7b6"},
+        {"name": "Agent Arena", "value": "+12.15%", "note": "第 2，仅次 Fable 5.1 Max；每任务中位成本 $1.31", "source": "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3"},
+        {"name": "AA Intelligence Index", "value": "58", "note": "第 1（max 档）", "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"},
+        {"name": "Terminal-Bench 4.0", "value": "66.4%", "note": "官方；GPT-6 Astra 57.9%", "source": "https://www.anthropic.com/claude-opus-5-5"},
+        {"name": "SimpleBench", "value": "88.4%", "note": "第 1", "source": "https://agihunt.info/e/1a0d47069a370628d4c7cddb80e"},
+        {"name": "Vals AI Index", "value": "69.69%", "note": "第 1", "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"}
+      ],
+      "notes": "effort 分 low/medium(默认)/high/xhigh/max，已合并；Fast 模式 $8/$40。写作仍被评落后 Astra，部分开发者认为硬核编码不及 Fable 5.1。",
+      "sources": [
+        "https://www.anthropic.com/claude-opus-5-5",
+        "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "https://agihunt.info/e/1a0cc10520e07e502c3036bd6ae",
+        "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"
+      ]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "category": "llm",
+      "family": "Claude 5.5",
+      "released": "2026-09-28",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$2 / $10 每百万 token",
+      "tier": "S",
+      "score": 92,
+      "tags": ["编程", "Agent", "性价比"],
+      "tagline": "半价 Opus，跑分只差 2 分",
+      "highlights": [
+        "AA 智能指数 56 分排第二，仅次 Opus 5.5，高于 GPT-6 Astra",
+        "官方 Terminal-Bench 4.0 70.6%，超过 Opus 5.5 的 66.4%",
+        "GDPval-AA 1844 / OSWorld 2.1 80.1%，与 Opus 5.5 基本持平",
+        "比 Sonnet 5 快 30% 以上，价格不变"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "56", "note": "第 2（max 档）", "source": "https://agihunt.info/e/1a0e954eb0a26a9b53112e759a0"},
+        {"name": "Terminal-Bench 4.0", "value": "70.6%", "note": "官方；AA 实测 64%", "source": "https://www.anthropic.com/claude-sonnet-5-5"},
+        {"name": "GDPval-AA v2.1", "value": "1844", "note": "Opus 5.5 为 1846", "source": "https://www.anthropic.com/claude-sonnet-5-5"},
+        {"name": "OSWorld 2.1", "value": "80.1%", "note": "partial", "source": "https://www.anthropic.com/claude-sonnet-5-5"}
+      ],
+      "notes": "五档 effort 已合并。max 档单任务约 19.3 万输出 token、$7.60/任务，AA 测到的最高耗 token；AA 评测基于预发布版。LMArena 名次待出，有望冲 SS。",
+      "sources": [
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+        "https://agihunt.info/e/1a0e954eb0a26a9b53112e759a0",
+        "https://agihunt.info/e/1a0e932146300d9eb2a54d21685"
+      ]
+    },
+    {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "category": "llm",
+      "family": "Claude Fable",
+      "released": "2026-09-01",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$10 / $50 每百万 token（缓存读 $0.25）",
+      "tier": "S",
+      "score": 91,
+      "tags": ["长程 Agent", "编程", "推理", "科研"],
+      "tagline": "Mythos 级大脑的公开版",
+      "highlights": [
+        "Agent Arena 第一（Max 档），净改进 +13.84%",
+        "Terminal-Bench 4.0 55.8%，比 Fable 5 高 13.8 个点",
+        "GDPval-AA v2 1853，HLE（带工具）65.0%",
+        "官方称典型负载比 Fable 5 便宜约 25%，缓存读降 75%"
+      ],
+      "benchmarks": [
+        {"name": "Agent Arena", "value": "+13.84%", "note": "第 1（Max 档），每任务 $3.51", "source": "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3"},
+        {"name": "AA Intelligence Index", "value": "53", "note": "与 GPT-6 Astra 并列", "source": "https://agihunt.info/e/1a0cc10520e07e502c3036bd6ae"},
+        {"name": "Terminal-Bench 4.0", "value": "55.8%", "note": "官方", "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"},
+        {"name": "GDPval-AA v2", "value": "1853", "note": "官方", "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"}
+      ],
+      "notes": "Opus 之上的 Mythos 级档位，与 Mythos 5.1 同一模型但带安全分类器；默认 effort high。Opus 5.5 发布后性价比被压，不少用户转投 Opus 5.5。",
+      "sources": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+        "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3",
+        "https://agihunt.info/e/1a0d9c67144ec4c679d4ad63775"
+      ]
+    },
+    {
+      "id": "claude-mythos-5-1",
+      "name": "Claude Mythos 5.1",
+      "category": "llm",
+      "family": "Claude Mythos",
+      "released": "2026-09-01",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$10 / $50 每百万 token（仅限邀请）",
+      "tier": "S",
+      "score": 91,
+      "tags": ["网络安全", "生命科学", "长程 Agent"],
+      "tagline": "不对外开放的满血 Fable",
+      "highlights": [
+        "与 Fable 5.1 同一模型，放宽网络安全与生物护栏",
+        "Terminal-Bench 4.0 60.9%，高于 Fable 5.1 的 55.8%",
+        "仅 Project Glasswing 成员可用（AWS、苹果、微软等）",
+        "Mythos 5 已自主发现类 CRISPR 新酶系统 ART"
+      ],
+      "benchmarks": [
+        {"name": "Terminal-Bench 4.0", "value": "60.9%", "note": "官方", "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"}
+      ],
+      "notes": "Mythos 为 Opus 之上顶配层：Mythos Preview（2026-04-07）→ Mythos 5（06-09，与 Fable 5 同模型）→ Mythos 5.1。邀请制，不计划公开发布。",
+      "sources": [
+        "https://platform.claude.com/docs/en/models/mythos-5-1/overview",
+        "https://anthropic.com/glasswing",
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://agihunt.info/e/1a0cf79e04b1f4547107c66bfc4"
+      ]
+    },
+    {
+      "id": "claude-fable-5-5",
+      "name": "Claude Fable 5.5",
+      "category": "llm",
+      "family": "Claude Fable",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "S",
+      "score": 90,
+      "tags": ["长程 Agent", "推理"],
+      "tagline": "传闻中的下一代 Fable",
+      "highlights": [
+        "9/25 起网传 Anthropic 内部 Slack 热议 Fable 5.5",
+        "9/29 World of AI 以「Fable 5.5 泄露」为头条，内容未证实",
+        "社区普遍认为 Opus 5.5 已追平 Fable 5.1，Fable 5.5 不会太远"
+      ],
+      "benchmarks": [],
+      "notes": "无官方信息、无跑分；另有 9/5 传闻称新预训练模型（被称 Fable 5.2）10 月初到来。档位为占位，发布后重评。",
+      "sources": [
+        "https://agihunt.info/e/1a0dac6b57ca79b30e045a087c7",
+        "https://agihunt.info/e/1a0ebfa54c45ad690c610791643",
+        "https://agihunt.info/e/1a0ca24157b4509cf02670c367e"
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "category": "llm",
+      "family": "Claude 5",
+      "released": "2026-07-24",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$5 / $25 每百万 token",
+      "tier": "A",
+      "score": 86,
+      "tags": ["编程", "Agent", "电脑操作"],
+      "tagline": "半价逼近 Fable 5 的上代主力",
+      "highlights": [
+        "官方称以一半价格接近 Fable 5 前沿水平",
+        "AA 智能指数 51 分，Terminal-Bench 4.0 52.3%",
+        "Code Arena WebDev 1692 分（Max），被 Opus 5.5 超 126 分",
+        "官方称 ARC-AGI 3 分数为次优模型三倍"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "51", "note": null, "source": "https://agihunt.info/e/1a0cc10520e07e502c3036bd6ae"},
+        {"name": "LMArena Text", "value": "1491", "note": "第 11（High 档）", "source": "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"},
+        {"name": "Terminal-Bench 4.0", "value": "52.3%", "note": "官方", "source": "https://www.anthropic.com/claude-opus-5-5"}
+      ],
+      "notes": "跑分高于 Fable 5，但口碑一般、被嫌难沟通；现为 legacy，官方建议迁移 Opus 5.5。",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "https://agihunt.info/e/1a0d1f26389003f0e8e4c2bd7b6"
+      ]
+    },
+    {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "category": "llm",
+      "family": "Claude Fable",
+      "released": "2026-06-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$10 / $50 每百万 token",
+      "tier": "A",
+      "score": 85,
+      "tags": ["长程 Agent", "编程", "科研"],
+      "tagline": "首个公开的 Mythos 级模型",
+      "highlights": [
+        "Opus 之上新档位，首次公开 Mythos 级能力",
+        "Stripe 用它一天完成 5000 万行代码迁移",
+        "Terminal-Bench 4.0 42.0%，CursorBench 3.2 70.5%",
+        "价格不到 Mythos Preview 的一半"
+      ],
+      "benchmarks": [
+        {"name": "Terminal-Bench 4.0", "value": "42.0%", "note": "官方", "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"},
+        {"name": "HLE（带工具）", "value": "63.8%", "note": "官方", "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"}
+      ],
+      "notes": "与 Mythos 5 同一模型，Fable 带拒答分类器；知识截止 2026-01；已被 Fable 5.1 取代，仍可用。",
+      "sources": [
+        "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+        "https://platform.claude.com/docs/en/models/fable-5/overview"
+      ]
+    },
+    {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "category": "llm",
+      "family": "Claude 5",
+      "released": "2026-06-30",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$2 / $10 每百万 token",
+      "tier": "B",
+      "score": 74,
+      "tags": ["编程", "性价比"],
+      "tagline": "上一代中杯，便宜但不惊艳",
+      "highlights": [
+        "首发 $2/$10 优惠价转为正式价，取消涨至 $3/$15",
+        "AA 智能指数约 38 分（max 档），比 Sonnet 5.5 低 18 分",
+        "GDPval-AA v2.1 1449，被 Sonnet 5.5 拉开近 400 分"
+      ],
+      "benchmarks": [
+        {"name": "GDPval-AA v2.1", "value": "1449", "note": "官方", "source": "https://www.anthropic.com/claude-sonnet-5-5"}
+      ],
+      "notes": "AA 分数按 Sonnet 5.5 的 56 分减 18 推算；已被 Sonnet 5.5 取代。",
+      "sources": [
+        "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://agihunt.info/e/1a0e954eb0a26a9b53112e759a0"
+      ]
+    },
+    {
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "category": "llm",
+      "family": "Claude 4",
+      "released": "2026-05-28",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$5 / $25 每百万 token",
+      "tier": "B",
+      "score": 76,
+      "tags": ["编程", "Agent"],
+      "tagline": "4 代收官之作，安全回退基座",
+      "highlights": [
+        "Claude 4 系列最后一代 Opus，1M 上下文、128K 输出",
+        "Opus 5.5 网络滥用类请求会回退到 Opus 4.8",
+        "Opus 5 在 Frontier-Bench 上成绩超其两倍"
+      ],
+      "benchmarks": [],
+      "notes": "legacy 仍在服务，支持 Fast 模式（$10/$50）；知识截止 2026-01。",
+      "sources": [
+        "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "https://www.anthropic.com/news/claude-opus-5",
+        "https://thezvi.substack.com/p/claude-opus-55-the-system-card"
+      ]
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "category": "llm",
+      "family": "Claude 4",
+      "released": "2026-02-05",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$5 / $25 每百万 token",
+      "tier": "B",
+      "score": 75,
+      "tags": ["对话", "编程", "写作"],
+      "tagline": "老将不死，Text Arena 仍居第二",
+      "highlights": [
+        "2026-09 Text Arena 仍排第 2，仅落后 Opus 5.5 4 分",
+        "SWE-bench Verified 80.8%，Terminal-Bench 2.0 65.4%",
+        "开发者仍怀念其轻松顺畅的协作手感"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "≈1505", "note": "第 2（High 档）", "source": "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"},
+        {"name": "SWE-bench Verified", "value": "80.8%", "note": "官方", "source": "https://anthropic.com/glasswing"}
+      ],
+      "notes": "聊天偏好榜强，但 Agent/编程已明显落后 5 代；同代还有 Opus 4.7（2026-04）、Opus 4.5（2025-11）仍在服务，未单列。",
+      "sources": [
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://anthropic.com/glasswing",
+        "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"
+      ]
+    },
+    {
+      "id": "claude-mythos-preview",
+      "name": "Claude Mythos Preview",
+      "category": "llm",
+      "family": "Claude Mythos",
+      "released": "2026-04-07",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": null,
+      "tier": "B",
+      "score": 78,
+      "tags": ["网络安全", "编程"],
+      "tagline": "Glasswing 计划的初代安全核武",
+      "highlights": [
+        "SWE-bench Verified 93.9%，Terminal-Bench 2.0 82.0%",
+        "CyberGym 漏洞复现 83.1%，远超 Opus 4.6 的 66.6%",
+        "只开放给 AWS、苹果、谷歌等 12 家伙伴与 40+ 关键基础设施机构"
+      ],
+      "benchmarks": [
+        {"name": "SWE-bench Verified", "value": "93.9%", "note": "官方", "source": "https://anthropic.com/glasswing"},
+        {"name": "CyberGym", "value": "83.1%", "note": "官方", "source": "https://anthropic.com/glasswing"}
+      ],
+      "notes": "从未公开发布，2026-06-09 随 Mythos 5 上线被弃用；价格为 Fable 5 的两倍以上，具体未核实。",
+      "sources": [
+        "https://anthropic.com/glasswing",
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      ]
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "category": "llm",
+      "family": "Claude 4",
+      "released": "2026-02-17",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$3 / $15 每百万 token",
+      "tier": "C",
+      "score": 66,
+      "tags": ["编程", "通用"],
+      "tagline": "旧 Sonnet 主力，仍在大量生产环境跑",
+      "highlights": [
+        "上半年主流编码模型，多家平台仍作默认中档",
+        "1M 上下文按标准价计费",
+        "价格反而比 Sonnet 5/5.5 贵 50%"
+      ],
+      "benchmarks": [],
+      "notes": "仍为 Active；官方把 Sonnet 3.7/4 的迁移目标指向它。同代 Sonnet 4.5（2025-09）未单列。",
+      "sources": [
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ]
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "category": "llm",
+      "family": "Claude 4",
+      "released": "2025-10-15",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "200K",
+      "pricing": "$1 / $5 每百万 token",
+      "tier": "E",
+      "score": 54,
+      "tags": ["轻量", "低延迟"],
+      "tagline": "快一年没换代的小杯",
+      "highlights": [
+        "当前在售最快的 Claude，发布时 SWE-bench Verified 73.3%",
+        "知识截止 2025-02，仅 200K 上下文、64K 输出",
+        "同价位已被 GPT-6 Luna 等新一代轻量模型拉开差距"
+      ],
+      "benchmarks": [
+        {"name": "SWE-bench Verified", "value": "73.3%", "note": "2025-10 发布时官方数据", "source": "https://www.anthropic.com/news/claude-haiku-4-5"}
+      ],
+      "notes": "官方退役时间不早于 2026-10-15；Haiku 5.5 已官宣数周内接替。",
+      "sources": [
+        "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "https://www.anthropic.com/news/claude-haiku-4-5"
+      ]
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "category": "llm",
+      "family": "Claude 5.5",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "C",
+      "score": 70,
+      "tags": ["轻量", "低成本"],
+      "tagline": "官宣在路上的 5.5 小杯",
+      "highlights": [
+        "Opus 5.5 与 Sonnet 5.5 发布文均预告「未来数周」上线",
+        "定位高并发、成本敏感场景，接替 Haiku 4.5",
+        "社区猜测会卡在 OpenAI DevDay 前后发布"
+      ],
+      "benchmarks": [],
+      "notes": "官方已预告但未发布，无规格与跑分；档位为占位。",
+      "sources": [
+        "https://www.anthropic.com/claude-sonnet-5-5",
+        "https://agihunt.info/e/1a0ca10ebe321c83ce4dafc1725"
+      ]
+    }
+  ],
+  "tierRationale": "Opus 5.5 同时拿下 LMArena Text（1509）、Code Arena WebDev（1818）和 AA 智能指数（58）三个第一，Vals AI、SimpleBench 也居首，与日本网友天梯图一致定 SSS。Sonnet 5.5 在 AA 指数排第二（56，高于 GPT-6 Astra 的 53），Terminal-Bench 4.0 超过 Opus 5.5，但耗 token 极高，LMArena 名次也还没出，暂定 S 顶格 92。Fable 5.1 占 Agent Arena 第一、AA 53，定 S；Mythos 5.1 是同一模型的邀请制版本，同档。Opus 5 / Fable 5 按天梯图和 AA 51 分放 A；Sonnet 5、Opus 4.8、Opus 4.6 放 B（Opus 4.6 虽仍是 Text Arena 第二，Agent 能力已落后）；Haiku 4.5 参照天梯图放 E。Fable 5.5、Haiku 5.5 尚未发布，档位只是占位。"
+}

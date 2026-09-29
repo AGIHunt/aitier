@@ -1,0 +1,74 @@
+{
+  "vendor": {
+    "id": "reve",
+    "name": "Reve",
+    "nameZh": "Reve",
+    "country": "US",
+    "color": "#1A1A1A",
+    "accent": "#F5E6C8",
+    "monogram": "Rv",
+    "blurb": "用十分之一算力训练的独立小团队，原生 4K 生图，文生图榜紧追 OpenAI"
+  },
+  "models": [
+    {
+      "id": "reve-2.1",
+      "name": "Reve 2.1",
+      "category": "image",
+      "family": "Reve 2",
+      "released": "2026-07-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K（16MP）",
+      "pricing": null,
+      "tier": "S",
+      "score": 89,
+      "tags": ["文生图", "4K", "排版", "图像编辑"],
+      "tagline": "独立实验室做出的最强原生 4K 生图",
+      "highlights": [
+        "LMArena 文生图 1302，第 5，独立厂商中最高",
+        "LMArena 图像编辑 1375，约第 14",
+        "原生 4K、1600 万像素，先规划布局再渲染",
+        "发布时排 LMArena 第 2，比 Reve 2.0 高 36 分"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1302", "note": "第 5", "source": "https://arena.ai/leaderboard/text-to-image"},
+        {"name": "LMArena Image Edit", "value": "1375", "note": "约第 14", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "未见于 AA 文生图前 30。外文文字渲染和世界知识较 2.0 有加强。",
+      "sources": [
+        "https://blog.reve.com/posts/launching-reve-2.1/",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "reve-2.0",
+      "name": "Reve 2.0",
+      "category": "image",
+      "family": "Reve 2",
+      "released": "2026-06",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": null,
+      "tier": "A",
+      "score": 83,
+      "tags": ["文生图", "4K", "排版"],
+      "tagline": "让 Reve 挤进第一梯队的一代",
+      "highlights": [
+        "LMArena 文生图 1269，约第 8，高于 Nano Banana 2（1261）",
+        "LMArena 图像编辑 1358，约第 17"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1269", "note": "约第 8", "source": "https://arena.ai/leaderboard/text-to-image"},
+        {"name": "LMArena Image Edit", "value": "1358", "note": "约第 17", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "",
+      "sources": [
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    }
+  ],
+  "tierRationale": "以 LMArena 文生图为主要依据。Reve 2.1 以 1302 分排第 5，与 Grok Imagine Image 2.0（1301，S 90）并列，仅次于 OpenAI GPT Image 2.x 和微软 MAI-Image-2.6，定 S（89）。Reve 2.0 以 1269 分略高于 Seedream 5.0 Pro 和 Nano Banana 2，定 A（83）。AA 图像榜未收录 Reve，存在单一榜单偏差。"
+}

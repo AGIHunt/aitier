@@ -1,0 +1,705 @@
+{
+  "vendor": {
+    "id": "google",
+    "name": "Google / Google DeepMind",
+    "nameZh": "谷歌 · DeepMind",
+    "country": "US",
+    "color": "#4285F4",
+    "accent": "#FBBC05",
+    "monogram": "G",
+    "blurb": "Pro 线停在 3.1，靠三周一更的 Flash 和 Omni 视频撑场，Gemini 4 Pro 暗测中"
+  },
+  "models": [
+    {
+      "id": "gemini-4-pro",
+      "name": "Gemini 4 Pro",
+      "category": "llm",
+      "family": "Gemini 4",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": "2M（传闻）",
+      "pricing": "传闻 $2.25 / $11.25 每百万 token",
+      "tier": "S",
+      "score": 91,
+      "tags": ["Agent", "编程", "前端生成"],
+      "tagline": "Arena 暗测中的谷歌翻身牌",
+      "highlights": [
+        "疑挂 3.8 Flash 名在 Arena 盲测，代号 Barium-B",
+        "泄露 DeepSWE v1.1 88.7%，高于 Astra 的 86.9%",
+        "传闻定价约为 Astra 的 1/5，上下文 2M",
+        "社区传 10 月初发布，官方未确认"
+      ],
+      "benchmarks": [
+        {"name": "DeepSWE v1.1", "value": "88.7%", "note": "泄露，未证实", "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"},
+        {"name": "Terminal-bench 2.1", "value": "95.3%", "note": "泄露，未证实", "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"},
+        {"name": "GDPval-AA v2", "value": "2064 Elo", "note": "泄露，未证实", "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"}
+      ],
+      "notes": "全部为暗测与泄露信息；有实测者称已逼近但未达 Opus 5.5，也有人认为泄露表是假的。先按 S 占位，发布后重评。",
+      "sources": [
+        "https://agihunt.info/e/1a0d9628023276a889ff0730401",
+        "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa",
+        "https://agihunt.info/e/1a0ecefb284ccb9e1aa5328c355",
+        "https://agihunt.info/e/1a0e6caeb6b4a3541a41156726f"
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "name": "Gemini 3.8 Flash",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-09-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$0.75 / $3.75 每百万 token（年底前优惠价，2027 起 $1.5 / $7.5）",
+      "tier": "A",
+      "score": 84,
+      "tags": ["编程", "Agent", "性价比", "多模态"],
+      "tagline": "谷歌现役最强，Flash 价格打旗舰",
+      "highlights": [
+        "LMArena Text 1492 分排第 10，高于 Opus 5",
+        "DeepSWE v1.1 73.7%，只比 Opus 5 低 0.3 个点",
+        "AA 智能指数 41，输出约 239 token/s",
+        "六周内第三个 Flash，另有网络安全专版 3.8 Flash Cyber"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1492", "note": "第 10（high 档）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "AA Intelligence Index", "value": "41", "note": "high 档", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "DeepSWE v1.1", "value": "73.7%", "note": "Opus 5 为 74.0%", "source": "https://www.vellum.ai/blog/gemini-3-8-flash-benchmarks-explained"},
+        {"name": "HLE-Verified", "value": "54.9%", "note": "官方", "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"}
+      ],
+      "notes": "low/medium/high 档合并收录。OSWorld-2.0 59%，落后 Opus 5 的 75.4%，长链路 Agent 仍弱。",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+        "https://www.vellum.ai/blog/gemini-3-8-flash-benchmarks-explained",
+        "https://arena.ai/leaderboard/text",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash",
+      "name": "Gemini 3.7 Flash",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-08-13",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$0.75 / $3.75 每百万 token（年底前优惠价，2027 起 $1.5 / $7.5）",
+      "tier": "B",
+      "score": 78,
+      "tags": ["编程", "Agent", "性价比"],
+      "tagline": "三周就被替代的编程主力",
+      "highlights": [
+        "LMArena Text 1488 分，排第 15",
+        "DeepSWE v1.1 65.3%，3.6 Flash 只有 49.0%",
+        "FrontierCode 从 3.6 的 34.4% 提到 43.6%",
+        "距 3.6 Flash 发布仅三周"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1488", "note": "第 15（high 档）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "DeepSWE v1.1", "value": "65.3%", "note": "官方", "source": "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut"}
+      ],
+      "notes": "和 3.8 Flash 同价，现在基本只在兼容场景里用。上下文按同系列推断为 1M。",
+      "sources": [
+        "https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gemini-3-6-flash",
+      "name": "Gemini 3.6 Flash",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-07-21",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$0.75 / $3.75 每百万 token（年底前优惠价，2027 起 $1.5 / $7.5）",
+      "tier": "B",
+      "score": 74,
+      "tags": ["多模态", "电脑操作", "性价比"],
+      "tagline": "3.5 Pro 被砍后顶上的过渡款",
+      "highlights": [
+        "LMArena Text 1482 分，排第 20",
+        "OSWorld-Verified 83.0%，3.5 Flash 为 78.4%",
+        "输出 token 比 3.5 Flash 少约 17%",
+        "MLE-Bench 63.9%，3.5 Flash 为 49.7%"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1482", "note": "第 20（high 档）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "DeepSWE v1.1", "value": "49.0%", "note": "官方", "source": "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite"},
+        {"name": "OSWorld-Verified", "value": "83.0%", "note": "官方", "source": "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite"}
+      ],
+      "notes": "据 SemiAnalysis，Gemini 3.5 Pro 延期数月后被砍，3.6 Flash 当作通往 Gemini 4 的过渡。Google 没有正式确认。",
+      "sources": [
+        "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite",
+        "https://nokiapoweruser.com/google-shelves-gemini-3-5-pro-pivot-gemini-4/",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gemini-3-5-flash",
+      "name": "Gemini 3.5 Flash",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-05-19",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$1.5 / $9 每百万 token",
+      "tier": "C",
+      "score": 70,
+      "tags": ["多模态", "高吞吐"],
+      "tagline": "I/O 2026 首发，比后继款还贵",
+      "highlights": [
+        "I/O 2026 发布，开启 3.5 到 3.8 的 Flash 快迭代",
+        "LMArena Text 1477 分（high 档），排第 27",
+        "OSWorld-Verified 78.4%，DeepSWE 37%",
+        "价格高于 3.6 到 3.8 Flash，官方已标为旧款"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1477", "note": "第 27（high 档）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "OSWorld-Verified", "value": "78.4%", "note": "官方", "source": "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite"}
+      ],
+      "notes": "high 和 medium 档合并收录（medium 档 1474 分）。上下文为 1M，是从同代 Flash 推断的。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gemini-3-5-flash-lite",
+      "name": "Gemini 3.5 Flash-Lite",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-07-21",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "$0.3 / $2.5 每百万 token",
+      "tier": "C",
+      "score": 65,
+      "tags": ["极速", "低成本", "高吞吐"],
+      "tagline": "每秒 350 token 的流水线小钢炮",
+      "highlights": [
+        "输出约 350 token/s，是 Google 最快的模型",
+        "Terminal-Bench 2.1 54%，上代仅 31%",
+        "AA 智能指数 22，单价约为 3.8 Flash 的 1/3",
+        "LMArena Text 1456 分"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "22", "note": null, "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1456", "note": "第 65", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Terminal-Bench 2.1", "value": "54%", "note": "官方", "source": "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite"}
+      ],
+      "notes": "替代 3.1 Flash-Lite（2026-03），适合分类、排序和高频小调用。",
+      "sources": [
+        "https://aitoolsreview.co.uk/insights/gemini-3-6-flash-3-5-flash-lite",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "gemini-3-1-pro",
+      "name": "Gemini 3.1 Pro",
+      "category": "llm",
+      "family": "Gemini 3",
+      "released": "2026-02-19",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$2 / $12 每百万 token",
+      "tier": "B",
+      "score": 73,
+      "tags": ["推理", "多模态", "长上下文"],
+      "tagline": "谷歌仅剩的 Pro，挂 preview 七个月",
+      "highlights": [
+        "发布时 ARC-AGI-2 77.1%，较 3 Pro 翻倍有余",
+        "SWE-bench Verified 80.6%，GPQA 94.3%",
+        "LMArena Text 至今仍有 1487 分，排第 17",
+        "AA 智能指数只有 30，已被 3.8 Flash 反超"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1487", "note": "第 17", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "AA Intelligence Index", "value": "30", "note": null, "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "ARC-AGI-2", "value": "77.1%", "note": "官方，2026-02", "source": "https://deepmind.google/models/model-cards/gemini-3-1-pro/"},
+        {"name": "GPQA Diamond", "value": "94.3%", "note": "官方，2026-02", "source": "https://deepmind.google/models/model-cards/gemini-3-1-pro/"}
+      ],
+      "notes": "API 里仍是 gemini-3.1-pro-preview。Gemini 3.5 Pro 据传已取消，Pro 线等 Gemini 4 接班。",
+      "sources": [
+        "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+        "https://smartchunks.com/gemini-3-1-pro-benchmarks-gpqa-hle-lmsys-frontiermath/",
+        "https://arena.ai/leaderboard/text",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "gemma-4-31b",
+      "name": "Gemma 4 31B",
+      "category": "llm",
+      "family": "Gemma 4",
+      "released": "2026-03-31",
+      "status": "released",
+      "openWeights": true,
+      "params": "31B Dense",
+      "context": "256K",
+      "pricing": "开源免费（Apache 2.0）",
+      "tier": "C",
+      "score": 65,
+      "tags": ["开源", "本地部署", "多模态"],
+      "tagline": "单卡能跑的美国开源标杆",
+      "highlights": [
+        "Apache 2.0 许可，取消了旧版 Gemma 的商用限制",
+        "AIME 2026 89.2%，MMLU Pro 85.2%",
+        "LMArena Text 1453 分，AA 智能指数 19",
+        "原生支持图像和视频输入，覆盖 140+ 语言"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1453", "note": "第 73", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "AA Intelligence Index", "value": "19", "note": "推理模式", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "AIME 2026", "value": "89.2%", "note": "官方", "source": "https://ai.google.dev/gemma/docs/core/model_card_4"}
+      ],
+      "notes": "推理和非推理模式合并（非推理 AA 为 14）。4/16 加入 MTP。Kaggle 正办 11 万美元 Gemma 4 Agent 赛。",
+      "sources": [
+        "https://ai.google.dev/gemma/docs/core/model_card_4",
+        "https://ai.google.dev/gemma/docs/releases",
+        "https://arena.ai/leaderboard/text",
+        "https://agihunt.info/e/1a0e97d20e7a2badf3c19fdbb6b"
+      ]
+    },
+    {
+      "id": "gemma-4-26b-a4b",
+      "name": "Gemma 4 26B A4B",
+      "category": "llm",
+      "family": "Gemma 4",
+      "released": "2026-03-31",
+      "status": "released",
+      "openWeights": true,
+      "params": "26B MoE / 4B 激活",
+      "context": "256K",
+      "pricing": "开源免费（Apache 2.0）",
+      "tier": "D",
+      "score": 60,
+      "tags": ["开源", "MoE", "端侧 Agent"],
+      "tagline": "只激活 4B，笔记本也能跑 Agent",
+      "highlights": [
+        "激活参数只有 4B，AA 实测约 107 token/s（非推理模式）",
+        "Antigravity SDK 本地 Agent 首发模型，零 token 费",
+        "LMArena Text 1438 分，AA 智能指数 17"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1438", "note": "第 96", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "AA Intelligence Index", "value": "17", "note": "推理模式", "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": "配合 LiteRT 在本地离线运行，是 Google 端侧 Agent 路线的主力。",
+      "sources": [
+        "https://ai.google.dev/gemma/docs/core/model_card_4",
+        "https://agihunt.info/e/1a0cfa003d79dbecb84ab9ac7a6",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gemma-4-12b-unified",
+      "name": "Gemma 4 12B Unified",
+      "category": "llm",
+      "family": "Gemma 4",
+      "released": "2026-06-03",
+      "status": "released",
+      "openWeights": true,
+      "params": "12B",
+      "context": null,
+      "pricing": "开源免费",
+      "tier": "D",
+      "score": 56,
+      "tags": ["开源", "全模态", "轻量"],
+      "tagline": "Gemma 4 家族的中杯补位",
+      "highlights": [
+        "6 月补发的中间尺寸，推理和非推理合一",
+        "AA 智能指数 14（推理模式），约 114 token/s"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "14", "note": "推理模式", "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": "上下文长度和许可细节没有查到官方写法。",
+      "sources": [
+        "https://ai.google.dev/gemma/docs/releases",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "gemma-4-e4b",
+      "name": "Gemma 4 E4B / E2B",
+      "category": "llm",
+      "family": "Gemma 4",
+      "released": "2026-03-31",
+      "status": "released",
+      "openWeights": true,
+      "params": "有效 4B / 2B",
+      "context": null,
+      "pricing": "开源免费（Apache 2.0）",
+      "tier": "E",
+      "score": 45,
+      "tags": ["开源", "端侧", "手机"],
+      "tagline": "树莓派上跑离线翻译的端侧小模型",
+      "highlights": [
+        "手机和树莓派级设备可离线运行，支持文本、图像和音频输入",
+        "官方 Gemma Translator 用 E2B 在树莓派离线翻译",
+        "AA 智能指数：E4B 9，E2B 8"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "9", "note": "E4B 推理模式", "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": "E4B 和 E2B 两个端侧尺寸合并收录，定位在设备端，和前沿模型没有可比性。",
+      "sources": [
+        "https://ai.google.dev/gemma/docs/core/model_card_4",
+        "https://agihunt.info/e/1a0e9187daec61a372ac2c37c83"
+      ]
+    },
+    {
+      "id": "nano-banana-2",
+      "name": "Nano Banana 2",
+      "category": "image",
+      "family": "Nano Banana",
+      "released": "2026-02-26",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": "约 $0.045（512px）到 $0.151（4K）/张",
+      "tier": "A",
+      "score": 84,
+      "tags": ["文生图", "图像编辑", "文字渲染"],
+      "tagline": "谷歌生图主力，已被 GPT Image 拉开",
+      "highlights": [
+        "LMArena 文生图 1261 分，排第 9，是 Google 最高的一款",
+        "LMArena 图像编辑 1388 分，排第 12",
+        "API 代号 gemini-3.1-flash-image，最高出 4K",
+        "Runway、Flow、Gemini App 等产品广泛集成"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1261", "note": "第 9", "source": "https://arena.ai/leaderboard/text-to-image"},
+        {"name": "LMArena Image Edit", "value": "1388", "note": "第 12", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "文生图榜第一是 gpt-image-2.5（1424 分），差距约 160 分。Flow 里已出现 Nano Banana 2.1 的痕迹。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+        "https://openrouter.ai/google/gemini-3.1-flash-image",
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "nano-banana-pro",
+      "name": "Nano Banana Pro",
+      "category": "image",
+      "family": "Nano Banana",
+      "released": "2025-11-20",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": null,
+      "tier": "A",
+      "score": 82,
+      "tags": ["专业生图", "文字渲染", "图像编辑", "4K"],
+      "tagline": "4K 专业档，改图仍是谷歌第一",
+      "highlights": [
+        "LMArena 图像编辑 1390 分（2K 版）排第 9，谷歌最高",
+        "LMArena 文生图 1247 分（2K 版），排第 14",
+        "基于 Gemini 3 Pro，以精准文字渲染和世界知识见长"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image Edit", "value": "1390", "note": "第 9（2K 版）", "source": "https://arena.ai/leaderboard/image-edit"},
+        {"name": "LMArena Text-to-Image", "value": "1247", "note": "第 14（2K 版）", "source": "https://arena.ai/leaderboard/text-to-image"}
+      ],
+      "notes": "API 代号 gemini-3-pro-image，已转为正式版。单张价格没有查到当前官方口径，留空。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "nano-banana-2-lite",
+      "name": "Nano Banana 2 Lite",
+      "category": "image",
+      "family": "Nano Banana",
+      "released": "2026-06-30",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1K",
+      "pricing": "$0.034/张（1K）",
+      "tier": "B",
+      "score": 78,
+      "tags": ["文生图", "极速", "低成本"],
+      "tagline": "4 秒出图、三分钱一张",
+      "highlights": [
+        "文生图约 4 秒，比 Nano Banana 2 快约 2.7 倍",
+        "LMArena 文生图 1250 分，排第 13，只比 NB2 低 11 分",
+        "官方推荐用它替代初代 Nano Banana"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1250", "note": "第 13", "source": "https://arena.ai/leaderboard/text-to-image"},
+        {"name": "LMArena Image Edit", "value": "1314", "note": "第 21", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "API 代号 gemini-3.1-flash-lite-image。上线搜索 AI Mode、Photos、NotebookLM 等消费产品。",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+        "https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "nano-banana-2-1",
+      "name": "Nano Banana 2.1",
+      "category": "image",
+      "family": "Nano Banana",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "A",
+      "score": 84,
+      "tags": ["文生图", "图像编辑"],
+      "tagline": "Flow 代码里露头的下一版生图",
+      "highlights": [
+        "TestingCatalog 在 Flow 构建里发现 NB 2.1 字样",
+        "原引用名是 Nano Banana 2.5 Flash，改名后更像小版本迭代",
+        "有人推测会和 Gemini 4 Pro 同周发布"
+      ],
+      "benchmarks": [],
+      "notes": "只有代码痕迹，暂时没有实测。分数按 Nano Banana 2 占位，发布后重评。",
+      "sources": [
+        "https://agihunt.info/e/1a0e3500d34b150e4d5afa48e6b",
+        "https://agihunt.info/e/1a0e726a61589150a2207c1850a"
+      ]
+    },
+    {
+      "id": "nano-banana",
+      "name": "Nano Banana",
+      "category": "image",
+      "family": "Nano Banana",
+      "released": "2025-08",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "C",
+      "score": 66,
+      "tags": ["图像编辑", "角色一致性"],
+      "tagline": "引爆「香蕉修图」的初代",
+      "highlights": [
+        "初代 Gemini 2.5 Flash Image，以角色一致性修图出圈",
+        "LMArena 文生图第 32（1150），改图第 28（1293）"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image Edit", "value": "1293", "note": "第 28", "source": "https://arena.ai/leaderboard/image-edit"}
+      ],
+      "notes": "官方已建议迁移到 Nano Banana 2 Lite，API 被归入访问受限的 2.5 系列。",
+      "sources": [
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "imagen-4",
+      "name": "Imagen 4",
+      "category": "image",
+      "family": "Imagen",
+      "released": "2025",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "D",
+      "score": 60,
+      "tags": ["文生图", "写实"],
+      "tagline": "被 Nano Banana 取代的纯扩散生图线",
+      "highlights": [
+        "Imagen 4 Ultra 在 LMArena 文生图 1148 分排第 34",
+        "Gemini API 已关停 imagen-4.0-generate"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1148", "note": "第 34（Ultra）", "source": "https://arena.ai/leaderboard/text-to-image"}
+      ],
+      "notes": "Standard、Ultra 和 Fast 合并收录。谷歌生图已全面转向 Gemini 原生图像（Nano Banana），这一条只作历史对照。",
+      "sources": [
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "gemini-omni-1-1-flash",
+      "name": "Gemini Omni 1.1 Flash",
+      "category": "video",
+      "family": "Gemini Omni",
+      "released": "2026-08-27",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p/4K 超分·单段 10s，可续到 40s",
+      "pricing": "约 $0.10/秒（720p），360p 草稿约为 1/3",
+      "tier": "SSS",
+      "score": 97,
+      "tags": ["文生视频", "图生视频", "对话式剪辑", "原生音频"],
+      "tagline": "文生视频双榜第一的任意模态模型",
+      "highlights": [
+        "LMArena 文生视频 1516 分，排第 1",
+        "LMArena 图生视频 1488 分，排第 2，仅次于 MiniMax H3",
+        "新增首尾帧控制和 40 秒场景续写，可超分到 4K",
+        "Adobe、Figma、Runway 已接入工作流"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Video", "value": "1516", "note": "第 1", "source": "https://arena.ai/leaderboard/text-to-video"},
+        {"name": "LMArena Image-to-Video", "value": "1488", "note": "第 2", "source": "https://arena.ai/leaderboard/image-to-video"}
+      ],
+      "notes": "API 仍是预览版。Google Vids 已全面换用它，但有中文博主实测 Vids 成片体验一般。",
+      "sources": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+        "https://www.marktechpost.com/2026/08/29/google-ai-releases-gemini-omni-1-1-flash-40-second-scene-extension-first-last-frame-control-and-4k-upscaling/",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0e34aad92389303ed7a332472"
+      ]
+    },
+    {
+      "id": "gemini-omni-flash",
+      "name": "Gemini Omni Flash",
+      "category": "video",
+      "family": "Gemini Omni",
+      "released": "2026-05-19",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "720p·10s",
+      "pricing": "$0.10/秒",
+      "tier": "SS",
+      "score": 95,
+      "tags": ["文生视频", "任意模态输入", "对话式剪辑"],
+      "tagline": "谷歌首个任意输入、直出视频的模型",
+      "highlights": [
+        "I/O 2026 发布，6/30 进 API 公测",
+        "AA 有音频文生视频榜 Elo 1233，排第 1",
+        "LMArena 文生视频第 2（1513），图生视频第 6",
+        "YouTube Shorts 可免费使用"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video（含音频）", "value": "1233", "note": "第 1", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "LMArena Text-to-Video", "value": "1513", "note": "第 2", "source": "https://arena.ai/leaderboard/text-to-video"}
+      ],
+      "notes": "API 首版不支持音频参考和场景延展，1.1 版已补上。",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "veo-3-1",
+      "name": "Veo 3.1",
+      "category": "video",
+      "family": "Veo",
+      "released": "2025-10",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "最高 4K·8s",
+      "pricing": "约 $0.15 到 $0.60/秒（按档位和分辨率）",
+      "tier": "B",
+      "score": 76,
+      "tags": ["文生视频", "原生音频", "电影感"],
+      "tagline": "上一代音画同出标杆，已被 Omni 接班",
+      "highlights": [
+        "LMArena 文生视频 1364 分，排第 12",
+        "LMArena 图生视频 1398 分，排第 13",
+        "AA 有音频文生视频榜排第 14，Elo 1088",
+        "Runway、Flow 等主流平台仍在集成"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Video", "value": "1364", "note": "第 12（含音频）", "source": "https://arena.ai/leaderboard/text-to-video"},
+        {"name": "AA Text-to-Video（含音频）", "value": "1088", "note": "第 14", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+      ],
+      "notes": "Veo 3.1 与 Fast 合并收录（Fast 在 LMArena 为 1362 分）。发布月份 2025-10 凭记忆，没有在官方页面核对。",
+      "sources": [
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemini-api/docs/pricing",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "veo-3-1-lite",
+      "name": "Veo 3.1 Lite",
+      "category": "video",
+      "family": "Veo",
+      "released": "2026-03-31",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·8s",
+      "pricing": "$0.05/秒（720p），$0.08/秒（1080p）",
+      "tier": "C",
+      "score": 68,
+      "tags": ["文生视频", "低成本", "批量"],
+      "tagline": "五分钱一秒的批量出片档",
+      "highlights": [
+        "价格不到 Veo 3.1 Fast 的一半，速度相同",
+        "支持 720p/1080p、横竖屏和 4/6/8 秒",
+        "带原生音频"
+      ],
+      "benchmarks": [],
+      "notes": "没有查到独立的竞技场排名，按价位和定位估档。",
+      "sources": [
+        "https://openrouter.ai/google/veo-3.1-lite",
+        "https://www.bitget.com/news/detail/12560605324266"
+      ]
+    },
+    {
+      "id": "genie-3",
+      "name": "Genie 3",
+      "category": "video",
+      "family": "Genie",
+      "released": "2025-08",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "720p·24fps，可交互数分钟",
+      "pricing": null,
+      "tier": "A",
+      "score": 80,
+      "tags": ["世界模型", "实时交互", "可探索 3D"],
+      "tagline": "一句话生成可走进去的实时世界",
+      "highlights": [
+        "首个通用实时交互世界模型，以 24fps 生成可导航世界",
+        "2026-01-29 以 Project Genie 开放给 Ultra 用户",
+        "I/O 2026 接入街景，可生成真实地点的模拟",
+        "Waymo 用它衍生出自动驾驶仿真世界模型"
+      ],
+      "benchmarks": [],
+      "notes": "世界模型没有和视频生成同口径的榜单，按独特性和影响力给档。目前没有查到 Genie 4 的可靠消息。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Genie_(world_model)",
+        "https://go.theregister.com/feed/www.theregister.com/2026/01/29/googles_project_genie_ai/",
+        "https://www.pymnts.com/google/2026/google-deepmind-introduces-project-genie-for-interactive-ai-world-building/"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 以 LMArena Text、Artificial Analysis 智能指数和官方编程/Agent 基准为主。Gemini 3.8 Flash 在 LMArena 排第 10（1492），AA 指数 41，DeepSWE 和 Opus 5 基本持平，定 A。日本天梯图把 Gemini 单列一排、没有进主梯队，这里按榜单数据归档。Google 已没有现役 Pro 旗舰：3.1 Pro 的 AA 指数只有 30，3.5 Pro 据传被砍，所以 LLM 最高只到 A，传闻中的 Gemini 4 Pro 以 S 占位。Gemma 4 在开源阵营中尺寸偏小（最大 31B），AA 指数 19，放在 C 到 E。图像按 LMArena 文生图和图像编辑：第一是 gpt-image-2.5（1424），NB2 1261、NB Pro 1247，差距约 160 分，所以最高只到 A。视频按 LMArena 文生视频/图生视频和 AA 视频榜：Gemini Omni 1.1 Flash 在 LMArena 文生视频第一、图生视频第二，Omni Flash 在 AA 含音频榜第一，定 SSS 和 SS；Veo 3.1 已落到十几名，定 B。"
+}

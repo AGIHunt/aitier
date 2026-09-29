@@ -1,0 +1,231 @@
+{
+  "vendor": {
+    "id": "meta",
+    "name": "Meta",
+    "nameZh": "Meta",
+    "country": "US",
+    "color": "#0866ff",
+    "accent": "#ffffff",
+    "monogram": "M",
+    "blurb": "超级智能实验室重做 Muse 全家桶，Spark 冲回前沿，图像视频也挤进前十"
+  },
+  "models": [
+    {
+      "id": "muse-spark-1-3",
+      "name": "Muse Spark 1.3",
+      "category": "llm",
+      "family": "Muse Spark",
+      "released": "2026-09-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$1.25 / $4.25 每百万 token（Contributor 档 $0.10 / $0.20）",
+      "tier": "A",
+      "score": 86,
+      "tags": ["编程", "Agent", "多模态", "性价比"],
+      "tagline": "Meta 重回前沿的最便宜门票",
+      "highlights": [
+        "AA 智能指数 48（max），高于 Grok 4.7 的 46",
+        "Code Arena 第 10（1656），Text Arena 第 9（1494）",
+        "官方称 DeepSWE v1.1 75.4%，Terminal-Bench 2.1 88.8%",
+        "比 1.2 少用约 20% 工具调用、25% token"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "48", "note": "max；xhigh 为 45", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "Code Arena", "value": "1656", "note": "第 10（max）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "Text Arena", "value": "1494", "note": "第 9（max）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "105 植入 bug 实测", "value": "32.2", "note": "GPT-6 Astra 45、Opus 5.5 41.7", "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"}
+      ],
+      "notes": "推理档到 xhigh/max；Contributor 低价档会留存数据训练。被曝在 Terminal Bench Science 利用 Lean 内核 bug 骗分；数学证明口碑一般",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Muse_Spark",
+        "https://www.eesel.ai/blog/muse-spark-1-3",
+        "https://agihunt.info/e/1a0d4e4aee51846de3c0f1c89f1",
+        "https://agihunt.info/e/1a0d1f23a062213932afbbedb86"
+      ]
+    },
+    {
+      "id": "muse-spark-1-2",
+      "name": "Muse Spark 1.2",
+      "category": "llm",
+      "family": "Muse Spark",
+      "released": "2026-08-05",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$1.25 / $4.25 每百万 token",
+      "tier": "B",
+      "score": 76,
+      "tags": ["对话", "编程", "待开源"],
+      "tagline": "Text Arena 第 7 的聊天型选手",
+      "highlights": [
+        "Text Arena 1496 排第 7，Meta 家文本最高分",
+        "Code Arena 仅 1531（第 40），编程明显弱于 1.3",
+        "扎克伯格与 Alexandr Wang 承诺将开放权重"
+      ],
+      "benchmarks": [
+        {"name": "Text Arena", "value": "1496", "note": "第 7（xHigh）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena", "value": "1531", "note": "第 40（xHigh）", "source": "https://arena.ai/leaderboard/code"}
+      ],
+      "notes": "与终端编程 Agent Muse Code 同日发布；开源承诺截至 9 月初尚未兑现。外部天梯图放 C 档",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Muse_Spark",
+        "https://www.orcarouter.ai/blog/meta-muse-spark-1-2-explained",
+        "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"
+      ]
+    },
+    {
+      "id": "muse-spark-1-1",
+      "name": "Muse Spark 1.1",
+      "category": "llm",
+      "family": "Muse Spark",
+      "released": "2026-07-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": null,
+      "tier": "C",
+      "score": 68,
+      "tags": ["多模态", "推理"],
+      "tagline": "MSL 首个正式上线的 Muse",
+      "highlights": [
+        "Muse Spark 4 月 8 日官宣，1.1 为首个正式版",
+        "Text Arena 1491（第 12），初版 muse-spark 1489（第 13）",
+        "Code Arena 1541（第 35）"
+      ],
+      "benchmarks": [
+        {"name": "Text Arena", "value": "1491", "note": "第 12", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena", "value": "1541", "note": "第 35", "source": "https://arena.ai/leaderboard/code"}
+      ],
+      "notes": "合并 4 月发布的初版 Muse Spark；已被 1.2/1.3 取代",
+      "sources": [
+        "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/",
+        "https://en.wikipedia.org/wiki/Muse_Spark"
+      ]
+    },
+    {
+      "id": "muse-glimmer",
+      "name": "Muse Glimmer",
+      "category": "llm",
+      "family": "Muse",
+      "released": "2026-08-10",
+      "status": "released",
+      "openWeights": true,
+      "params": "30B",
+      "context": "131K",
+      "pricing": "开源（Apache 2.0）",
+      "tier": "D",
+      "score": 60,
+      "tags": ["开源", "端侧", "Agent"],
+      "tagline": "一张 24G 显卡跑得动的 Meta 开源款",
+      "highlights": [
+        "Apache 2.0 开放权重，4bit 量化后不到 20GB",
+        "单张 24GB 消费级显卡可离线运行，支持 100+ 语言",
+        "AA 智能指数 17，Text Arena 1424（第 118）"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "17", "note": "high", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "Text Arena", "value": "1424", "note": "第 118", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena", "value": "1355", "note": "第 102", "source": "https://arena.ai/leaderboard/code"}
+      ],
+      "notes": "Meta 在 Llama 之后重返开源的标志；支持文本+图像输入",
+      "sources": [
+        "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now",
+        "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+        "https://artificialanalysis.ai/articles/muse-glimmer"
+      ]
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "category": "llm",
+      "family": "Llama 4",
+      "released": "2025-04-05",
+      "status": "released",
+      "openWeights": true,
+      "params": "400B MoE / 17B 激活",
+      "context": "1M",
+      "pricing": "开源（Llama 4 社区许可）",
+      "tier": "E",
+      "score": 45,
+      "tags": ["开源", "多模态"],
+      "tagline": "Llama 路线的最后一代主力",
+      "highlights": [
+        "AA 智能指数 10，同代 Scout 为 8（10M 上下文）",
+        "仍是存量部署最多的 Meta 开源权重之一",
+        "此后 Meta 转向 Muse 系列，Llama 未再更新"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "10", "note": "Scout 为 8", "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": "作为历史对照收录，合并 Scout（109B/17B 激活，10M 上下文）",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Llama_(language_model)",
+        "https://artificialanalysis.ai/leaderboards/models"
+      ]
+    },
+    {
+      "id": "muse-image",
+      "name": "Muse Image",
+      "category": "image",
+      "family": "Muse",
+      "released": "2026-07-07",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "$0.01/张",
+      "tier": "A",
+      "score": 86,
+      "tags": ["文生图", "图像编辑", "多图参考", "便宜"],
+      "tagline": "一分钱一张的前十画师",
+      "highlights": [
+        "AA 文生图第 7（Elo 1111），Arena 文生图第 7（1276）",
+        "$10/千张，前十里最便宜",
+        "已进 Meta AI、Instagram Stories、WhatsApp"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Image", "value": "1111", "note": "第 7", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"},
+        {"name": "Arena Text-to-Image", "value": "1276", "note": "第 7", "source": "https://arena.ai/leaderboard/text-to-image"}
+      ],
+      "notes": "MSL 首个图像模型；上线后因使用用户照片引发争议",
+      "sources": [
+        "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+        "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/"
+      ]
+    },
+    {
+      "id": "muse-video",
+      "name": "Muse Video",
+      "category": "video",
+      "family": "Muse",
+      "released": "2026-07-07",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "A",
+      "score": 84,
+      "tags": ["文生视频", "原生音频"],
+      "tagline": "只见榜单不见 API 的预告片",
+      "highlights": [
+        "Arena 文生视频第 9（1456），领先 Sora 2 Pro 与 Veo 3.1",
+        "与 Muse Image 同一预训练底座，原生带音频",
+        "7 月预览至今仅称「即将上线」，无 API、无定价"
+      ],
+      "benchmarks": [
+        {"name": "Arena Text-to-Video", "value": "1456", "note": "第 9", "source": "https://arena.ai/leaderboard/text-to-video"}
+      ],
+      "notes": "released 字段为预览日；分辨率与时长未公布，AA 视频榜未收录",
+      "sources": [
+        "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/",
+        "https://www.orcarouter.ai/blog/muse-video"
+      ]
+    }
+  ],
+  "tierRationale": "文本类主要看 Artificial Analysis 智能指数与 Arena 文本/代码榜：Muse Spark 1.3 AA 48、Code Arena 第 10，与外部天梯图一致定 A 上沿；1.2 在 Text Arena 排第 7 但代码只排第 40，比天梯图的 C 略高定 B；1.1 定 C。Muse Glimmer 是 30B 开源款，AA 17，与天梯图一致放 D；Llama 4 仅作历史对照放 E。图像 Muse Image 在 AA 与 Arena 文生图都是第 7，定 A；Muse Video 在 Arena 文生视频第 9 但仍未开放，定 A 并标 preview。"
+}

@@ -1,0 +1,42 @@
+{
+  "vendor": {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "nameZh": "Midjourney",
+    "country": "US",
+    "color": "#0B0B0B",
+    "accent": "#E8E8E8",
+    "monogram": "MJ",
+    "blurb": "审美标杆型订阅产品，没有 API，所以不上任何公开竞技榜"
+  },
+  "models": [
+    {
+      "id": "midjourney-v8.2",
+      "name": "Midjourney V8.2",
+      "category": "image",
+      "family": "Midjourney V8",
+      "released": "2026-07-24",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "2K",
+      "pricing": "仅订阅（Basic $10/月起）",
+      "tier": "B",
+      "score": 76,
+      "tags": ["文生图", "审美", "风格化", "个性化"],
+      "tagline": "不上榜的审美派，仍是设计师心头好",
+      "highlights": [
+        "7/24 成为默认版本，原生 2K，速度约为 V7 的 5 倍",
+        "新 Edit 模型取代 Omni Reference、角色参考和 Retexture",
+        "个性化能力增强，能更好地学习用户的审美偏好"
+      ],
+      "benchmarks": [],
+      "notes": "没有 API，LMArena 和 AA 均未收录 V8（AA 只有两年前的 V6.1）。定档依据的是社区口碑而非榜单，可信度较低。",
+      "sources": [
+        "https://updates.midjourney.com/version-8-2/",
+        "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+      ]
+    }
+  ],
+  "tierRationale": "Midjourney 没有 API，LMArena 和 AA 都没有收录 V8.x，没有可比分数。考虑到它的审美口碑和用户规模，但文字渲染和指令遵循普遍被认为落后于 GPT Image、Nano Banana，暂定 B（76）。这个档位是主观估计，前端最好标注为「未上榜」。"
+}

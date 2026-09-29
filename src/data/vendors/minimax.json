@@ -1,0 +1,379 @@
+{
+  "vendor": {
+    "id": "minimax",
+    "name": "MiniMax",
+    "nameZh": "MiniMax·稀宇科技",
+    "country": "CN",
+    "color": "#E6245B",
+    "accent": "#FF7A45",
+    "monogram": "M",
+    "blurb": "文本模型走便宜快路线，海螺 H3 视频开源并登顶图生视频榜"
+  },
+  "models": [
+    {
+      "id": "minimax-m3-1",
+      "name": "MiniMax M3.1",
+      "category": "llm",
+      "family": "MiniMax-M3",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": null,
+      "tier": "B",
+      "score": 76,
+      "tags": [
+        "编程",
+        "3D/前端",
+        "多模态",
+        "高速"
+      ],
+      "tagline": "疑似「太空兔」真身，匿名冲上调用榜首",
+      "highlights": [
+        "匿名 Space Bunny 9/23 上线，登顶 OpenRouter 日榜",
+        "OpenCode 连续 5 天第一，累计处理约 40T token",
+        "分词器特征与 MiniMax 系列吻合，开源仓库提前写入 M3.1 配置",
+        "1M 上下文，支持图像/视频输入，可调推理强度"
+      ],
+      "benchmarks": [],
+      "notes": "未经官方确认，也可能就是已上线的 M3.1-Flash-Preview。爆料称 9/30 前后正式发布。实测快而稳，惊艳度不及 GPT-6 Astra",
+      "sources": [
+        "https://agihunt.info/e/1a0e346ed64b065d1d1464f0361",
+        "https://agihunt.info/e/1a0e155c9c02ab0ec98bfc407e3",
+        "https://agihunt.info/e/1a0cf59a08733ee4322d09e21ae"
+      ]
+    },
+    {
+      "id": "minimax-m3-1-flash-preview",
+      "name": "MiniMax M3.1-Flash-Preview",
+      "category": "llm",
+      "family": "MiniMax-M3",
+      "released": "2026-09-27",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "包含在 Token Plan 订阅内",
+      "tier": "B",
+      "score": 73,
+      "tags": [
+        "编程",
+        "高速",
+        "日常开发"
+      ],
+      "tagline": "面向日常开发的快速编程预览版",
+      "highlights": [
+        "9/27 首发于 MiniMax Code，随后进入 Token Plan",
+        "推理分 low/medium/high/xhigh/max 五档",
+        "官方定位高吞吐、低延迟，覆盖从修 bug 到做完整功能"
+      ],
+      "benchmarks": [],
+      "notes": "暂无官方跑分和第三方榜单，定档保守。上线后 Token Plan 额度临时改为每日两次重置。",
+      "sources": [
+        "https://agihunt.info/e/1a0e16d8a01bc70d2fd076ddcdf",
+        "https://agihunt.info/e/1a0e155c9c02ab0ec98bfc407e3",
+        "https://agihunt.info/e/1a0e89dbba70742955da74144b5"
+      ]
+    },
+    {
+      "id": "minimax-m3",
+      "name": "MiniMax M3",
+      "category": "llm",
+      "family": "MiniMax-M3",
+      "released": "2026-06-01",
+      "status": "released",
+      "openWeights": true,
+      "params": "428B MoE / 23B 激活",
+      "context": "1M",
+      "pricing": "$0.30 / $1.20 每百万 token（>512K 另计）",
+      "tier": "C",
+      "score": 68,
+      "tags": [
+        "编程",
+        "长上下文",
+        "多模态",
+        "开源"
+      ],
+      "tagline": "开源兼 1M 上下文和原生多模态，价格极低",
+      "highlights": [
+        "官方称首个同时具备前沿编程、1M 上下文、原生多模态的开源模型",
+        "官方：SWE-Bench Pro 59.0%，TB 2.1 66.0%",
+        "新注意力架构 MSA（MiniMax Sparse Attention）",
+        "AA 新版指数仅 29，LMArena Text 1440 排第 91"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index v4.3.2",
+          "value": "29",
+          "note": "发布时旧版指数为 55",
+          "source": "https://artificialanalysis.ai/models/comparisons/glm-5-3-vs-minimax-m3"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1440",
+          "note": "第 91",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1483",
+          "note": "第 54",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "value": "59.0%",
+          "note": "官方",
+          "source": "https://www.minimax.io/blog/minimax-m3"
+        }
+      ],
+      "notes": "支持思考开关。发布时一度是开源第一，但 AA 新版指数里 Terminal-Bench 4.0 仅 2%，排名大跌；参考图也放在 C。",
+      "sources": [
+        "https://www.minimax.io/blog/minimax-m3",
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://artificialanalysis.ai/models/comparisons/glm-5-3-vs-minimax-m3",
+        "https://x.com/ArtificialAnlys/status/2064066303863005254"
+      ]
+    },
+    {
+      "id": "minimax-m2-7",
+      "name": "MiniMax M2.7",
+      "category": "llm",
+      "family": "MiniMax-M2",
+      "released": "2026-03-18",
+      "status": "released",
+      "openWeights": true,
+      "params": "230B MoE / 10B 激活",
+      "context": "205K",
+      "pricing": "$0.30 / $1.20 每百万 token",
+      "tier": "D",
+      "score": 60,
+      "tags": [
+        "编程",
+        "自我进化",
+        "低价"
+      ],
+      "tagline": "主打「自我进化」的小激活编程模型",
+      "highlights": [
+        "SWE-Pro 56.2%，发布时与 GPT-5.3-Codex 持平",
+        "10B 激活，另有 highspeed 高速版",
+        "AA 指数 23，LMArena Code 1397 排第 84"
+      ],
+      "benchmarks": [
+        {
+          "name": "SWE-Pro",
+          "value": "56.2%",
+          "note": "官方",
+          "source": "https://www.minimax.io/news/minimax-m27-en"
+        },
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "23",
+          "note": null,
+          "source": "https://artificialanalysis.ai/models/comparisons/minimax-m2-7-vs-minimax-m2-5"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1397",
+          "note": "第 84",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "权重开放但改为非商用许可，社区不满。仍在 MiniMax Code 模型列表中。",
+      "sources": [
+        "https://www.minimax.io/news/minimax-m27-en",
+        "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+        "https://artificialanalysis.ai/models/comparisons/minimax-m2-7-vs-minimax-m2-5"
+      ]
+    },
+    {
+      "id": "minimax-m2-5",
+      "name": "MiniMax M2.5",
+      "category": "llm",
+      "family": "MiniMax-M2",
+      "released": "2026-02-12",
+      "status": "released",
+      "openWeights": true,
+      "params": "230B MoE / 10B 激活",
+      "context": "205K",
+      "pricing": "$0.30 / $1.20 每百万 token",
+      "tier": "D",
+      "score": 59,
+      "tags": [
+        "编程",
+        "开源",
+        "性价比"
+      ],
+      "tagline": "一小时一美元的 MIT 开源编程模型",
+      "highlights": [
+        "SWE-bench Verified 80.2%，发布时逼近 Opus 4.6",
+        "100 tok/s 连续跑一小时约 $1",
+        "MIT 许可，比 M2.7 快约 34%"
+      ],
+      "benchmarks": [
+        {
+          "name": "SWE-bench Verified",
+          "value": "80.2%",
+          "note": "官方",
+          "source": "https://www.minimax.io/news/minimax-m25"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1386",
+          "note": "第 89",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "许可比 M2.7 宽松，至今仍是很多本地和 Agent 框架的廉价选项。",
+      "sources": [
+        "https://www.minimax.io/news/minimax-m25",
+        "https://huggingface.co/blog/mlabonne/minimax-m25",
+        "https://artificialanalysis.ai/models/comparisons/minimax-m2-7-vs-minimax-m2-5"
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "name": "MiniMax H3（海螺 Hailuo 3）",
+      "category": "video",
+      "family": "Hailuo",
+      "released": "2026-07-31",
+      "status": "released",
+      "openWeights": true,
+      "params": "33B 稠密（约 20B 推理激活）",
+      "context": "2K·15s",
+      "pricing": "约 $0.13/秒（2K，第三方口径）",
+      "tier": "SS",
+      "score": 93,
+      "tags": [
+        "图生视频",
+        "原生音频",
+        "开源",
+        "多参考"
+      ],
+      "tagline": "开源的全模态视频模型，图生视频榜第一",
+      "highlights": [
+        "LMArena 图生视频 1495 排第 1，文生视频 1460 排第 8",
+        "AA 文生视频（带音频）第 4，图生视频第 2，均为开源第一",
+        "原生立体声，2K 分辨率，单条 4–15 秒",
+        "单次可参考 9 张图、3 段视频、3 段音频"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1495",
+          "note": "第 1",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1460",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "Artificial Analysis Text-to-Video（带音频）",
+          "value": "1220",
+          "note": "第 4；fal 后训练版 H3 Max 1227 第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "Artificial Analysis Image-to-Video（带音频）",
+          "value": "1181",
+          "note": "第 2；H3 Max（fal）第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
+      ],
+      "notes": "用户说的「H3」即此款，官方名 MiniMax H3，品牌名海螺 3（Hailuo 3.0）。WAIC 7/17 亮相，8/3 开源，许可排除美、欧、英、韩。",
+      "sources": [
+        "https://www.minimax.io/blog/minimax-h3",
+        "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+        "https://huggingface.co/blog/ResterChed/minimax-h3-hailuo-3-0",
+        "https://www.atlascloud.ai/blog/tips/minimax-h3-open-source-weights",
+        "https://platform.minimax.io/docs/release-notes/models"
+      ]
+    },
+    {
+      "id": "hailuo-2-3",
+      "name": "MiniMax-Hailuo-2.3",
+      "category": "video",
+      "family": "Hailuo",
+      "released": "2025-10-28",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p",
+      "pricing": null,
+      "tier": "D",
+      "score": 58,
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "动作表现"
+      ],
+      "tagline": "海螺上一代主力，已被 H3 全面取代",
+      "highlights": [
+        "强化肢体动作、面部表情和物理真实感",
+        "另有 2.3-Fast 快速版",
+        "LMArena 文生视频第 32，图生视频第 29"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1206",
+          "note": "第 32",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1262",
+          "note": "第 29",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
+      ],
+      "notes": "没有原生音频，和新一代带音频模型差距很大。Hailuo-02（2025-06）更老，不单独收录。",
+      "sources": [
+        "https://platform.minimax.io/docs/release-notes/models",
+        "https://arena.ai/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "minimax-image-01",
+      "name": "MiniMax Image-01",
+      "category": "image",
+      "family": "Image-01",
+      "released": "2025-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "E",
+      "score": 42,
+      "tags": [
+        "文生图",
+        "主体参考"
+      ],
+      "tagline": "MiniMax 唯一的图像模型，已明显掉队",
+      "highlights": [
+        "支持文生图和主体参考图生图，一次最多出 9 张",
+        "AA 文生图 861，排第 124",
+        "一年半未更新，未进 LMArena 文生图榜"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Text-to-Image",
+          "value": "861",
+          "note": "第 124",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        }
+      ],
+      "notes": "发布已超 18 个月，按收录标准属边缘；因是 MiniMax 仅有的图像模型、仍在 API 上架，保留作为参照。",
+      "sources": [
+        "https://www.minimax.io/news/image-01",
+        "https://platform.minimax.io/docs/release-notes/models"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 看 Artificial Analysis 智能指数 v4.3.2 和 LMArena：M3 在 AA 新版只有 29 分、LMArena Text 第 91，与参考图一致给 C；M2.7 和 M2.5 的 AA 均为 23，Code Arena 在 80 名开外，给 D。M3.1-Flash-Preview 刚上线，还没有跑分，暂给 B 低位。疑似 M3.1 的 Space Bunny 口碑和调用量都很强，但身份和跑分都没坐实，按 rumored 给 B。视频类 H3 是 LMArena 图生视频第一、AA 文生/图生视频前 4，且开源，只因文生视频总榜仍落后 Gemini Omni Flash 等，给 SS。Hailuo 2.3 排三十名开外给 D。Image-01 在 AA 排第 124 给 E。"
+}

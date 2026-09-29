@@ -1,0 +1,178 @@
+{
+  "vendor": {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "nameZh": "深度求索",
+    "country": "CN",
+    "color": "#4d6bfe",
+    "accent": "#ffffff",
+    "monogram": "DS",
+    "blurb": "开源性价比之王：V4.1 Flash 以 Flash 身价打出旗舰分，调用量霸榜"
+  },
+  "models": [
+    {
+      "id": "deepseek-v4-1-flash",
+      "name": "DeepSeek-V4.1-Flash",
+      "category": "llm",
+      "family": "DeepSeek V4.1",
+      "released": "2026-09-10",
+      "status": "released",
+      "openWeights": true,
+      "params": "552B MoE / 输入 8B、输出 16B 激活",
+      "context": "1M",
+      "pricing": "$0.30 / $1.20 每百万 token（高峰价，闲时五折；缓存读 $0.006）",
+      "tier": "A",
+      "score": 83,
+      "tags": ["性价比", "编程", "Agent", "多模态"],
+      "tagline": "Flash 的价，Pro 的分",
+      "highlights": [
+        "官方称多项基准超过自家旗舰 V4 Pro，DeepSWE 74.2 vs 62.7",
+        "LMArena Text 1477 分，DeepSeek 全系最高，WebDev 第 16",
+        "新因果编码器-解码器架构，KV 缓存 HBM 占用降至 1/4",
+        "高峰价 $0.30/$1.20，AA 测速约 217 token/s"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "39", "note": "max 档；非推理模式 25", "source": "https://artificialanalysis.ai/models/deepseek-v4-1-flash"},
+        {"name": "LMArena Text", "value": "1477", "note": "第 29（max 档，9/25 快照）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1621", "note": "第 16（max 档）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "DeepSWE v1.1", "value": "74.2", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
+        {"name": "Terminal-Bench 2.1", "value": "90.6", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
+        {"name": "GPQA Diamond", "value": "90.9", "note": "官方自报", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"}
+      ],
+      "notes": "推理/非推理合一，effort 可调（max 档合并）；API 名 deepseek-flash，MIT 协议开源。输出偏啰嗦；AA 分落后 MiMo V2.6 Pro(46)。",
+      "sources": [
+        "https://api-docs.deepseek.com/news/news260910/",
+        "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+        "https://artificialanalysis.ai/models/deepseek-v4-1-flash",
+        "https://agihunt.info/e/1a0d496cc36887815588f0ea608"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek-V4-Pro",
+      "category": "llm",
+      "family": "DeepSeek V4",
+      "released": "2026-04-24",
+      "status": "released",
+      "openWeights": true,
+      "params": "1.6T MoE / 49B 激活",
+      "context": "1M",
+      "pricing": "$1.32 / $3.96 每百万 token（高峰价，闲时五折）",
+      "tier": "B",
+      "score": 76,
+      "tags": ["推理", "Agent", "开源"],
+      "tagline": "1.6T 老旗舰，被自家 Flash 反超",
+      "highlights": [
+        "发布时 AA 智能指数 52，开源第 2，仅次 Kimi K2.6",
+        "8/13 GA 版强化 Agent，原生支持 Responses API 适配 Codex",
+        "LMArena Text 1464（0813 High 档），落后 V4.1 Flash 13 分",
+        "Nonobench 开源最佳 83%，并列第 4"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "36", "note": "0813 max 档，现行指数版本", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "LMArena Text", "value": "1464", "note": "第 53（high-20260813）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1582", "note": "第 26（high-20260813）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "DeepSWE v1.1", "value": "62.7", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
+        {"name": "GPQA Diamond", "value": "92.4", "note": "官方自报，高于 V4.1 Flash", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"}
+      ],
+      "notes": "effort 分 low/high/max 已合并。官方原定 9/14 起路由到 V4.1 Flash，后改口 Pro 继续服务、计费不变；CheatBench 作弊率 73%。",
+      "sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash",
+        "https://agihunt.info/e/1a0e290abe0586bb14f48a5c450",
+        "https://agihunt.info/e/1a0d2e87cd227797aea0fd2a8a4"
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek-V4-Flash",
+      "category": "llm",
+      "family": "DeepSeek V4",
+      "released": "2026-04-24",
+      "status": "deprecated",
+      "openWeights": true,
+      "params": "284B MoE / 13B 激活",
+      "context": "1M",
+      "pricing": "$0.14 / $0.28 每百万 token（下线前官方价）",
+      "tier": "C",
+      "score": 68,
+      "tags": ["性价比", "开源", "轻量"],
+      "tagline": "上一代白菜价主力，权重仍在流通",
+      "highlights": [
+        "发布时 AA 智能指数 47，价格仅 $0.14/$0.28",
+        "0731 版重做后训练，Code Arena WebDev 1581 分",
+        "曾长期位居 OpenRouter 分类请求份额榜首",
+        "8/21 衍生 Vision-Exp 多模态实验版，9/10 一并退役"
+      ],
+      "benchmarks": [
+        {"name": "Code Arena WebDev", "value": "1581", "note": "第 27（0731 high 档）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "LMArena Text", "value": "1436", "note": "第 99", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "AA Intelligence Index", "value": "47", "note": "4 月发布时旧版指数，max 档", "source": "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash"}
+      ],
+      "notes": "API 已于 2026-09-10 退役，deepseek-v4-flash 名称暂时路由到 V4.1 Flash；AA 测得幻觉率 96%。",
+      "sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash",
+        "https://agihunt.info/e/1a0e0f10b25449f158cb1bc41d6"
+      ]
+    },
+    {
+      "id": "deepseek-v3-2",
+      "name": "DeepSeek-V3.2",
+      "category": "llm",
+      "family": "DeepSeek V3",
+      "released": "2025-12-01",
+      "status": "deprecated",
+      "openWeights": true,
+      "params": "671B MoE / 37B 激活",
+      "context": "128K",
+      "pricing": null,
+      "tier": "D",
+      "score": 60,
+      "tags": ["开源", "稀疏注意力", "老一代"],
+      "tagline": "DSA 稀疏注意力的开山之作",
+      "highlights": [
+        "引入 DeepSeek 稀疏注意力 DSA，长文本推理成本大降",
+        "单模型兼容思考/非思考两种模式",
+        "LMArena Text 1425，落后 V4.1 Flash 52 分"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1425", "note": "第 117", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1362", "note": "第 97（thinking）", "source": "https://arena.ai/leaderboard/code"}
+      ],
+      "notes": "deepseek-chat / deepseek-reasoner 已于 2026-07-24 停用，V3.2 退出官方 API，仅开源权重在第三方流通。R 系列（R1-0528）同期随 reasoner 端点退役，未单独收录。",
+      "sources": [
+        "https://api-docs.deepseek.com/updates/",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "deepseek-v4-1-pro",
+      "name": "DeepSeek-V4.1-Pro",
+      "category": "llm",
+      "family": "DeepSeek V4.1",
+      "released": null,
+      "status": "rumored",
+      "openWeights": null,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "A",
+      "score": 85,
+      "tags": ["旗舰", "传闻"],
+      "tagline": "官方预告的下一代大杯",
+      "highlights": [
+        "V4.1 Flash 发布公告明确称 V4.1-Pro 将在之后推出",
+        "OpenCode 站点地图泄露 V4.1 Pro 页面，与 Kimi K4 同批"
+      ],
+      "benchmarks": [],
+      "notes": "未发布，参数、价格、分数均未知；tier/score 为按 V4.1 Flash 外推的占位预估，上线后需重评。",
+      "sources": [
+        "https://api-docs.deepseek.com/news/news260910/",
+        "https://agihunt.info/e/1a0d8e52e54a9904524da1dd6ff"
+      ]
+    }
+  ],
+  "tierRationale": "V4.1 Flash 参照日本网友天梯图放 A：LMArena Text 1477（全系最高、第 29）、WebDev 第 16、AA 智能指数 39，绝对分落后 Opus 5.5(58)/GPT-6 Astra(53) 一截，但以 $0.30/$1.20 的价格贴近前沿，社区口碑极高，取 A 档下沿 83。V4 Pro 在 LMArena（1464）和现行 AA 指数（36）上都已被 V4.1 Flash 反超，价格却贵 4 倍，定 B。V4 Flash 已退役 API 但权重仍流通，给 C；V3.2 退出官方 API、分数落后明显，给 D。R 系列随 deepseek-reasoner 端点于 7/24 退役，Janus-Pro 图像模型为 2025 年 1 月老模型，DeepSeek 目前无现役图像/视频模型，均不收。V4.1 Pro 仅有官方预告和站点泄露，档位为预估。"
+}

@@ -1,0 +1,180 @@
+{
+  "vendor": {
+    "id": "moonshot",
+    "name": "Moonshot AI (Kimi)",
+    "nameZh": "月之暗面·Kimi",
+    "country": "CN",
+    "color": "#16191f",
+    "accent": "#2f7cff",
+    "monogram": "K",
+    "blurb": "K3 以 2.8T 参数坐稳最大开源模型，Agent 与前端编程是招牌"
+  },
+  "models": [
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3",
+      "category": "llm",
+      "family": "Kimi K3",
+      "released": "2026-07-16",
+      "status": "released",
+      "openWeights": true,
+      "params": "2.8T MoE / 104B 激活",
+      "context": "1M",
+      "pricing": "$3 / $15 每百万 token（缓存读 $0.30）",
+      "tier": "A",
+      "score": 87,
+      "tags": ["开源旗舰", "Agent", "前端编程", "多模态"],
+      "tagline": "史上最大开源模型，开源天花板",
+      "highlights": [
+        "2.8T 参数、104B 激活，7/27 放出 1.56TB 权重",
+        "LMArena Text 1488 分第 16，开源模型最高",
+        "WebDev 1660 分第 9，发布时拿下 Frontend Code Arena 第一",
+        "Agent Swarm 最多调度 300 个子 Agent"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "44", "note": "max 档；发布时总榜第 3，low 档 34", "source": "https://artificialanalysis.ai/models/kimi-k3"},
+        {"name": "LMArena Text", "value": "1488", "note": "第 16（max 档，9/25 快照）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1660", "note": "第 9（max 档）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "Vals AI Index", "value": "第 2", "note": "发布时排名，具体分数未查到", "source": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation"},
+        {"name": "GPQA Diamond", "value": "93.5", "note": "官方自报", "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"},
+        {"name": "Terminal-Bench 2.1", "value": "88.3", "note": "官方自报", "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"},
+        {"name": "BrowseComp", "value": "91.2", "note": "官方自报", "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"}
+      ],
+      "notes": "默认常开思考，effort 分 low/max 已合并。新 K3 License：年收入超 2000 万美元的服务商需分成最高 30%。被 Anthropic 点名蒸馏 Claude；CheatBench 作弊率 72.3%。",
+      "sources": [
+        "https://x.com/Kimi_Moonshot/status/2081760186235289764",
+        "https://github.com/MoonshotAI/Kimi-K3",
+        "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+        "https://artificialanalysis.ai/models/kimi-k3",
+        "https://agihunt.info/e/1a0cf99a88dd27de1f35430eb30",
+        "https://agihunt.info/e/1a0ce7faa941ab8af10d0852259"
+      ]
+    },
+    {
+      "id": "kimi-k3-1",
+      "name": "Kimi K3.1",
+      "category": "llm",
+      "family": "Kimi K3",
+      "released": null,
+      "status": "rumored",
+      "openWeights": null,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "A",
+      "score": 87,
+      "tags": ["传闻", "开源旗舰"],
+      "tagline": "官方暗示过、却一再跳票",
+      "highlights": [
+        "月之暗面官方发过暗示，被列入「确认即将发布」名单",
+        "爆料人 ChrisGPT 称本周及下周都不会发布，再度跳票"
+      ],
+      "benchmarks": [],
+      "notes": "截至 9/29 未发布，参数/价格/分数均未知，tier/score 暂按 K3 占位。另有 Kimi K4 出现在 OpenCode 站点地图泄露中。",
+      "sources": [
+        "https://agihunt.info/e/1a0d9d239c00fb39b86b2882e9c",
+        "https://agihunt.info/e/1a0ec692c8a21f99f12aced0904",
+        "https://agihunt.info/e/1a0e6a0b21fdecfffc6125583a0",
+        "https://agihunt.info/e/1a0d8e52e54a9904524da1dd6ff"
+      ]
+    },
+    {
+      "id": "kimi-k2-6",
+      "name": "Kimi K2.6",
+      "category": "llm",
+      "family": "Kimi K2",
+      "released": "2026-04-20",
+      "status": "released",
+      "openWeights": true,
+      "params": "1T MoE / 32B 激活",
+      "context": "256K",
+      "pricing": "$0.95 / $4 每百万 token（缓存读 $0.16）",
+      "tier": "B",
+      "score": 76,
+      "tags": ["编程", "Agent", "开源", "多模态"],
+      "tagline": "上一代开源王者，Agent Swarm 成型",
+      "highlights": [
+        "发布时 AA 智能指数 54，开源第一，压过 DeepSeek V4 Pro",
+        "SWE-bench Verified 80.2%，SWE-Bench Pro 58.6%",
+        "Terminal-Bench 2.0 从 K2.5 的 50.8% 升至 66.7%",
+        "LMArena Text 1461，WebDev 1509"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1461", "note": "第 55", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1509", "note": "第 48", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "AA Intelligence Index", "value": "54", "note": "4 月旧版指数，开源第 1", "source": "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash"},
+        {"name": "SWE-bench Verified", "value": "80.2%", "note": "官方自报", "source": "https://miraflow.ai/blog/kimi-k2-6-explained-moonshot-ai-open-source-model-ties-gpt-5-5-coding"},
+        {"name": "SWE-Bench Pro", "value": "58.6%", "note": "官方自报", "source": "https://deepinfra.com/blog/kimi-k2-6-model-overview"}
+      ],
+      "notes": "思考/非思考双模式合并为一条；Modified MIT 协议。Kimi Work 桌面端默认跑 K2.6。",
+      "sources": [
+        "https://platform.kimi.ai/docs/models",
+        "https://deepinfra.com/blog/kimi-k2-6-model-overview",
+        "https://benchlm.ai/moonshot/api-pricing"
+      ]
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "name": "Kimi K2.7 Code",
+      "category": "llm",
+      "family": "Kimi K2",
+      "released": "2026-06-12",
+      "status": "released",
+      "openWeights": true,
+      "params": "1T MoE / 32B 激活",
+      "context": "256K",
+      "pricing": "$0.95 / $4 每百万 token（缓存读 $0.19）",
+      "tier": "B",
+      "score": 73,
+      "tags": ["编程", "长程开发", "开源"],
+      "tagline": "K2 底座的专用编码特化版",
+      "highlights": [
+        "Kimi Code Bench v2 较 K2.6 提升 21.8%",
+        "同等任务推理 token 消耗减少约 30%",
+        "highspeed 版输出约 180 token/s，短上下文达 260",
+        "WebDev 1473 分，反而低于 K2.6"
+      ],
+      "benchmarks": [
+        {"name": "Code Arena WebDev", "value": "1473", "note": "第 57", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "Kimi Code Bench v2", "value": "+21.8%", "note": "相对 K2.6，官方自研基准", "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"}
+      ],
+      "notes": "官方只公布相对 K2.6 的自研基准增幅，未给 SWE-bench 等公开榜分数；另有 kimi-k2.7-code-highspeed 高速版。",
+      "sources": [
+        "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+        "https://platform.kimi.ai/docs/models"
+      ]
+    },
+    {
+      "id": "kimi-k2-5",
+      "name": "Kimi K2.5",
+      "category": "llm",
+      "family": "Kimi K2",
+      "released": "2026-01-27",
+      "status": "deprecated",
+      "openWeights": true,
+      "params": "1T MoE / 32B 激活",
+      "context": "256K",
+      "pricing": "$0.60 / $3 每百万 token（下线前官方价）",
+      "tier": "C",
+      "score": 66,
+      "tags": ["多模态", "Agent", "开源"],
+      "tagline": "Kimi 原生多模态与 Agent 集群的起点",
+      "highlights": [
+        "首次加入 400M 参数视觉编码器 MoonViT",
+        "首推 Agent Swarm，可调度 100 个子 Agent",
+        "LMArena Text 1450（thinking），落后 K3 38 分"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text", "value": "1450", "note": "第 74（thinking）", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena WebDev", "value": "1436", "note": "第 70（thinking）", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "SWE-Bench Pro", "value": "50.7%", "note": "官方自报", "source": "https://deepinfra.com/blog/kimi-k2-6-model-overview"}
+      ],
+      "notes": "API 已于 2026-08-31 下线，仅开源权重流通；instant/thinking 两模式合并。",
+      "sources": [
+        "https://siliconangle.com/2026/01/27/moonshot-ai-releases-open-source-kimi-k2-5-model-1t-parameters/",
+        "https://platform.kimi.ai/docs/models"
+      ]
+    }
+  ],
+  "tierRationale": "K3 参照日本网友天梯图放 A：LMArena Text 1488（第 16，开源最高）、WebDev 第 9、AA 智能指数 44，均为国产开源第一梯队，但距 Opus 5.5(58)/GPT-6 Astra(53) 仍有明显差距，取 A 档上沿 87。K2.6 仍在 API 在售，LMArena 1461，定 B；K2.7 Code 是编码特化版，官方只给自研基准，WebDev 反而低于 K2.6，给 B 下沿；K2.5 API 已下线，给 C。K3.1 尚未发布（官方暗示、多次跳票），档位按 K3 占位。天梯图里的「K2 Horizon 375B A23B」经查是 MBZUAI 旗下 IFM（Institute of Foundation Models）9 月初发布的 Apache 2.0 全开源模型，与月之暗面无关，不收入本文件；月之暗面目前无图像/视频生成模型，K2 系列与 K2 Thinking 的 API 已于 5/25 下线，也不收。"
+}

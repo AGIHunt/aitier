@@ -1,0 +1,453 @@
+{
+  "vendor": {
+    "id": "alibaba",
+    "name": "Alibaba Qwen",
+    "nameZh": "阿里巴巴·通义",
+    "country": "CN",
+    "color": "#615ced",
+    "accent": "#ff6a00",
+    "monogram": "Q",
+    "blurb": "开源生态最大的中国厂商，Qwen 全尺寸开源、万相视频冲进全球前二"
+  },
+  "models": [
+    {
+      "id": "qwen3-8-max",
+      "name": "Qwen3.8-Max (0902)",
+      "category": "llm",
+      "family": "Qwen3.8",
+      "released": "2026-08-03",
+      "status": "released",
+      "openWeights": true,
+      "params": "2.4T MoE / 95B 激活",
+      "context": "1M",
+      "pricing": "$2 / $6 每百万 token",
+      "tier": "A",
+      "score": 86,
+      "tags": ["编程", "Agent", "多模态", "开源"],
+      "tagline": "首个开放权重的 Max 级 Qwen",
+      "highlights": [
+        "0902 快照上线即登 Code Arena WebDev 第 1（1691 分），高出 Opus 5 (Max) 3 分",
+        "AA 智能指数 45，官方称 RSI 自动训练 33 轮把分数从 40 拉到 45",
+        "Terminal-Bench-Science 上是 OpenAI/Anthropic 之外最佳（12%）",
+        "OSWorld-Verified 86.1，官方表中高于 Fable 5 的 85.0"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "45", "note": "0902 版，第 27/216", "source": "https://artificialanalysis.ai/models/qwen3-8-max"},
+        {"name": "Code Arena WebDev", "value": "1691", "note": "9 月初首发第 1，9/23 后被 Opus 5.5 超过", "source": "https://x.com/arena/status/2094974637704913198"},
+        {"name": "LMArena Text", "value": "1496", "note": "8 月首版第 5", "source": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen3-8-max?_p_lc=1"},
+        {"name": "SWE-Bench Pro", "value": "67.7", "note": "首版，官方数据", "source": "https://www.datacamp.com/blog/qwen3-8-max"}
+      ],
+      "notes": "reasoning_effort 分 low/medium/xhigh 三档。8/12 放出的开源版 Qwen3.8-2.4T-A95B 只有文本、无 1M 上下文，自带商用门槛许可；托管版为闭源多模态。",
+      "sources": [
+        "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen3-8-max?_p_lc=1",
+        "https://www.datacamp.com/blog/qwen3-8-max",
+        "https://artificialanalysis.ai/models/qwen3-8-max",
+        "https://openrouter.ai/blog/insights/qwen-3-8/",
+        "https://x.com/arena/status/2094974637704913198",
+        "https://agihunt.info/e/1a0da8ecf631f785c9a7159ed65",
+        "https://agihunt.info/e/1a0d5cb795f54630f1459a51043"
+      ]
+    },
+    {
+      "id": "qwen3-8-flash-next",
+      "name": "Qwen3.8-Flash-Next",
+      "category": "llm",
+      "family": "Qwen3.8",
+      "released": "2026-08-26",
+      "status": "released",
+      "openWeights": true,
+      "params": "125B MoE（另含 51B N-gram 嵌入）/ 6B 激活",
+      "context": "262K（YaRN 可扩至 1M；API 版默认 1M）",
+      "pricing": "$0.15 / $0.47 每百万 token",
+      "tier": "B",
+      "score": 78,
+      "tags": ["开源", "性价比", "编程", "多模态"],
+      "tagline": "Qwen4 架构的抢先预览",
+      "highlights": [
+        "AA 智能指数 40，在同类开源模型中排第 6",
+        "只激活 6B，SWE-bench Pro 62.5，高于 Opus 4.6 Max 的 53.4",
+        "训练成本约为 Qwen3.7-Plus 的 1/9，1M 上下文预填充吞吐最高 8.6 倍",
+        "API 以 qwen3.8-flash 名义提供，Qoder 免费用到 9/30"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "40", "note": "开源同类第 6/116", "source": "https://artificialanalysis.ai/models/qwen3-8-flash-next"},
+        {"name": "SWE-bench Pro", "value": "62.5", "note": "官方数据", "source": "https://www.datacamp.com/blog/qwen3-8-flash-next"},
+        {"name": "GPQA Diamond", "value": "91.7", "note": "官方数据", "source": "https://www.datacamp.com/blog/qwen3-8-flash-next"}
+      ],
+      "notes": "开源许可为 qwen-community-1.0，大规模 MaaS 商用需另行授权。社区反馈 Mac 本地跑不如同尺寸的 27B 快。",
+      "sources": [
+        "https://www.marktechpost.com/2026/08/26/alibabas-qwen-team-releases-qwen3-8-flash-next-a-125b-multimodal-moe-with-6b-active-parameters-previewing-the-qwen4-architecture/",
+        "https://www.datacamp.com/blog/qwen3-8-flash-next",
+        "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+        "https://github.com/QwenLM/Qwen3.8-Flash-Next",
+        "https://agihunt.info/e/1a0ceb04fbb2ea9d868ef73085f"
+      ]
+    },
+    {
+      "id": "qwen3-8-27b",
+      "name": "Qwen3.8-27B",
+      "category": "llm",
+      "family": "Qwen3.8",
+      "released": "2026-08-14",
+      "status": "released",
+      "openWeights": true,
+      "params": "27B 稠密",
+      "context": "262K（可扩至 1M）",
+      "pricing": "$0.5 / $3 每百万 token（阿里云 API）",
+      "tier": "C",
+      "score": 70,
+      "tags": ["开源", "本地部署", "编程", "多模态"],
+      "tagline": "本地党的默认 Qwen",
+      "highlights": [
+        "AA 智能指数 34，同尺寸级别开源模型第 1/142",
+        "Apache 2.0，Q4 量化约 17GB，一张消费级显卡能跑",
+        "Holo4、ThinkingCap、Swift 等大量衍生微调，HF 热榜常客",
+        "三值量化版 Bonsai 2 压到 5.9GB，保留约 98% 能力"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "34", "note": "xhigh 档，同级第 1", "source": "https://artificialanalysis.ai/models/qwen3-8-27b"}
+      ],
+      "notes": "推理档位到 xhigh。话很多（评测输出 2 亿 token），速度约 46 tok/s。",
+      "sources": [
+        "https://artificialanalysis.ai/models/qwen3-8-27b",
+        "https://openrouter.ai/blog/insights/qwen-3-8/",
+        "https://agihunt.info/e/1a0eb5a241b448dd0733d5500c3",
+        "https://agihunt.info/e/1a0e4aeac4db280aa08efb959b2"
+      ]
+    },
+    {
+      "id": "qwen3-8-omni-flash",
+      "name": "Qwen3.8-Omni-Flash",
+      "category": "llm",
+      "family": "Qwen3.8",
+      "released": "2026-09-18",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$0.15 / $0.47 每百万 token",
+      "tier": "B",
+      "score": 73,
+      "tags": ["全模态", "Agent", "音视频"],
+      "tagline": "能看能听还能干活的全模态 Agent",
+      "highlights": [
+        "文本/图像/音频/视频统一输入，单次最长约 1 小时音视频",
+        "基于 Qwen3.8-Flash 的稀疏 MoE，支持 74 种输入语言",
+        "官方称 30 项音视频测试比 Qwen3.5-Omni-Plus 平均提升 26%",
+        "官方 SWE-bench Pro 63.3、AndroidWorld 87.1"
+      ],
+      "benchmarks": [
+        {"name": "SWE-bench Pro", "value": "63.3", "note": "官方数据", "source": "https://benchlm.ai/models/qwen3-8-omni-flash"},
+        {"name": "OmniVideoBench", "value": "63.4", "note": "官方数据", "source": "https://www.orcarouter.ai/blog/qwen-3-8-omni-flash-launch"}
+      ],
+      "notes": "只输出文本，不再生成语音；暂无第三方独立评测，权重未开源。千问办公「企业上下文」依赖此模型。",
+      "sources": [
+        "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+        "https://www.orcarouter.ai/blog/qwen-3-8-omni-flash-launch",
+        "https://benchlm.ai/models/qwen3-8-omni-flash",
+        "https://agihunt.info/e/1a0da02d9405cdfae771db5455e"
+      ]
+    },
+    {
+      "id": "qwen3-7-max",
+      "name": "Qwen3.7-Max",
+      "category": "llm",
+      "family": "Qwen3.7",
+      "released": "2026-05-19",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$2.5 / $7.5 每百万 token",
+      "tier": "C",
+      "score": 65,
+      "tags": ["推理", "Agent", "闭源"],
+      "tagline": "被跳过的一代闭源旗舰",
+      "highlights": [
+        "AA 智能指数 29，排第 88/216",
+        "输出速度约 200 tok/s，比 3.8-Max 快 5 倍",
+        "Together AI 等平台仍在售，适合长程 Agent 任务"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "29", "note": "第 88/216", "source": "https://artificialanalysis.ai/models/qwen3-7-max"}
+      ],
+      "notes": "AA 已标记弃用、推荐换 3.8-Max；3.7 全系未开源，同期还有 Qwen3.7-Plus（6/3）。",
+      "sources": [
+        "https://artificialanalysis.ai/models/qwen3-7-max",
+        "https://www.datacamp.com/blog/qwen3-7-max",
+        "https://agihunt.info/e/1a0cf8d0a6e037b4c3ed217d492"
+      ]
+    },
+    {
+      "id": "qwen3-coder-next",
+      "name": "Qwen3-Coder-Next",
+      "category": "llm",
+      "family": "Qwen3-Coder",
+      "released": "2026-02-03",
+      "status": "released",
+      "openWeights": true,
+      "params": "80B MoE / 3B 激活",
+      "context": "256K",
+      "pricing": null,
+      "tier": "D",
+      "score": 60,
+      "tags": ["编程", "开源", "本地部署"],
+      "tagline": "3B 激活的本地编程 Agent",
+      "highlights": [
+        "SWE-Bench Verified 74.2%，只激活 3B",
+        "Apache 2.0，64GB 内存机器即可本地跑",
+        "截至目前仍是 Qwen 最新的专用 Coder 模型"
+      ],
+      "benchmarks": [
+        {"name": "SWE-bench Verified", "value": "74.2", "note": "官方数据，SWE-Agent 框架", "source": "https://qwen.ai/blog?id=qwen3-coder-next"}
+      ],
+      "notes": "截至 8 月中没有发布 3.8 代 Coder，编程能力并入主线模型。",
+      "sources": [
+        "https://qwen.ai/blog?id=qwen3-coder-next",
+        "https://arxiv.org/html/2603.00729v1"
+      ]
+    },
+    {
+      "id": "qwen3-6-35b-a3b",
+      "name": "Qwen3.6-35B-A3B",
+      "category": "llm",
+      "family": "Qwen3.6",
+      "released": "2026-04",
+      "status": "released",
+      "openWeights": true,
+      "params": "35B MoE / 3B 激活",
+      "context": "262K",
+      "pricing": null,
+      "tier": "D",
+      "score": 57,
+      "tags": ["开源", "轻量", "本地部署"],
+      "tagline": "笔记本也能跑的小 MoE",
+      "highlights": [
+        "只激活 3B，普通笔记本本地部署的热门选择",
+        "Apache 2.0，3.8 代没有同档位替代品",
+        "主打 Agentic 编程，同期还有 Qwen3.6-27B 稠密版"
+      ],
+      "benchmarks": [],
+      "notes": "3.8 代跳过了 27B 以下和 27B–125B 之间的尺寸，小尺寸本地用户仍停留在 3.6/3.5。",
+      "sources": [
+        "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+        "https://codersera.com/blog/qwen-3-8-model-lineup-2026/"
+      ]
+    },
+    {
+      "id": "qwen-image-2-1",
+      "name": "Qwen-Image-2.1",
+      "category": "image",
+      "family": "Qwen-Image",
+      "released": "2026-09-20",
+      "status": "released",
+      "openWeights": true,
+      "params": "7B 生成器（DiT）",
+      "context": "2K（2048×2048）",
+      "pricing": null,
+      "tier": "B",
+      "score": 77,
+      "tags": ["文生图", "开源", "透明图层", "中文排版"],
+      "tagline": "开源文生图第一名",
+      "highlights": [
+        "LMArena 文生图 1228 分，开源第 1、总榜第 17",
+        "距 nano-banana-pro 仅 4 分，距 GPT-Image-1.5-HF 11 分",
+        "原生支持 RGBA 透明图生成，最多 10 张参考图合成",
+        "单卡 4090 可本地部署，turbo/蒸馏 LoRA 一周内铺满 HF 热榜"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1228", "note": "总第 17，开源第 1（初步）", "source": "https://x.com/arena/status/2102416023983210554"}
+      ],
+      "notes": "许可改为 Qwen Research License，商用需另行授权；社区有「蒸馏自 GPT Image 2」的猜测，无证据。",
+      "sources": [
+        "https://technode.com/2026/09/21/alibabas-qwen-open-sources-qwen-image-2-1-for-unified-image-generation-and-editing/",
+        "https://www.marktechpost.com/2026/09/21/alibaba-qwen-releases-qwen-image-2-1/",
+        "https://agihunt.info/e/1a0c9b6b797ac23551ce3fd8a70",
+        "https://www.orcarouter.ai/blog/qwen-image-2-1-arena-first-open-source"
+      ]
+    },
+    {
+      "id": "qwen-image-2-1-edit",
+      "name": "Qwen-Image-2.1 Edit",
+      "category": "image",
+      "family": "Qwen-Image",
+      "released": "2026-09-20",
+      "status": "released",
+      "openWeights": true,
+      "params": "7B 生成器（与文生图同一权重）",
+      "context": "2K（2048×2048）",
+      "pricing": null,
+      "tier": "B",
+      "score": 75,
+      "tags": ["图像编辑", "开源", "多图参考"],
+      "tagline": "开源图像编辑的新标杆",
+      "highlights": [
+        "LMArena 图像编辑 1367 分，开源第 1、总榜第 16",
+        "距 GPT-Image-1.5-HF 仅 3 分，但落后榜首 GPT-Image-2.5 约 160 分",
+        "无需 LoRA 即可出完整角色设定图，社区换脸/姿态工具大量跟进"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image Edit", "value": "1367", "note": "总第 16，开源第 1（初步）", "source": "https://x.com/Alibaba_Qwen/status/2102569821997346912"}
+      ],
+      "notes": "2.1 是生成/编辑一体模型，此条为编辑能力单列；社区共识开源编辑 Qwen-Image 2.1 > Flux 2 Klein 9B。",
+      "sources": [
+        "https://agihunt.info/e/1a0c9b6b797ac23551ce3fd8a70",
+        "https://www.orcarouter.ai/blog/qwen-image-2-1-arena-first-open-source",
+        "https://agihunt.info/e/1a0d7cddadc9ee288972c979b04"
+      ]
+    },
+    {
+      "id": "qwen-image-2-0",
+      "name": "Qwen-Image-2.0",
+      "category": "image",
+      "family": "Qwen-Image",
+      "released": "2026-02-10",
+      "status": "released",
+      "openWeights": false,
+      "params": "7B 扩散解码器 + 8B Qwen3-VL 编码器",
+      "context": "2K",
+      "pricing": null,
+      "tier": "C",
+      "score": 67,
+      "tags": ["文生图", "图像编辑", "中文排版"],
+      "tagline": "生成编辑合一的上一代",
+      "highlights": [
+        "首次把生成和编辑合进一个 7B 模型，参数比初代 20B 大幅缩小",
+        "支持 1K token 超长提示词，中文文字渲染是强项",
+        "Pro 版曾登 LMArena 文生图全球第 9"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "#9", "note": "Pro 版曾排第 9（官方宣称，现已下滑）", "source": "https://x.com/Alibaba_Qwen/status/2048022731548229869"}
+      ],
+      "notes": "通过阿里云百炼 API 提供；是否放出开源权重未查到确切信息，按闭源处理。",
+      "sources": [
+        "https://en.tmtpost.com/news/7874148",
+        "https://x.com/Alibaba_Qwen/status/2048022731548229869"
+      ]
+    },
+    {
+      "id": "wan-3-0",
+      "name": "Wan3.0",
+      "category": "video",
+      "family": "通义万相 Wan",
+      "released": "2026-08-24",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·30s",
+      "pricing": "$0.05–0.20/秒（480p–1080p）",
+      "tier": "SS",
+      "score": 93,
+      "tags": ["文生视频", "图生视频", "视频编辑", "音画同出"],
+      "tagline": "丢个 PPT 就能出 30 秒片子",
+      "highlights": [
+        "AA 文生视频（无音频）榜第 1，Elo 1335",
+        "AA 文生视频（带音频）第 2，仅落后 Gemini Omni Flash 4 分",
+        "单次最长 30 秒，是 Wan2.7 的两倍；可直接读 PDF/PPT/Excel",
+        "8 月登顶带音频视频编辑榜（Elo 1189）"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video（无音频）", "value": "1335", "note": "第 1", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Text-to-Video（带音频）", "value": "1229", "note": "第 2", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Image-to-Video（无音频）", "value": "1362", "note": "第 3", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
+        {"name": "Video Edit Arena（带音频）", "value": "1189", "note": "8 月第 1", "source": "https://www.atlascloud.ai/blog/tips/wan-3.0-video-edit-arena"}
+      ],
+      "notes": "8/6 起公测，8/24 正式上线；万相首个纯闭源旗舰，未放权重。官方承认音质和画面文字渲染仍待改进。",
+      "sources": [
+        "https://technode.com/2026/08/24/alibaba-launches-wan3-0-video-model-with-30-second-generation-and-document-input/",
+        "https://www.alibabacloud.com/blog/wan3-0-30-second-ai-video-generation-from-any-input_603452",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://www.atlascloud.ai/blog/tips/wan-3.0-video-edit-arena"
+      ]
+    },
+    {
+      "id": "wan-2-7",
+      "name": "Wan2.7",
+      "category": "video",
+      "family": "通义万相 Wan",
+      "released": "2026-04",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·15s",
+      "pricing": null,
+      "tier": "A",
+      "score": 81,
+      "tags": ["文生视频", "图生视频", "首尾帧", "声音克隆"],
+      "tagline": "首尾帧可控的四件套",
+      "highlights": [
+        "一次发布文生、图生、参考生视频和指令编辑四个模型",
+        "6/12 快照在 AA 带音频文生视频榜排第 7（Elo 1149）",
+        "单段最长 15 秒，支持首尾帧控制和多参考输入"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video（带音频）", "value": "1149", "note": "Wan2.7-260612 第 7；原版 1098 第 10", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+      ],
+      "notes": "4 月初上线全套，6 月更新快照。部分媒体称其开源，但 Turing Post 核实 Wan2.2 之后无公开可下载权重。",
+      "sources": [
+        "https://www.cliprise.app/news/wan-2-7-video-release",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0e2dbbb4f4a73b30b5b934190"
+      ]
+    },
+    {
+      "id": "happyhorse-1-1",
+      "name": "HappyHorse-1.1",
+      "category": "video",
+      "family": "HappyHorse",
+      "released": "2026-06-22",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·15s",
+      "pricing": "¥0.9–1.6/秒（720p–1080p）",
+      "tier": "A",
+      "score": 80,
+      "tags": ["音画同出", "口型同步", "多角色参考"],
+      "tagline": "匿名打榜出道的阿里黑马",
+      "highlights": [
+        "AA 带音频文生视频榜第 8（Elo 1147），1.0 版第 9",
+        "音视频一次生成，支持 7 种语言原生口型同步",
+        "最多 9 张参考图按编号调用，适合多角色场景"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video（带音频）", "value": "1147", "note": "第 8", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+      ],
+      "notes": "出自阿里 ATH AI 创新事业部，不属通义万相团队；1.0 版 4 月匿名登顶视频榜后才公布身份。",
+      "sources": [
+        "https://morphic.com/resources/models/happy-horse-1-1",
+        "https://www.cnbc.com/2026/04/10/alibaba-happyhorse-ai-video-model-benchmark-reveal.html",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "wan-2-2",
+      "name": "Wan2.2",
+      "category": "video",
+      "family": "通义万相 Wan",
+      "released": "2025-07",
+      "status": "released",
+      "openWeights": true,
+      "params": "27B MoE（高/低噪双专家）；另有 TI2V-5B 稠密版",
+      "context": "720p·5s",
+      "pricing": null,
+      "tier": "C",
+      "score": 64,
+      "tags": ["开源", "文生视频", "图生视频", "本地部署"],
+      "tagline": "万相最后一个开源版本",
+      "highlights": [
+        "Apache 2.0，至今仍是万相最新的可下载权重",
+        "5B 版单张消费级显卡能跑 720p/24fps",
+        "ComfyUI 生态最成熟的开源视频底模之一，LoRA 极多"
+      ],
+      "benchmarks": [],
+      "notes": "社区实测开源图生视频排序为 MiniMax H3 > LTX-2.5 > Wan2.2，已被新开源模型超过。",
+      "sources": [
+        "https://agihunt.info/e/1a0e2dbbb4f4a73b30b5b934190",
+        "https://agihunt.info/e/1a0d7cddadc9ee288972c979b04",
+        "https://agihunt.info/e/1a0d810afc40bbb841274c581b1"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 以 Artificial Analysis 智能指数为主轴（3.8-Max 0902 得 45、Flash-Next 40、27B 34、3.7-Max 29），叠加 LMArena Code/Text Arena 名次，与日本网友天梯图一致：Max 进 A、Flash-Next 进 B、27B 进 C。Max 在 9 月初一度拿下 WebDev 榜第 1，但综合指数离 GPT-6/Opus 5.5 仍差一截，所以停在 A 档上沿。图像按 LMArena 定档：Qwen-Image-2.1 文生图第 17、编辑第 16，开源第一但与闭源头部仍有差距（编辑差约 160 分），给 B。视频按 AA Video Arena：Wan3.0 无音频文生视频第 1、带音频第 2，给 SS；Wan2.7 与 HappyHorse-1.1 在带音频榜 7–8 名，给 A；开源的 Wan2.2 已落后，给 C。"
+}

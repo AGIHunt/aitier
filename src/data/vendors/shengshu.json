@@ -1,0 +1,75 @@
+{
+  "vendor": {
+    "id": "shengshu",
+    "name": "Shengshu Vidu",
+    "nameZh": "生数科技·Vidu",
+    "country": "CN",
+    "color": "#00B2FF",
+    "accent": "#0A1A3F",
+    "monogram": "Vi",
+    "blurb": "清华系视频模型公司，Vidu 主打参考生和短剧成片，稳定在第二梯队"
+  },
+  "models": [
+    {
+      "id": "vidu-q3-pro",
+      "name": "Vidu Q3 Pro",
+      "category": "video",
+      "family": "Vidu Q3",
+      "released": "2026-01-30",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p（最高 4K）·16s",
+      "pricing": "约 $0.12/秒",
+      "tier": "C",
+      "score": 70,
+      "tags": ["文生视频", "图生视频", "音画同出", "短剧"],
+      "tagline": "为短剧而生的音画一体模型",
+      "highlights": [
+        "LMArena 图生视频 1363，约第 18",
+        "AA 文生视频 1078，约第 19；图生视频 1056，约第 18",
+        "可一次生成 16 秒视频，同步输出配乐、音效和对白",
+        "已上架华为云，面向影视和短剧制作"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Image-to-Video", "value": "1363", "note": "约第 18", "source": "https://arena.ai/leaderboard/image-to-video"},
+        {"name": "AA Text-to-Video", "value": "1078", "note": "约第 19", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Image-to-Video", "value": "1056", "note": "约第 18", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+      ],
+      "notes": "发布初期曾自称登顶全球榜单，目前已回落到第二梯队。",
+      "sources": [
+        "https://baike.baidu.com/item/Vidu%20Q3/67330811",
+        "https://arena.ai/leaderboard/image-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "vidu-q3-turbo",
+      "name": "Vidu Q3 Turbo",
+      "category": "video",
+      "family": "Vidu Q3",
+      "released": "2026-02",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": "约 $0.065/秒",
+      "tier": "D",
+      "score": 62,
+      "tags": ["快速", "性价比"],
+      "tagline": "Q3 的快速低价版",
+      "highlights": [
+        "AA 文生视频 1025，约第 28；图生视频 1030，约第 24",
+        "价格约为 Pro 版的一半"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video", "value": "1025", "note": "约第 28", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+      ],
+      "notes": "",
+      "sources": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    }
+  ],
+  "tierRationale": "Vidu Q3 Pro 在 LMArena 图生视频为 1363，与 Sora 2 Pro 相当、低于 Grok Imagine Video（1415，B 74）；在 AA 两个榜都排第 18–19 位，定 C 高位（70）。Q3 Turbo 在 AA 排二十几名，定 D。"
+}

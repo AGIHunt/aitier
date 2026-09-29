@@ -1,0 +1,103 @@
+{
+  "vendor": {
+    "id": "bfl",
+    "name": "Black Forest Labs",
+    "nameZh": "Black Forest Labs",
+    "country": "DE",
+    "color": "#000000",
+    "accent": "#FFFFFF",
+    "monogram": "BF",
+    "blurb": "Stable Diffusion 原班人马，FLUX 从生图做到视频和机器人，FLUX 3 Video 冲进 LMArena 前三"
+  },
+  "models": [
+    {
+      "id": "flux-3-video",
+      "name": "FLUX 3 Video",
+      "category": "video",
+      "family": "FLUX 3",
+      "released": "2026-08-04",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K·20s",
+      "pricing": "2K $0.40/秒，4K $0.80/秒",
+      "tier": "S",
+      "score": 89,
+      "tags": ["文生视频", "图生视频", "音画同出", "文字渲染"],
+      "tagline": "生图老炮跨界，文生视频排进前三",
+      "highlights": [
+        "LMArena 文生视频 1493，第 3，仅次于 Gemini Omni",
+        "LMArena 图生视频 1449，约第 9，累计超 3.7 万票",
+        "单条最长 20 秒并带原生音频，支持 14 种以上语言口型同步",
+        "9/10 新增 2K/4K 输出，画面内可直接渲染文字"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Video", "value": "1493", "note": "第 3（票数约 1300，误差 ±17）", "source": "https://arena.ai/leaderboard/text-to-video"},
+        {"name": "LMArena Image-to-Video", "value": "1449", "note": "约第 9", "source": "https://arena.ai/leaderboard/image-to-video"}
+      ],
+      "notes": "7/23 发布，8/4 API 全量开放，官方称胜过 Seedance 2.0。AA 视频榜前 30 暂未收录。同一底座还衍生出 7B 开源机器人模型 FLUX 3 Action。",
+      "sources": [
+        "https://docs.bfl.ml/release-notes",
+        "https://bfl.ai/blog/flux-3-video",
+        "https://the-decoder.com/black-forest-labs-makes-flux-3-video-generally-available-and-claims-it-beats-seedance-2-0/"
+      ]
+    },
+    {
+      "id": "flux-2-max",
+      "name": "FLUX.2 [max]",
+      "category": "image",
+      "family": "FLUX.2",
+      "released": "2025-12-16",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4MP",
+      "pricing": "约 $0.07/张",
+      "tier": "C",
+      "score": 68,
+      "tags": ["文生图", "多图参考", "联网生成"],
+      "tagline": "FLUX.2 最高画质档，开发者用量大",
+      "highlights": [
+        "LMArena 文生图 1162，约第 27；AA 文生图 1021，约第 27",
+        "支持联网检索参考生成，最多 10 张参考图编辑",
+        "FLUX.2 [pro] 和 [flex] 在 LMArena 累计票数都超过 15 万"
+      ],
+      "benchmarks": [
+        {"name": "LMArena Text-to-Image", "value": "1162", "note": "约第 27", "source": "https://arena.ai/leaderboard/text-to-image"},
+        {"name": "AA Text-to-Image", "value": "1021", "note": "约第 27", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"}
+      ],
+      "notes": "同代 [pro]（1154，$0.03/MP 起）和 [flex]（1157，擅长排版）分数相近，合并在本条说明。",
+      "sources": [
+        "https://docs.bfl.ml/release-notes",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "flux-2-klein",
+      "name": "FLUX.2 [klein]",
+      "category": "image",
+      "family": "FLUX.2",
+      "released": "2026-01-15",
+      "status": "released",
+      "openWeights": true,
+      "params": "4B / 9B",
+      "context": null,
+      "pricing": "$0.014–0.015/张",
+      "tier": "D",
+      "score": 60,
+      "tags": ["开源", "亚秒级", "本地部署"],
+      "tagline": "13GB 显存就能跑的亚秒生图",
+      "highlights": [
+        "亚秒级推理，最低约 13GB 显存",
+        "4B 版 Apache 2.0，9B 版为非商用许可",
+        "开放 LoRA 自助微调，是社区常用的开源生图底座"
+      ],
+      "benchmarks": [],
+      "notes": "未进入图像榜前 30，因开源生态影响力而收录。",
+      "sources": [
+        "https://docs.bfl.ml/release-notes"
+      ]
+    }
+  ],
+  "tierRationale": "FLUX 3 Video 在 LMArena 文生视频排第 3（1493，高于 Seedance 2.0 的 1479），图生视频约第 9，与 Seedance 2.x、Grok Imagine Video 1.5 同档，定 S（89）。不过它的票数较少，AA 也还没收录，需要后续复核。FLUX.2 系列在 LMArena 文生图约 1155–1162，落后头部约 260 分，与 Grok Imagine Image（1170，C）相近，定 C。klein 按开源轻量定位给 D。"
+}

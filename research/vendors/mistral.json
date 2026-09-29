@@ -1,0 +1,166 @@
+{
+  "vendor": {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "nameZh": "Mistral",
+    "country": "FR",
+    "color": "#fa520f",
+    "accent": "#ffd800",
+    "monogram": "Mi",
+    "blurb": "欧洲主权 AI 招牌，放弃冲前沿，靠开源权重与企业私有部署吃饭"
+  },
+  "models": [
+    {
+      "id": "mistral-medium-3-5",
+      "name": "Mistral Medium 3.5",
+      "category": "llm",
+      "family": "Mistral Medium",
+      "released": "2026-04",
+      "status": "released",
+      "openWeights": true,
+      "params": "128B 稠密",
+      "context": "256K",
+      "pricing": "$1.5 / $7.5 每百万 token",
+      "tier": "E",
+      "score": 53,
+      "tags": ["开源", "编程", "Agent", "多模态"],
+      "tagline": "一个模型合并了 Devstral 和 Magistral",
+      "highlights": [
+        "SWE-bench Verified 77.6%，4 张 GPU 即可自部署",
+        "合并编程线 Devstral 2 与推理线 Magistral，推理强度可调",
+        "AA 智能指数 14，Text Arena 第 113、Code Arena 第 118"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "14", "note": "Opus 5.5 max 为 58", "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "Text Arena", "value": "1426", "note": "第 113", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Code Arena", "value": "1263", "note": "第 118", "source": "https://arena.ai/leaderboard/code"},
+        {"name": "SWE-bench Verified", "value": "77.6%", "note": "官方", "source": "https://letsdatascience.com/blog/mistral-medium-3-5-128b-open-weight-merged-model"}
+      ],
+      "notes": "修改版 MIT 许可（高营收企业需走付费渠道）；驱动 Vibe 远程编程 Agent。发布日各源为 4/29 或 4/30",
+      "sources": [
+        "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+        "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+        "https://docs.mistral.ai/resources/changelogs"
+      ]
+    },
+    {
+      "id": "mistral-small-4",
+      "name": "Mistral Small 4",
+      "category": "llm",
+      "family": "Mistral Small",
+      "released": "2026-03-16",
+      "status": "released",
+      "openWeights": true,
+      "params": "119B MoE / 6.5B 激活",
+      "context": "256K",
+      "pricing": "$0.15 / $0.6 每百万 token",
+      "tier": "E",
+      "score": 48,
+      "tags": ["开源", "轻量", "多模态"],
+      "tagline": "指令、推理、编程三合一的小钢炮",
+      "highlights": [
+        "Apache 2.0，128 专家每 token 仅激活 4 个",
+        "一个模型统一 instruct / 推理 / 编程，支持图像输入",
+        "AA 智能指数 11，输出仅 $0.6/M"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "11", "note": null, "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": null,
+      "sources": [
+        "https://mistral.ai/news/mistral-small-4/",
+        "https://openrouter.ai/mistralai/mistral-small-2603"
+      ]
+    },
+    {
+      "id": "mistral-large-3",
+      "name": "Mistral Large 3",
+      "category": "llm",
+      "family": "Mistral Large",
+      "released": "2025-12",
+      "status": "released",
+      "openWeights": true,
+      "params": "675B MoE / 41B 激活",
+      "context": "256K",
+      "pricing": null,
+      "tier": "E",
+      "score": 44,
+      "tags": ["开源", "大参数", "多语言"],
+      "tagline": "套着 DeepSeek V3 架构的欧洲最大开源",
+      "highlights": [
+        "Apache 2.0 开放权重，675B 总参 / 41B 激活",
+        "Raschka 拆配置：沿用 DeepSeek V3 架构，专家减半、单专家翻倍",
+        "AA 智能指数 9，Text Arena 第 139"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "9", "note": null, "source": "https://artificialanalysis.ai/leaderboards/models"},
+        {"name": "Text Arena", "value": "1413", "note": "第 139", "source": "https://arena.ai/leaderboard/text"}
+      ],
+      "notes": "至今未出 Large 4，旗舰定位实际已让位 Medium 3.5",
+      "sources": [
+        "https://mistral.ai/news/mistral-3/",
+        "https://docs.mistral.ai/models/mistral-large-3-25-12",
+        "https://agihunt.info/e/1a0e4f0939767d81d5fad937289"
+      ]
+    },
+    {
+      "id": "devstral-2",
+      "name": "Devstral 2",
+      "category": "llm",
+      "family": "Devstral",
+      "released": "2025-12-10",
+      "status": "released",
+      "openWeights": true,
+      "params": "123B（Small 2 为 24B）",
+      "context": "256K",
+      "pricing": null,
+      "tier": "E",
+      "score": 42,
+      "tags": ["编程", "开源", "端侧"],
+      "tagline": "笔记本也能跑的 Small 版编程模型",
+      "highlights": [
+        "SWE-bench Verified 72.2%，Devstral Small 2 为 68.0%",
+        "Small 2 用 Apache 2.0，可在笔记本本地运行",
+        "Code Arena 1196（第 129）"
+      ],
+      "benchmarks": [
+        {"name": "SWE-bench Verified", "value": "72.2%", "note": "官方", "source": "https://mistral.ai/news/devstral-2-vibe-cli/"},
+        {"name": "Code Arena", "value": "1196", "note": "第 129", "source": "https://arena.ai/leaderboard/code"}
+      ],
+      "notes": "大号为修改版 MIT；2026-01 起转付费 API，4 月起编程主力被 Medium 3.5 取代",
+      "sources": [
+        "https://mistral.ai/news/devstral-2-vibe-cli/",
+        "https://venturebeat.com/ai/mistral-launches-powerful-devstral-2-coding-model-including-open-source"
+      ]
+    },
+    {
+      "id": "ministral-3",
+      "name": "Ministral 3",
+      "category": "llm",
+      "family": "Ministral",
+      "released": "2025-12",
+      "status": "released",
+      "openWeights": true,
+      "params": "3B / 8B / 14B",
+      "context": "256K",
+      "pricing": null,
+      "tier": "E",
+      "score": 35,
+      "tags": ["开源", "端侧", "小模型"],
+      "tagline": "给手机和边缘设备的三件套",
+      "highlights": [
+        "Apache 2.0，3B/8B/14B 三个尺寸，带视觉",
+        "AA 智能指数 6（14B）"
+      ],
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "6", "note": "14B", "source": "https://artificialanalysis.ai/leaderboards/models"}
+      ],
+      "notes": null,
+      "sources": [
+        "https://mistral.ai/news/mistral-3/",
+        "https://docs.mistral.ai/resources/changelogs"
+      ]
+    }
+  ],
+  "tierRationale": "Mistral 2026 年只出了 Small 4（3 月）和 Medium 3.5（4 月）两款主力，此后没有新的通用大模型。Artificial Analysis 智能指数上 Medium 3.5 仅 14，低于 Meta 30B 的 Muse Glimmer（17）；Text/Code Arena 也在 110 名开外，外部天梯图同样把 Medium 3.5 放 E 档，故全家都在 E 档内按强弱排序。开源权重、欧洲主权部署是其卖点，但不影响能力定档。Mistral 目前没有自研文生图/文生视频模型，未收录。"
+}

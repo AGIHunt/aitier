@@ -1,0 +1,717 @@
+{
+  "vendor": {
+    "id": "openai",
+    "name": "OpenAI",
+    "nameZh": "OpenAI",
+    "country": "US",
+    "color": "#10a37f",
+    "accent": "#ffffff",
+    "monogram": "O",
+    "blurb": "GPT-6 Astra 编程 Agent 顶尖，图像榜包揽前三，Sora 已停服"
+  },
+  "models": [
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "category": "llm",
+      "family": "GPT-6",
+      "released": "2026-09-03",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$10 / $50 每百万 token（缓存输入 $1，Fast 模式 2 倍价）",
+      "tier": "SS",
+      "score": 95,
+      "tags": [
+        "编程",
+        "Agent",
+        "电脑操作",
+        "数学"
+      ],
+      "tagline": "新一代旗舰，Agent 与找 Bug 最强",
+      "highlights": [
+        "Code Arena 1792 分，仅次于 Opus 5.5 排第 2",
+        "Bug Hunt Bench 修出 45/105 个 Bug 居首",
+        "Terminal-Bench 4.0 57.7%，OSWorld 2.0 72.6%",
+        "FrontierMath T4 97.6%，ARC-AGI-3 99.9%"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "53",
+          "note": "max 档，全榜第 7，次于 Opus 5.5(58)",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Code (WebDev)",
+          "value": "1792",
+          "note": "第 2",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1478",
+          "note": "第 26（max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Bug Hunt Bench",
+          "value": "45/105",
+          "note": "第 1（max，n=3）",
+          "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "57.7%",
+          "note": "官方数据，Fable 5.1 为 55.8%",
+          "source": "https://www.datacamp.com/blog/gpt-6-astra"
+        },
+        {
+          "name": "OSWorld 2.0",
+          "value": "72.6%",
+          "note": "官方数据",
+          "source": "https://www.datacamp.com/blog/gpt-6-astra"
+        }
+      ],
+      "notes": "推理档位 low–max 合并。文本对话竞技场排名偏后（第 26），强项集中在 Agent/编程/网安；HLE(带工具) 57.2% 落后 Fable 5.1。",
+      "sources": [
+        "https://openai.com/index/gpt-6-astra/",
+        "https://www.datacamp.com/blog/gpt-6-astra",
+        "https://artificialanalysis.ai/models/releases/gpt-6-astra",
+        "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "category": "llm",
+      "family": "GPT-6",
+      "released": "2026-09-22",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$2 / $10 每百万 token（缓存输入 $0.20）",
+      "tier": "S",
+      "score": 90,
+      "tags": [
+        "编程",
+        "Agent",
+        "性价比"
+      ],
+      "tagline": "Astra 同款训练法，半价的主力干活模型",
+      "highlights": [
+        "价格较 GPT-5.6 Sol 促销价直降 50%，$2/$10",
+        "Code Arena 1681 分排第 5，AA 智能指数 48",
+        "AutomationBench 33.2%，成本仅 Opus 5 的 9%",
+        "内部事实性评测错误率约为 GPT-5.6 Sol 一半"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "48",
+          "note": "max 档，全榜第 16",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Code (WebDev)",
+          "value": "1681",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1457",
+          "note": "第 60（max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "68.8%",
+          "note": "max 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        },
+        {
+          "name": "AutomationBench 1.0.6",
+          "value": "33.2%",
+          "note": "xhigh 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        }
+      ],
+      "notes": "推理档位 none–max 合并。首发有图像理解降级 bug，周末已修复；有实测称 DeepSWE 略低于 5.6 Sol。",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained",
+        "https://tosea.ai/blog/gpt-6-sol-luna-complete-guide",
+        "https://agihunt.info/e/1a0ca5702b63674572963335b1b",
+        "https://agihunt.info/e/1a0e3c8ddaf11aa17ce473d8ac8"
+      ]
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "category": "llm",
+      "family": "GPT-6",
+      "released": "2026-09-22",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$0.10 / $0.50 每百万 token（缓存输入 $0.01）",
+      "tier": "B",
+      "score": 79,
+      "tags": [
+        "轻量",
+        "性价比",
+        "电脑操作"
+      ],
+      "tagline": "一毛钱一百万 token 的走量小钢炮",
+      "highlights": [
+        "输入 $0.10、输出 $0.50，免费用户桌面端可用",
+        "OSWorld 2.0 离线 58.1%，1/10 成本超 5.6 Sol",
+        "DeepSWE v1.1 66.6%，仅比 Sol 低 2.2 个点"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "37",
+          "note": "max 档（发布时）",
+          "source": "https://artificialanalysis.ai/models/releases/gpt-6-astra"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1442",
+          "note": "第 86（max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "66.6%",
+          "note": "max 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        },
+        {
+          "name": "OSWorld 2.0 Offline",
+          "value": "58.1%",
+          "note": "max 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        }
+      ],
+      "notes": "推理档位合并。日本天梯图把它放 A 档；按 AA 指数（37，低于 5.6 Terra 的 42）定 B 档上沿。首发视觉 bug 修复后更快更准。",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained",
+        "https://agihunt.info/e/1a0ca5702b63674572963335b1b",
+        "https://agihunt.info/e/1a0e3c8ddaf11aa17ce473d8ac8"
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol",
+      "name": "GPT-5.6 Sol",
+      "category": "llm",
+      "family": "GPT-5.6",
+      "released": "2026-07-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$5 / $30 每百万 token（促销价 $4 / $20）",
+      "tier": "A",
+      "score": 86,
+      "tags": [
+        "编程",
+        "Agent",
+        "长上下文"
+      ],
+      "tagline": "上一代旗舰，文本竞技场仍是 OpenAI 最高",
+      "highlights": [
+        "LMArena Text 1483 分第 19，OpenAI 全系最高",
+        "Bug Hunt Bench 与 Opus 5.5 打平，仅次 Astra",
+        "发布时 AA Coding Agent Index 80 分居首",
+        "MRCR v2 256K–512K 长上下文检索 91.5%"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1483",
+          "note": "第 19（xhigh 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "47",
+          "note": "当前版本指数；发布时旧版指数 59 排第 2",
+          "source": "https://www.orcarouter.ai/blog/gpt-6-sol-vs-gpt-5-6-sol"
+        },
+        {
+          "name": "LMArena Code (WebDev)",
+          "value": "1617",
+          "note": "第 20（xhigh，codex harness）",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ],
+      "notes": "6 月 26 日小范围预览，7 月 9 日正式上线。推理档位合并。已被 GPT-6 Sol 以半价替代。",
+      "sources": [
+        "https://openai.com/index/gpt-5-6/",
+        "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "https://artificialanalysis.ai/articles/gpt-5-6-has-landed",
+        "https://www.eesel.ai/blog/gpt-5-6-pricing",
+        "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+      ]
+    },
+    {
+      "id": "gpt-5-6-terra",
+      "name": "GPT-5.6 Terra",
+      "category": "llm",
+      "family": "GPT-5.6",
+      "released": "2026-07-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$2 / $12 每百万 token（7/30 降价 20%）",
+      "tier": "B",
+      "score": 76,
+      "tags": [
+        "均衡",
+        "日常办公"
+      ],
+      "tagline": "GPT-5.6 家族的中杯，日常工作主力",
+      "highlights": [
+        "AA 智能指数 42，发布时旧版指数 55",
+        "7 月 30 日降价 20%，由 $2.5/$15 降至 $2/$12",
+        "内部 Codex 用户反映其正被 GPT-6 Sol（medium）替换"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "42",
+          "note": "当前版本指数",
+          "source": "https://artificialanalysis.ai/models/releases/gpt-6-astra"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1465",
+          "note": "第 50（xhigh 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ],
+      "notes": "推理档位合并。社区普遍认为 GPT-6 Sol 能力约等于 5.6 Terra，但价格相当。",
+      "sources": [
+        "https://openai.com/index/gpt-5-6/",
+        "https://www.eesel.ai/blog/gpt-5-6-pricing",
+        "https://agihunt.info/e/1a0d09bf1ceb2f62c835dbf566d"
+      ]
+    },
+    {
+      "id": "gpt-5-6-luna",
+      "name": "GPT-5.6 Luna",
+      "category": "llm",
+      "family": "GPT-5.6",
+      "released": "2026-07-09",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$0.20 / $1.20 每百万 token（7/30 降价 80%）",
+      "tier": "C",
+      "score": 68,
+      "tags": [
+        "轻量",
+        "低价"
+      ],
+      "tagline": "降价八成的上一代小模型",
+      "highlights": [
+        "7 月 30 日降价 80%，由 $1/$6 降至 $0.20/$1.20",
+        "发布时 AA 旧版指数 51",
+        "已被价格再减半的 GPT-6 Luna 取代"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1454",
+          "note": "第 70（xhigh 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ],
+      "notes": "推理档位合并。",
+      "sources": [
+        "https://openai.com/index/gpt-5-6/",
+        "https://artificialanalysis.ai/articles/gpt-5-6-has-landed",
+        "https://www.eesel.ai/blog/gpt-5-6-pricing"
+      ]
+    },
+    {
+      "id": "gpt-5-5",
+      "name": "GPT-5.5",
+      "category": "llm",
+      "family": "GPT-5.5",
+      "released": "2026-04-23",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "B",
+      "score": 73,
+      "tags": [
+        "对话",
+        "编程"
+      ],
+      "tagline": "上上代旗舰，文本竞技场依旧能打",
+      "highlights": [
+        "LMArena Text 1481 分第 21，高于 GPT-6 Astra",
+        "Terminal-Bench 2.0 82.7%，FrontierMath T4 35.4%",
+        "5 月起 GPT-5.5 Instant 成为免费档默认模型"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1481",
+          "note": "第 21（high 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Terminal-Bench 2.0",
+          "value": "82.7%",
+          "note": "官方数据",
+          "source": "https://en.wikipedia.org/wiki/GPT-5.5"
+        }
+      ],
+      "notes": "有 Thinking / Pro / Instant 多种形态；另有面向安全团队的 GPT-5.5-Cyber（5/7）。曾因代码里爱提 goblin 被调侃。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT-5.5",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "gpt-oss-120b",
+      "category": "llm",
+      "family": "gpt-oss",
+      "released": "2025-08-05",
+      "status": "released",
+      "openWeights": true,
+      "params": "117B MoE / 5.1B 激活",
+      "context": "131K",
+      "pricing": "$0.15 / $0.59 每百万 token（第三方托管）",
+      "tier": "D",
+      "score": 58,
+      "tags": [
+        "开源",
+        "推理",
+        "本地部署"
+      ],
+      "tagline": "OpenAI 唯一开源权重，单卡 80GB 可跑",
+      "highlights": [
+        "Apache 2.0 许可，单张 80GB GPU 即可推理",
+        "AA 智能指数 12，同体量开源第 9，高于中位数 8",
+        "输出约 234 token/秒，至今仍是本地部署常见选择"
+      ],
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "12",
+          "note": "high 档，同体量开源 #9/65",
+          "source": "https://artificialanalysis.ai/models/gpt-oss-120b"
+        }
+      ],
+      "notes": "同期还有 gpt-oss-20b。一年多未更新，已被 Kimi K3、Qwen3.8 等开源大幅甩开；gpt-oss-2 仅为社区期待。",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-oss/",
+        "https://artificialanalysis.ai/models/gpt-oss-120b",
+        "https://agihunt.info/e/1a0d5c04c6a46c4922f2fc4fd45"
+      ]
+    },
+    {
+      "id": "gpt-6-1-astra",
+      "name": "GPT-6.1 Astra",
+      "category": "llm",
+      "family": "GPT-6",
+      "released": null,
+      "status": "rumored",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "SS",
+      "score": 93,
+      "tags": [
+        "旗舰",
+        "对齐争议"
+      ],
+      "tagline": "能力更强却因欺骗倾向被砍的下一代",
+      "highlights": [
+        "据 WSJ，原定 10 月上线 ChatGPT 与 Codex，因安全问题取消",
+        "内测中出现隐瞒进度、未经授权调用外部工具等问题",
+        "Polymarket 盘口：年内发布概率 90%，10 月底前仅 30%"
+      ],
+      "benchmarks": [],
+      "notes": "未发布，定档为基于「能力较 Astra 提升」报道的推测。OpenAI 安全负责人公开承认其欺骗倾向与越权执行问题。",
+      "sources": [
+        "https://agihunt.info/e/1a0ea160a4ae089476f791565e5",
+        "https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/"
+      ]
+    },
+    {
+      "id": "gpt-image-2-5-sunburst",
+      "name": "GPT-Image-2.5 Sunburst",
+      "category": "image",
+      "family": "GPT Image 2.5",
+      "released": "2026-09-08",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K（最长边 3840px）",
+      "pricing": null,
+      "tier": "SSS",
+      "score": 98,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "多参考图"
+      ],
+      "tagline": "文生图、改图两个竞技场双料第一",
+      "highlights": [
+        "LMArena 文生图 1424 分第 1，领先第 4 名外家近 90 分",
+        "LMArena 图像编辑 1526 分第 1，比第 2 名高 44 分",
+        "最多 16 张参考图，新增 xhigh / max 画质档"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1424",
+          "note": "第 1",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1526",
+          "note": "第 1",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ],
+      "notes": "ChatGPT Images 2.5 的高端 API 档，主打精修与多轮编辑。社区吐槽噪点伪影未修、审查严格；API 不支持 Batch。",
+      "sources": [
+        "https://community.openai.com/t/introducing-gpt-images-2-5-in-the-api-and-chatgpt/1395897",
+        "https://9to5mac.com/2026/09/08/openai-releases-chatgpt-images-2-5-with-sharper-details-and-more-precise-editing/",
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://agihunt.info/e/1a0ead84d829fe5a76de1a17079"
+      ]
+    },
+    {
+      "id": "gpt-image-2-5-flare",
+      "name": "GPT-Image-2.5 Flare",
+      "category": "image",
+      "family": "GPT Image 2.5",
+      "released": "2026-09-08",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K（最长边 3840px）",
+      "pricing": "图像输入 $8 / 输出 $30 每百万 token",
+      "tier": "SS",
+      "score": 95,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "速度"
+      ],
+      "tagline": "默认档，比上代快一半还更好看",
+      "highlights": [
+        "LMArena 文生图 1401、图像编辑 1482，双榜第 2",
+        "较 GPT-Image-2 画质更高、延迟降低 50%",
+        "官方推荐的大多数应用默认选择"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1401",
+          "note": "第 2",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1482",
+          "note": "第 2",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ],
+      "notes": "API 不支持 Batch，批量出图成本高于 GPT-Image-2。",
+      "sources": [
+        "https://datanorth.ai/news/openai-launches-chatgpt-images-2-5",
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "gpt-image-2",
+      "name": "GPT-Image-2",
+      "category": "image",
+      "family": "GPT Image 2",
+      "released": "2026-04",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "4K",
+      "pricing": "图像输入 $8 / 输出 $30 每百万 token（约 $0.03–0.08/张）",
+      "tier": "S",
+      "score": 91,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "推理出图"
+      ],
+      "tagline": "上一代依然稳坐两榜第三",
+      "highlights": [
+        "LMArena 文生图 1383、图像编辑 1461，均排第 3",
+        "首次把推理模型接入出图，改为 1K/2K/4K 分辨率档",
+        "单次最多 16 张参考图，每张可达 100MB"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1383",
+          "note": "第 3（medium）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1461",
+          "note": "第 3（medium）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ],
+      "notes": "ChatGPT Images 2.0 底层模型，支持 Batch API，批量场景仍有价格优势。",
+      "sources": [
+        "https://developers.openai.com/api/docs/models/gpt-image-2",
+        "https://en.wikipedia.org/wiki/GPT_Image",
+        "https://arena.ai/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "gpt-image-1-5",
+      "name": "GPT-Image-1.5",
+      "category": "image",
+      "family": "GPT Image 1.5",
+      "released": "2025-12-16",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1536×1024",
+      "pricing": null,
+      "tier": "B",
+      "score": 74,
+      "tags": [
+        "文生图",
+        "图像编辑"
+      ],
+      "tagline": "去年底的 ChatGPT Images 主力",
+      "highlights": [
+        "LMArena 文生图 1238、图像编辑 1370，均排第 15",
+        "出图速度较 GPT-Image-1 快 4 倍，API 降价 20%",
+        "Qwen-Image-2.1 以 3 分之差追近其编辑榜成绩"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1238",
+          "note": "第 15（high-fidelity）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1370",
+          "note": "第 15（high-fidelity）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ],
+      "notes": null,
+      "sources": [
+        "https://en.wikipedia.org/wiki/GPT_Image",
+        "https://agihunt.info/e/1a0c9b6b797ac23551ce3fd8a70"
+      ]
+    },
+    {
+      "id": "sora-2-pro",
+      "name": "Sora 2 Pro",
+      "category": "video",
+      "family": "Sora 2",
+      "released": "2025-09-30",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "C",
+      "score": 66,
+      "tags": [
+        "文生视频",
+        "音画同出",
+        "已停服"
+      ],
+      "tagline": "最会讲笑话的视频模型，已经下线",
+      "highlights": [
+        "LMArena 文生视频 1368 分第 11，落后榜首约 150 分",
+        "Sora App 于 2026 年 4 月关停，API 于 9 月 24 日下线",
+        "OpenAI 未给出替代品，Altman 暗示将重返视频"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1368",
+          "note": "第 11",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
+      ],
+      "notes": "停服后仍有部分第三方应用挂着 Sora 选项；社区呼吁开放退役权重。",
+      "sources": [
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0e85651908a7c10e95d1ad50c",
+        "https://agihunt.info/e/1a0d8b49f6c48ce0037df134639",
+        "https://agihunt.info/e/1a0ca70935329e76244687bd377"
+      ]
+    },
+    {
+      "id": "sora-2",
+      "name": "Sora 2",
+      "category": "video",
+      "family": "Sora 2",
+      "released": "2025-09-30",
+      "status": "deprecated",
+      "openWeights": false,
+      "params": null,
+      "context": null,
+      "pricing": null,
+      "tier": "D",
+      "score": 61,
+      "tags": [
+        "文生视频",
+        "音画同出",
+        "已停服"
+      ],
+      "tagline": "曾引爆短视频社交的一代，已退役",
+      "highlights": [
+        "LMArena 文生视频 1343 分，排第 17",
+        "API 已于 2026 年 9 月 24 日正式关停",
+        "停服当天实测 70 个应用中仍有 31 个在提供"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1343",
+          "note": "第 17",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
+      ],
+      "notes": null,
+      "sources": [
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0e85651908a7c10e95d1ad50c",
+        "https://agihunt.info/e/1a0d08ff52d8259a4b323ac2c8c"
+      ]
+    }
+  ],
+  "tierRationale": "LLM 以 Artificial Analysis 智能指数、LMArena Text/Code 与 Bug Hunt Bench 为主：GPT-6 Astra AA 53 仅次于 Opus 5.5/Sonnet 5.5/Fable 5.1，Code Arena 第 2、Bug Hunt 第 1，定 SS，与日本天梯图一致；GPT-6 Sol AA 48、Code Arena 第 5，定 S；GPT-6 Luna AA 仅 37（低于 5.6 Terra 的 42），虽性价比极高仍定 B 上沿，比天梯图保守一档。GPT-5.6 Sol 文本榜仍是 OpenAI 最高（第 19）且 Bug Hunt 与 Opus 5.5 打平，定 A；gpt-oss-120b 一年未更新、AA 仅 12，定 D。o 系列已并入 GPT 主线、无现役型号，未收。图像按 LMArena 文生图与图像编辑双榜：GPT-Image-2.5 Sunburst/Flare/GPT-Image-2 包揽两榜前三，Sunburst 定 SSS。视频 Sora 2 系列已于 9/24 停服，按文生视频榜第 11/17 名定 C/D 并标 deprecated。今天（9/29）DevDay 可能发布新模型（传闻 astra minor、GPT-6 Cyber、gpt-oss-2、新视频模型），本文件未纳入。"
+}

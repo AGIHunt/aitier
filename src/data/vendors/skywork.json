@@ -1,0 +1,45 @@
+{
+  "vendor": {
+    "id": "skywork",
+    "name": "Skywork AI",
+    "nameZh": "昆仑万维·天工",
+    "country": "CN",
+    "color": "#1F6BFF",
+    "accent": "#00E0C6",
+    "monogram": "Sk",
+    "blurb": "昆仑万维旗下，SkyReels 系列主打音画一体视频，AA 文生视频与可灵同分"
+  },
+  "models": [
+    {
+      "id": "skyreels-v4",
+      "name": "SkyReels V4",
+      "category": "video",
+      "family": "SkyReels",
+      "released": "2026-02-25",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1080p·32fps·15s",
+      "pricing": "约 $0.35/秒",
+      "tier": "B",
+      "score": 72,
+      "tags": ["音画同出", "视频编辑", "文生视频"],
+      "tagline": "双流 MMDiT，画面和声音一起出",
+      "highlights": [
+        "AA 文生视频 1095，约第 11，与 Kling 3.0 Pro 同分",
+        "AA 图生视频 1069，约第 16",
+        "支持文本、图像、视频、遮罩和音频参考输入，可做局部重绘和全维度编辑"
+      ],
+      "benchmarks": [
+        {"name": "AA Text-to-Video", "value": "1095", "note": "约第 11", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
+        {"name": "AA Image-to-Video", "value": "1069", "note": "约第 16", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+      ],
+      "notes": "发布时曾排 AA 视频榜第 2。前代 SkyReels V2 开源，V4 权重尚未公开。未进入 LMArena 视频榜前 30。",
+      "sources": [
+        "https://wavespeed.ai/blog/posts/what-is-skyreels-v4/",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    }
+  ],
+  "tierRationale": "只收 SkyReels V4。它在 AA 文生视频约第 11，与 Kling 3.0 同分，图生视频约第 16，所以和 Kling 3.0 一样定 B 低位（72）。天工的大语言模型没有进入主流榜单前列，不收。"
+}
