@@ -9,7 +9,10 @@ import { CameraRig } from './CameraRig'
 import { Effects } from './Effects'
 import { computeLayout } from './layout'
 import { TierLevel } from './TierLevel'
+import { setTextureFocus } from './cardTexture'
 import { runtime, setLayout } from './runtime'
+
+setTextureFocus(() => (runtime.introFocus >= 0 ? runtime.introFocus : useStore.getState().focus))
 
 function Tower() {
   const category = useStore((s) => s.category)

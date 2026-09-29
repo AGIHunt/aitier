@@ -23,14 +23,9 @@ applyDocumentLang(lang)
 
 if (import.meta.env.DEV) (window as unknown as { __store: typeof useStore }).__store = useStore
 
-// 卡片贴图用 canvas 绘制，需要字体先就绪
-const fonts = ['900 40px Orbitron', '700 40px "Space Grotesk"', '500 40px "Space Grotesk"', '400 20px "JetBrains Mono"']
-Promise.all(fonts.map((f) => document.fonts.load(f)))
-  .catch(() => {})
-  .finally(() => {
-    createRoot(document.getElementById('root')!).render(
-      <StrictMode>
-        <App />
-      </StrictMode>,
-    )
-  })
+// 不再等字体：界面立即渲染，卡片贴图在 cardTexture 里等字体就绪后再画
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

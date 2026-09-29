@@ -1,8 +1,9 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { useEffect } from 'react'
 import { audio } from './audio/engine'
 import { MODEL_BY_ID, MODELS_BY_CATEGORY } from './data'
 import { TIER_BY_ID, TIERS } from './data/tiers'
 import { useT } from './i18n'
+import { Experience } from './scene/Experience'
 import { useStore } from './store'
 import { DetailPanel } from './ui/DetailPanel'
 import { SoundPill, Ticker, TierRail, TopBar, VendorBar } from './ui/Hud'
@@ -11,7 +12,6 @@ import { Slam } from './ui/Slam'
 import { TableView } from './ui/TableView'
 import { Versus } from './ui/Versus'
 
-const Experience = lazy(() => import('./scene/Experience').then((m) => ({ default: m.Experience })))
 
 /**
  * 浏览器要求用户先有一次交互才能出声。注意移动端触摸的 pointerdown 不算「用户激活」，
@@ -125,9 +125,7 @@ export default function App() {
     <div className={`app ${entered ? 'app--in' : ''} ${intro ? 'app--intro' : ''} app--${view}`}>
       <div className="stage">
         {entered && view === '3d' && (
-          <Suspense fallback={null}>
-            <Experience />
-          </Suspense>
+          <Experience />
         )}
         {entered && view === 'table' && <TableView />}
       </div>

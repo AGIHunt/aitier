@@ -55,13 +55,21 @@ export function drawBadge(ctx: CanvasRenderingContext2D, cx: number, cy: number,
   ctx.fillText(mono, cx, cy + r * 0.05)
 }
 
+/** 触屏 / 窄屏设备：贴图降到 0.75 倍分辨率，去掉 shadowBlur（Safari 上极慢） */
+export const LOW_END =
+  typeof window !== 'undefined' && (window.matchMedia?.('(pointer: coarse)').matches || window.innerWidth < 900)
+const TEX_SCALE = LOW_END ? 0.75 : 1
+
 export function makeCardTexture(m: RankedModel, lang: Lang): THREE.CanvasTexture {
   const tx = m.text[lang]
   const { w, h } = CARD_PX
   const canvas = document.createElement('canvas')
-  canvas.width = w
-  canvas.height = h
+  canvas.width = Math.round(w * TEX_SCALE)
+  canvas.height = Math.round(h * TEX_SCALE)
   const ctx = canvas.getContext('2d')!
+  ctx.scale(TEX_SCALE, TEX_SCALE)
+  // 低端设备上把阴影模糊全部关掉
+  if (LOW_END) Object.defineProperty(ctx, 'shadowBlur', { set() {}, get: () => 0 })
   const tier = TIER_BY_ID[m.tier]
   const pad = 10
 
@@ -176,7 +184,7 @@ export function makeCardTexture(m: RankedModel, lang: Lang): THREE.CanvasTexture
 
   const tex = new THREE.CanvasTexture(canvas)
   tex.colorSpace = THREE.SRGBColorSpace
-  tex.anisotropy = 8
+  tex.anisotropy = LOW_END ? 2 : 8
   return tex
 }
 
@@ -197,3 +205,51 @@ export function getGlowTexture() {
   glowTex = new THREE.CanvasTexture(c)
   return glowTex
 }
+
+// ───────────── 渐进式生成队列：每帧只画几张，离相机最近的档位优先 ─────────────
+
+type Job = { m: RankedModel; lang: Lang; level: number; resolve: (t: THREE.CanvasTexture) => void; cancelled: boolean }
+const queue: Job[] = []
+let running = false
+let focusProvider: () => number = () => 0
+
+/** 字体就绪后才能画卡片（否则会用回退字体） */
+export const fontsReady: Promise<unknown> =
+  typeof document !== 'undefined'
+    ? Promise.all(['900 40px Orbitron', '700 40px "Space Grotesk"', '500 40px "Space Grotesk"'].map((f) => document.fonts.load(f))).catch(() => {})
+    : Promise.resolve()
+
+export function setTextureFocus(fn: () => number) {
+  focusProvider = fn
+}
+
+export function requestCardTexture(m: RankedModel, lang: Lang, level: number) {
+  let job!: Job
+  const promise = new Promise<THREE.CanvasTexture>((resolve) => {
+    job = { m, lang, level, resolve, cancelled: false }
+  })
+  queue.push(job)
+  if (!running) {
+    running = true
+    fontsReady.then(() => requestAnimationFrame(pump))
+  }
+  return { promise, cancel: () => (job.cancelled = true) }
+}
+
+function pump() {
+  const budget = LOW_END ? 6 : 10
+  const t0 = performance.now()
+  const f = focusProvider()
+  queue.sort((a, b) => Math.abs(a.level - f) - Math.abs(b.level - f))
+  while (queue.length && performance.now() - t0 < budget) {
+    const job = queue.shift()!
+    if (job.cancelled) continue
+    job.resolve(makeCardTexture(job.m, job.lang))
+  }
+  if (queue.length) requestAnimationFrame(pump)
+  else running = false
+}
+
+/** 贴图没画好前用的 1×1 透明占位 */
+export const EMPTY_TEXTURE = new THREE.DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1)
+EMPTY_TEXTURE.needsUpdate = true

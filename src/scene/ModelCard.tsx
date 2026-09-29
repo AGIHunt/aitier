@@ -1,12 +1,12 @@
 import { Billboard } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { audio } from '../audio/engine'
 import { TIER_BY_ID, TOWER } from '../data/tiers'
 import { useStore } from '../store'
 import type { RankedModel } from '../types'
-import { getGlowTexture, makeCardTexture } from './cardTexture'
+import { EMPTY_TEXTURE, getGlowTexture, requestCardTexture } from './cardTexture'
 import { runtime } from './runtime'
 
 const vert = /* glsl */ `
@@ -70,8 +70,21 @@ export function ModelCard({ model, position, index, active }: Props) {
   const hoverAmt = useRef(0)
 
   const lang = useStore((s) => s.lang)
-  const texture = useMemo(() => makeCardTexture(model, lang), [model, lang])
-  useEffect(() => () => texture.dispose(), [texture])
+  const [texture, setTexture] = useState<THREE.Texture>(EMPTY_TEXTURE)
+  const ready = texture !== EMPTY_TEXTURE
+  useEffect(() => {
+    // 排队生成贴图，每帧只画几张，避免首屏卡死
+    let tex: THREE.Texture | null = null
+    const req = requestCardTexture(model, lang, tier.level)
+    req.promise.then((t) => {
+      tex = t
+      setTexture(t)
+    })
+    return () => {
+      req.cancel()
+      tex?.dispose()
+    }
+  }, [model, lang, tier.level])
 
   const material = useMemo(
     () =>
@@ -102,7 +115,7 @@ export function ModelCard({ model, position, index, active }: Props) {
     const t = state.clock.elapsedTime
     if (active && startAt.current === null) startAt.current = t + index * 0.045
     const s = useStore.getState()
-    const started = startAt.current !== null && t >= startAt.current
+    const started = ready && startAt.current !== null && t >= startAt.current
     appear.current = THREE.MathUtils.damp(appear.current, started ? 1 : 0, 4.5, dt)
     const isSel = s.selectedId === model.id
     const hov = hovered.current || s.hoveredId === model.id || isSel
