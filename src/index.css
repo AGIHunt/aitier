@@ -289,7 +289,13 @@ kbd {
   display: grid;
   place-content: center;
   justify-items: center;
+  gap: 4px;
+  padding: 16px;
   pointer-events: none;
+  /* 压暗并虚化后面的 3D 塔，避免与塔上的 SSS / 卡片文字叠成重影 */
+  background: radial-gradient(ellipse at 50% 50%, rgba(10, 4, 24, 0.55) 0%, rgba(4, 2, 12, 0.88) 70%);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
 }
 .slam__flash {
   position: fixed;
@@ -297,11 +303,12 @@ kbd {
   background: radial-gradient(circle, #fff 0%, rgba(255, 180, 240, 0.6) 40%, transparent 75%);
 }
 .slam__letters {
+  position: relative;
   display: flex;
   gap: 0.05em;
   font-family: var(--display);
   font-weight: 900;
-  font-size: clamp(90px, 18vw, 240px);
+  font-size: clamp(88px, 17vw, 220px);
   line-height: 0.9;
 }
 .slam__letters span {
@@ -309,17 +316,57 @@ kbd {
   -webkit-text-stroke: 3px #fff;
   text-shadow: 0 0 40px currentColor, 0 0 90px currentColor, 0 8px 0 rgba(0, 0, 0, 0.5);
 }
-.slam__who {
-  margin-top: 18px;
+.slam__card {
+  position: relative;
+  margin-top: 22px;
   display: flex;
   align-items: center;
-  gap: 14px;
-  font-size: clamp(22px, 3.6vw, 42px);
+  gap: 18px;
+  width: min(560px, 92vw);
+  padding: 18px 22px;
+  border-radius: 20px;
+  border: 1px solid color-mix(in srgb, var(--tc) 70%, transparent);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--vc) 30%, #0c0a1e), #07061a 70%);
+  box-shadow: 0 0 60px color-mix(in srgb, var(--tc) 45%, transparent), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+.slam__info {
+  flex: 1;
+  min-width: 0;
+}
+.slam__vendor {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--tg);
+}
+.slam__name {
+  margin-top: 4px;
+  font-size: clamp(24px, 4.2vw, 38px);
   font-weight: 700;
-  text-shadow: 0 0 24px rgba(255, 255, 255, 0.4);
+  line-height: 1.1;
+  color: #fff;
+}
+.slam__tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--ink-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.slam__score {
+  flex: none;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(36px, 6vw, 56px);
+  background: linear-gradient(180deg, #fff, var(--tc));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 14px var(--tc));
 }
 .slam__caption {
-  margin-top: 10px;
+  margin-top: 14px;
   font-family: var(--mono);
   letter-spacing: 0.3em;
   font-size: 13px;

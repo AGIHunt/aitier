@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { audio } from '../audio/engine'
@@ -18,7 +19,7 @@ export function Slam() {
     if (!shock || !useStore.getState().intro) return
     setShow(true)
     const hits = [0, 1, 2].map((i) => setTimeout(() => audio.hit(i * 4), 120 + i * 190))
-    const off = setTimeout(() => setShow(false), 2300)
+    const off = setTimeout(() => setShow(false), 2900)
     return () => {
       hits.forEach(clearTimeout)
       clearTimeout(off)
@@ -31,7 +32,7 @@ export function Slam() {
   return (
     <AnimatePresence>
       {show && top && tier && (
-        <motion.div className="slam" initial={{ opacity: 1 }} exit={{ opacity: 0, scale: 1.08 }} transition={{ duration: 0.6 }}>
+        <motion.div className="slam" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 1.04 }} transition={{ duration: 0.25 }}>
           <motion.div className="slam__flash" initial={{ opacity: 0.9 }} animate={{ opacity: 0 }} transition={{ duration: 0.7 }} />
           <div className="slam__letters" style={{ color: tier.color }}>
             {top.tier.split('').map((ch, i) => (
@@ -46,16 +47,24 @@ export function Slam() {
             ))}
           </div>
           <motion.div
-            className="slam__who"
-            initial={{ opacity: 0, y: 20, letterSpacing: '0.6em' }}
-            animate={{ opacity: 1, y: 0, letterSpacing: '0.08em' }}
-            transition={{ delay: 0.75, duration: 0.7, ease: 'easeOut' }}
+            className="slam__card"
+            style={{ '--tc': tier.color, '--tg': tier.glow, '--vc': top.vendor.color } as CSSProperties}
+            initial={{ opacity: 0, y: 30, scale: 0.92 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: 0.75, type: 'spring', stiffness: 260, damping: 22 }}
           >
-            <Badge vendor={top.vendor} size={40} />
-            <span>{top.name}</span>
+            <Badge vendor={top.vendor} size={52} />
+            <div className="slam__info">
+              <div className="slam__vendor">
+                #1 · {top.vendor.label[lang]}
+              </div>
+              <div className="slam__name">{top.name}</div>
+              <div className="slam__tagline">{top.text[lang].tagline}</div>
+            </div>
+            <div className="slam__score">{Math.round(top.score)}</div>
           </motion.div>
-          <motion.div className="slam__caption" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.05 }}>
-            #1 · {TIER_TEXT[lang][tier.id].desc}
+          <motion.div className="slam__caption" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }}>
+            {TIER_TEXT[lang][tier.id].label} · {TIER_TEXT[lang][tier.id].desc}
           </motion.div>
         </motion.div>
       )}
