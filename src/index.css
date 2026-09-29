@@ -276,6 +276,7 @@ kbd {
   align-items: center;
   gap: 10px;
   min-width: 170px;
+  flex: none;
 }
 .brand__mark {
   font-size: 22px;
@@ -300,6 +301,7 @@ kbd {
 }
 .cats {
   margin: 0 auto;
+  min-width: 0;
   display: flex;
   gap: 4px;
   padding: 4px;
@@ -354,6 +356,7 @@ kbd {
   display: flex;
   gap: 8px;
   min-width: 170px;
+  flex: none;
   justify-content: flex-end;
 }
 .icon-btn {
@@ -379,8 +382,17 @@ kbd {
   border-color: rgba(255, 255, 255, 0.28);
   background: var(--glass-2);
 }
-.icon-btn span {
-  font-size: 17px;
+.icon-btn .ico {
+  flex: none;
+}
+.icon-btn .btn-label {
+  line-height: 1;
+}
+/* 中等宽度只显示图标，避免顶栏挤出框 */
+@media (max-width: 1180px) {
+  .icon-btn .btn-label {
+    display: none;
+  }
 }
 .eq {
   display: inline-flex;

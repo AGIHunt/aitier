@@ -60,16 +60,22 @@ export function TopBar() {
 
       <div className="actions">
         <button className="icon-btn" title={T('search')} onClick={() => (audio.tick(), set({ paletteOpen: true, paletteMode: 'search' }))}>
-          <span>⌕</span>
+          <Icon name="search" />
           <kbd>⌘K</kbd>
         </button>
         {view === '3d' && (
           <button className={`icon-btn ${overview ? 'icon-btn--on' : ''}`} title={T('overview')} onClick={() => (audio.whoosh(0.9, !overview), set({ overview: !overview, selectedId: null }))}>
-            {T('overview')}
+            <Icon name="overview" />
+            <span className="btn-label">{T('overview')}</span>
           </button>
         )}
-        <button className="icon-btn" title="切换视图 (V)" onClick={() => (audio.tick(), set({ view: view === '3d' ? 'table' : '3d', selectedId: null }))}>
-          {view === '3d' ? T('table') : '3D'}
+        <button
+          className="icon-btn"
+          title={view === '3d' ? T('table') : '3D'}
+          onClick={() => (audio.tick(), set({ view: view === '3d' ? 'table' : '3d', selectedId: null }))}
+        >
+          <Icon name={view === '3d' ? 'table' : 'cube'} />
+          <span className="btn-label">{view === '3d' ? T('table') : '3D'}</span>
         </button>
         <LangButton />
         <button className={`icon-btn sound ${muted ? '' : 'sound--on'}`} title={T('sound')} onClick={toggleMute}>
@@ -228,5 +234,20 @@ export function SoundPill() {
       </span>
       {T('soundPill')}
     </div>
+  )
+}
+
+const ICONS: Record<string, string> = {
+  search: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm9 16-4.35-4.35',
+  overview: 'M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5',
+  table: 'M4 5h16M4 10h16M4 15h16M4 20h16M9 5v15',
+  cube: 'M12 3 20 7.5v9L12 21 4 16.5v-9L12 3Zm0 0v18M4 7.5l8 4.5 8-4.5',
+}
+
+function Icon({ name }: { name: keyof typeof ICONS }) {
+  return (
+    <svg className="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d={ICONS[name]} />
+    </svg>
   )
 }
