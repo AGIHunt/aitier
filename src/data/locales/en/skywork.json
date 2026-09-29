@@ -1,0 +1,26 @@
+{
+  "vendor": {
+    "blurb": "Kunlun Tech's SkyReels line: joint audio-video, tied with Kling on AA text-to-video."
+  },
+  "models": {
+    "skyreels-v4": {
+      "tagline": "Dual-stream MMDiT: picture and sound together",
+      "highlights": [
+        "AA text-to-video 1095, around #11, tied with Kling 3.0 Pro",
+        "AA image-to-video 1069, around #16",
+        "Text, image, video, mask and audio references; local inpainting and full-dimension editing"
+      ],
+      "tags": [
+        "Joint audio-video",
+        "Video editing",
+        "Text-to-video"
+      ],
+      "notes": "Ranked #2 on the AA video board at launch. Earlier SkyReels V2 is open; V4 weights are not yet released. Not in the LMArena video top 30.",
+      "bench": {
+        "AA Text-to-Video": "~#11",
+        "AA Image-to-Video": "~#16"
+      },
+      "pricing": "~$0.35/sec"
+    }
+  }
+}

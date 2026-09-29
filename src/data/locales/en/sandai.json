@@ -1,0 +1,28 @@
+{
+  "vendor": {
+    "blurb": "Beijing video startup. MAGI-2, open weights with 6B active params, is top 10 on AA video."
+  },
+  "models": {
+    "magi-2-preview": {
+      "tagline": "Open 6B-active audio-video model, top 10 on AA",
+      "highlights": [
+        "AA text-to-video 1156, #6",
+        "AA image-to-video 1094, around #9",
+        "Video and sound in a single forward pass, with lip sync",
+        "Claimed ~1/10 the cost of leading closed models for 10s 1080p; Apache 2.0"
+      ],
+      "tags": [
+        "Open weights",
+        "Joint audio-video",
+        "Text-to-video",
+        "Image-to-video"
+      ],
+      "notes": "Among the highest-ranked open-weights video models. API pricing on AA shows Coming soon.",
+      "bench": {
+        "AA Text-to-Video": "#6",
+        "AA Image-to-Video": "~#9"
+      },
+      "params": "114B MoE / 6B active"
+    }
+  }
+}

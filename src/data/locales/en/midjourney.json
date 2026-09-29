@@ -1,0 +1,23 @@
+{
+  "vendor": {
+    "blurb": "The taste-first subscription product. No API, so it's on no public arena."
+  },
+  "models": {
+    "midjourney-v8.2": {
+      "tagline": "Off the leaderboards, still a designer's pick",
+      "highlights": [
+        "Default since 7/24, native 2K, about 5x faster than V7",
+        "New Edit model replaces Omni Reference, character reference and Retexture",
+        "Stronger personalization that learns your aesthetic preferences"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Aesthetics",
+        "Stylized",
+        "Personalized"
+      ],
+      "notes": "No API. Neither LMArena nor AA lists V8 (AA only has V6.1 from two years ago). The tier is based on community word of mouth, not leaderboards, so confidence is low.",
+      "pricing": "Subscription only (from $10/mo Basic)"
+    }
+  }
+}

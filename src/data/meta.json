@@ -1,7 +1,11 @@
 {
-  "updatedAt": "2026-09-29",
-  "edition": "2026.09 · 第 1 期",
+  "edition": "2026-09-29",
+  "issue": 1,
   "changelog": [
-    { "date": "2026-09-29", "text": "天梯榜首发：收录 LLM / 图像 / 视频三大类模型" }
+    {
+      "date": "2026-09-29",
+      "zh": "天梯榜首发：收录 LLM / 图像 / 视频三大类模型",
+      "en": "Launch edition: LLM, image and video models ranked"
+    }
   ]
 }

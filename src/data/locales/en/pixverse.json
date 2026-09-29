@@ -1,0 +1,42 @@
+{
+  "vendor": {
+    "blurb": "A top overseas Chinese video app; its models have stayed in the second tier"
+  },
+  "models": {
+    "pixverse-v6": {
+      "tagline": "20+ cinematic camera moves, multi-shot engine",
+      "highlights": [
+        "AA Image-to-Video 1070, ~#15; Text-to-Video 1076, ~#21",
+        "20+ cinematic camera controls with native audio",
+        "Multi-shot engine, billed per second, up to 15s at 1080p"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Camera control",
+        "Multi-shot"
+      ],
+      "notes": "LMArena so far lists only the previous V5.6 (text-to-video 1240, image-to-video 1299).",
+      "bench": {
+        "AA Image-to-Video": "~#15",
+        "AA Text-to-Video": "~#21"
+      },
+      "pricing": "~$0.115/sec"
+    },
+    "pixverse-v5.6": {
+      "tagline": "Last-gen workhorse with tons of LMArena votes",
+      "highlights": [
+        "LMArena Image-to-Video 1299, ~#25, over 120K votes",
+        "Ranked ahead of Kling 3.0 on AA image-to-video in February"
+      ],
+      "tags": [
+        "Image-to-video",
+        "Value"
+      ],
+      "bench": {
+        "LMArena Image-to-Video": "~#25"
+      },
+      "pricing": "~$0.072/sec"
+    }
+  }
+}

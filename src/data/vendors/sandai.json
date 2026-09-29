@@ -23,7 +23,12 @@
       "pricing": null,
       "tier": "A",
       "score": 82,
-      "tags": ["开源", "音画同出", "文生视频", "图生视频"],
+      "tags": [
+        "开源",
+        "音画同出",
+        "文生视频",
+        "图生视频"
+      ],
       "tagline": "6B 激活参数的开源音画模型，挤进 AA 前十",
       "highlights": [
         "AA 文生视频 1156，第 6",
@@ -32,8 +37,18 @@
         "官方称 10 秒 1080p 的成本约为主流闭源模型的 1/10，Apache 2.0"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Video", "value": "1156", "note": "第 6", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
-        {"name": "AA Image-to-Video", "value": "1094", "note": "约第 9", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+        {
+          "name": "AA Text-to-Video",
+          "value": "1156",
+          "note": "第 6",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1094",
+          "note": "约第 9",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
       ],
       "notes": "开源视频模型中榜单排名最靠前的之一。AA 上的 API 定价显示为 Coming soon。",
       "sources": [

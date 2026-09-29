@@ -1,0 +1,119 @@
+{
+  "vendor": {
+    "blurb": "Hunyuan rebuilt as Hy: all LLMs Apache-licensed, deployed via Yuanbao and WeChat"
+  },
+  "models": {
+    "hy4-preview": {
+      "tagline": "First flagship to help optimize its own training",
+      "highlights": [
+        "163 internal experts' blind eval 2.99/4, edging Kimi K3 and GLM-5.3",
+        "Terminal-Bench 2.1 85.4, DeepSWE 64.3",
+        "Self-optimized its inference stack: end-to-end throughput +31.8%",
+        "Among the cheapest flagship open weights; listed on OpenRouter"
+      ],
+      "tags": [
+        "Open weights",
+        "Coding",
+        "Agents",
+        "Office"
+      ],
+      "notes": "No AA Intelligence Index or LMArena results yet. The lead comes from Tencent's own blind eval; on public benchmarks it trails Opus 5 and GPT-5.6. Placed in tier A on the reference ladder.",
+      "bench": {
+        "Terminal-Bench 2.1": "Third-party compilation",
+        "DeepSWE": "Third-party compilation",
+        "腾讯内部盲评（203 个工程任务）": "GLM-5.3 2.92, Kimi K3 2.94"
+      },
+      "pricing": "$0.834 / $2.501 per 1M tokens (cached $0.042)",
+      "params": "770B MoE / 49B active",
+      "benchName": {
+        "腾讯内部盲评（203 个工程任务）": "Tencent internal blind eval (203 engineering tasks)"
+      }
+    },
+    "hy3": {
+      "tagline": "The workhorse behind Tencent's app family",
+      "highlights": [
+        "AA Intelligence Index 25",
+        "LMArena Text 1457, roughly #62",
+        "Wired into Yuanbao, ima, QQ Browser, WeChat Official Accounts, CodeBuddy and more",
+        "Apache 2.0, fast/slow thinking fused"
+      ],
+      "tags": [
+        "Open weights",
+        "Fast/slow thinking",
+        "Value"
+      ],
+      "notes": "Hy3 preview shipped in late April; the final version arrived in July. Placed in tier C on the reference ladder.",
+      "bench": {
+        "LMArena Text": "~#62"
+      },
+      "params": "295B MoE / 21B active"
+    },
+    "hy3-preview": {
+      "tagline": "The first release after the Hunyuan rebuild",
+      "highlights": [
+        "First model after Hunyuan's reorg, focused on practicality and agents",
+        "LMArena Text 1409, roughly #145",
+        "Replaced by the final Hy3 after 3 months"
+      ],
+      "tags": [
+        "Open weights",
+        "Agents"
+      ],
+      "notes": "Superseded by the final Hy3; kept only to show the version history.",
+      "bench": {
+        "LMArena Text": "~#145"
+      },
+      "params": "295B MoE / 21B active"
+    },
+    "hy-image-3.5-preview": {
+      "tagline": "Thinks before it draws, and it's cheap",
+      "highlights": [
+        "Human-eval win rate up 30% over Hy Image 3.0, per Tencent",
+        "One model for text-to-image and image-to-image; up to 5 references, 2K output",
+        "Tencent says it costs 1/8.8 of GPT Image 2",
+        "Available on ComfyUI, OnSolo and GMI Cloud"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Text rendering"
+      ],
+      "notes": "Not yet in the top 30 of LMArena or AA image boards. Tier is set from the previous generation's ranking plus the self-reported gain, without upgrading it.",
+      "pricing": "$0.024/image (GMI Cloud); official API ¥0.15/image"
+    },
+    "hunyuanimage-3.0": {
+      "tagline": "One of the biggest open multimodal image models",
+      "highlights": [
+        "80B MoE native multimodal architecture, open weights",
+        "Instruct version (2026-01) adds chain-of-thought reasoning and image-to-image",
+        "LMArena Image Edit 1302, roughly #23, 300K+ votes"
+      ],
+      "tags": [
+        "Open weights",
+        "Text-to-image",
+        "Image editing"
+      ],
+      "notes": "Text-to-image is not in the top 30 of LMArena or AA. Edit score is on par with Seedream 4.5.",
+      "bench": {
+        "LMArena Image Edit": "hunyuan-image-3.0-instruct, ~#23"
+      },
+      "params": "80B MoE / 13B active"
+    },
+    "hunyuanvideo-1.5": {
+      "tagline": "Open video model that runs on a consumer GPU",
+      "highlights": [
+        "8.3B parameters, native 480p/720p, up to 1080p via super-resolution",
+        "Step-distilled I2V runs 75% faster on an RTX 4090",
+        "Open training code and LoRA fine-tuning scripts"
+      ],
+      "tags": [
+        "Open weights",
+        "Text-to-video",
+        "Image-to-video",
+        "Lightweight"
+      ],
+      "notes": "Not in the top 30 of LMArena or AA video boards. Tencent currently has no video model that competes with closed frontier ones like Seedance or Veo; a rumored HunyuanVideo 2.0 is unconfirmed.",
+      "context": "1080p (upscaled) · 10s"
+    }
+  }
+}

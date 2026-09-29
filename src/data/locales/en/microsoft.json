@@ -1,0 +1,155 @@
+{
+  "vendor": {
+    "blurb": "Suleyman's in-house MAI team: top-4 image gen in a year, LLMs still catching up"
+  },
+  "models": {
+    "mai-image-2.6": {
+      "tagline": "Microsoft's first top-4 image model",
+      "highlights": [
+        "LMArena text-to-image 1335, #4, behind only three OpenAI models",
+        "LMArena image edit 1429, #5, just 1 point behind Grok Imagine 2.0",
+        "+79 Elo overall over MAI-Image-2.5, +91 on text rendering",
+        "Up to 5 reference images for multi-image editing, with web grounding"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Multi-reference",
+        "Text rendering"
+      ],
+      "notes": "Debuted on Arena 8/10; public preview on Foundry 9/4 alongside Flash. Microsoft claims #1 in AA image editing; not independently verified.",
+      "bench": {
+        "LMArena Text-to-Image": "#4 (#2 at launch)",
+        "LMArena Image Edit": "#5",
+        "AA Text-to-Image": "#5"
+      },
+      "pricing": "~$0.039/image (AA-converted $38.9/1K images)"
+    },
+    "mai-image-2.6-flash": {
+      "tagline": "Half the price, last-gen flagship quality",
+      "highlights": [
+        "AA text-to-image 1103, #9, tied with MAI-Image-2.5",
+        "Microsoft claims 2.8x the speed of GPT-Image-2 Medium",
+        "Priced at roughly half of MAI-Image-2.6"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Fast",
+        "Cheap"
+      ],
+      "notes": "Not yet on the LMArena leaderboard; Foundry bills per token, image output $19 per million tokens.",
+      "bench": {
+        "AA Text-to-Image": "#9"
+      },
+      "pricing": "~$0.02/image (AA-converted $19.5/1K images)"
+    },
+    "mai-image-2.5": {
+      "tagline": "The last-gen workhorse that landed in PowerPoint",
+      "highlights": [
+        "LMArena image edit 1400, #7, ahead of Nano Banana Pro",
+        "LMArena text-to-image 1254, #12; ranked #3 at launch",
+        "AA text-to-image 1103, #10",
+        "Integrated into PowerPoint and Foundry"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Office integration"
+      ],
+      "notes": "Officially launched at Build 2026 (6/2) with seven MAI models; hit Arena first on 5/26.",
+      "bench": {
+        "LMArena Text-to-Image": "#12",
+        "LMArena Image Edit": "#7",
+        "AA Text-to-Image": "#10"
+      },
+      "pricing": "~$0.048/image (AA-converted $48.1/1K images)"
+    },
+    "mai-image-2.5-pro": {
+      "tagline": "Twice the price, no better score",
+      "highlights": [
+        "AA text-to-image 1099, #12, slightly below standard 2.5",
+        "Costs about 2.3x MAI-Image-2.5"
+      ],
+      "tags": [
+        "Text-to-image",
+        "High quality"
+      ],
+      "notes": "Appears only on the AA leaderboard with little official documentation; release date taken from AA.",
+      "bench": {
+        "AA Text-to-Image": "#12"
+      },
+      "pricing": "~$0.11/image (AA-converted $108.5/1K images)"
+    },
+    "mai-image-2.5-flash": {
+      "tagline": "The budget tier, already outclassed by 2.6-Flash",
+      "highlights": [
+        "AA text-to-image 1033, #19",
+        "2.6-Flash scores 70 points higher at the same price"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Cheap"
+      ],
+      "bench": {
+        "AA Text-to-Image": "#19"
+      },
+      "pricing": "~$0.02/image (AA-converted $20/1K images)"
+    },
+    "mai-image-2": {
+      "tagline": "The one that put Microsoft in the top 3",
+      "highlights": [
+        "Ranked #3 on LMArena text-to-image at launch",
+        "Now LMArena text-to-image 1184, #21",
+        "Powers Copilot and Bing Image Creator"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Copilot",
+        "Bing"
+      ],
+      "notes": "A faster MAI-Image-2-Efficient is also on Foundry and not listed separately.",
+      "bench": {
+        "LMArena Text-to-Image": "#21"
+      }
+    },
+    "mai-thinking-1": {
+      "tagline": "Microsoft's first in-house reasoner, undistilled",
+      "highlights": [
+        "Self-reported AIME 2025 97.0%, AIME 2026 94.5%",
+        "SWE-Bench Pro 52.8%, which Microsoft says matches Opus 4.6",
+        "Beat Claude Sonnet 4.6 in a 1,276-task blind eval",
+        "$2/$8 pricing, aimed at high-volume enterprise use"
+      ],
+      "tags": [
+        "Reasoning",
+        "Math",
+        "Coding",
+        "Enterprise"
+      ],
+      "notes": "Build launch was partners only; public preview on Foundry from 8/12. Not on LMArena Text or the AA index; all figures self-reported, benchmarked against the February 4.6 generation.",
+      "bench": {
+        "SWE-Bench Pro": "Self-reported",
+        "AIME 2025": "Self-reported"
+      },
+      "pricing": "$2 / $8 per 1M tokens",
+      "params": "~1T MoE / 35B active"
+    },
+    "mai-code-1.1-flash": {
+      "tagline": "A small in-house powerhouse inside Copilot",
+      "highlights": [
+        "1-Flash has only 5B active parameters; Microsoft benchmarks it against Haiku",
+        "1.1 adds native vision: reads screenshots and design mockups",
+        "List price 73% lower than MAI-Code-1-Flash",
+        "Auto-routed for Copilot Free and student plans"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Lightweight"
+      ],
+      "notes": "The previous MAI-Code-1-Flash (6/2) was retired from Copilot on 9/10; parameter count follows the 1-Flash figure, as 1.1 hasn't published its own.",
+      "pricing": "Copilot 0.25x premium request multiplier",
+      "params": "137B MoE / 5B active (1-Flash figure)"
+    }
+  }
+}

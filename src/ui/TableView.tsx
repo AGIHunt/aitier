@@ -3,6 +3,7 @@ import type { CSSProperties } from 'react'
 import { useMemo } from 'react'
 import { audio } from '../audio/engine'
 import { groupByTier, MODELS_BY_CATEGORY } from '../data'
+import { TIER_TEXT, useT } from '../i18n'
 import { useStore } from '../store'
 import { Badge } from './bits'
 
@@ -12,6 +13,8 @@ export function TableView() {
   const vf = useStore((s) => s.vendorFilter)
   const selectedId = useStore((s) => s.selectedId)
   const select = useStore((s) => s.select)
+  const lang = useStore((s) => s.lang)
+  const T = useT()
   const groups = useMemo(() => groupByTier(MODELS_BY_CATEGORY[category]), [category])
   const total = MODELS_BY_CATEGORY[category].length
 
@@ -29,7 +32,7 @@ export function TableView() {
           >
             <div className="trow__label">
               <span>{tier.id}</span>
-              <small>{tier.label}</small>
+              <small>{TIER_TEXT[lang][tier.id].label}</small>
             </div>
             <div className="trow__items">
               <AnimatePresence>
@@ -53,12 +56,12 @@ export function TableView() {
                       <Badge vendor={m.vendor} size={34} />
                       <span className="tcard__name">{m.name}</span>
                       <span className="tcard__score">{Math.round(m.score)}</span>
-                      {m.openWeights && <span className="tcard__open">OPEN</span>}
+                      {m.openWeights && <span className="tcard__open">{T('open')}</span>}
                     </motion.button>
                   )
                 })}
               </AnimatePresence>
-              {!models.length && <span className="trow__empty">— 虚位以待 —</span>}
+              {!models.length && <span className="trow__empty">{T('vacant')}</span>}
             </div>
             <div className="trow__pct">{total ? Math.round((models.length / total) * 100) : 0}%</div>
           </motion.div>

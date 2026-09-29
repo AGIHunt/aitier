@@ -1,8 +1,7 @@
 import type { CSSProperties } from 'react'
-import { META } from '../data'
 import { TIER_BY_ID } from '../data/tiers'
 import { lighten, readable } from '../lib/color'
-import type { TierId, Vendor } from '../types'
+import type { RankedModel, TierId, Vendor } from '../types'
 
 export function Badge({ vendor, size = 28 }: { vendor: Vendor; size?: number }) {
   const style: CSSProperties = {
@@ -32,22 +31,9 @@ export function TierChip({ tier, size = 'md' }: { tier: TierId; size?: 'sm' | 'm
   )
 }
 
-/** 两周内发布的新模型 */
-export function isFresh(released: string | null) {
-  if (!released || released.length < 10) return false
-  return (Date.parse(META.updatedAt) - Date.parse(released)) / 864e5 <= 14
-}
-
-export function Move({ tier, prev, released }: { tier: TierId; prev?: TierId | null; released: string | null }) {
-  if (!prev) return isFresh(released) ? <span className="move move--new">NEW</span> : null
-  const d = TIER_BY_ID[prev].level - TIER_BY_ID[tier].level
-  if (d === 0) return null
-  return <span className={`move ${d > 0 ? 'move--up' : 'move--down'}`}>{d > 0 ? `▲${d}` : `▼${-d}`}</span>
-}
-
-export const STATUS_ZH: Record<string, string> = {
-  released: '已发布',
-  preview: '预览',
-  rumored: '传闻',
-  deprecated: '已退役',
+export function Move({ m }: { m: RankedModel }) {
+  const mv = m.move
+  if (!mv) return null
+  if (mv.kind === 'new') return <span className="move move--new">NEW</span>
+  return <span className={`move move--${mv.kind}`}>{mv.kind === 'up' ? `▲${mv.by}` : `▼${mv.by}`}</span>
 }

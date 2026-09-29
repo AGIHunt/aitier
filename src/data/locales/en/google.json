@@ -1,0 +1,431 @@
+{
+  "vendor": {
+    "blurb": "Pro line stuck at 3.1, carried by 3-weekly Flash and Omni video; Gemini 4 Pro in stealth."
+  },
+  "models": {
+    "gemini-4-pro": {
+      "tagline": "Google's comeback card, in stealth on Arena",
+      "highlights": [
+        "Suspected to be testing blind on Arena as 3.8 Flash, codename Barium-B",
+        "Leaked DeepSWE v1.1 88.7%, above Astra's 86.9%",
+        "Rumored price about 1/5 of Astra's, 2M context",
+        "Community says early October launch; not confirmed by Google"
+      ],
+      "tags": [
+        "Agents",
+        "Coding",
+        "Frontend generation"
+      ],
+      "notes": "All from stealth tests and leaks. One tester says it nears but doesn't reach Opus 5.5; others think the leaked table is fake. Placed at S as a placeholder, to be re-rated at launch.",
+      "bench": {
+        "DeepSWE v1.1": "Leaked, unconfirmed",
+        "Terminal-bench 2.1": "Leaked, unconfirmed",
+        "GDPval-AA v2": "Leaked, unconfirmed"
+      },
+      "pricing": "Rumored $2.25 / $11.25 per 1M tokens",
+      "context": "2M (rumored)"
+    },
+    "gemini-3-8-flash": {
+      "tagline": "Google's best live model at Flash prices",
+      "highlights": [
+        "LMArena Text 1492, #10, above Opus 5",
+        "DeepSWE v1.1 73.7%, just 0.3 points below Opus 5",
+        "AA Intelligence Index 41, output ~239 tokens/s",
+        "Third Flash in six weeks; also a cybersecurity edition, 3.8 Flash Cyber"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Value",
+        "Multimodal"
+      ],
+      "notes": "low/medium/high levels merged. OSWorld-2.0 59% trails Opus 5's 75.4%; still weak on long-horizon agents.",
+      "bench": {
+        "LMArena Text": "#10 (high)",
+        "AA Intelligence Index": "high",
+        "DeepSWE v1.1": "Opus 5 at 74.0%",
+        "HLE-Verified": "Official"
+      },
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+    },
+    "gemini-3-7-flash": {
+      "tagline": "The coding workhorse replaced in three weeks",
+      "highlights": [
+        "LMArena Text 1488, #15",
+        "DeepSWE v1.1 65.3% vs 49.0% for 3.6 Flash",
+        "FrontierCode up from 3.6's 34.4% to 43.6%",
+        "Just three weeks after 3.6 Flash"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Value"
+      ],
+      "notes": "Same price as 3.8 Flash, now used mostly for compatibility. Context of 1M is inferred from the rest of the series.",
+      "bench": {
+        "LMArena Text": "#15 (high)",
+        "DeepSWE v1.1": "Official"
+      },
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+    },
+    "gemini-3-6-flash": {
+      "tagline": "The stopgap after 3.5 Pro got cut",
+      "highlights": [
+        "LMArena Text 1482, #20",
+        "OSWorld-Verified 83.0% vs 78.4% for 3.5 Flash",
+        "About 17% fewer output tokens than 3.5 Flash",
+        "MLE-Bench 63.9% vs 49.7% for 3.5 Flash"
+      ],
+      "tags": [
+        "Multimodal",
+        "Computer use",
+        "Value"
+      ],
+      "notes": "Per SemiAnalysis, Gemini 3.5 Pro was cut after months of delay and 3.6 Flash serves as the bridge to Gemini 4. Google has not confirmed.",
+      "bench": {
+        "LMArena Text": "#20 (high)",
+        "DeepSWE v1.1": "Official",
+        "OSWorld-Verified": "Official"
+      },
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+    },
+    "gemini-3-5-flash": {
+      "tagline": "I/O 2026 launch model, pricier than successors",
+      "highlights": [
+        "Launched at I/O 2026, kicking off the 3.5 to 3.8 Flash rapid cycle",
+        "LMArena Text 1477 (high), #27",
+        "OSWorld-Verified 78.4%, DeepSWE 37%",
+        "Priced above 3.6 to 3.8 Flash; Google now labels it legacy"
+      ],
+      "tags": [
+        "Multimodal",
+        "High throughput"
+      ],
+      "notes": "high and medium levels merged (medium scores 1474). The 1M context is inferred from the same-generation Flash.",
+      "bench": {
+        "LMArena Text": "#27 (high)",
+        "OSWorld-Verified": "Official"
+      },
+      "pricing": "$1.5 / $9 per 1M tokens"
+    },
+    "gemini-3-5-flash-lite": {
+      "tagline": "350 tokens a second, a pipeline mini-cannon",
+      "highlights": [
+        "~350 tokens/s output, Google's fastest model",
+        "Terminal-Bench 2.1 54%, up from 31% last gen",
+        "AA Intelligence Index 22, about 1/3 the price of 3.8 Flash",
+        "LMArena Text 1456"
+      ],
+      "tags": [
+        "Ultra fast",
+        "Low cost",
+        "High throughput"
+      ],
+      "notes": "Replaces 3.1 Flash-Lite (2026-03); suited to classification, ranking and high-frequency small calls.",
+      "bench": {
+        "LMArena Text": "#65",
+        "Terminal-Bench 2.1": "Official"
+      },
+      "pricing": "$0.3 / $2.5 per 1M tokens"
+    },
+    "gemini-3-1-pro": {
+      "tagline": "Google's last Pro, in preview for seven months",
+      "highlights": [
+        "ARC-AGI-2 77.1% at launch, more than double 3 Pro",
+        "SWE-bench Verified 80.6%, GPQA 94.3%",
+        "LMArena Text still 1487, #17",
+        "AA Intelligence Index only 30, now passed by 3.8 Flash"
+      ],
+      "tags": [
+        "Reasoning",
+        "Multimodal",
+        "Long context"
+      ],
+      "notes": "Still gemini-3.1-pro-preview in the API. Gemini 3.5 Pro is rumored canceled; the Pro line waits for Gemini 4.",
+      "bench": {
+        "LMArena Text": "#17",
+        "ARC-AGI-2": "Official, 2026-02",
+        "GPQA Diamond": "Official, 2026-02"
+      },
+      "pricing": "$2 / $12 per 1M tokens"
+    },
+    "gemma-4-31b": {
+      "tagline": "The US open-weights bar that fits on one GPU",
+      "highlights": [
+        "Apache 2.0 license, dropping older Gemma's commercial limits",
+        "AIME 2026 89.2%, MMLU Pro 85.2%",
+        "LMArena Text 1453, AA Intelligence Index 19",
+        "Native image and video input, 140+ languages"
+      ],
+      "tags": [
+        "Open weights",
+        "Local deployment",
+        "Multimodal"
+      ],
+      "notes": "Reasoning and non-reasoning modes merged (AA for non-reasoning is 14). MTP added 4/16. Kaggle is running a $110K Gemma 4 agent contest.",
+      "bench": {
+        "LMArena Text": "#73",
+        "AA Intelligence Index": "Reasoning mode",
+        "AIME 2026": "Official"
+      },
+      "pricing": "Open weights, free (Apache 2.0)"
+    },
+    "gemma-4-26b-a4b": {
+      "tagline": "Only 4B active: agents on a laptop",
+      "highlights": [
+        "Just 4B active params; AA measured ~107 tokens/s (non-reasoning)",
+        "Launch model for Antigravity SDK local agents, zero token cost",
+        "LMArena Text 1438, AA Intelligence Index 17"
+      ],
+      "tags": [
+        "Open weights",
+        "MoE",
+        "On-device agents"
+      ],
+      "notes": "Runs fully offline with LiteRT; the workhorse of Google's on-device agent strategy.",
+      "bench": {
+        "LMArena Text": "#96",
+        "AA Intelligence Index": "Reasoning mode"
+      },
+      "pricing": "Open weights, free (Apache 2.0)",
+      "params": "26B MoE / 4B active"
+    },
+    "gemma-4-12b-unified": {
+      "tagline": "The mid-size slot filled in the Gemma 4 family",
+      "highlights": [
+        "Mid-size model added in June, reasoning and non-reasoning in one",
+        "AA Intelligence Index 14 (reasoning), ~114 tokens/s"
+      ],
+      "tags": [
+        "Open weights",
+        "Omni-modal",
+        "Lightweight"
+      ],
+      "notes": "Could not find official wording on context length or license details.",
+      "bench": {
+        "AA Intelligence Index": "Reasoning mode"
+      },
+      "pricing": "Open weights, free"
+    },
+    "gemma-4-e4b": {
+      "tagline": "On-device model that translates offline on a Pi",
+      "highlights": [
+        "Runs offline on phones and Raspberry Pi-class devices; text, image and audio input",
+        "Official Gemma Translator uses E2B for offline translation on a Pi",
+        "AA Intelligence Index: E4B 9, E2B 8"
+      ],
+      "tags": [
+        "Open weights",
+        "On-device",
+        "Mobile"
+      ],
+      "notes": "The two on-device sizes, E4B and E2B, are merged. Built for devices, not comparable with frontier models.",
+      "bench": {
+        "AA Intelligence Index": "E4B, reasoning mode"
+      },
+      "pricing": "Open weights, free (Apache 2.0)",
+      "params": "4B / 2B effective"
+    },
+    "nano-banana-2": {
+      "tagline": "Google's image workhorse, now behind GPT Image",
+      "highlights": [
+        "LMArena text-to-image 1261, #9, Google's highest",
+        "LMArena image edit 1388, #12",
+        "API codename gemini-3.1-flash-image, up to 4K output",
+        "Widely integrated: Runway, Flow, Gemini app and more"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Text rendering"
+      ],
+      "notes": "The text-to-image leader is gpt-image-2.5 (1424), a gap of about 160 points. Traces of Nano Banana 2.1 have appeared in Flow.",
+      "bench": {
+        "LMArena Text-to-Image": "#9",
+        "LMArena Image Edit": "#12"
+      },
+      "pricing": "~$0.045 (512px) to $0.151 (4K) per image"
+    },
+    "nano-banana-pro": {
+      "tagline": "The 4K pro tier, still Google's best editor",
+      "highlights": [
+        "LMArena image edit 1390 (2K), #9, Google's highest",
+        "LMArena text-to-image 1247 (2K), #14",
+        "Built on Gemini 3 Pro; known for precise text rendering and world knowledge"
+      ],
+      "tags": [
+        "Pro imaging",
+        "Text rendering",
+        "Image editing",
+        "4K"
+      ],
+      "notes": "API codename gemini-3-pro-image, now GA. Could not find the current official per-image price, so it is left blank.",
+      "bench": {
+        "LMArena Image Edit": "#9 (2K)",
+        "LMArena Text-to-Image": "#14 (2K)"
+      }
+    },
+    "nano-banana-2-lite": {
+      "tagline": "Four seconds an image, pennies each",
+      "highlights": [
+        "Text-to-image in ~4 seconds, about 2.7x faster than Nano Banana 2",
+        "LMArena text-to-image 1250, #13, only 11 points below NB2",
+        "Google recommends it as the replacement for the original Nano Banana"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Ultra fast",
+        "Low cost"
+      ],
+      "notes": "API codename gemini-3.1-flash-lite-image. Live in consumer products including Search AI Mode, Photos and NotebookLM.",
+      "bench": {
+        "LMArena Text-to-Image": "#13",
+        "LMArena Image Edit": "#21"
+      },
+      "pricing": "$0.034 per image (1K)"
+    },
+    "nano-banana-2-1": {
+      "tagline": "The next image model spotted in Flow's code",
+      "highlights": [
+        "TestingCatalog found NB 2.1 strings in a Flow build",
+        "Originally referenced as Nano Banana 2.5 Flash; the rename reads like a point update",
+        "Some guess it ships the same week as Gemini 4 Pro"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing"
+      ],
+      "notes": "Code traces only, no hands-on tests yet. Score is a placeholder based on Nano Banana 2, to be re-rated at launch."
+    },
+    "nano-banana": {
+      "tagline": "The original that sparked the banana-edit craze",
+      "highlights": [
+        "The first Gemini 2.5 Flash Image, famous for character-consistent edits",
+        "LMArena text-to-image #32 (1150), image edit #28 (1293)"
+      ],
+      "tags": [
+        "Image editing",
+        "Character consistency"
+      ],
+      "notes": "Google now suggests migrating to Nano Banana 2 Lite; the API lists it under the access-restricted 2.5 series.",
+      "bench": {
+        "LMArena Image Edit": "#28"
+      }
+    },
+    "imagen-4": {
+      "tagline": "The pure-diffusion line Nano Banana replaced",
+      "highlights": [
+        "Imagen 4 Ultra: LMArena text-to-image 1148, #34",
+        "Gemini API has shut down imagen-4.0-generate"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Photorealism"
+      ],
+      "notes": "Standard, Ultra and Fast merged. Google image generation has moved fully to Gemini-native images (Nano Banana); this entry is a historical reference only.",
+      "bench": {
+        "LMArena Text-to-Image": "#34 (Ultra)"
+      }
+    },
+    "gemini-omni-1-1-flash": {
+      "tagline": "Any-modality model, #1 on text-to-video",
+      "highlights": [
+        "LMArena text-to-video 1516, #1",
+        "LMArena image-to-video 1488, #2, behind only MiniMax H3",
+        "Adds first/last-frame control and 40-second scene extension; upscales to 4K",
+        "Adobe, Figma and Runway have integrated it into workflows"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Conversational editing",
+        "Native audio"
+      ],
+      "notes": "API is still in preview. Google Vids has fully switched to it, though one Chinese blogger found Vids output underwhelming.",
+      "bench": {
+        "LMArena Text-to-Video": "#1",
+        "LMArena Image-to-Video": "#2"
+      },
+      "pricing": "~$0.10/sec (720p); 360p drafts ~1/3",
+      "context": "1080p/4K upscale · 10s per clip, extendable to 40s"
+    },
+    "gemini-omni-flash": {
+      "tagline": "Google's first any-input, video-out model",
+      "highlights": [
+        "Launched at I/O 2026; API public beta 6/30",
+        "#1 on the AA text-to-video with audio board, Elo 1233",
+        "LMArena text-to-video #2 (1513), image-to-video #6",
+        "Free to use in YouTube Shorts"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Any-modality input",
+        "Conversational editing"
+      ],
+      "notes": "The first API release lacked audio references and scene extension; 1.1 added both.",
+      "bench": {
+        "AA Text-to-Video（含音频）": "#1",
+        "LMArena Text-to-Video": "#2"
+      },
+      "pricing": "$0.10/sec",
+      "benchName": {
+        "AA Text-to-Video（含音频）": "AA Text-to-Video (with audio)"
+      }
+    },
+    "veo-3-1": {
+      "tagline": "Last-gen audio-video benchmark, now Omni's",
+      "highlights": [
+        "LMArena text-to-video 1364, #12",
+        "LMArena image-to-video 1398, #13",
+        "#14 on the AA text-to-video with audio board, Elo 1088",
+        "Still being integrated by Runway, Flow and other major platforms"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Native audio",
+        "Cinematic"
+      ],
+      "notes": "Veo 3.1 and Fast merged (Fast scores 1362 on LMArena). The 2025-10 launch month is from memory, not checked on an official page.",
+      "bench": {
+        "LMArena Text-to-Video": "#12 (with audio)",
+        "AA Text-to-Video（含音频）": "#14"
+      },
+      "pricing": "~$0.15 to $0.60/sec (by tier and resolution)",
+      "context": "Up to 4K · 8s",
+      "benchName": {
+        "AA Text-to-Video（含音频）": "AA Text-to-Video (with audio)"
+      }
+    },
+    "veo-3-1-lite": {
+      "tagline": "Five cents a second, the bulk-output tier",
+      "highlights": [
+        "Less than half the price of Veo 3.1 Fast, at the same speed",
+        "720p/1080p, landscape and portrait, 4/6/8 seconds",
+        "Native audio included"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Low cost",
+        "Batch"
+      ],
+      "notes": "No standalone arena ranking found; tier is estimated from price and positioning.",
+      "pricing": "$0.05/sec (720p), $0.08/sec (1080p)"
+    },
+    "genie-3": {
+      "tagline": "One sentence, a real-time world to walk into",
+      "highlights": [
+        "First general-purpose real-time interactive world model, navigable at 24fps",
+        "Opened to Ultra users as Project Genie on 2026-01-29",
+        "Connected to Street View at I/O 2026 to simulate real places",
+        "Waymo derived a driving simulation world model from it"
+      ],
+      "tags": [
+        "World model",
+        "Real-time interactive",
+        "Explorable 3D"
+      ],
+      "notes": "World models have no leaderboard comparable to video generation; tier reflects uniqueness and influence. No reliable news on Genie 4 found.",
+      "context": "720p · 24fps, interactive for several minutes"
+    }
+  }
+}

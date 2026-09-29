@@ -1,0 +1,223 @@
+{
+  "vendor": {
+    "blurb": "China's #1 by token volume; Seedance is top-tier video, while its LLMs still trail"
+  },
+  "models": {
+    "doubao-seed-2-1-pro": {
+      "tagline": "Doubao's flagship for coding and agents",
+      "highlights": [
+        "ByteDance says top GDPVal and MobileWorld scores, #1 on visual benchmarks like CharXiv-RQ",
+        "Preview ranked #8 on Code Arena Frontend at launch (1539), level with Opus 4.6",
+        "ByteDance says total cost on comparable workloads is nearly 80% below Opus 4.6",
+        "A 0915 build shipped 9/15 with better trusted search, VLM and 3D spatial understanding"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Multimodal understanding"
+      ],
+      "notes": "A deep-thinking model; not on the AA Intelligence Index or LMArena Text. The 2.2 release planned for August slipped, and 2.1 Pro has been kept going through the 0915 build.",
+      "bench": {
+        "Code Arena": "seed-2.1-pro-preview, #44 (leader Opus 5.5 at 1827)",
+        "Code Arena Frontend": "#8 at launch (official framing)",
+        "MathVision": "Official figure",
+        "Video-MME": "Official figure"
+      },
+      "pricing": "¥6 / ¥30 per 1M tokens (~$0.88 / $4.42), cache hit ¥1.2"
+    },
+    "doubao-seed-2-1-turbo": {
+      "tagline": "Near-Pro capability at half the price",
+      "highlights": [
+        "ByteDance says capability is close to 2.1 Pro at half the price",
+        "256K context, with the same 256K max output",
+        "The default pick for enterprise high-volume calls"
+      ],
+      "tags": [
+        "Value",
+        "Agents",
+        "High volume"
+      ],
+      "notes": "No independent third-party leaderboard results; the tier is set by marking down from 2.1 Pro.",
+      "bench": {},
+      "pricing": "¥3 / ¥15 per 1M tokens, cache hit ¥0.6"
+    },
+    "doubao-seed-2-0-pro": {
+      "tagline": "The last flagship, out before Spring Gala",
+      "highlights": [
+        "AIME 2025 98.3, GPQA Diamond 88.9, Codeforces 3020 (official figures)",
+        "SWE-bench Verified 76.5, BrowseComp 77.3",
+        "LMArena Text 1456, still ByteDance's only model on the text leaderboard"
+      ],
+      "tags": [
+        "Reasoning",
+        "Math",
+        "Video understanding"
+      ],
+      "notes": "A Seed 2.0 Code coding edition launched alongside at Pro pricing; not listed separately.",
+      "bench": {
+        "LMArena Text": "dola-seed-2.0-pro, #64",
+        "LMArena Vision": "#43",
+        "SWE-bench Verified": "Official figure"
+      },
+      "pricing": "$0.47 / $2.37 per 1M tokens"
+    },
+    "doubao-seed-2-0-lite": {
+      "tagline": "The lightweight tier for everyday Doubao chats",
+      "highlights": [
+        "AIME 2025 93, GPQA Diamond 85.1 (official figures)",
+        "LiveCodeBench v6 81.7, at about 1/5 of Pro's price"
+      ],
+      "tags": [
+        "Lightweight",
+        "Value",
+        "Chat"
+      ],
+      "notes": "The same generation also has a cheaper Mini ($0.03/$0.31, GPQA 79), not listed separately.",
+      "bench": {
+        "GPQA Diamond": "Official figure"
+      },
+      "pricing": "$0.09 / $0.53 per 1M tokens"
+    },
+    "seed-oss-36b": {
+      "tagline": "ByteDance's only open-weights LLM to date",
+      "highlights": [
+        "Apache-2.0, with three variants including Base and Instruct",
+        "Trained on just 12T tokens, native 512K context",
+        "Supports an adjustable thinking budget"
+      ],
+      "tags": [
+        "Open weights",
+        "Long context",
+        "Controllable thinking"
+      ],
+      "notes": "Released over a year ago; ByteDance has not open-sourced a newer LLM since.",
+      "bench": {}
+    },
+    "doubao-seed-2-2": {
+      "tagline": "Slated for August, delayed to grind on coding",
+      "highlights": [
+        "Originally due August 2026; a formal delay was reported on 8/30",
+        "The delay is mainly to polish coding, tool calling and agent architecture"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Rumored"
+      ],
+      "notes": "Unreleased; the tier is a placeholder estimate. ByteDance is also rumored to be working on a next-gen giant model codenamed \"Atlas\".",
+      "bench": {}
+    },
+    "seedream-5-0-pro": {
+      "tagline": "The design-savvy flagship for commercial imagery",
+      "highlights": [
+        "LMArena Text-to-Image #10 (1256), Image Edit #8 (1394)",
+        "Pixel-level interactive editing via click, lasso, box and doodle, plus layer separation",
+        "Blends up to 10 reference images; aimed at ads, e-commerce and brand assets"
+      ],
+      "tags": [
+        "Commercial design",
+        "Image editing",
+        "Text rendering"
+      ],
+      "notes": "ByteDance concedes fine-grained text rendering and edit consistency still have room to improve; the gap to GPT Image 2.5 is clear.",
+      "bench": {
+        "LMArena Text-to-Image": "#10 (leader GPT Image 2.5 Sunburst at 1424)",
+        "LMArena Image Edit": "#8",
+        "AA Text-to-Image": "#15"
+      },
+      "pricing": "$0.09/image (AA figure)"
+    },
+    "seedream-5-0-lite": {
+      "tagline": "The lightweight pick for fast everyday images",
+      "highlights": [
+        "LMArena Text-to-Image #38 (1138), Image Edit #27 (1294)",
+        "AA Text-to-Image #37 (1010), priced at about 40% of Pro"
+      ],
+      "tags": [
+        "Fast",
+        "Everyday creation"
+      ],
+      "notes": "Sources disagree on the release date: first launched before Spring Festival (2026-02), while OpenRouter lists it as added 8/13.",
+      "bench": {
+        "LMArena Text-to-Image": "#38",
+        "LMArena Image Edit": "#27"
+      },
+      "pricing": "$0.035/image (AA figure)"
+    },
+    "seedream-4-5": {
+      "tagline": "Last-gen workhorse, still ahead on editing",
+      "highlights": [
+        "LMArena Image Edit #25 (1302), slightly above 5.0 Lite",
+        "LMArena Text-to-Image #35 (1147)"
+      ],
+      "tags": [
+        "Image editing",
+        "Multi-image reference"
+      ],
+      "notes": "Seedream 4.0 (2025-09) is still #21 on AA (1028), not listed separately.",
+      "bench": {
+        "LMArena Text-to-Image": "#35",
+        "LMArena Image Edit": "#25",
+        "AA Text-to-Image": "#25"
+      },
+      "pricing": "$0.04/image (AA figure)"
+    },
+    "seedance-2-5": {
+      "tagline": "30 seconds in one take, 50 assets at once",
+      "highlights": [
+        "Natively generates 30s in one pass; multi-round continuation reaches minutes",
+        "Takes up to 30 images + 10 videos + 10 audio clips as references",
+        "LMArena Image-to-Video #4 (1477), Text-to-Video #7 (1474)",
+        "Local regeneration, green screen, timestamp-level control; native 1080p live on fal"
+      ],
+      "tags": [
+        "Long takes",
+        "Multimodal reference",
+        "Native audio"
+      ],
+      "notes": "Shown at the FORCE conference 6/23 and live on Jimeng/Doubao 7/31. Community chatter often calls it the video king, but it isn't on the AA video leaderboards yet.",
+      "bench": {
+        "LMArena Image-to-Video": "#4 (leader MiniMax H3 at 1495)",
+        "LMArena Text-to-Video": "#7 (leader Gemini Omni 1.1 Flash at 1516)"
+      },
+      "pricing": "~$0.23/sec (720p, ModelArk); 1080p ~$0.6/sec"
+    },
+    "seedance-2-0": {
+      "tagline": "The one that drew Hollywood's legal letters",
+      "highlights": [
+        "AA Text-to-Video #5 (1210), Image-to-Video #4 (1176)",
+        "LMArena Text-to-Video #5 (1479), scoring above its own successor 2.5",
+        "Received legal letters from Disney, Paramount, Netflix and others over IP and likeness"
+      ],
+      "tags": [
+        "Photorealism",
+        "Native audio",
+        "Human performance"
+      ],
+      "notes": "A cheaper Seedance 2.0 Fast tier also exists; all leaderboard results are for the 720p version.",
+      "bench": {
+        "LMArena Text-to-Video": "#5",
+        "LMArena Image-to-Video": "#5",
+        "AA Text-to-Video": "#5",
+        "AA Image-to-Video": "#4"
+      },
+      "pricing": "$9.07/min (AA figure, 720p)"
+    },
+    "seedance-1-5-pro": {
+      "tagline": "ByteDance's first video model with native audio",
+      "highlights": [
+        "First to add multilingual lip-sync and sound effect generation",
+        "LMArena Text-to-Video #22 (1256), Image-to-Video #24 (1307)"
+      ],
+      "tags": [
+        "Native audio",
+        "Lip-sync"
+      ],
+      "notes": "Superseded by 2.0/2.5, but the low-priced API still sees usage.",
+      "bench": {
+        "LMArena Text-to-Video": "#22",
+        "LMArena Image-to-Video": "#24"
+      }
+    }
+  }
+}

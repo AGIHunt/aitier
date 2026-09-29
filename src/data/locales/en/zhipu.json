@@ -1,0 +1,149 @@
+{
+  "vendor": {
+    "blurb": "Open-source coding flagship lab; GLM-5.3 is top-tier open weights, pushing its Coding Plan"
+  },
+  "models": {
+    "glm-5-3": {
+      "tagline": "One of the best open-weights coding agents",
+      "highlights": [
+        "AA Intelligence Index 45, #2 among open weights, tied with Qwen3.8 Max",
+        "LMArena Text #24 (1480), Code #18 (1619)",
+        "DeepSWE 66.9 (5.2: 46.2), TB 3.0 28.3",
+        "CyberGym 84.5%; Z.ai says it found 2,436 vulnerabilities in real projects"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Cybersecurity",
+        "Open weights"
+      ],
+      "notes": "Post-training only, on the same base as 5.2. Coding Plan 8/14, API 8/18, weights 8/28 (not MIT). In September, ZCode drew a code-upload controversy.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "Max tier; #2 among open weights",
+        "LMArena Text": "#24 (glm-5.3-max)",
+        "LMArena Code": "#18 (glm-5.3-max)",
+        "DeepSWE v1.1": "Kimi K3 67.5, Fable 5 69.7",
+        "Terminal-Bench 3.0": "GPT-5.6 Sol 34.6"
+      },
+      "pricing": "$1.40 / $4.40 per 1M tokens",
+      "params": "744B MoE / 40B active"
+    },
+    "glm-5-3-flash": {
+      "tagline": "Bargain native multimodal, a local-run favorite",
+      "highlights": [
+        "First natively multimodal GLM-5 model: image, video and document input",
+        "AA Intelligence Index 42, just 3 below full GLM-5.3",
+        "LMArena Code 1613 (#21), Text 1474 (#35)",
+        "MIT license; Sentdex reports 4B+ tokens run locally"
+      ],
+      "tags": [
+        "Value",
+        "Multimodal",
+        "Local",
+        "Coding"
+      ],
+      "notes": "Anonymous codename Ox Alpha. The faster GLM-5.3-FlashX (up to 200 tok/s, 2.5x the price) is folded in here. Some users say it's slower than the standard model.",
+      "bench": {
+        "LMArena Code": "#21",
+        "LMArena Text": "#35"
+      },
+      "pricing": "$0.15 / $0.50 per 1M tokens (AA basis)",
+      "params": "320B MoE / 18B active"
+    },
+    "glm-5-2": {
+      "tagline": "The last-gen flagship that hit 1M context",
+      "highlights": [
+        "AA index 51 at launch (v4.1), #1 among open weights",
+        "Context up from GLM-5.1's 200K to 1M",
+        "LMArena Code 1602 (#22), Text 1476 (#31)"
+      ],
+      "tags": [
+        "Coding",
+        "Long context",
+        "Open weights"
+      ],
+      "notes": "Shares its base with GLM-5.3. Z.ai says long-horizon coding falls between Opus 4.7 and 4.8. Token use per task runs high (about 43k).",
+      "bench": {
+        "Artificial Analysis Intelligence Index v4.1": "#1 open weights at launch (old index)",
+        "LMArena Code": "#22",
+        "LMArena Text": "#31"
+      },
+      "pricing": "$1.40 / $4.40 per 1M tokens",
+      "params": "744B MoE / 40B active"
+    },
+    "glm-5-1": {
+      "tagline": "Open-weights veteran, 8 hours autonomous",
+      "highlights": [
+        "SWE-Bench Pro 58.4, beat GPT-5.4 and Opus 4.6 at launch",
+        "MIT license; Z.ai says it can run autonomously for 8 hours",
+        "LMArena Code 1508, now down to #49"
+      ],
+      "tags": [
+        "Coding",
+        "Long-horizon agents",
+        "Open weights"
+      ],
+      "notes": "Superseded by 5.2 and 5.3 within six months; now mostly an open-weights baseline.",
+      "bench": {
+        "SWE-Bench Pro": "#1 open weights at launch",
+        "LMArena Code": "#49"
+      },
+      "params": "754B MoE / 40B active"
+    },
+    "glm-5": {
+      "tagline": "The base model that started the GLM-5 family",
+      "highlights": [
+        "First to adopt DeepSeek Sparse Attention (DSA) for long-context token efficiency",
+        "Z.ai benchmarks its code logic density against Claude Opus 4.5",
+        "LMArena Text 1457 (#61), Code 1434 (#72)"
+      ],
+      "tags": [
+        "Open weights",
+        "Sparse attention",
+        "Coding"
+      ],
+      "notes": "MIT-licensed open weights; 5.1, 5.2 and 5.3 all reuse the same MoE scale.",
+      "bench": {
+        "LMArena Text": "#61",
+        "LMArena Code": "#72"
+      },
+      "params": "744B MoE / 40B active"
+    },
+    "glm-5v-turbo": {
+      "tagline": "A screenshot-to-code vision agent, now retired",
+      "highlights": [
+        "Z.ai's first natively multimodal agent base: image, video and text input",
+        "Built for screenshot/mockup-to-code and browser agents",
+        "LMArena Code 1400, #81"
+      ],
+      "tags": [
+        "Vision",
+        "Visual coding",
+        "GUI agents"
+      ],
+      "notes": "Closed, API only; removed from the Z.ai price list as of September 2026. Its vision capabilities now live in the natively multimodal GLM-5.3-Flash.",
+      "bench": {
+        "LMArena Code": "#81"
+      },
+      "params": "744B (official figure, multimodal)"
+    },
+    "glm-image": {
+      "tagline": "Open image gen that knows things",
+      "highlights": [
+        "Hybrid: autoregressive semantic understanding plus diffusion decoding",
+        "Z.ai pitches it for knowledge-heavy scenes and in-image text",
+        "MIT-licensed; LMArena text-to-image 1012, #74"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Open weights",
+        "Knowledge-heavy"
+      ],
+      "notes": "Well behind frontier image models; listed because it's Z.ai's only current image model and it's open.",
+      "bench": {
+        "LMArena Text-to-Image": "#74",
+        "Artificial Analysis Text-to-Image": "#104 of 166"
+      }
+    }
+  }
+}

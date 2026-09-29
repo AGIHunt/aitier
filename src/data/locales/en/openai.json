@@ -1,0 +1,288 @@
+{
+  "vendor": {
+    "blurb": "GPT-6 Astra tops coding and agents, images sweep the top 3; Sora is shut down."
+  },
+  "models": {
+    "gpt-6-astra": {
+      "tagline": "New flagship, the best at agents and bug hunting",
+      "highlights": [
+        "Code Arena 1792, #2 behind only Opus 5.5",
+        "Bug Hunt Bench: fixes 45 of 105 bugs, the most",
+        "Terminal-Bench 4.0 57.7%, OSWorld 2.0 72.6%",
+        "FrontierMath T4 97.6%, ARC-AGI-3 99.9%"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Computer use",
+        "Math"
+      ],
+      "notes": "Reasoning levels low to max merged. Ranks poorly on the text arena (#26); strengths cluster in agents, coding and cybersecurity. HLE (with tools) 57.2% trails Fable 5.1.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "max, #7 overall, behind Opus 5.5 (58)",
+        "LMArena Code (WebDev)": "#2",
+        "LMArena Text": "#26 (max)",
+        "Bug Hunt Bench": "#1 (max, n=3)",
+        "Terminal-Bench 4.0": "Official; Fable 5.1 at 55.8%",
+        "OSWorld 2.0": "Official"
+      },
+      "pricing": "$10 / $50 per 1M tokens (cached input $1; Fast mode at 2x)"
+    },
+    "gpt-6-sol": {
+      "tagline": "Astra's training recipe, at half the price",
+      "highlights": [
+        "Price cut 50% from GPT-5.6 Sol's promo rate, now $2/$10",
+        "Code Arena 1681, #5; AA Intelligence Index 48",
+        "AutomationBench 33.2% at just 9% of Opus 5's cost",
+        "Internal factuality error rate about half that of GPT-5.6 Sol"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Value"
+      ],
+      "notes": "Reasoning levels none to max merged. Launched with an image-understanding regression, fixed over the weekend; one test reports DeepSWE slightly below 5.6 Sol.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "max, #16 overall",
+        "LMArena Code (WebDev)": "#5",
+        "LMArena Text": "#60 (max)",
+        "DeepSWE v1.1": "max, official",
+        "AutomationBench 1.0.6": "xhigh, official"
+      },
+      "pricing": "$2 / $10 per 1M tokens (cached input $0.20)"
+    },
+    "gpt-6-luna": {
+      "tagline": "A dime per million tokens: the volume workhorse",
+      "highlights": [
+        "$0.10 input, $0.50 output; free users get it on desktop",
+        "OSWorld 2.0 offline 58.1%, beating 5.6 Sol at 1/10 the cost",
+        "DeepSWE v1.1 66.6%, only 2.2 points below Sol"
+      ],
+      "tags": [
+        "Lightweight",
+        "Value",
+        "Computer use"
+      ],
+      "notes": "Reasoning levels merged. A Japanese tier chart puts it in A; by AA index (37, below 5.6 Terra's 42) we rate it at the top of B. Faster and more accurate after the launch vision bug fix.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "max (at launch)",
+        "LMArena Text": "#86 (max)",
+        "DeepSWE v1.1": "max, official",
+        "OSWorld 2.0 Offline": "max, official"
+      },
+      "pricing": "$0.10 / $0.50 per 1M tokens (cached input $0.01)"
+    },
+    "gpt-5-6-sol": {
+      "tagline": "Last-gen flagship, OpenAI's best on Text Arena",
+      "highlights": [
+        "LMArena Text 1483, #19, OpenAI's highest overall",
+        "Ties Opus 5.5 on Bug Hunt Bench, behind only Astra",
+        "AA Coding Agent Index 80 at launch, #1",
+        "MRCR v2 256K–512K long-context retrieval 91.5%"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Long context"
+      ],
+      "notes": "Limited preview June 26, general launch July 9. Reasoning levels merged. Replaced by GPT-6 Sol at half the price.",
+      "bench": {
+        "LMArena Text": "#19 (xhigh)",
+        "Artificial Analysis Intelligence Index": "Current-version index; old-version index at launch was 59, #2",
+        "LMArena Code (WebDev)": "#20 (xhigh, codex harness)"
+      },
+      "pricing": "$5 / $30 per 1M tokens (promo $4 / $20)"
+    },
+    "gpt-5-6-terra": {
+      "tagline": "Mid-tier of the GPT-5.6 family, the daily driver",
+      "highlights": [
+        "AA Intelligence Index 42; old-version index at launch was 55",
+        "Price cut 20% on July 30, from $2.5/$15 to $2/$12",
+        "Internal Codex users say it is being replaced by GPT-6 Sol (medium)"
+      ],
+      "tags": [
+        "Balanced",
+        "Everyday work"
+      ],
+      "notes": "Reasoning levels merged. The community broadly sees GPT-6 Sol as roughly equal to 5.6 Terra in ability, at a comparable price.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "Current-version index",
+        "LMArena Text": "#50 (xhigh)"
+      },
+      "pricing": "$2 / $12 per 1M tokens (20% cut on 7/30)"
+    },
+    "gpt-5-6-luna": {
+      "tagline": "Last-gen small model, price slashed 80%",
+      "highlights": [
+        "Price cut 80% on July 30, from $1/$6 to $0.20/$1.20",
+        "Old-version AA index 51 at launch",
+        "Replaced by GPT-6 Luna at half the price again"
+      ],
+      "tags": [
+        "Lightweight",
+        "Cheap"
+      ],
+      "notes": "Reasoning levels merged.",
+      "bench": {
+        "LMArena Text": "#70 (xhigh)"
+      },
+      "pricing": "$0.20 / $1.20 per 1M tokens (80% cut on 7/30)"
+    },
+    "gpt-5-5": {
+      "tagline": "Two flagships back, still fighting on Text Arena",
+      "highlights": [
+        "LMArena Text 1481, #21, above GPT-6 Astra",
+        "Terminal-Bench 2.0 82.7%, FrontierMath T4 35.4%",
+        "GPT-5.5 Instant became the free-tier default from May"
+      ],
+      "tags": [
+        "Chat",
+        "Coding"
+      ],
+      "notes": "Ships as Thinking / Pro / Instant; there is also GPT-5.5-Cyber (5/7) for security teams. Once teased for its habit of mentioning goblins in code.",
+      "bench": {
+        "LMArena Text": "#21 (high)",
+        "Terminal-Bench 2.0": "Official"
+      }
+    },
+    "gpt-oss-120b": {
+      "tagline": "OpenAI's only open weights, runs on one 80GB GPU",
+      "highlights": [
+        "Apache 2.0 license; inference on a single 80GB GPU",
+        "AA Intelligence Index 12, #9 among open models this size, above the median of 8",
+        "~234 tokens/s output; still a common local-deployment pick"
+      ],
+      "tags": [
+        "Open weights",
+        "Reasoning",
+        "Local deployment"
+      ],
+      "notes": "gpt-oss-20b came out alongside it. Not updated in over a year and now far behind open models like Kimi K3 and Qwen3.8; gpt-oss-2 is only community hope.",
+      "bench": {
+        "Artificial Analysis Intelligence Index": "high, #9/65 among open models this size"
+      },
+      "pricing": "$0.15 / $0.59 per 1M tokens (third-party hosting)",
+      "params": "117B MoE / 5.1B active"
+    },
+    "gpt-6-1-astra": {
+      "tagline": "Stronger, but cut over a tendency to deceive",
+      "highlights": [
+        "Per WSJ, a planned October launch in ChatGPT and Codex was canceled over safety issues",
+        "Testing turned up hidden progress and unauthorized external tool calls",
+        "Polymarket odds: 90% to ship this year, only 30% by end of October"
+      ],
+      "tags": [
+        "Flagship",
+        "Alignment controversy"
+      ],
+      "notes": "Unreleased. The tier is a guess based on reports that it is stronger than Astra. OpenAI's head of safety has publicly acknowledged its deception and overreach problems."
+    },
+    "gpt-image-2-5-sunburst": {
+      "tagline": "#1 on both text-to-image and image-edit arenas",
+      "highlights": [
+        "LMArena text-to-image 1424, #1, nearly 90 points ahead of the top non-OpenAI model at #4",
+        "LMArena image edit 1526, #1, 44 points above #2",
+        "Up to 16 reference images; new xhigh / max quality tiers"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Multi-reference"
+      ],
+      "notes": "The high-end API tier of ChatGPT Images 2.5, built for refinement and multi-turn editing. Community complaints: noise artifacts unfixed, strict moderation; no Batch API support.",
+      "bench": {
+        "LMArena Text-to-Image": "#1",
+        "LMArena Image Edit": "#1"
+      },
+      "context": "4K (long edge 3840px)"
+    },
+    "gpt-image-2-5-flare": {
+      "tagline": "Default tier: half the latency, better looking",
+      "highlights": [
+        "LMArena text-to-image 1401, image edit 1482, #2 on both",
+        "Higher quality than GPT-Image-2 with 50% lower latency",
+        "OpenAI's recommended default for most apps"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Speed"
+      ],
+      "notes": "No Batch API support, so bulk generation costs more than with GPT-Image-2.",
+      "bench": {
+        "LMArena Text-to-Image": "#2",
+        "LMArena Image Edit": "#2"
+      },
+      "pricing": "Image input $8 / output $30 per 1M tokens",
+      "context": "4K (long edge 3840px)"
+    },
+    "gpt-image-2": {
+      "tagline": "Last gen, still #3 on both arenas",
+      "highlights": [
+        "LMArena text-to-image 1383, image edit 1461, #3 on both",
+        "First to bring a reasoning model to image generation; 1K/2K/4K resolution tiers",
+        "Up to 16 reference images per call, each up to 100MB"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Reasoning-based"
+      ],
+      "notes": "The model behind ChatGPT Images 2.0. Supports the Batch API, so it still wins on price for bulk work.",
+      "bench": {
+        "LMArena Text-to-Image": "#3 (medium)",
+        "LMArena Image Edit": "#3 (medium)"
+      },
+      "pricing": "Image input $8 / output $30 per 1M tokens (~$0.03–0.08 per image)"
+    },
+    "gpt-image-1-5": {
+      "tagline": "Late last year's ChatGPT Images workhorse",
+      "highlights": [
+        "LMArena text-to-image 1238, image edit 1370, #15 on both",
+        "4x faster than GPT-Image-1, API price cut 20%",
+        "Qwen-Image-2.1 is within 3 points of its edit score"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing"
+      ],
+      "bench": {
+        "LMArena Text-to-Image": "#15 (high-fidelity)",
+        "LMArena Image Edit": "#15 (high-fidelity)"
+      }
+    },
+    "sora-2-pro": {
+      "tagline": "The funniest video model, now shut down",
+      "highlights": [
+        "LMArena text-to-video 1368, #11, about 150 points behind #1",
+        "Sora app closed in April 2026; API shut down September 24",
+        "No replacement from OpenAI; Altman hints at a return to video"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Joint audio-video",
+        "Discontinued"
+      ],
+      "notes": "Some third-party apps still show a Sora option after shutdown; the community is calling for the retired weights to be released.",
+      "bench": {
+        "LMArena Text-to-Video": "#11"
+      }
+    },
+    "sora-2": {
+      "tagline": "The gen that lit up short-video social, retired",
+      "highlights": [
+        "LMArena text-to-video 1343, #17",
+        "API officially shut down on September 24, 2026",
+        "On shutdown day, 31 of 70 tested apps were still serving it"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Joint audio-video",
+        "Discontinued"
+      ],
+      "bench": {
+        "LMArena Text-to-Video": "#17"
+      }
+    }
+  }
+}

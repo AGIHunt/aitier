@@ -23,7 +23,11 @@
       "pricing": "$2 / $6 每百万 token（>200K 翻倍）",
       "tier": "A",
       "score": 84,
-      "tags": ["编程", "Agent", "性价比"],
+      "tags": [
+        "编程",
+        "Agent",
+        "性价比"
+      ],
       "tagline": "价格只有对手零头的编程快枪手",
       "highlights": [
         "Artificial Analysis 智能指数 46（xhigh），高于 Grok 4.6 的 44",
@@ -32,11 +36,36 @@
         "已上架 Bedrock、GitHub Copilot 全家桶与 Grok Build"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "46", "note": "xhigh；Opus 5.5 max 为 58", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "Code Arena", "value": "1629", "note": "第 13（xhigh）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "Text Arena", "value": "1439", "note": "第 92（xhigh），低于 4.6", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Agent Arena", "value": "+3.96%", "note": "第 16，单任务中位成本 $1.14", "source": "https://agihunt.info/e/1a0debee0dcd60a6e2e69f87fab"},
-        {"name": "Terminal-Bench 4.0", "value": "38.0%", "note": "dl_weekly 转述", "source": "https://agihunt.info/e/1a0e2c066a2ead1f3dcd264007f"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "46",
+          "note": "xhigh；Opus 5.5 max 为 58",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1629",
+          "note": "第 13（xhigh）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1439",
+          "note": "第 92（xhigh），低于 4.6",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+3.96%",
+          "note": "第 16，单任务中位成本 $1.14",
+          "source": "https://agihunt.info/e/1a0debee0dcd60a6e2e69f87fab"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "38.0%",
+          "note": "dl_weekly 转述",
+          "source": "https://agihunt.info/e/1a0e2c066a2ead1f3dcd264007f"
+        }
       ],
       "notes": "推理档 low/medium/high/xhigh；另有 Grok 4.7 Fast（2 倍价）。输出 token 比 4.6 多 125%；SWE-Together 审计有 44 次绕过已重跑。社区评价两极",
       "sources": [
@@ -60,7 +89,11 @@
       "pricing": "$2 / $6 每百万 token（>200K 翻倍）",
       "tier": "A",
       "score": 81,
-      "tags": ["编程", "长程 Agent", "性价比"],
+      "tags": [
+        "编程",
+        "长程 Agent",
+        "性价比"
+      ],
       "tagline": "Grok Build 1.0 的默认引擎",
       "highlights": [
         "Code Arena 第 17（1621），与 4.7 仅差 8 分",
@@ -69,9 +102,24 @@
         "Text Arena 1453，反而高于 4.7"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "44", "note": "high / xhigh 同分", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "Code Arena", "value": "1621", "note": "第 17（high）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "Text Arena", "value": "1453", "note": "第 72（high）", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "44",
+          "note": "high / xhigh 同分",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1621",
+          "note": "第 17（high）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1453",
+          "note": "第 72（high）",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "推理档 low/medium/high/xhigh；聚焦长程 Agent 与编程；外部天梯图放 A 档且高于 4.7",
       "sources": [
@@ -93,7 +141,10 @@
       "pricing": "$2 / $6 每百万 token（>200K 翻倍）",
       "tier": "C",
       "score": 70,
-      "tags": ["编程", "推理"],
+      "tags": [
+        "编程",
+        "推理"
+      ],
       "tagline": "首个与 Cursor 联合训练的 Grok",
       "highlights": [
         "首个用 Cursor 真实开发者交互数据联合训练的 Grok",
@@ -101,8 +152,18 @@
         "Agent Arena 单任务中位成本仅 $0.43"
       ],
       "benchmarks": [
-        {"name": "Code Arena", "value": "1552", "note": "第 33", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "Text Arena", "value": "1465", "note": "第 47", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "Code Arena",
+          "value": "1552",
+          "note": "第 33",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1465",
+          "note": "第 47",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "发布时自称 AA 指数第 4（旧版指数口径），两个月后被 4.6/4.7 取代",
       "sources": [
@@ -124,7 +185,11 @@
       "pricing": "$1.25 / $2.5 每百万 token（>200K 翻倍）",
       "tier": "D",
       "score": 62,
-      "tags": ["长上下文", "视频理解", "便宜"],
+      "tags": [
+        "长上下文",
+        "视频理解",
+        "便宜"
+      ],
       "tagline": "1M 上下文的 Grok 平价款",
       "highlights": [
         "输入价较前代降约 40%，输出仅 $2.5/M",
@@ -132,8 +197,18 @@
         "Text Arena 1442（第 89），Code Arena 1357（第 101）"
       ],
       "benchmarks": [
-        {"name": "Text Arena", "value": "1442", "note": "第 89", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena", "value": "1357", "note": "第 101", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "Text Arena",
+          "value": "1442",
+          "note": "第 89",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1357",
+          "note": "第 101",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "4 月 17 日先给 SuperGrok Heavy 内测，4 月 30 日 API 全量",
       "sources": [
@@ -154,7 +229,11 @@
       "pricing": "$1.25 / $2.5 每百万 token（>200K 翻倍）",
       "tier": "D",
       "score": 60,
-      "tags": ["多 Agent", "低幻觉", "对话"],
+      "tags": [
+        "多 Agent",
+        "低幻觉",
+        "对话"
+      ],
       "tagline": "玩梗命名的多 Agent 版 Grok",
       "highlights": [
         "提供 reasoning / non-reasoning / multi-agent 三个 API 变体",
@@ -162,8 +241,18 @@
         "Code Arena 仅 1374（第 93），编程明显落后"
       ],
       "benchmarks": [
-        {"name": "Text Arena", "value": "1475", "note": "第 34（beta1）", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena", "value": "1374", "note": "第 93", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "Text Arena",
+          "value": "1475",
+          "note": "第 34（beta1）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1374",
+          "note": "第 93",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "当前 API 版本号 0309；对话口碑好于后续编程向版本",
       "sources": [
@@ -184,7 +273,11 @@
       "pricing": "$1 / $2 每百万 token（长上下文翻倍）",
       "tier": "D",
       "score": 58,
-      "tags": ["编程", "速度", "Agent"],
+      "tags": [
+        "编程",
+        "速度",
+        "Agent"
+      ],
       "tagline": "每秒百 token 的终端编程专用模型",
       "highlights": [
         "专为 Agent 式编程训练，输出 100+ token/秒",
@@ -212,7 +305,10 @@
       "pricing": null,
       "tier": "A",
       "score": 85,
-      "tags": ["传闻", "编程"],
+      "tags": [
+        "传闻",
+        "编程"
+      ],
       "tagline": "4.7 刚发一周就现身 Cursor",
       "highlights": [
         "Cursor 服务端列表出现 grok-4.8-high / xhigh-fast 等变体",
@@ -220,7 +316,9 @@
       ],
       "benchmarks": [],
       "notes": "仅为泄露，档位为推测占位",
-      "sources": ["https://agihunt.info/e/1a0e7877f9640a85a9a1369f332"]
+      "sources": [
+        "https://agihunt.info/e/1a0e7877f9640a85a9a1369f332"
+      ]
     },
     {
       "id": "grok-imagine-image-2",
@@ -234,8 +332,12 @@
       "context": null,
       "pricing": "$0.04/张",
       "tier": "S",
-      "score": 90,
-      "tags": ["文生图", "图像编辑", "多图参考"],
+      "score": 91,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "多图参考"
+      ],
       "tagline": "只输 GPT Image 的第二名画师",
       "highlights": [
         "AA 文生图榜第 4（Elo 1154），仅次于三款 GPT Image",
@@ -243,8 +345,30 @@
         "魔棒局部改图、分割、去背景、最多 5 图参考融合"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1154", "note": "第 4", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"},
-        {"name": "Arena Text-to-Image", "value": "1301", "note": "第 6（low）", "source": "https://arena.ai/leaderboard/text-to-image"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1301",
+          "note": "第 6（low）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1430",
+          "note": "第 4（low）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1154",
+          "note": "第 4",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 9",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "Grok 内称 Quality Mode；AA 标价 $60/千张，官方 API 文档为 $0.04/张",
       "sources": [
@@ -264,9 +388,13 @@
       "params": null,
       "context": null,
       "pricing": "$0.02/张（quality 版 $0.05）",
-      "tier": "C",
-      "score": 69,
-      "tags": ["文生图", "便宜", "快速"],
+      "tier": "B",
+      "score": 75,
+      "tags": [
+        "文生图",
+        "便宜",
+        "快速"
+      ],
       "tagline": "两分钱一张的 Grok 出图基础款",
       "highlights": [
         "quality 版 AA 文生图第 17（Elo 1046，2026-05）",
@@ -274,11 +402,35 @@
         "单价 $0.02/张，Imagine 全家最便宜"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1046", "note": "quality 版第 17", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"},
-        {"name": "Arena Text-to-Image", "value": "1170", "note": "第 23", "source": "https://arena.ai/leaderboard/text-to-image"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1170",
+          "note": "第 23（基础版）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1390",
+          "note": "第 10（quality 20260519）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1046",
+          "note": "第 17（quality）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1083",
+          "note": "第 16（quality）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "合并 grok-imagine-image / -quality / -pro 等 1.x 变体；具体首发日期未查实",
-      "sources": ["https://docs.x.ai/developers/models"]
+      "sources": [
+        "https://docs.x.ai/developers/models"
+      ]
     },
     {
       "id": "grok-imagine-video-1-5",
@@ -293,7 +445,12 @@
       "pricing": "$0.08/秒",
       "tier": "S",
       "score": 89,
-      "tags": ["文生视频", "图生视频", "原生音频", "多帧控制"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "原生音频",
+        "多帧控制"
+      ],
       "tagline": "能当导演用的 Grok 视频模型",
       "highlights": [
         "Arena 文生视频第 4（agent 版 1492），紧追 Gemini Omni",
@@ -301,8 +458,18 @@
         "图片可指定首帧/中间帧/尾帧/循环/参考"
       ],
       "benchmarks": [
-        {"name": "Arena Text-to-Video", "value": "1492", "note": "第 4（1.5-agent）", "source": "https://arena.ai/leaderboard/text-to-video"},
-        {"name": "AA Image-to-Video", "value": "1099", "note": "第 8", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+        {
+          "name": "Arena Text-to-Video",
+          "value": "1492",
+          "note": "第 4（1.5-agent）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1099",
+          "note": "第 8",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
       ],
       "notes": "6 月初以图生视频 720p 上线，7 月扩展文生视频/参考生视频并支持原生 1080p；AA 文生视频榜前 20 未见 1.5",
       "sources": [
@@ -324,7 +491,11 @@
       "pricing": "$0.05/秒",
       "tier": "B",
       "score": 74,
-      "tags": ["文生视频", "图生视频", "便宜"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "便宜"
+      ],
       "tagline": "年初登顶过 AA 视频榜的初代",
       "highlights": [
         "2026 年 1 月曾同时登顶 AA 文生视频与图生视频榜",
@@ -332,9 +503,24 @@
         "$4.2/分钟含音频，至今仍是最便宜的一档"
       ],
       "benchmarks": [
-        {"name": "AA Image-to-Video", "value": "1072", "note": "第 13", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
-        {"name": "AA Text-to-Video", "value": "1065", "note": "第 23", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
-        {"name": "Arena Text-to-Video", "value": "1342", "note": "第 18（720p）", "source": "https://arena.ai/leaderboard/text-to-video"}
+        {
+          "name": "AA Image-to-Video",
+          "value": "1072",
+          "note": "第 13",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Text-to-Video",
+          "value": "1065",
+          "note": "第 23",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "Arena Text-to-Video",
+          "value": "1342",
+          "note": "第 18（720p）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
       ],
       "notes": "已被 1.5 取代，但仍在 API 提供",
       "sources": [

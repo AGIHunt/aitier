@@ -69,7 +69,8 @@ export function ModelCard({ model, position, index, active }: Props) {
   const startAt = useRef<number | null>(null)
   const hoverAmt = useRef(0)
 
-  const texture = useMemo(() => makeCardTexture(model), [model])
+  const lang = useStore((s) => s.lang)
+  const texture = useMemo(() => makeCardTexture(model, lang), [model, lang])
   useEffect(() => () => texture.dispose(), [texture])
 
   const material = useMemo(

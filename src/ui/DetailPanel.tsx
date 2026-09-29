@@ -3,9 +3,10 @@ import type { CSSProperties } from 'react'
 import { audio } from '../audio/engine'
 import { MODEL_BY_ID, MODELS_BY_CATEGORY } from '../data'
 import { TIER_BY_ID } from '../data/tiers'
+import { useT } from '../i18n'
 import { useStore } from '../store'
 import type { RankedModel } from '../types'
-import { Badge, Move, STATUS_ZH, TierChip } from './bits'
+import { Badge, Move, TierChip } from './bits'
 
 function ScoreRing({ m }: { m: RankedModel }) {
   const t = TIER_BY_ID[m.tier]
@@ -44,6 +45,8 @@ function ScoreRing({ m }: { m: RankedModel }) {
 export function DetailPanel() {
   const id = useStore((s) => s.selectedId)
   const view = useStore((s) => s.view)
+  const lang = useStore((s) => s.lang)
+  const T = useT()
   const m = id ? MODEL_BY_ID.get(id) : undefined
   const select = useStore((s) => s.select)
   const set = useStore((s) => s.set)
@@ -58,10 +61,11 @@ export function DetailPanel() {
     select(n.id)
     set({ focus: TIER_BY_ID[n.tier].level })
   }
+  const tx = m?.text[lang]
 
   return (
     <AnimatePresence>
-      {m && (
+      {m && tx && (
         <motion.aside
           key="panel"
           className={`panel ${view === 'table' ? 'panel--table' : ''}`}
@@ -71,136 +75,139 @@ export function DetailPanel() {
           exit={{ x: 60, opacity: 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 30 }}
         >
-          <motion.div key={m.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
-            <div className="panel__top">
-              <button className="panel__nav" onClick={() => go(-1)} title="上一名 (←)">
-                ‹
-              </button>
-              <span className="panel__rank">
-                #{m.rank} / {list.length}
-              </span>
-              <button className="panel__nav" onClick={() => go(1)} title="下一名 (→)">
-                ›
-              </button>
-              <button className="panel__close" onClick={() => select(null)} title="关闭 (Esc)">
-                ✕
-              </button>
-            </div>
+          <div className="panel__top">
+            <button className="panel__nav" onClick={() => go(-1)} title={T('prev')}>
+              ‹
+            </button>
+            <span className="panel__rank">
+              #{m.rank} / {list.length}
+            </span>
+            <button className="panel__nav" onClick={() => go(1)} title={T('next')}>
+              ›
+            </button>
+            <button className="panel__close" onClick={() => select(null)} title={T('close')}>
+              ✕
+            </button>
+          </div>
 
-            <div className="panel__head">
-              <div>
-                <div className="panel__vendor">
-                  <Badge vendor={m.vendor} size={26} />
-                  <span>{m.vendor.nameZh}</span>
-                  <span className="dim">{m.vendor.country}</span>
+          <div className="panel__scroll">
+            <motion.div key={m.id + lang} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
+              <div className="panel__head">
+                <div>
+                  <div className="panel__vendor">
+                    <Badge vendor={m.vendor} size={26} />
+                    <span>{m.vendor.label[lang]}</span>
+                    <span className="dim">{m.vendor.country}</span>
+                  </div>
+                  <h2 className="panel__name">{m.name}</h2>
+                  <div className="panel__tagline">{tx.tagline}</div>
+                  <div className="panel__chips">
+                    <TierChip tier={m.tier} size="lg" />
+                    <Move m={m} />
+                    <span className={`status status--${m.status}`}>{T(`status_${m.status}`)}</span>
+                    {m.openWeights && <span className="status status--open">{T('openWeights')}</span>}
+                  </div>
                 </div>
-                <h2 className="panel__name">{m.name}</h2>
-                <div className="panel__tagline">{m.tagline}</div>
-                <div className="panel__chips">
-                  <TierChip tier={m.tier} size="lg" />
-                  <Move tier={m.tier} prev={m.prevTier} released={m.released} />
-                  <span className={`status status--${m.status}`}>{STATUS_ZH[m.status]}</span>
-                  {m.openWeights && <span className="status status--open">开源权重</span>}
+                <ScoreRing m={m} />
+              </div>
+
+              <div className="tags">
+                {tx.tags.map((t) => (
+                  <span key={t} className="tag">
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <dl className="facts">
+                <div>
+                  <dt>{T('released')}</dt>
+                  <dd>{m.released ?? '—'}</dd>
                 </div>
-              </div>
-              <ScoreRing m={m} />
-            </div>
+                <div>
+                  <dt>{m.category === 'llm' ? T('context') : T('spec')}</dt>
+                  <dd>{tx.context ?? '—'}</dd>
+                </div>
+                <div>
+                  <dt>{T('params')}</dt>
+                  <dd>{tx.params ?? '—'}</dd>
+                </div>
+                <div>
+                  <dt>{T('price')}</dt>
+                  <dd>{tx.pricing ?? '—'}</dd>
+                </div>
+              </dl>
 
-            <div className="tags">
-              {m.tags.map((t) => (
-                <span key={t} className="tag">
-                  {t}
-                </span>
-              ))}
-            </div>
+              {tx.highlights.length > 0 && (
+                <section>
+                  <h3>{T('highlights')}</h3>
+                  <ul className="hl">
+                    {tx.highlights.map((h, i) => (
+                      <motion.li key={i} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.07 }}>
+                        {h}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
-            <dl className="facts">
-              <div>
-                <dt>发布</dt>
-                <dd>{m.released ?? '—'}</dd>
-              </div>
-              <div>
-                <dt>{m.category === 'llm' ? '上下文' : '规格'}</dt>
-                <dd>{m.context ?? '—'}</dd>
-              </div>
-              <div>
-                <dt>参数</dt>
-                <dd>{m.params ?? '—'}</dd>
-              </div>
-              <div>
-                <dt>价格</dt>
-                <dd>{m.pricing ?? '—'}</dd>
-              </div>
-            </dl>
+              {m.benchmarks.length > 0 && (
+                <section>
+                  <h3>{T('benchmarks')}</h3>
+                  <div className="bench">
+                    {m.benchmarks.map((b, i) => (
+                      <a key={i} className="bench__row" href={b.source} target="_blank" rel="noreferrer">
+                        <span className="bench__name">{tx.bench[i].name}</span>
+                        <span className="bench__val">{tx.bench[i].value}</span>
+                        <span className="bench__note">{tx.bench[i].note}</span>
+                      </a>
+                    ))}
+                  </div>
+                </section>
+              )}
 
-            {m.highlights.length > 0 && (
-              <section>
-                <h3>亮点</h3>
-                <ul className="hl">
-                  {m.highlights.map((h, i) => (
-                    <motion.li key={i} initial={{ opacity: 0, x: 12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 + i * 0.07 }}>
-                      {h}
-                    </motion.li>
-                  ))}
-                </ul>
-              </section>
-            )}
+              {tx.notes && <p className="notes">{tx.notes}</p>}
 
-            {m.benchmarks.length > 0 && (
-              <section>
-                <h3>榜单 / 基准</h3>
-                <div className="bench">
-                  {m.benchmarks.map((b, i) => (
-                    <a key={i} className="bench__row" href={b.source} target="_blank" rel="noreferrer">
-                      <span className="bench__name">{b.name}</span>
-                      <span className="bench__val">{b.value}</span>
-                      <span className="bench__note">{b.note}</span>
+              {peers.length > 0 && (
+                <section>
+                  <h3>{T('peers')}</h3>
+                  <div className="peers">
+                    {peers.map((p) => (
+                      <button key={p.id} className="peer" onClick={() => (audio.select(TIER_BY_ID[p.tier].semitone), select(p.id))}>
+                        <Badge vendor={p.vendor} size={18} />
+                        <span>{p.name}</span>
+                        <b>{Math.round(p.score)}</b>
+                      </button>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {m.sources.length > 0 && (
+                <div className="sources">
+                  {T('sources')}
+                  {m.sources.slice(0, 6).map((s, i) => (
+                    <a key={i} href={s} target="_blank" rel="noreferrer">
+                      [{i + 1}]
                     </a>
                   ))}
                 </div>
-              </section>
-            )}
+              )}
+            </motion.div>
+          </div>
 
-            {m.notes && <p className="notes">{m.notes}</p>}
-
-            {peers.length > 0 && (
-              <section>
-                <h3>同档对手</h3>
-                <div className="peers">
-                  {peers.map((p) => (
-                    <button key={p.id} className="peer" onClick={() => (audio.select(TIER_BY_ID[p.tier].semitone), select(p.id))}>
-                      <Badge vendor={p.vendor} size={18} />
-                      <span>{p.name}</span>
-                      <b>{Math.round(p.score)}</b>
-                    </button>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            <div className="panel__cta">
-              <button
-                className="vs-btn"
-                onClick={() => {
-                  audio.hit(6)
-                  set({ paletteOpen: true, paletteMode: 'vs' })
-                }}
-              >
-                ⚔ 发起对决
-              </button>
-            </div>
-
-            {m.sources.length > 0 && (
-              <div className="sources">
-                来源：
-                {m.sources.slice(0, 6).map((s, i) => (
-                  <a key={i} href={s} target="_blank" rel="noreferrer">
-                    [{i + 1}]
-                  </a>
-                ))}
-              </div>
-            )}
-          </motion.div>
+          {/* 对决按钮固定在面板底部，不用滚动 */}
+          <div className="panel__foot">
+            <button
+              className="vs-btn"
+              onClick={() => {
+                audio.hit(6)
+                set({ paletteOpen: true, paletteMode: 'vs' })
+              }}
+            >
+              {T('duel')}
+            </button>
+          </div>
         </motion.aside>
       )}
     </AnimatePresence>

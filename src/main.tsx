@@ -8,6 +8,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
+import { applyDocumentLang, detectLang } from './i18n'
 import { useStore } from './store'
 
 try {
@@ -15,6 +16,10 @@ try {
 } catch {
   /* 无存储也能用 */
 }
+
+const lang = detectLang()
+useStore.getState().set({ lang })
+applyDocumentLang(lang)
 
 if (import.meta.env.DEV) (window as unknown as { __store: typeof useStore }).__store = useStore
 

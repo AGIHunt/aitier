@@ -1,0 +1,32 @@
+SSS    97 [google] gemini-omni-1-1-flash | Gemini Omni 1.1 Flash | preview | 2026-08-27 | LMArena Text-to-Video=1516(第 1); LMArena Image-to-Video=1488(第 2)
+SS     95 [google] gemini-omni-flash | Gemini Omni Flash | preview | 2026-05-19 | AA Text-to-Video（含音频）=1233(第 1); LMArena Text-to-Video=1513(第 2)
+SS     93 [alibaba] wan-3-0 | Wan3.0 | released | 2026-08-24 | AA Text-to-Video（无音频）=1335(第 1); AA Text-to-Video（带音频）=1229(第 2); AA Image-to-Video（无音频）=1362(第 3); Video Edit Arena（带音频）=1189(8 月第 1)
+SS     93 [minimax] minimax-h3 | MiniMax H3（海螺 Hailuo 3） | released | 2026-07-31 | LMArena Image-to-Video=1495(第 1); LMArena Text-to-Video=1460(第 8); Artificial Analysis Text-to-Video（带音频）=1220(第 4；fal 后训练版 H3 Max 1227 第 3); Artificial Analysis Image-to-Video（带音频）=1181(第 2；H3 Max（fal）第 1)
+S      91 [bytedance] seedance-2-5 | Seedance 2.5 | released | 2026-07-31 | LMArena Image-to-Video=1477(第 4（榜首 MiniMax H3 1495）); LMArena Text-to-Video=1474(第 7（榜首 Gemini Omni 1.1 Flash 1516）)
+S      89 [bfl] flux-3-video | FLUX 3 Video | released | 2026-08-04 | LMArena Text-to-Video=1493(第 3（票数约 1300，误差 ±17）); LMArena Image-to-Video=1449(约第 9)
+S      89 [bytedance] seedance-2-0 | Seedance 2.0 | released | 2026-02-12 | LMArena Text-to-Video=1479(第 5); LMArena Image-to-Video=1475(第 5); AA Text-to-Video=1210(第 5); AA Image-to-Video=1176(第 4)
+S      89 [xai] grok-imagine-video-1-5 | Grok Imagine Video 1.5 | released | 2026-06 | Arena Text-to-Video=1492(第 4（1.5-agent）); AA Image-to-Video=1099(第 8)
+A      86 [hidream] hidream-o1-video-1.0 | HiDream-O1-Video-1.0 | released | 2026-09-17 | AA Image-to-Video=1174(第 5); LMArena Image-to-Video=1456(约第 7)
+A      84 [meta] muse-video | Muse Video | preview | 2026-07-07 | Arena Text-to-Video=1456(第 9)
+A      82 [kuaishou] kling-4.0 | Kling 4.0 | preview | 2026-10 | 
+A      82 [sandai] magi-2-preview | MAGI-2 Preview | preview | 2026-08-05 | AA Text-to-Video=1156(第 6); AA Image-to-Video=1094(约第 9)
+A      81 [alibaba] wan-2-7 | Wan2.7 | released | 2026-04 | AA Text-to-Video（带音频）=1149(Wan2.7-260612 第 7；原版 1098 第 10)
+A      80 [alibaba] happyhorse-1-1 | HappyHorse-1.1 | released | 2026-06-22 | AA Text-to-Video（带音频）=1147(第 8)
+A      80 [google] genie-3 | Genie 3 | preview | 2025-08 | 
+B      76 [google] veo-3-1 | Veo 3.1 | preview | 2025-10 | LMArena Text-to-Video=1364(第 12（含音频）); AA Text-to-Video（含音频）=1088(第 14)
+B      75 [kuaishou] kling-4.0-flash | Kling 4.0 Flash | preview | 2026-09-28 | 
+B      74 [xai] grok-imagine-video | Grok Imagine Video | released | 2026-01 | AA Image-to-Video=1072(第 13); AA Text-to-Video=1065(第 23); Arena Text-to-Video=1342(第 18（720p）)
+B      72 [kuaishou] kling-3.0 | Kling 3.0 | released | 2026-02-05 | AA Text-to-Video=1095(1080p Pro，约第 12); AA Image-to-Video=1055(1080p Pro，约第 19); LMArena Image-to-Video=1354(kling-v3-pro，约第 19)
+B      72 [skywork] skyreels-v4 | SkyReels V4 | released | 2026-02-25 | AA Text-to-Video=1095(约第 11); AA Image-to-Video=1069(约第 16)
+C      70 [pixverse] pixverse-v6 | PixVerse V6 | released | 2026-03-30 | AA Image-to-Video=1070(约第 15); AA Text-to-Video=1076(约第 21)
+C      70 [shengshu] vidu-q3-pro | Vidu Q3 Pro | released | 2026-01-30 | LMArena Image-to-Video=1363(约第 18); AA Text-to-Video=1078(约第 19); AA Image-to-Video=1056(约第 18)
+C      68 [google] veo-3-1-lite | Veo 3.1 Lite | preview | 2026-03-31 | 
+C      66 [bytedance] seedance-1-5-pro | Seedance 1.5 Pro | released | 2025-12 | LMArena Text-to-Video=1256(第 22); LMArena Image-to-Video=1307(第 24)
+C      66 [openai] sora-2-pro | Sora 2 Pro | deprecated | 2025-09-30 | LMArena Text-to-Video=1368(第 11)
+C      64 [alibaba] wan-2-2 | Wan2.2 | released | 2025-07 | 
+D      62 [shengshu] vidu-q3-turbo | Vidu Q3 Turbo | released | 2026-02 | AA Text-to-Video=1025(约第 28)
+D      61 [openai] sora-2 | Sora 2 | deprecated | 2025-09-30 | LMArena Text-to-Video=1343(第 17)
+D      60 [pixverse] pixverse-v5.6 | PixVerse V5.6 | released | 2026-02 | LMArena Image-to-Video=1299(约第 25)
+D      58 [minimax] hailuo-2-3 | MiniMax-Hailuo-2.3 | released | 2025-10-28 | LMArena Text-to-Video=1206(第 32); LMArena Image-to-Video=1262(第 29)
+D      58 [runway] runway-gen-4.5 | Runway Gen-4.5 | released | 2025-12-01 | LMArena Text-to-Video=1225(约第 27)
+D      55 [tencent] hunyuanvideo-1.5 | HunyuanVideo 1.5 | released | 2025-11-20 | 

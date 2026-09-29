@@ -1,0 +1,218 @@
+{
+  "vendor": {
+    "blurb": "Musk's lab: monthly Grok on value, top-tier Imagine, text flagship half a step back"
+  },
+  "models": {
+    "grok-4-7": {
+      "tagline": "A fast coding gun at a fraction of the price",
+      "highlights": [
+        "Artificial Analysis Intelligence Index 46 (xhigh), up from Grok 4.6's 44",
+        "Terminal-Bench 4.0 jumps from 20.3% on 4.6 to 38.0%",
+        "Code Arena #13 (1629), 94% on the Next.js eval, 2–7x cheaper",
+        "Now on Bedrock, the full GitHub Copilot lineup and Grok Build"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Value"
+      ],
+      "notes": "Reasoning levels: low/medium/high/xhigh; a Grok 4.7 Fast also exists at 2x the price. Output tokens are 125% higher than 4.6; 44 bypasses found in a SWE-Together audit were rerun. Community verdicts are split.",
+      "bench": {
+        "AA Intelligence Index": "xhigh; Opus 5.5 max is 58",
+        "Code Arena": "#13 (xhigh)",
+        "Text Arena": "#92 (xhigh), below 4.6",
+        "Agent Arena": "#16, median cost per task $1.14",
+        "Terminal-Bench 4.0": "As relayed by dl_weekly"
+      },
+      "pricing": "$2 / $6 per 1M tokens (doubles above 200K)"
+    },
+    "grok-4-6": {
+      "tagline": "The default engine of Grok Build 1.0",
+      "highlights": [
+        "Code Arena #17 (1621), just 8 points behind 4.7",
+        "AA Intelligence Index 44 (high), at about half of 4.7's cost per task",
+        "Agent Arena median cost per task $0.74, net gain +1.22%",
+        "Text Arena 1453, actually above 4.7"
+      ],
+      "tags": [
+        "Coding",
+        "Long-horizon agents",
+        "Value"
+      ],
+      "notes": "Reasoning levels: low/medium/high/xhigh. Focused on long-horizon agents and coding; an external tier list puts it in A, above 4.7.",
+      "bench": {
+        "AA Intelligence Index": "high and xhigh tie",
+        "Code Arena": "#17 (high)",
+        "Text Arena": "#72 (high)"
+      },
+      "pricing": "$2 / $6 per 1M tokens (doubles above 200K)",
+      "params": "~1.5T (V9 base)"
+    },
+    "grok-4-5": {
+      "tagline": "The first Grok co-trained with Cursor",
+      "highlights": [
+        "First Grok co-trained on real developer interactions from Cursor",
+        "Code Arena 1552 (#33), Text Arena 1465 (#47)",
+        "Agent Arena median cost per task just $0.43"
+      ],
+      "tags": [
+        "Coding",
+        "Reasoning"
+      ],
+      "notes": "At launch it claimed #4 on the AA index (old index methodology); replaced by 4.6/4.7 two months later.",
+      "bench": {
+        "Code Arena": "#33",
+        "Text Arena": "#47"
+      },
+      "pricing": "$2 / $6 per 1M tokens (doubles above 200K)",
+      "params": "~1.5T (V9 base)"
+    },
+    "grok-4-3": {
+      "tagline": "The budget Grok with 1M context",
+      "highlights": [
+        "Input price down about 40% from its predecessor, output just $2.5/M",
+        "First with native video input; can generate PDFs, spreadsheets and slides directly",
+        "Text Arena 1442 (#89), Code Arena 1357 (#101)"
+      ],
+      "tags": [
+        "Long context",
+        "Video understanding",
+        "Cheap"
+      ],
+      "notes": "Went to SuperGrok Heavy testers on 4/17, then to the full API on 4/30.",
+      "bench": {
+        "Text Arena": "#89",
+        "Code Arena": "#101"
+      },
+      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)"
+    },
+    "grok-4-20": {
+      "tagline": "The meme-named multi-agent Grok",
+      "highlights": [
+        "Three API variants: reasoning, non-reasoning and multi-agent",
+        "Text Arena 1475 (#34), still the Grok family's best text score",
+        "Code Arena only 1374 (#93), clearly behind on coding"
+      ],
+      "tags": [
+        "Multi-agent",
+        "Low hallucination",
+        "Chat"
+      ],
+      "notes": "The current API version is 0309; chat reception was better than the later coding-focused versions.",
+      "bench": {
+        "Text Arena": "#34 (beta1)",
+        "Code Arena": "#93"
+      },
+      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)"
+    },
+    "grok-build-0-1": {
+      "tagline": "A terminal coding model at 100 tokens a second",
+      "highlights": [
+        "Trained specifically for agentic coding, 100+ tokens/sec output",
+        "Powers an early version of Grok Build, the open-source (Apache 2.0) terminal agent",
+        "Succeeds 2025's Grok Code Fast 1 (Code Arena just 1167)"
+      ],
+      "tags": [
+        "Coding",
+        "Speed",
+        "Agents"
+      ],
+      "notes": "Public beta on the API; from Grok Build 1.0 the default switched to Grok 4.6/4.7. No independent leaderboard results.",
+      "bench": {},
+      "pricing": "$1 / $2 per 1M tokens (doubles at long context)"
+    },
+    "grok-4-8": {
+      "tagline": "Spotted in Cursor a week after 4.7 shipped",
+      "highlights": [
+        "Variants like grok-4.8-high and xhigh-fast appeared on Cursor's server list",
+        "A commit labels it the \"next-gen Grok release\"; rumored to land in about a month"
+      ],
+      "tags": [
+        "Rumored",
+        "Coding"
+      ],
+      "notes": "A leak only; the tier is a speculative placeholder.",
+      "bench": {}
+    },
+    "grok-imagine-image-2": {
+      "tagline": "The runner-up artist, beaten only by GPT Image",
+      "highlights": [
+        "#4 on AA text-to-image (Elo 1154), behind only three GPT Image models",
+        "Arena Text-to-Image #6 (1301); claimed #2 in both text-to-image and editing at launch",
+        "Magic-wand local edits, segmentation, background removal, and up to 5 reference images"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Multi-image reference"
+      ],
+      "notes": "Called Quality Mode inside Grok. AA lists $60 per 1K images; the official API docs say $0.04 per image.",
+      "bench": {
+        "AA Text-to-Image": "#4",
+        "Arena Text-to-Image": "#6 (low)"
+      },
+      "pricing": "$0.04/image"
+    },
+    "grok-imagine-image": {
+      "tagline": "The two-cent baseline Grok image model",
+      "highlights": [
+        "Quality version is #17 on AA text-to-image (Elo 1046, 2026-05)",
+        "Arena Text-to-Image: base #23 (1170), pro #26 (1162)",
+        "$0.02 per image, the cheapest in the Imagine family"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Cheap",
+        "Fast"
+      ],
+      "notes": "Merges the 1.x variants (grok-imagine-image, -quality, -pro and others); the exact launch date is unverified.",
+      "bench": {
+        "AA Text-to-Image": "Quality version #17",
+        "Arena Text-to-Image": "#23"
+      },
+      "pricing": "$0.02/image (quality version $0.05)"
+    },
+    "grok-imagine-video-1-5": {
+      "tagline": "The Grok video model you can actually direct",
+      "highlights": [
+        "Arena Text-to-Video #4 (agent version 1492), right behind Gemini Omni",
+        "AA Image-to-Video #8 (Elo 1099) at $8.4/minute",
+        "Images can be set as first, middle or last frame, loop, or reference"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Native audio",
+        "Multi-frame control"
+      ],
+      "notes": "Launched in early June for 720p image-to-video; in July it added text-to-video and reference-to-video and native 1080p. 1.5 is not in the AA text-to-video top 20.",
+      "bench": {
+        "Arena Text-to-Video": "#4 (1.5-agent)",
+        "AA Image-to-Video": "#8"
+      },
+      "pricing": "$0.08/sec",
+      "context": "1080p, native audio"
+    },
+    "grok-imagine-video": {
+      "tagline": "The original that topped AA video in January",
+      "highlights": [
+        "Topped both AA text-to-video and image-to-video in January 2026",
+        "Now #13 on AA image-to-video (1072) and #23 on text-to-video (1065)",
+        "$4.2/minute with audio, still the cheapest tier"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Cheap"
+      ],
+      "notes": "Replaced by 1.5 but still available on the API.",
+      "bench": {
+        "AA Image-to-Video": "#13",
+        "AA Text-to-Video": "#23",
+        "Arena Text-to-Video": "#18 (720p)"
+      },
+      "pricing": "$0.05/sec",
+      "context": "720p, native audio"
+    }
+  }
+}

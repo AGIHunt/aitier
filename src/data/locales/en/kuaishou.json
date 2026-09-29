@@ -1,0 +1,72 @@
+{
+  "vendor": {
+    "blurb": "Kling once topped the AA video board; now behind Seedance and Wan, eyeing 4.0 in October"
+  },
+  "models": {
+    "kling-4.0": {
+      "tagline": "Native 30-second 4K HDR: Kling's comeback play",
+      "highlights": [
+        "Native 30-second generation, up to 10 keyframes of control",
+        "Up to 4K output and 10-bit HDR, with 21:9 support",
+        "Omni Reference accepts up to 15 multimodal references",
+        "Dual-channel stereo, tighter lip-sync, multiple languages and dialects"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Native audio",
+        "Long shots",
+        "Multi-reference"
+      ],
+      "notes": "Announced 9/28; full release in October, currently in closed beta. Cello, an anonymous entry on AA, is suspected to be this model. No public leaderboard results yet; the tier is provisional."
+    },
+    "kling-4.0-flash": {
+      "tagline": "Fast early cut of 4.0, Ultra annual plans only",
+      "highlights": [
+        "Open to Ultra annual subscribers from 9/28 (top China plan from ¥916/month)",
+        "Faster and cheaper than the full 4.0",
+        "Early users praise its prompt understanding"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Fast",
+        "Native audio"
+      ],
+      "notes": "No leaderboard results yet; tier B is provisional, following the usual lightweight-model convention."
+    },
+    "kling-3.0": {
+      "tagline": "February's #1 on the AA text-to-video board",
+      "highlights": [
+        "Ranked #1 on AA text-to-video (with and without audio) at launch",
+        "Now AA text-to-video 1095, roughly #12",
+        "LMArena image-to-video 1354, roughly #19, 200K+ votes",
+        "Standard 720p and Pro 1080p tiers, plus an Omni version"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Native audio"
+      ],
+      "notes": "Kling 3.0 Omni (multi-reference and editing) is folded in here; its AA text-to-video score is 1075-1082.",
+      "bench": {
+        "AA Text-to-Video": "1080p Pro, ~#12",
+        "AA Image-to-Video": "1080p Pro, ~#19",
+        "LMArena Image-to-Video": "kling-v3-pro, ~#19"
+      },
+      "pricing": "~$0.34/sec (1080p Pro)"
+    },
+    "kling-image-3.0": {
+      "tagline": "The image model that makes Kling's first frames",
+      "highlights": [
+        "Launched the same day as Video 3.0, plus an Image 3.0 Omni",
+        "Native 2K/4K output with visual chain-of-thought reasoning",
+        "Built to give video generation consistent characters and first frames"
+      ],
+      "tags": [
+        "Text-to-image",
+        "4K",
+        "Character consistency"
+      ],
+      "notes": "Not in the top 30 of LMArena or AA image boards. Its predecessor Kolors has largely left the mainstream and isn't listed. Kling Image 4.0 has leaked but isn't out."
+    }
+  }
+}

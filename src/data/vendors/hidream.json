@@ -23,7 +23,12 @@
       "pricing": "约 $5.8/分钟",
       "tier": "A",
       "score": 86,
-      "tags": ["图生视频", "全模态", "物理一致性", "音画同出"],
+      "tags": [
+        "图生视频",
+        "全模态",
+        "物理一致性",
+        "音画同出"
+      ],
       "tagline": "黑马级图生视频，首发就进全球前五",
       "highlights": [
         "AA 图生视频 1174，第 5",
@@ -32,8 +37,18 @@
         "主打叙事规划、角色一致性和物理合理性"
       ],
       "benchmarks": [
-        {"name": "AA Image-to-Video", "value": "1174", "note": "第 5", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
-        {"name": "LMArena Image-to-Video", "value": "1456", "note": "约第 7", "source": "https://arena.ai/leaderboard/image-to-video"}
+        {
+          "name": "AA Image-to-Video",
+          "value": "1174",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1456",
+          "note": "约第 7",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
       ],
       "notes": "亦称 HiDream V1。AA 显示的上线时间为 2026-08，官方 9/17 正式发布。两个榜的文生视频前 30 都没有它。",
       "sources": [
@@ -55,14 +70,22 @@
       "pricing": "约 $0.08/张",
       "tier": "C",
       "score": 66,
-      "tags": ["文生图", "全模态"],
+      "tags": [
+        "文生图",
+        "全模态"
+      ],
       "tagline": "O1 全模态体系里的生图模型",
       "highlights": [
         "AA 文生图 1021，约第 28",
         "前代 HiDream-O1-Image 在 Hugging Face 开放了权重"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1021", "note": "约第 28", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"}
+        {
+          "name": "AA Text-to-Image",
+          "value": "1021",
+          "note": "约第 28",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        }
       ],
       "notes": "1.5 版本是否开源未核实。",
       "sources": [

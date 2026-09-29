@@ -1,0 +1,43 @@
+{
+  "vendor": {
+    "blurb": "Indie lab on a tenth of the compute; native 4K, close behind OpenAI in text-to-image"
+  },
+  "models": {
+    "reve-2.1": {
+      "tagline": "Best native-4K image model from an indie lab",
+      "highlights": [
+        "LMArena Text-to-Image 1302, #5, the highest of any independent vendor",
+        "LMArena Image Edit 1375, ~#14",
+        "Native 4K at 16 megapixels; plans the layout before rendering",
+        "Ranked #2 on LMArena at launch, 36 points above Reve 2.0"
+      ],
+      "tags": [
+        "Text-to-image",
+        "4K",
+        "Typography",
+        "Image editing"
+      ],
+      "notes": "Not in AA's text-to-image top 30. Non-English text rendering and world knowledge are improved over 2.0.",
+      "bench": {
+        "LMArena Text-to-Image": "#5",
+        "LMArena Image Edit": "~#14"
+      }
+    },
+    "reve-2.0": {
+      "tagline": "The release that put Reve in the top tier",
+      "highlights": [
+        "LMArena Text-to-Image 1269, ~#8, ahead of Nano Banana 2 (1261)",
+        "LMArena Image Edit 1358, ~#17"
+      ],
+      "tags": [
+        "Text-to-image",
+        "4K",
+        "Typography"
+      ],
+      "bench": {
+        "LMArena Text-to-Image": "~#8",
+        "LMArena Image Edit": "~#17"
+      }
+    }
+  }
+}

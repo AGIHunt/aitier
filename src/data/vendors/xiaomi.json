@@ -23,7 +23,12 @@
       "pricing": "$0.435 / $0.87 每百万 token（缓存命中 99% 折扣）",
       "tier": "A",
       "score": 86,
-      "tags": ["开源", "Agent", "编程", "全模态"],
+      "tags": [
+        "开源",
+        "Agent",
+        "编程",
+        "全模态"
+      ],
       "tagline": "当下最强开源权重模型，价格还是白菜价",
       "highlights": [
         "AA 智能指数 46，开源权重第一，与 Grok 4.7 持平",
@@ -32,10 +37,30 @@
         "Vals Index 开源权重榜第一，MIT 许可，原生支持图/音/视频输入"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "46", "note": "开源权重第一，总榜约第 21", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "LMArena Text", "value": "1480", "note": "约第 23", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "DeepSWE v1.1", "value": "71.9", "note": "官方", "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"},
-        {"name": "Terminal-Bench 2.1", "value": "89.9", "note": "官方", "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "46",
+          "note": "开源权重第一，总榜约第 21",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "约第 23",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "71.9",
+          "note": "官方",
+          "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "89.9",
+          "note": "官方",
+          "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"
+        }
       ],
       "notes": "架构沿用 V2.5，新增 1M 上下文与 MTP drafter；RL 训练过程公开直播。首发用户反馈表现波动较大。",
       "sources": [
@@ -57,7 +82,11 @@
       "pricing": null,
       "tier": "B",
       "score": 78,
-      "tags": ["开源", "性价比", "编程"],
+      "tags": [
+        "开源",
+        "性价比",
+        "编程"
+      ],
       "tagline": "便宜到能拿来刷量的编程 Flash",
       "highlights": [
         "AA 智能指数 38，接近 DeepSeek V4.1 Flash（39）",
@@ -65,8 +94,18 @@
         "opencode $10 套餐下 5 小时约可跑 3 万次请求"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "38", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "LMArena Text", "value": "1454", "note": "约第 71", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "38",
+          "note": "",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1454",
+          "note": "约第 71",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "另有 Flash-RL、Flash-MOPD 等变体权重；社区反馈状态好时强于 DeepSeek，但稳定性欠佳。",
       "sources": [
@@ -88,7 +127,11 @@
       "pricing": "$0.435 / $0.87 每百万 token",
       "tier": "C",
       "score": 66,
-      "tags": ["开源", "Agent", "编程"],
+      "tags": [
+        "开源",
+        "Agent",
+        "编程"
+      ],
       "tagline": "上一代万亿开源旗舰，已被 V2.6 全面替代",
       "highlights": [
         "AA 智能指数 26，V2.6-Pro 较其提升 20 分",
@@ -96,8 +139,18 @@
         "发布时称 GDPVal-AA、ClawEval 开源第一，MIT 许可"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "26", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "LMArena Text", "value": "1467", "note": "约第 46", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "26",
+          "note": "",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1467",
+          "note": "约第 46",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "日本网友天梯图将其放在 C 档。",
       "sources": [

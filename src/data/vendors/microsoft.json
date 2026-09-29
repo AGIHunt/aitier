@@ -22,8 +22,13 @@
       "context": "1.5K",
       "pricing": "约 $0.039/张（AA 折算 $38.9/千张）",
       "tier": "S",
-      "score": 90,
-      "tags": ["文生图", "图像编辑", "多图参考", "文字渲染"],
+      "score": 92,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "多图参考",
+        "文字渲染"
+      ],
       "tagline": "微软自研生图首次挤进全球前四",
       "highlights": [
         "LMArena 文生图 1335，第 4，仅次于 OpenAI 三款",
@@ -32,9 +37,30 @@
         "最多 5 张参考图做多图编辑，支持联网 grounding"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1335", "note": "第 4（发布时第 2）", "source": "https://arena.ai/leaderboard/text-to-image"},
-        {"name": "LMArena Image Edit", "value": "1429", "note": "第 5", "source": "https://arena.ai/leaderboard/image-edit"},
-        {"name": "AA Text-to-Image", "value": "1148", "note": "第 5", "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1335",
+          "note": "第 4",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1429",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1148",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1135",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "8/10 在 Arena 亮相，9/4 与 Flash 一同上 Foundry 公测；官方称 AA 图像编辑第 1，未独立核实。",
       "sources": [
@@ -56,8 +82,12 @@
       "context": "1.5K",
       "pricing": "约 $0.02/张（AA 折算 $19.5/千张）",
       "tier": "A",
-      "score": 82,
-      "tags": ["文生图", "高速", "低价"],
+      "score": 84,
+      "tags": [
+        "文生图",
+        "高速",
+        "低价"
+      ],
       "tagline": "半价出图，画质追平上一代旗舰",
       "highlights": [
         "AA 文生图 1103，第 9，与 MAI-Image-2.5 同分",
@@ -65,7 +95,18 @@
         "单价约为 MAI-Image-2.6 的一半"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1103", "note": "第 9", "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"}
+        {
+          "name": "AA Text-to-Image",
+          "value": "1103",
+          "note": "第 9",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1124",
+          "note": "第 4",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "暂未进 LMArena 榜单；Foundry 按 token 计价，图像输出 $19/百万 token。",
       "sources": [
@@ -86,8 +127,12 @@
       "context": null,
       "pricing": "约 $0.048/张（AA 折算 $48.1/千张）",
       "tier": "A",
-      "score": 83,
-      "tags": ["文生图", "图像编辑", "办公集成"],
+      "score": 85,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "办公集成"
+      ],
       "tagline": "进了 PowerPoint 的上一代主力",
       "highlights": [
         "LMArena 图像编辑 1400，第 7，高于 Nano Banana Pro",
@@ -96,9 +141,30 @@
         "已接入 PowerPoint 与 Foundry"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1254", "note": "第 12", "source": "https://arena.ai/leaderboard/text-to-image"},
-        {"name": "LMArena Image Edit", "value": "1400", "note": "第 7", "source": "https://arena.ai/leaderboard/image-edit"},
-        {"name": "AA Text-to-Image", "value": "1103", "note": "第 10", "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1254",
+          "note": "第 12",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1400",
+          "note": "第 7",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1103",
+          "note": "第 10",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1113",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "Build 2026（6/2）正式随七款 MAI 模型推出，5/26 先上 Arena。",
       "sources": [
@@ -119,15 +185,29 @@
       "context": null,
       "pricing": "约 $0.11/张（AA 折算 $108.5/千张）",
       "tier": "A",
-      "score": 81,
-      "tags": ["文生图", "高画质"],
+      "score": 82,
+      "tags": [
+        "文生图",
+        "高画质"
+      ],
       "tagline": "贵一倍，分数反而没涨",
       "highlights": [
         "AA 文生图 1099，第 12，略低于标准版 2.5",
         "单价约为 MAI-Image-2.5 的 2.3 倍"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1099", "note": "第 12", "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"}
+        {
+          "name": "AA Text-to-Image",
+          "value": "1099",
+          "note": "第 12",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 10",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "仅见于 AA 榜，官方资料较少，发布日期取自 AA。",
       "sources": [
@@ -146,15 +226,29 @@
       "context": null,
       "pricing": "约 $0.02/张（AA 折算 $20/千张）",
       "tier": "B",
-      "score": 74,
-      "tags": ["文生图", "低价"],
+      "score": 75,
+      "tags": [
+        "文生图",
+        "低价"
+      ],
       "tagline": "已被 2.6-Flash 同价碾压的廉价版",
       "highlights": [
         "AA 文生图 1033，第 19",
         "同价位的 2.6-Flash 高出 70 分"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1033", "note": "第 19", "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"}
+        {
+          "name": "AA Text-to-Image",
+          "value": "1033",
+          "note": "第 19",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1087",
+          "note": "第 15",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "",
       "sources": [
@@ -174,7 +268,11 @@
       "pricing": null,
       "tier": "C",
       "score": 70,
-      "tags": ["文生图", "Copilot", "Bing"],
+      "tags": [
+        "文生图",
+        "Copilot",
+        "Bing"
+      ],
       "tagline": "让微软生图第一次进前三的一代",
       "highlights": [
         "发布时 LMArena 文生图第 3",
@@ -182,7 +280,12 @@
         "接入 Copilot 与 Bing Image Creator"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1184", "note": "第 21", "source": "https://arena.ai/leaderboard/text-to-image"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1184",
+          "note": "第 21",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        }
       ],
       "notes": "另有 MAI-Image-2-Efficient 加速版上 Foundry，未单列。",
       "sources": [
@@ -204,7 +307,12 @@
       "pricing": "$2 / $8 每百万 token",
       "tier": "C",
       "score": 67,
-      "tags": ["推理", "数学", "编程", "企业"],
+      "tags": [
+        "推理",
+        "数学",
+        "编程",
+        "企业"
+      ],
       "tagline": "微软首个自研推理模型，不蒸馏",
       "highlights": [
         "官方 AIME 2025 97.0%、AIME 2026 94.5%",
@@ -213,8 +321,18 @@
         "$2/$8 定价，主打企业高频调用性价比"
       ],
       "benchmarks": [
-        {"name": "SWE-Bench Pro", "value": "52.8%", "note": "官方自报", "source": "https://microsoft.ai/news/introducing-mai-thinking-1/"},
-        {"name": "AIME 2025", "value": "97.0%", "note": "官方自报", "source": "https://microsoft.ai/news/introducing-mai-thinking-1/"}
+        {
+          "name": "SWE-Bench Pro",
+          "value": "52.8%",
+          "note": "官方自报",
+          "source": "https://microsoft.ai/news/introducing-mai-thinking-1/"
+        },
+        {
+          "name": "AIME 2025",
+          "value": "97.0%",
+          "note": "官方自报",
+          "source": "https://microsoft.ai/news/introducing-mai-thinking-1/"
+        }
       ],
       "notes": "Build 首发仅限合作方，8/12 起 Foundry 公测；未进 LMArena Text 与 AA 指数，成绩均为自报，对标的是 2 月的 4.6 代。",
       "sources": [
@@ -236,7 +354,11 @@
       "pricing": "Copilot 0.25× 高级请求倍率",
       "tier": "D",
       "score": 57,
-      "tags": ["编程", "Agent", "轻量"],
+      "tags": [
+        "编程",
+        "Agent",
+        "轻量"
+      ],
       "tagline": "Copilot 里的自研小钢炮",
       "highlights": [
         "1-Flash 仅 5B 激活参数，官方称对标 Haiku",

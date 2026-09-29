@@ -1,0 +1,45 @@
+{
+  "vendor": {
+    "blurb": "Tsinghua-rooted video lab: Vidu's reference-to-video and short drama hold the second tier"
+  },
+  "models": {
+    "vidu-q3-pro": {
+      "tagline": "Audio-visual generation built for short drama",
+      "highlights": [
+        "LMArena image-to-video 1363, roughly #18",
+        "AA text-to-video 1078, ~#19; image-to-video 1056, ~#18",
+        "16-second clips with score, sound effects and dialogue in one pass",
+        "Listed on Huawei Cloud, aimed at film and short-drama production"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Native audio",
+        "Short drama"
+      ],
+      "notes": "Claimed the top of global leaderboards early on; it has since slipped to the second tier.",
+      "bench": {
+        "LMArena Image-to-Video": "~#18",
+        "AA Text-to-Video": "~#19",
+        "AA Image-to-Video": "~#18"
+      },
+      "pricing": "~$0.12/sec",
+      "context": "1080p (up to 4K) · 16s"
+    },
+    "vidu-q3-turbo": {
+      "tagline": "Q3's fast, cheap tier",
+      "highlights": [
+        "AA text-to-video 1025, ~#28; image-to-video 1030, ~#24",
+        "Priced at about half of Pro"
+      ],
+      "tags": [
+        "Fast",
+        "Value"
+      ],
+      "bench": {
+        "AA Text-to-Video": "~#28"
+      },
+      "pricing": "~$0.065/sec"
+    }
+  }
+}

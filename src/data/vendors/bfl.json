@@ -23,7 +23,12 @@
       "pricing": "2K $0.40/秒，4K $0.80/秒",
       "tier": "S",
       "score": 89,
-      "tags": ["文生视频", "图生视频", "音画同出", "文字渲染"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "音画同出",
+        "文字渲染"
+      ],
       "tagline": "生图老炮跨界，文生视频排进前三",
       "highlights": [
         "LMArena 文生视频 1493，第 3，仅次于 Gemini Omni",
@@ -32,8 +37,18 @@
         "9/10 新增 2K/4K 输出，画面内可直接渲染文字"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Video", "value": "1493", "note": "第 3（票数约 1300，误差 ±17）", "source": "https://arena.ai/leaderboard/text-to-video"},
-        {"name": "LMArena Image-to-Video", "value": "1449", "note": "约第 9", "source": "https://arena.ai/leaderboard/image-to-video"}
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1493",
+          "note": "第 3（票数约 1300，误差 ±17）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1449",
+          "note": "约第 9",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
       ],
       "notes": "7/23 发布，8/4 API 全量开放，官方称胜过 Seedance 2.0。AA 视频榜前 30 暂未收录。同一底座还衍生出 7B 开源机器人模型 FLUX 3 Action。",
       "sources": [
@@ -55,7 +70,11 @@
       "pricing": "约 $0.07/张",
       "tier": "C",
       "score": 68,
-      "tags": ["文生图", "多图参考", "联网生成"],
+      "tags": [
+        "文生图",
+        "多图参考",
+        "联网生成"
+      ],
       "tagline": "FLUX.2 最高画质档，开发者用量大",
       "highlights": [
         "LMArena 文生图 1162，约第 27；AA 文生图 1021，约第 27",
@@ -63,8 +82,18 @@
         "FLUX.2 [pro] 和 [flex] 在 LMArena 累计票数都超过 15 万"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1162", "note": "约第 27", "source": "https://arena.ai/leaderboard/text-to-image"},
-        {"name": "AA Text-to-Image", "value": "1021", "note": "约第 27", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1162",
+          "note": "约第 27",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1021",
+          "note": "约第 27",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        }
       ],
       "notes": "同代 [pro]（1154，$0.03/MP 起）和 [flex]（1157，擅长排版）分数相近，合并在本条说明。",
       "sources": [
@@ -85,7 +114,11 @@
       "pricing": "$0.014–0.015/张",
       "tier": "D",
       "score": 60,
-      "tags": ["开源", "亚秒级", "本地部署"],
+      "tags": [
+        "开源",
+        "亚秒级",
+        "本地部署"
+      ],
       "tagline": "13GB 显存就能跑的亚秒生图",
       "highlights": [
         "亚秒级推理，最低约 13GB 显存",

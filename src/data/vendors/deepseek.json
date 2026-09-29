@@ -23,7 +23,12 @@
       "pricing": "$0.30 / $1.20 每百万 token（高峰价，闲时五折；缓存读 $0.006）",
       "tier": "A",
       "score": 83,
-      "tags": ["性价比", "编程", "Agent", "多模态"],
+      "tags": [
+        "性价比",
+        "编程",
+        "Agent",
+        "多模态"
+      ],
       "tagline": "Flash 的价，Pro 的分",
       "highlights": [
         "官方称多项基准超过自家旗舰 V4 Pro，DeepSWE 74.2 vs 62.7",
@@ -32,12 +37,42 @@
         "高峰价 $0.30/$1.20，AA 测速约 217 token/s"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "39", "note": "max 档；非推理模式 25", "source": "https://artificialanalysis.ai/models/deepseek-v4-1-flash"},
-        {"name": "LMArena Text", "value": "1477", "note": "第 29（max 档，9/25 快照）", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena WebDev", "value": "1621", "note": "第 16（max 档）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "DeepSWE v1.1", "value": "74.2", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
-        {"name": "Terminal-Bench 2.1", "value": "90.6", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
-        {"name": "GPQA Diamond", "value": "90.9", "note": "官方自报", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "39",
+          "note": "max 档；非推理模式 25",
+          "source": "https://artificialanalysis.ai/models/deepseek-v4-1-flash"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1477",
+          "note": "第 29（max 档，9/25 快照）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1621",
+          "note": "第 16（max 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "74.2",
+          "note": "官方自报，max 档",
+          "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "90.6",
+          "note": "官方自报，max 档",
+          "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": "90.9",
+          "note": "官方自报",
+          "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"
+        }
       ],
       "notes": "推理/非推理合一，effort 可调（max 档合并）；API 名 deepseek-flash，MIT 协议开源。输出偏啰嗦；AA 分落后 MiMo V2.6 Pro(46)。",
       "sources": [
@@ -61,7 +96,11 @@
       "pricing": "$1.32 / $3.96 每百万 token（高峰价，闲时五折）",
       "tier": "B",
       "score": 76,
-      "tags": ["推理", "Agent", "开源"],
+      "tags": [
+        "推理",
+        "Agent",
+        "开源"
+      ],
       "tagline": "1.6T 老旗舰，被自家 Flash 反超",
       "highlights": [
         "发布时 AA 智能指数 52，开源第 2，仅次 Kimi K2.6",
@@ -70,11 +109,36 @@
         "Nonobench 开源最佳 83%，并列第 4"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "36", "note": "0813 max 档，现行指数版本", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "LMArena Text", "value": "1464", "note": "第 53（high-20260813）", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena WebDev", "value": "1582", "note": "第 26（high-20260813）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "DeepSWE v1.1", "value": "62.7", "note": "官方自报，max 档", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"},
-        {"name": "GPQA Diamond", "value": "92.4", "note": "官方自报，高于 V4.1 Flash", "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "36",
+          "note": "0813 max 档，现行指数版本",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1464",
+          "note": "第 53（high-20260813）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1582",
+          "note": "第 26（high-20260813）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "62.7",
+          "note": "官方自报，max 档",
+          "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": "92.4",
+          "note": "官方自报，高于 V4.1 Flash",
+          "source": "https://www.digitalapplied.com/blog/deepseek-v4-1-flash-pro-routing-prices-early-tests"
+        }
       ],
       "notes": "effort 分 low/high/max 已合并。官方原定 9/14 起路由到 V4.1 Flash，后改口 Pro 继续服务、计费不变；CheatBench 作弊率 73%。",
       "sources": [
@@ -97,7 +161,11 @@
       "pricing": "$0.14 / $0.28 每百万 token（下线前官方价）",
       "tier": "C",
       "score": 68,
-      "tags": ["性价比", "开源", "轻量"],
+      "tags": [
+        "性价比",
+        "开源",
+        "轻量"
+      ],
       "tagline": "上一代白菜价主力，权重仍在流通",
       "highlights": [
         "发布时 AA 智能指数 47，价格仅 $0.14/$0.28",
@@ -106,9 +174,24 @@
         "8/21 衍生 Vision-Exp 多模态实验版，9/10 一并退役"
       ],
       "benchmarks": [
-        {"name": "Code Arena WebDev", "value": "1581", "note": "第 27（0731 high 档）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "LMArena Text", "value": "1436", "note": "第 99", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "AA Intelligence Index", "value": "47", "note": "4 月发布时旧版指数，max 档", "source": "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash"}
+        {
+          "name": "Code Arena WebDev",
+          "value": "1581",
+          "note": "第 27（0731 high 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1436",
+          "note": "第 99",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "47",
+          "note": "4 月发布时旧版指数，max 档",
+          "source": "https://artificialanalysis.ai/articles/deepseek-is-back-among-the-leading-open-weights-models-with-v4-pro-and-v4-flash"
+        }
       ],
       "notes": "API 已于 2026-09-10 退役，deepseek-v4-flash 名称暂时路由到 V4.1 Flash；AA 测得幻觉率 96%。",
       "sources": [
@@ -130,7 +213,11 @@
       "pricing": null,
       "tier": "D",
       "score": 60,
-      "tags": ["开源", "稀疏注意力", "老一代"],
+      "tags": [
+        "开源",
+        "稀疏注意力",
+        "老一代"
+      ],
       "tagline": "DSA 稀疏注意力的开山之作",
       "highlights": [
         "引入 DeepSeek 稀疏注意力 DSA，长文本推理成本大降",
@@ -138,8 +225,18 @@
         "LMArena Text 1425，落后 V4.1 Flash 52 分"
       ],
       "benchmarks": [
-        {"name": "LMArena Text", "value": "1425", "note": "第 117", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena WebDev", "value": "1362", "note": "第 97（thinking）", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "LMArena Text",
+          "value": "1425",
+          "note": "第 117",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1362",
+          "note": "第 97（thinking）",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "deepseek-chat / deepseek-reasoner 已于 2026-07-24 停用，V3.2 退出官方 API，仅开源权重在第三方流通。R 系列（R1-0528）同期随 reasoner 端点退役，未单独收录。",
       "sources": [
@@ -160,7 +257,10 @@
       "pricing": null,
       "tier": "A",
       "score": 85,
-      "tags": ["旗舰", "传闻"],
+      "tags": [
+        "旗舰",
+        "传闻"
+      ],
       "tagline": "官方预告的下一代大杯",
       "highlights": [
         "V4.1 Flash 发布公告明确称 V4.1-Pro 将在之后推出",

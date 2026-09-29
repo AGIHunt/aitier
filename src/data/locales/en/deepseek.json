@@ -1,0 +1,110 @@
+{
+  "vendor": {
+    "blurb": "Open-source value king: V4.1 Flash scores like a flagship, tops usage charts"
+  },
+  "models": {
+    "deepseek-v4-1-flash": {
+      "tagline": "Flash pricing, Pro scores",
+      "highlights": [
+        "DeepSeek says it beats its own V4 Pro on several benchmarks; DeepSWE 74.2 vs 62.7",
+        "LMArena Text 1477, DeepSeek's highest; WebDev #16",
+        "New causal encoder-decoder cuts KV cache HBM use to 1/4",
+        "Peak price $0.30/$1.20; AA measures ~217 tokens/s"
+      ],
+      "tags": [
+        "Value",
+        "Coding",
+        "Agents",
+        "Multimodal"
+      ],
+      "notes": "Reasoning and non-reasoning in one model with adjustable effort (max tier merged); API name deepseek-flash, MIT-licensed. Verbose output; AA score trails MiMo V2.6 Pro (46).",
+      "bench": {
+        "AA Intelligence Index": "Max tier; non-reasoning mode 25",
+        "LMArena Text": "#29 (max tier, 9/25 snapshot)",
+        "Code Arena WebDev": "#16 (max tier)",
+        "DeepSWE v1.1": "Self-reported, max tier",
+        "Terminal-Bench 2.1": "Self-reported, max tier",
+        "GPQA Diamond": "Self-reported"
+      },
+      "pricing": "$0.30 / $1.20 per 1M tokens (peak price, 50% off-peak; cached read $0.006)",
+      "params": "552B MoE / 8B active on input, 16B on output"
+    },
+    "deepseek-v4-pro": {
+      "tagline": "The 1.6T ex-flagship, overtaken by its own Flash",
+      "highlights": [
+        "AA Intelligence Index 52 at launch, #2 open, behind only Kimi K2.6",
+        "8/13 GA release boosts agents; native Responses API support for Codex",
+        "LMArena Text 1464 (0813 High), 13 points behind V4.1 Flash",
+        "Nonobench 83%, best among open models, tied #4"
+      ],
+      "tags": [
+        "Reasoning",
+        "Agents",
+        "Open weights"
+      ],
+      "notes": "Low/high/max effort tiers merged. DeepSeek planned to route to V4.1 Flash from 9/14, then reversed: Pro keeps serving at unchanged pricing. CheatBench cheat rate 73%.",
+      "bench": {
+        "AA Intelligence Index": "0813 max tier, current index version",
+        "LMArena Text": "#53 (high-20260813)",
+        "Code Arena WebDev": "#26 (high-20260813)",
+        "DeepSWE v1.1": "Self-reported, max tier",
+        "GPQA Diamond": "Self-reported, higher than V4.1 Flash"
+      },
+      "pricing": "$1.32 / $3.96 per 1M tokens (peak price, 50% off-peak)",
+      "params": "1.6T MoE / 49B active"
+    },
+    "deepseek-v4-flash": {
+      "tagline": "Last-gen bargain workhorse, weights still around",
+      "highlights": [
+        "AA Intelligence Index 47 at launch, priced at just $0.14/$0.28",
+        "0731 build reworked post-training; Code Arena WebDev 1581",
+        "Long sat atop OpenRouter's category request share",
+        "8/21 spinoff Vision-Exp multimodal experiment, retired together on 9/10"
+      ],
+      "tags": [
+        "Value",
+        "Open weights",
+        "Lightweight"
+      ],
+      "notes": "API retired 2026-09-10; the deepseek-v4-flash name temporarily routes to V4.1 Flash. AA measured a 96% hallucination rate.",
+      "bench": {
+        "Code Arena WebDev": "#27 (0731 high tier)",
+        "LMArena Text": "#99",
+        "AA Intelligence Index": "Old April launch index, max tier"
+      },
+      "pricing": "$0.14 / $0.28 per 1M tokens (final official price before retirement)",
+      "params": "284B MoE / 13B active"
+    },
+    "deepseek-v3-2": {
+      "tagline": "The one that pioneered DSA sparse attention",
+      "highlights": [
+        "Introduced DeepSeek Sparse Attention (DSA), slashing long-context inference cost",
+        "One model handles both thinking and non-thinking modes",
+        "LMArena Text 1425, 52 points behind V4.1 Flash"
+      ],
+      "tags": [
+        "Open weights",
+        "Sparse attention",
+        "Legacy"
+      ],
+      "notes": "deepseek-chat / deepseek-reasoner were shut down 2026-07-24, so V3.2 is off the official API and circulates only as open weights via third parties. The R series (R1-0528) retired with the reasoner endpoint and isn't listed separately.",
+      "bench": {
+        "LMArena Text": "#117",
+        "Code Arena WebDev": "#97 (thinking)"
+      },
+      "params": "671B MoE / 37B active"
+    },
+    "deepseek-v4-1-pro": {
+      "tagline": "The bigger sibling DeepSeek has promised",
+      "highlights": [
+        "The V4.1 Flash announcement says V4.1-Pro will follow",
+        "A V4.1 Pro page leaked in the OpenCode sitemap, alongside Kimi K4"
+      ],
+      "tags": [
+        "Flagship",
+        "Rumored"
+      ],
+      "notes": "Unreleased; parameters, pricing and scores unknown. Tier/score are placeholder estimates extrapolated from V4.1 Flash and need re-rating at launch."
+    }
+  }
+}

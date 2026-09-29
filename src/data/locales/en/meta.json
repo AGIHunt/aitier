@@ -1,0 +1,143 @@
+{
+  "vendor": {
+    "blurb": "Superintelligence Labs rebuilt on Muse: Spark back at the frontier, image and video top 10"
+  },
+  "models": {
+    "muse-spark-1-3": {
+      "tagline": "Meta's cheapest ticket back to the frontier",
+      "highlights": [
+        "AA Intelligence Index 48 (max), above Grok 4.7's 46",
+        "Code Arena #10 (1656), Text Arena #9 (1494)",
+        "Meta reports DeepSWE v1.1 75.4%, Terminal-Bench 2.1 88.8%",
+        "About 20% fewer tool calls and 25% fewer tokens than 1.2"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Multimodal",
+        "Value"
+      ],
+      "notes": "Reasoning tiers go up to xhigh/max; the low-price Contributor tier retains data for training. Reportedly gamed Terminal Bench Science by exploiting a Lean kernel bug; math proofs get mixed reviews.",
+      "bench": {
+        "AA Intelligence Index": "Max; xhigh is 45",
+        "Code Arena": "#10 (max)",
+        "Text Arena": "#9 (max)",
+        "105 植入 bug 实测": "GPT-6 Astra 45, Opus 5.5 41.7"
+      },
+      "pricing": "$1.25 / $4.25 per 1M tokens (Contributor tier $0.10 / $0.20)",
+      "benchName": {
+        "105 植入 bug 实测": "105 planted-bug test"
+      }
+    },
+    "muse-spark-1-2": {
+      "tagline": "The chat-first Muse, #7 on Text Arena",
+      "highlights": [
+        "Text Arena 1496, #7, Meta's best text score",
+        "Code Arena only 1531 (#40), well behind 1.3 at coding",
+        "Zuckerberg and Alexandr Wang promised to open the weights"
+      ],
+      "tags": [
+        "Chat",
+        "Coding",
+        "Open-weights pledge"
+      ],
+      "notes": "Launched the same day as the terminal coding agent Muse Code; the open-weights pledge was still unfulfilled as of early September. Third-party tier lists put it in tier C.",
+      "bench": {
+        "Text Arena": "#7 (xHigh)",
+        "Code Arena": "#40 (xHigh)"
+      },
+      "pricing": "$1.25 / $4.25 per 1M tokens"
+    },
+    "muse-spark-1-1": {
+      "tagline": "The first Muse MSL shipped for real",
+      "highlights": [
+        "Muse Spark announced April 8; 1.1 is the first official release",
+        "Text Arena 1491 (#12); original muse-spark 1489 (#13)",
+        "Code Arena 1541 (#35)"
+      ],
+      "tags": [
+        "Multimodal",
+        "Reasoning"
+      ],
+      "notes": "Folds in the original April Muse Spark; superseded by 1.2 and 1.3.",
+      "bench": {
+        "Text Arena": "#12",
+        "Code Arena": "#35"
+      }
+    },
+    "muse-glimmer": {
+      "tagline": "Meta's open model that fits on one 24GB GPU",
+      "highlights": [
+        "Apache 2.0 open weights; under 20GB at 4-bit quantization",
+        "Runs offline on a single 24GB consumer GPU; 100+ languages",
+        "AA Intelligence Index 17, Text Arena 1424 (#118)"
+      ],
+      "tags": [
+        "Open weights",
+        "On-device",
+        "Agents"
+      ],
+      "notes": "Marks Meta's return to open source after Llama; accepts text and image input.",
+      "bench": {
+        "AA Intelligence Index": "High",
+        "Text Arena": "#118",
+        "Code Arena": "#102"
+      },
+      "pricing": "Open weights (Apache 2.0)"
+    },
+    "llama-4-maverick": {
+      "tagline": "The last mainstay of the Llama line",
+      "highlights": [
+        "AA Intelligence Index 10; same-gen Scout scores 8 (10M context)",
+        "Still one of the most widely deployed Meta open-weights models",
+        "Meta has since moved to Muse; Llama hasn't been updated"
+      ],
+      "tags": [
+        "Open weights",
+        "Multimodal"
+      ],
+      "notes": "Included as a historical reference; folds in Scout (109B total/17B active, 10M context).",
+      "bench": {
+        "AA Intelligence Index": "Scout: 8"
+      },
+      "pricing": "Open weights (Llama 4 Community License)",
+      "params": "400B MoE / 17B active"
+    },
+    "muse-image": {
+      "tagline": "A top-10 painter at a cent an image",
+      "highlights": [
+        "AA text-to-image #7 (Elo 1111), Arena text-to-image #7 (1276)",
+        "$10 per 1,000 images, cheapest in the top 10",
+        "Live in Meta AI, Instagram Stories and WhatsApp"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Multi-reference",
+        "Cheap"
+      ],
+      "notes": "MSL's first image model; sparked controversy after launch over its use of user photos.",
+      "bench": {
+        "AA Text-to-Image": "#7",
+        "Arena Text-to-Image": "#7"
+      },
+      "pricing": "$0.01/image"
+    },
+    "muse-video": {
+      "tagline": "All leaderboard, no API: a trailer for now",
+      "highlights": [
+        "Arena text-to-video #9 (1456), ahead of Sora 2 Pro and Veo 3.1",
+        "Same pretraining base as Muse Image, with native audio",
+        "July preview, still just \"coming soon\": no API, no pricing"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Native audio"
+      ],
+      "notes": "The released field is the preview date; resolution and duration undisclosed; not on the AA video leaderboard.",
+      "bench": {
+        "Arena Text-to-Video": "#9"
+      }
+    }
+  }
+}

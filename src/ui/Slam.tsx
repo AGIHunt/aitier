@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { audio } from '../audio/engine'
 import { MODELS_BY_CATEGORY } from '../data'
 import { TIER_BY_ID } from '../data/tiers'
+import { TIER_TEXT } from '../i18n'
 import { useStore } from '../store'
 import { Badge } from './bits'
 
@@ -10,6 +11,7 @@ import { Badge } from './bits'
 export function Slam() {
   const shock = useStore((s) => s.shock)
   const category = useStore((s) => s.category)
+  const lang = useStore((s) => s.lang)
   const [show, setShow] = useState(false)
 
   useEffect(() => {
@@ -53,7 +55,7 @@ export function Slam() {
             <span>{top.name}</span>
           </motion.div>
           <motion.div className="slam__caption" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.05 }}>
-            #1 · {tier.desc}
+            #1 · {TIER_TEXT[lang][tier.id].desc}
           </motion.div>
         </motion.div>
       )}

@@ -1,0 +1,62 @@
+{
+  "vendor": {
+    "blurb": "Stable Diffusion's original team: FLUX spans image, video, robotics; FLUX 3 Video is top 3"
+  },
+  "models": {
+    "flux-3-video": {
+      "tagline": "An image veteran crosses over, top 3 in video",
+      "highlights": [
+        "LMArena text-to-video 1493, #3, behind only Gemini Omni",
+        "LMArena image-to-video 1449, roughly #9, 37K+ votes",
+        "Up to 20 seconds per clip with native audio; lip-sync in 14+ languages",
+        "9/10 added 2K/4K output and in-frame text rendering"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Native audio",
+        "Text rendering"
+      ],
+      "notes": "Released 7/23, API fully open 8/4; BFL claims it beats Seedance 2.0. Not yet in the AA video top 30. The same base also spawned FLUX 3 Action, a 7B open robotics model.",
+      "bench": {
+        "LMArena Text-to-Video": "#3 (~1,300 votes, ±17)",
+        "LMArena Image-to-Video": "~#9"
+      },
+      "pricing": "2K $0.40/sec, 4K $0.80/sec"
+    },
+    "flux-2-max": {
+      "tagline": "FLUX.2's top-quality tier, a developer favorite",
+      "highlights": [
+        "LMArena text-to-image 1162, ~#27; AA text-to-image 1021, ~#27",
+        "Web-grounded generation; edits with up to 10 reference images",
+        "FLUX.2 [pro] and [flex] each passed 150K LMArena votes"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Multi-reference",
+        "Web-grounded"
+      ],
+      "notes": "Same-gen [pro] (1154, from $0.03/MP) and [flex] (1157, strong at typography) score similarly and are covered here.",
+      "bench": {
+        "LMArena Text-to-Image": "~#27",
+        "AA Text-to-Image": "~#27"
+      },
+      "pricing": "~$0.07/image"
+    },
+    "flux-2-klein": {
+      "tagline": "Sub-second images in 13GB of VRAM",
+      "highlights": [
+        "Sub-second inference, as little as ~13GB VRAM",
+        "4B is Apache 2.0; 9B is non-commercial",
+        "Self-serve LoRA fine-tuning; a go-to open base in the community"
+      ],
+      "tags": [
+        "Open weights",
+        "Sub-second",
+        "Local"
+      ],
+      "notes": "Not in the image top 30; listed for its influence in the open-source ecosystem.",
+      "pricing": "$0.014–0.015/image"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "vendor": {
+    "blurb": "Open trillion-param MoE; MiMo-V2.6-Pro tops AA's open-weights board, RL data included"
+  },
+  "models": {
+    "mimo-v2.6-pro": {
+      "tagline": "Strongest open-weights model, still dirt cheap",
+      "highlights": [
+        "AA Intelligence Index 46, #1 open weights, level with Grok 4.7",
+        "LMArena Text 1480, roughly #23 overall",
+        "DeepSWE 71.9, Terminal-Bench 2.1 89.9 (official)",
+        "#1 on Vals Index open weights; MIT license, native image/audio/video input"
+      ],
+      "tags": [
+        "Open weights",
+        "Agents",
+        "Coding",
+        "Omni-modal"
+      ],
+      "notes": "Architecture follows V2.5, adding 1M context and an MTP drafter; the RL training run was livestreamed. Early users report uneven performance at launch.",
+      "bench": {
+        "AA Intelligence Index": "#1 open weights, roughly #21 overall",
+        "LMArena Text": "~#23",
+        "DeepSWE v1.1": "Official",
+        "Terminal-Bench 2.1": "Official"
+      },
+      "pricing": "$0.435 / $0.87 per 1M tokens (99% discount on cache hits)",
+      "params": "1.02T MoE / 42B active"
+    },
+    "mimo-v2.6-flash": {
+      "tagline": "A coding Flash cheap enough to spam",
+      "highlights": [
+        "AA Intelligence Index 38, near DeepSeek V4.1 Flash (39)",
+        "#2 on Vals Index open weights, behind its own Pro",
+        "On opencode's $10 plan, ~30,000 requests per 5 hours"
+      ],
+      "tags": [
+        "Open weights",
+        "Value",
+        "Coding"
+      ],
+      "notes": "Variants such as Flash-RL and Flash-MOPD also have weights out. Community says it beats DeepSeek on a good day, but stability is poor.",
+      "bench": {
+        "LMArena Text": "~#71"
+      },
+      "params": "310B MoE / 15B active"
+    },
+    "mimo-v2.5-pro": {
+      "tagline": "Last-gen trillion-param open flagship, replaced",
+      "highlights": [
+        "AA Intelligence Index 26; V2.6-Pro is 20 points higher",
+        "LMArena Text 1467, nearly 70K votes",
+        "Claimed #1 open on GDPVal-AA and ClawEval at launch; MIT license"
+      ],
+      "tags": [
+        "Open weights",
+        "Agents",
+        "Coding"
+      ],
+      "notes": "A Japanese user's tier list puts it in tier C.",
+      "bench": {
+        "LMArena Text": "~#46"
+      },
+      "pricing": "$0.435 / $0.87 per 1M tokens",
+      "params": "1.02T MoE / 42B active"
+    }
+  }
+}

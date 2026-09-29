@@ -23,7 +23,11 @@
       "pricing": "约 $0.35/秒",
       "tier": "B",
       "score": 72,
-      "tags": ["音画同出", "视频编辑", "文生视频"],
+      "tags": [
+        "音画同出",
+        "视频编辑",
+        "文生视频"
+      ],
       "tagline": "双流 MMDiT，画面和声音一起出",
       "highlights": [
         "AA 文生视频 1095，约第 11，与 Kling 3.0 Pro 同分",
@@ -31,8 +35,18 @@
         "支持文本、图像、视频、遮罩和音频参考输入，可做局部重绘和全维度编辑"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Video", "value": "1095", "note": "约第 11", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
-        {"name": "AA Image-to-Video", "value": "1069", "note": "约第 16", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+        {
+          "name": "AA Text-to-Video",
+          "value": "1095",
+          "note": "约第 11",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1069",
+          "note": "约第 16",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
       ],
       "notes": "发布时曾排 AA 视频榜第 2。前代 SkyReels V2 开源，V4 权重尚未公开。未进入 LMArena 视频榜前 30。",
       "sources": [

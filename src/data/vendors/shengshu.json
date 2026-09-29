@@ -23,7 +23,12 @@
       "pricing": "约 $0.12/秒",
       "tier": "C",
       "score": 70,
-      "tags": ["文生视频", "图生视频", "音画同出", "短剧"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "音画同出",
+        "短剧"
+      ],
       "tagline": "为短剧而生的音画一体模型",
       "highlights": [
         "LMArena 图生视频 1363，约第 18",
@@ -32,9 +37,24 @@
         "已上架华为云，面向影视和短剧制作"
       ],
       "benchmarks": [
-        {"name": "LMArena Image-to-Video", "value": "1363", "note": "约第 18", "source": "https://arena.ai/leaderboard/image-to-video"},
-        {"name": "AA Text-to-Video", "value": "1078", "note": "约第 19", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
-        {"name": "AA Image-to-Video", "value": "1056", "note": "约第 18", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"}
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1363",
+          "note": "约第 18",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Text-to-Video",
+          "value": "1078",
+          "note": "约第 19",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1056",
+          "note": "约第 18",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
       ],
       "notes": "发布初期曾自称登顶全球榜单，目前已回落到第二梯队。",
       "sources": [
@@ -56,14 +76,22 @@
       "pricing": "约 $0.065/秒",
       "tier": "D",
       "score": 62,
-      "tags": ["快速", "性价比"],
+      "tags": [
+        "快速",
+        "性价比"
+      ],
       "tagline": "Q3 的快速低价版",
       "highlights": [
         "AA 文生视频 1025，约第 28；图生视频 1030，约第 24",
         "价格约为 Pro 版的一半"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Video", "value": "1025", "note": "约第 28", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"}
+        {
+          "name": "AA Text-to-Video",
+          "value": "1025",
+          "note": "约第 28",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        }
       ],
       "notes": "",
       "sources": [

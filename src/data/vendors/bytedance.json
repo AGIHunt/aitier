@@ -260,7 +260,7 @@
       "context": "2K",
       "pricing": "$0.09/张（AA 口径）",
       "tier": "A",
-      "score": 83,
+      "score": 84,
       "tags": [
         "商业设计",
         "图像编辑",
@@ -276,7 +276,7 @@
         {
           "name": "LMArena Text-to-Image",
           "value": "1256",
-          "note": "第 10（榜首 GPT Image 2.5 Sunburst 1424）",
+          "note": "第 10",
           "source": "https://arena.ai/leaderboard/text-to-image"
         },
         {
@@ -289,7 +289,13 @@
           "name": "AA Text-to-Image",
           "value": "1080",
           "note": "第 15",
-          "source": "https://artificialanalysis.ai/text-to-image/arena/leaderboard-text"
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 11",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
         }
       ],
       "notes": "官方自承细粒度文字渲染与编辑一致性仍有提升空间；与 GPT Image 2.5 差距明显",

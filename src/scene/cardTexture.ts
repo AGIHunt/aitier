@@ -1,7 +1,8 @@
 import * as THREE from 'three'
 import { TIER_BY_ID } from '../data/tiers'
 import { hexA, lighten, readable } from '../lib/color'
-import type { RankedModel } from '../types'
+import { t } from '../i18n'
+import type { Lang, RankedModel } from '../types'
 
 export const CARD_PX = { w: 572, h: 330 }
 const CJK = '"PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif'
@@ -54,7 +55,8 @@ export function drawBadge(ctx: CanvasRenderingContext2D, cx: number, cy: number,
   ctx.fillText(mono, cx, cy + r * 0.05)
 }
 
-export function makeCardTexture(m: RankedModel): THREE.CanvasTexture {
+export function makeCardTexture(m: RankedModel, lang: Lang): THREE.CanvasTexture {
+  const tx = m.text[lang]
   const { w, h } = CARD_PX
   const canvas = document.createElement('canvas')
   canvas.width = w
@@ -115,7 +117,12 @@ export function makeCardTexture(m: RankedModel): THREE.CanvasTexture {
   ctx.fillText(ellipsis(ctx, m.vendor.name.toUpperCase(), 250), 108, 60)
   ctx.fillStyle = 'rgba(255,255,255,0.4)'
   ctx.font = `500 18px ${CJK}`
-  const chips = [m.openWeights ? '开源' : null, m.status === 'preview' ? '预览' : null, m.status === 'rumored' ? '传闻' : null, m.released?.slice(0, 7)].filter(Boolean)
+  const chips = [
+    m.openWeights ? t(lang, 'open') : null,
+    m.status === 'preview' ? t(lang, 'status_preview') : null,
+    m.status === 'rumored' ? t(lang, 'status_rumored') : null,
+    m.released?.slice(0, 7),
+  ].filter(Boolean)
   ctx.fillText(chips.join(' · '), 108, 88)
 
   // 名次
@@ -136,12 +143,12 @@ export function makeCardTexture(m: RankedModel): THREE.CanvasTexture {
   // 标签行
   ctx.font = `500 21px ${CJK}`
   ctx.fillStyle = 'rgba(255,255,255,0.7)'
-  ctx.fillText(ellipsis(ctx, m.tagline, w - 190), 38, 226)
+  ctx.fillText(ellipsis(ctx, tx.tagline, w - 190), 38, 226)
 
   // 能力标签
   let x = 38
   ctx.font = `600 18px ${CJK}`
-  for (const tag of m.tags.slice(0, 3)) {
+  for (const tag of tx.tags.slice(0, 3)) {
     const tw = ctx.measureText(tag).width + 22
     if (x + tw > w - 170) break
     roundRect(ctx, x, 252, tw, 34, 17)

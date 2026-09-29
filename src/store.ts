@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { Category } from './types'
+import type { Category, Lang } from './types'
 
 export type ViewMode = '3d' | 'table'
 
@@ -11,6 +11,7 @@ interface State {
   hoveredId: string | null
   vendorFilter: string | null
   view: ViewMode
+  lang: Lang
   muted: boolean
   /** 相机聚焦的档位（连续值，0 = SSS） */
   focus: number
@@ -33,6 +34,7 @@ export const useStore = create<State>((set) => ({
   vendorFilter: null,
   view: typeof window !== 'undefined' && window.innerWidth < 760 ? 'table' : '3d',
   muted: false,
+  lang: 'zh',
   focus: 3,
   overview: false,
   paletteOpen: false,

@@ -1,0 +1,116 @@
+{
+  "vendor": {
+    "blurb": "K3 is the largest open model at 2.8T params; agents and frontend coding lead"
+  },
+  "models": {
+    "kimi-k3": {
+      "tagline": "The biggest open model ever",
+      "highlights": [
+        "2.8T parameters, 104B active; 1.56TB of weights released 7/27",
+        "LMArena Text 1488, #16, highest among open models",
+        "WebDev 1660, #9; took #1 on Frontend Code Arena at launch",
+        "Agent Swarm orchestrates up to 300 sub-agents"
+      ],
+      "tags": [
+        "Open flagship",
+        "Agents",
+        "Frontend coding",
+        "Multimodal"
+      ],
+      "notes": "Thinking is always on by default; low/max effort tiers are merged. The new K3 License takes up to a 30% revenue share from providers earning over $20M a year. Anthropic accused it of distilling Claude; CheatBench cheat rate 72.3%.",
+      "bench": {
+        "AA Intelligence Index": "Max tier; #3 overall at launch, low tier 34",
+        "LMArena Text": "#16 (max tier, 9/25 snapshot)",
+        "Code Arena WebDev": "#9 (max tier)",
+        "Vals AI Index": "Launch-day ranking; exact score not found",
+        "GPQA Diamond": "Self-reported",
+        "Terminal-Bench 2.1": "Self-reported",
+        "BrowseComp": "Self-reported"
+      },
+      "pricing": "$3 / $15 per 1M tokens (cached read $0.30)",
+      "params": "2.8T MoE / 104B active",
+      "benchValue": {
+        "Vals AI Index": "#2"
+      }
+    },
+    "kimi-k3-1": {
+      "tagline": "Teased by Moonshot, delayed again and again",
+      "highlights": [
+        "Moonshot dropped official hints; it's on the \"confirmed coming soon\" list",
+        "Leaker ChrisGPT says it won't ship this week or next, another delay"
+      ],
+      "tags": [
+        "Rumored",
+        "Open flagship"
+      ],
+      "notes": "Unreleased as of 9/29; parameters, pricing and scores unknown, tier/score held at K3's values as a placeholder. A Kimi K4 also showed up in the leaked OpenCode sitemap."
+    },
+    "kimi-k2-6": {
+      "tagline": "The last open-weights king, Agent Swarm matured",
+      "highlights": [
+        "AA Intelligence Index 54 at launch, #1 open, ahead of DeepSeek V4 Pro",
+        "SWE-bench Verified 80.2%, SWE-Bench Pro 58.6%",
+        "Terminal-Bench 2.0 up from K2.5's 50.8% to 66.7%",
+        "LMArena Text 1461, WebDev 1509"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Open weights",
+        "Multimodal"
+      ],
+      "notes": "Thinking and non-thinking modes merged into one entry; Modified MIT license. The Kimi Work desktop app runs K2.6 by default.",
+      "bench": {
+        "LMArena Text": "#55",
+        "Code Arena WebDev": "#48",
+        "AA Intelligence Index": "Old April index, #1 open",
+        "SWE-bench Verified": "Self-reported",
+        "SWE-Bench Pro": "Self-reported"
+      },
+      "pricing": "$0.95 / $4 per 1M tokens (cached read $0.16)",
+      "params": "1T MoE / 32B active"
+    },
+    "kimi-k2-7-code": {
+      "tagline": "A coding-specialized spin on the K2 base",
+      "highlights": [
+        "Kimi Code Bench v2 up 21.8% over K2.6",
+        "About 30% fewer reasoning tokens on the same tasks",
+        "Highspeed variant outputs ~180 tok/s, 260 on short context",
+        "WebDev 1473, actually below K2.6"
+      ],
+      "tags": [
+        "Coding",
+        "Long-horizon dev",
+        "Open weights"
+      ],
+      "notes": "Moonshot only published gains over K2.6 on its own benchmark, with no SWE-bench-style public scores; a kimi-k2.7-code-highspeed variant also exists.",
+      "bench": {
+        "Code Arena WebDev": "#57",
+        "Kimi Code Bench v2": "Vs. K2.6, Moonshot's in-house benchmark"
+      },
+      "pricing": "$0.95 / $4 per 1M tokens (cached read $0.19)",
+      "params": "1T MoE / 32B active"
+    },
+    "kimi-k2-5": {
+      "tagline": "Where Kimi's multimodality and swarms began",
+      "highlights": [
+        "First to add MoonViT, a 400M-parameter vision encoder",
+        "Debuted Agent Swarm, orchestrating up to 100 sub-agents",
+        "LMArena Text 1450 (thinking), 38 points behind K3"
+      ],
+      "tags": [
+        "Multimodal",
+        "Agents",
+        "Open weights"
+      ],
+      "notes": "API retired 2026-08-31; circulates only as open weights. Instant and thinking modes merged.",
+      "bench": {
+        "LMArena Text": "#74 (thinking)",
+        "Code Arena WebDev": "#70 (thinking)",
+        "SWE-Bench Pro": "Self-reported"
+      },
+      "pricing": "$0.60 / $3 per 1M tokens (final official price before retirement)",
+      "params": "1T MoE / 32B active"
+    }
+  }
+}

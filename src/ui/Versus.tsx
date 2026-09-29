@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { audio } from '../audio/engine'
 import { MODEL_BY_ID } from '../data'
 import { TIER_BY_ID } from '../data/tiers'
+import { useT } from '../i18n'
 import { useStore } from '../store'
 import type { RankedModel } from '../types'
 import { Badge, TierChip } from './bits'
@@ -27,6 +28,7 @@ function sharedBenchmarks(a: RankedModel, b: RankedModel) {
 
 function Fighter({ m, side, win }: { m: RankedModel; side: 'l' | 'r'; win: boolean }) {
   const t = TIER_BY_ID[m.tier]
+  const lang = useStore((s) => s.lang)
   return (
     <motion.div
       className={`fighter fighter--${side} ${win ? 'fighter--win' : ''}`}
@@ -38,7 +40,7 @@ function Fighter({ m, side, win }: { m: RankedModel; side: 'l' | 'r'; win: boole
       <div className="fighter__mono">{m.vendor.monogram}</div>
       <Badge vendor={m.vendor} size={56} />
       <div className="fighter__name">{m.name}</div>
-      <div className="fighter__vendor">{m.vendor.nameZh}</div>
+      <div className="fighter__vendor">{m.vendor.label[lang]}</div>
       <div className="fighter__row">
         <TierChip tier={m.tier} size="lg" />
         <span className="fighter__score">{Math.round(m.score)}</span>
@@ -46,7 +48,7 @@ function Fighter({ m, side, win }: { m: RankedModel; side: 'l' | 'r'; win: boole
       <div className="hp">
         <motion.i initial={{ width: 0 }} animate={{ width: `${m.score}%` }} transition={{ delay: 0.7, duration: 0.9, ease: 'easeOut' }} />
       </div>
-      <div className="fighter__tagline">{m.tagline}</div>
+      <div className="fighter__tagline">{m.text[lang].tagline}</div>
     </motion.div>
   )
 }
@@ -54,6 +56,7 @@ function Fighter({ m, side, win }: { m: RankedModel; side: 'l' | 'r'; win: boole
 export function Versus() {
   const vs = useStore((s) => s.vs)
   const set = useStore((s) => s.set)
+  const T = useT()
   const a = vs ? MODEL_BY_ID.get(vs[0]) : undefined
   const b = vs ? MODEL_BY_ID.get(vs[1]) : undefined
 
@@ -106,7 +109,7 @@ export function Versus() {
               ))
             ) : (
               <motion.div className="round round--none" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3 }}>
-                两者没有同口径的公开基准，按综合分裁决
+                {T('noSharedBench')}
               </motion.div>
             )}
             <motion.div className="verdict" initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1.5 + rows.length * 0.22, type: 'spring' }}>
@@ -114,7 +117,7 @@ export function Versus() {
             </motion.div>
           </div>
           <button className="versus__close" onClick={() => set({ vs: null })}>
-            ✕ 退出对决
+            {T('exitDuel')}
           </button>
         </motion.div>
       )}

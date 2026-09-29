@@ -23,7 +23,12 @@
       "pricing": "$1.25 / $4.25 每百万 token（Contributor 档 $0.10 / $0.20）",
       "tier": "A",
       "score": 86,
-      "tags": ["编程", "Agent", "多模态", "性价比"],
+      "tags": [
+        "编程",
+        "Agent",
+        "多模态",
+        "性价比"
+      ],
       "tagline": "Meta 重回前沿的最便宜门票",
       "highlights": [
         "AA 智能指数 48（max），高于 Grok 4.7 的 46",
@@ -32,10 +37,30 @@
         "比 1.2 少用约 20% 工具调用、25% token"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "48", "note": "max；xhigh 为 45", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "Code Arena", "value": "1656", "note": "第 10（max）", "source": "https://arena.ai/leaderboard/code"},
-        {"name": "Text Arena", "value": "1494", "note": "第 9（max）", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "105 植入 bug 实测", "value": "32.2", "note": "GPT-6 Astra 45、Opus 5.5 41.7", "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "48",
+          "note": "max；xhigh 为 45",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1656",
+          "note": "第 10（max）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1494",
+          "note": "第 9（max）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "105 植入 bug 实测",
+          "value": "32.2",
+          "note": "GPT-6 Astra 45、Opus 5.5 41.7",
+          "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+        }
       ],
       "notes": "推理档到 xhigh/max；Contributor 低价档会留存数据训练。被曝在 Terminal Bench Science 利用 Lean 内核 bug 骗分；数学证明口碑一般",
       "sources": [
@@ -58,7 +83,11 @@
       "pricing": "$1.25 / $4.25 每百万 token",
       "tier": "B",
       "score": 76,
-      "tags": ["对话", "编程", "待开源"],
+      "tags": [
+        "对话",
+        "编程",
+        "待开源"
+      ],
       "tagline": "Text Arena 第 7 的聊天型选手",
       "highlights": [
         "Text Arena 1496 排第 7，Meta 家文本最高分",
@@ -66,8 +95,18 @@
         "扎克伯格与 Alexandr Wang 承诺将开放权重"
       ],
       "benchmarks": [
-        {"name": "Text Arena", "value": "1496", "note": "第 7（xHigh）", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena", "value": "1531", "note": "第 40（xHigh）", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "Text Arena",
+          "value": "1496",
+          "note": "第 7（xHigh）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1531",
+          "note": "第 40（xHigh）",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "与终端编程 Agent Muse Code 同日发布；开源承诺截至 9 月初尚未兑现。外部天梯图放 C 档",
       "sources": [
@@ -89,7 +128,10 @@
       "pricing": null,
       "tier": "C",
       "score": 68,
-      "tags": ["多模态", "推理"],
+      "tags": [
+        "多模态",
+        "推理"
+      ],
       "tagline": "MSL 首个正式上线的 Muse",
       "highlights": [
         "Muse Spark 4 月 8 日官宣，1.1 为首个正式版",
@@ -97,8 +139,18 @@
         "Code Arena 1541（第 35）"
       ],
       "benchmarks": [
-        {"name": "Text Arena", "value": "1491", "note": "第 12", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena", "value": "1541", "note": "第 35", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "Text Arena",
+          "value": "1491",
+          "note": "第 12",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1541",
+          "note": "第 35",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "合并 4 月发布的初版 Muse Spark；已被 1.2/1.3 取代",
       "sources": [
@@ -119,7 +171,11 @@
       "pricing": "开源（Apache 2.0）",
       "tier": "D",
       "score": 60,
-      "tags": ["开源", "端侧", "Agent"],
+      "tags": [
+        "开源",
+        "端侧",
+        "Agent"
+      ],
       "tagline": "一张 24G 显卡跑得动的 Meta 开源款",
       "highlights": [
         "Apache 2.0 开放权重，4bit 量化后不到 20GB",
@@ -127,9 +183,24 @@
         "AA 智能指数 17，Text Arena 1424（第 118）"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "17", "note": "high", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "Text Arena", "value": "1424", "note": "第 118", "source": "https://arena.ai/leaderboard/text"},
-        {"name": "Code Arena", "value": "1355", "note": "第 102", "source": "https://arena.ai/leaderboard/code"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "17",
+          "note": "high",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1424",
+          "note": "第 118",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1355",
+          "note": "第 102",
+          "source": "https://arena.ai/leaderboard/code"
+        }
       ],
       "notes": "Meta 在 Llama 之后重返开源的标志；支持文本+图像输入",
       "sources": [
@@ -151,7 +222,10 @@
       "pricing": "开源（Llama 4 社区许可）",
       "tier": "E",
       "score": 45,
-      "tags": ["开源", "多模态"],
+      "tags": [
+        "开源",
+        "多模态"
+      ],
       "tagline": "Llama 路线的最后一代主力",
       "highlights": [
         "AA 智能指数 10，同代 Scout 为 8（10M 上下文）",
@@ -159,7 +233,12 @@
         "此后 Meta 转向 Muse 系列，Llama 未再更新"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "10", "note": "Scout 为 8", "source": "https://artificialanalysis.ai/leaderboards/models"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "10",
+          "note": "Scout 为 8",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        }
       ],
       "notes": "作为历史对照收录，合并 Scout（109B/17B 激活，10M 上下文）",
       "sources": [
@@ -178,9 +257,14 @@
       "params": null,
       "context": null,
       "pricing": "$0.01/张",
-      "tier": "A",
-      "score": 86,
-      "tags": ["文生图", "图像编辑", "多图参考", "便宜"],
+      "tier": "S",
+      "score": 89,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "多图参考",
+        "便宜"
+      ],
       "tagline": "一分钱一张的前十画师",
       "highlights": [
         "AA 文生图第 7（Elo 1111），Arena 文生图第 7（1276）",
@@ -188,8 +272,30 @@
         "已进 Meta AI、Instagram Stories、WhatsApp"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Image", "value": "1111", "note": "第 7", "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"},
-        {"name": "Arena Text-to-Image", "value": "1276", "note": "第 7", "source": "https://arena.ai/leaderboard/text-to-image"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1276",
+          "note": "第 7",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1402",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1111",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1117",
+          "note": "第 6",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
       ],
       "notes": "MSL 首个图像模型；上线后因使用用户照片引发争议",
       "sources": [
@@ -210,7 +316,10 @@
       "pricing": null,
       "tier": "A",
       "score": 84,
-      "tags": ["文生视频", "原生音频"],
+      "tags": [
+        "文生视频",
+        "原生音频"
+      ],
       "tagline": "只见榜单不见 API 的预告片",
       "highlights": [
         "Arena 文生视频第 9（1456），领先 Sora 2 Pro 与 Veo 3.1",
@@ -218,7 +327,12 @@
         "7 月预览至今仅称「即将上线」，无 API、无定价"
       ],
       "benchmarks": [
-        {"name": "Arena Text-to-Video", "value": "1456", "note": "第 9", "source": "https://arena.ai/leaderboard/text-to-video"}
+        {
+          "name": "Arena Text-to-Video",
+          "value": "1456",
+          "note": "第 9",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
       ],
       "notes": "released 字段为预览日；分辨率与时长未公布，AA 视频榜未收录",
       "sources": [

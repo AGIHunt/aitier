@@ -23,7 +23,12 @@
       "pricing": "$0.834 / $2.501 每百万 token（缓存 $0.042）",
       "tier": "A",
       "score": 82,
-      "tags": ["开源", "编程", "Agent", "办公"],
+      "tags": [
+        "开源",
+        "编程",
+        "Agent",
+        "办公"
+      ],
       "tagline": "腾讯首个参与优化自身训练的旗舰",
       "highlights": [
         "内部 163 名专家盲评 2.99/4，略高于 Kimi K3、GLM-5.3",
@@ -32,9 +37,24 @@
         "旗舰级开源权重里价格最低之一，上架 OpenRouter"
       ],
       "benchmarks": [
-        {"name": "Terminal-Bench 2.1", "value": "85.4", "note": "第三方整理", "source": "https://iadecider.com/articles/tencent-hy-review"},
-        {"name": "DeepSWE", "value": "64.3", "note": "第三方整理", "source": "https://iadecider.com/articles/tencent-hy-review"},
-        {"name": "腾讯内部盲评（203 个工程任务）", "value": "2.99/4", "note": "GLM-5.3 2.92，Kimi K3 2.94", "source": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"}
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "85.4",
+          "note": "第三方整理",
+          "source": "https://iadecider.com/articles/tencent-hy-review"
+        },
+        {
+          "name": "DeepSWE",
+          "value": "64.3",
+          "note": "第三方整理",
+          "source": "https://iadecider.com/articles/tencent-hy-review"
+        },
+        {
+          "name": "腾讯内部盲评（203 个工程任务）",
+          "value": "2.99/4",
+          "note": "GLM-5.3 2.92，Kimi K3 2.94",
+          "source": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+        }
       ],
       "notes": "尚未见 AA 智能指数和 LMArena 成绩。领先的对比来自腾讯自家盲评，公开基准上大体落后 Opus 5、GPT-5.6。参照天梯图放在 A 档。",
       "sources": [
@@ -56,7 +76,11 @@
       "pricing": null,
       "tier": "C",
       "score": 66,
-      "tags": ["开源", "快慢思考", "性价比"],
+      "tags": [
+        "开源",
+        "快慢思考",
+        "性价比"
+      ],
       "tagline": "腾讯全家桶的主力底座",
       "highlights": [
         "AA 智能指数 25",
@@ -65,8 +89,18 @@
         "Apache 2.0，快慢思考融合"
       ],
       "benchmarks": [
-        {"name": "AA Intelligence Index", "value": "25", "note": "", "source": "https://artificialanalysis.ai/leaderboards/models"},
-        {"name": "LMArena Text", "value": "1457", "note": "约第 62", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "AA Intelligence Index",
+          "value": "25",
+          "note": "",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1457",
+          "note": "约第 62",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "4 月底先发 Hy3 preview，7 月转正式版。参照天梯图放在 C 档。",
       "sources": [
@@ -88,7 +122,10 @@
       "pricing": null,
       "tier": "D",
       "score": 57,
-      "tags": ["开源", "Agent"],
+      "tags": [
+        "开源",
+        "Agent"
+      ],
       "tagline": "混元团队重建后的首作",
       "highlights": [
         "腾讯混元重组后的第一个模型，主打实用性和 Agent 能力",
@@ -96,7 +133,12 @@
         "3 个月后被 Hy3 正式版取代"
       ],
       "benchmarks": [
-        {"name": "LMArena Text", "value": "1409", "note": "约第 145", "source": "https://arena.ai/leaderboard/text"}
+        {
+          "name": "LMArena Text",
+          "value": "1409",
+          "note": "约第 145",
+          "source": "https://arena.ai/leaderboard/text"
+        }
       ],
       "notes": "已被 Hy3 正式版替代，收录只为展示版本演进。",
       "sources": [
@@ -115,9 +157,13 @@
       "params": null,
       "context": "2K",
       "pricing": "$0.024/张（GMI Cloud）；官方 API ¥0.15/张",
-      "tier": "C",
-      "score": 70,
-      "tags": ["文生图", "图像编辑", "文字渲染"],
+      "tier": "B",
+      "score": 76,
+      "tags": [
+        "文生图",
+        "图像编辑",
+        "文字渲染"
+      ],
       "tagline": "先推理再画，主打便宜",
       "highlights": [
         "官方人评胜率较 Hy Image 3.0 提升 30%",
@@ -125,7 +171,14 @@
         "官方称价格仅为 GPT Image 2 的 1/8.8",
         "已上 ComfyUI、OnSolo、GMI Cloud"
       ],
-      "benchmarks": [],
+      "benchmarks": [
+        {
+          "name": "AA Image Editing",
+          "value": "1090",
+          "note": "第 14（HunyuanImage 3.5 Preview）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ],
       "notes": "暂未进入 LMArena、AA 图像榜前 30。定档参考上一代在榜成绩，加上官方自报的提升幅度，不拔高。",
       "sources": [
         "https://agihunt.info/e/1a0c707257b1d6fc829c3dd7844",
@@ -145,7 +198,11 @@
       "pricing": null,
       "tier": "C",
       "score": 66,
-      "tags": ["开源", "文生图", "图像编辑"],
+      "tags": [
+        "开源",
+        "文生图",
+        "图像编辑"
+      ],
       "tagline": "最大的开源原生多模态生图模型之一",
       "highlights": [
         "80B MoE 原生多模态架构，权重开源",
@@ -153,7 +210,12 @@
         "LMArena Image Edit 1302，约第 23，累计超 30 万票"
       ],
       "benchmarks": [
-        {"name": "LMArena Image Edit", "value": "1302", "note": "hunyuan-image-3.0-instruct，约第 23", "source": "https://arena.ai/leaderboard/image-edit"}
+        {
+          "name": "LMArena Image Edit",
+          "value": "1302",
+          "note": "hunyuan-image-3.0-instruct，约第 23",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
       ],
       "notes": "文生图未进 LMArena、AA 前 30。编辑分与 Seedream 4.5 相当。",
       "sources": [
@@ -174,7 +236,12 @@
       "pricing": null,
       "tier": "D",
       "score": 55,
-      "tags": ["开源", "文生视频", "图生视频", "轻量"],
+      "tags": [
+        "开源",
+        "文生视频",
+        "图生视频",
+        "轻量"
+      ],
       "tagline": "消费级显卡能跑的开源视频模型",
       "highlights": [
         "8.3B 参数，480p/720p 原生，经超分可到 1080p",

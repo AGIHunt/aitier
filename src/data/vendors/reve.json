@@ -22,8 +22,13 @@
       "context": "4K（16MP）",
       "pricing": null,
       "tier": "S",
-      "score": 89,
-      "tags": ["文生图", "4K", "排版", "图像编辑"],
+      "score": 88,
+      "tags": [
+        "文生图",
+        "4K",
+        "排版",
+        "图像编辑"
+      ],
       "tagline": "独立实验室做出的最强原生 4K 生图",
       "highlights": [
         "LMArena 文生图 1302，第 5，独立厂商中最高",
@@ -32,8 +37,18 @@
         "发布时排 LMArena 第 2，比 Reve 2.0 高 36 分"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1302", "note": "第 5", "source": "https://arena.ai/leaderboard/text-to-image"},
-        {"name": "LMArena Image Edit", "value": "1375", "note": "约第 14", "source": "https://arena.ai/leaderboard/image-edit"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1302",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1375",
+          "note": "第 14",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
       ],
       "notes": "未见于 AA 文生图前 30。外文文字渲染和世界知识较 2.0 有加强。",
       "sources": [
@@ -53,16 +68,30 @@
       "context": "4K",
       "pricing": null,
       "tier": "A",
-      "score": 83,
-      "tags": ["文生图", "4K", "排版"],
+      "score": 82,
+      "tags": [
+        "文生图",
+        "4K",
+        "排版"
+      ],
       "tagline": "让 Reve 挤进第一梯队的一代",
       "highlights": [
         "LMArena 文生图 1269，约第 8，高于 Nano Banana 2（1261）",
         "LMArena 图像编辑 1358，约第 17"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Image", "value": "1269", "note": "约第 8", "source": "https://arena.ai/leaderboard/text-to-image"},
-        {"name": "LMArena Image Edit", "value": "1358", "note": "约第 17", "source": "https://arena.ai/leaderboard/image-edit"}
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1269",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1358",
+          "note": "第 17",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
       ],
       "notes": "",
       "sources": [

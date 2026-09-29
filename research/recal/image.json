@@ -1,0 +1,881 @@
+{
+  "changes": [
+    {
+      "id": "gpt-image-2-5-flare",
+      "tier": "SS",
+      "score": 96,
+      "reason": "四榜（LMArena 文生图/编辑、AA 文生图/编辑）全部第 2，仅次于 Sunburst；AA 文生图与 Sunburst 只差 6 Elo，但编辑差距 20–44 分，不并列 SSS",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "gpt-image-2",
+      "tier": "SS",
+      "score": 93,
+      "reason": "四榜中三榜第 3（AA 编辑第 5），LMArena 文生图/编辑样本量 8.9 万/25.9 万，是除 2.5 外最稳的第三名，领先外家第一名 MAI-Image-2.6 约 30–50 分",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "mai-image-2.6",
+      "tier": "S",
+      "score": 92,
+      "reason": "LMArena 文生图第 4、编辑第 5，AA 文生图第 5、AA 编辑第 3，外家最强；仍是 Foundry 公测（public preview），不上 SS",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing",
+        "https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/"
+      ]
+    },
+    {
+      "id": "grok-imagine-image-2",
+      "tier": "S",
+      "score": 91,
+      "reason": "LMArena 编辑第 4、文生图第 6，AA 文生图第 4、编辑第 9，四榜都在前 10",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "muse-image",
+      "tier": "S",
+      "score": 89,
+      "reason": "四榜都在第 6–7：LMArena 文生图第 7/编辑第 6，AA 文生图第 7/编辑第 6，编辑能力明显强于 Reve 2.1，原 A 86 偏低",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "reve-2.1",
+      "tier": "S",
+      "score": 88,
+      "reason": "LMArena 文生图第 5（1302）但编辑只排第 14，且未进 AA 文生图前 90（AA 只收了旧版 Reve Image Halfmoon），证据单边，压到 S 档底部、排在 Muse 之后",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+      ]
+    },
+    {
+      "id": "nano-banana-2",
+      "tier": "A",
+      "score": 86,
+      "reason": "AA 文生图第 6（1124）、AA 编辑第 8，LMArena 文生图第 9、编辑第 12；AA 口径下是谷歌最强也强于 Seedream 5.0 Pro，A 档头部",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "nano-banana-2-1",
+      "tier": "C",
+      "score": 64,
+      "reason": "截至 9/29 仍只有 Flow 代码里的命名痕迹（TestingCatalog），无实测无榜单；按 rumored 规则降到 B 以下占位，发布后重评",
+      "evidence": [
+        "https://agihunt.info/e/1a0e3500d34b150e4d5afa48e6b",
+        "https://agihunt.info/e/1a0e726a61589150a2207c1850a"
+      ]
+    },
+    {
+      "id": "seedream-5-0-pro",
+      "tier": "A",
+      "score": 84,
+      "reason": "LMArena 文生图第 10、编辑第 8，AA 文生图第 15、编辑第 11；与 Nano Banana Pro 基本打平，略低于 Nano Banana 2 与 MAI-Image-2.5",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "mai-image-2.5",
+      "tier": "A",
+      "score": 85,
+      "reason": "LMArena 编辑第 7、文生图第 12，AA 文生图第 10、编辑第 7，四榜均略高于 Seedream 5.0 Pro",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "reve-2.0",
+      "tier": "A",
+      "score": 82,
+      "reason": "LMArena 文生图第 8、编辑第 17，未上 AA；被 2.1 取代，排在 Seedream/NB Pro 之后",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit"
+      ]
+    },
+    {
+      "id": "nano-banana-pro",
+      "tier": "A",
+      "score": 84,
+      "reason": "LMArena 编辑第 9（2K 版 1390，58 万票）、文生图第 14，AA 文生图第 11、编辑第 13，与 Seedream 5.0 Pro 打平",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "mai-image-2.6-flash",
+      "tier": "A",
+      "score": 84,
+      "reason": "AA 编辑第 4（1124）、文生图第 9，未上 LMArena；编辑能力超过 GPT-Image-2(high) 在 AA 的分数，但只有单一榜单、仍为 preview",
+      "evidence": [
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "mai-image-2.5-pro",
+      "tier": "A",
+      "score": 82,
+      "reason": "AA 文生图第 12、AA 编辑第 10，未上 LMArena",
+      "evidence": [
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "nano-banana-2-lite",
+      "tier": "B",
+      "score": 79,
+      "reason": "LMArena 文生图第 13、AA 文生图第 13，但编辑只排 LMArena 第 21 / AA 第 25",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "midjourney-v8.2",
+      "tier": "B",
+      "score": 74,
+      "reason": "LMArena 与 AA 均未收录 V8.x（AA 仅有 V7 Alpha 第 112、V6 第 115），无任何盲测证据，放在有榜单证据的 Qwen-Image-2.1 之下",
+      "evidence": [
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://updates.midjourney.com/version-8-2/"
+      ]
+    },
+    {
+      "id": "mai-image-2.5-flash",
+      "tier": "B",
+      "score": 75,
+      "reason": "AA 文生图第 19、AA 编辑第 15",
+      "evidence": [
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "gpt-image-1-5",
+      "tier": "A",
+      "score": 81,
+      "reason": "原 B 74 明显偏低：AA 文生图第 8（1105）、AA 编辑第 12，LMArena 文生图/编辑第 15（ChatGPT 版 chatgpt-image-latest-hf 编辑第 11）；上一代但未退役，放 A 档底部、低于 GPT-Image-2",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "hy-image-3.5-preview",
+      "tier": "B",
+      "score": 76,
+      "reason": "原记「未进榜」已过时：AA 图像编辑榜第 14（HunyuanImage 3.5 Preview，1090），高于 Qwen-Image-3.0-Pro；仍是 preview 且未进文生图前 30",
+      "evidence": [
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "grok-imagine-image",
+      "tier": "B",
+      "score": 75,
+      "reason": "合并条目里的 quality 版在 LMArena 编辑第 10（1390）、AA 编辑第 16、AA 文生图第 17，原 C 69 按基础版定档偏低",
+      "evidence": [
+        "https://arena.ai/leaderboard/image-edit",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/editing"
+      ]
+    },
+    {
+      "id": "qwen-image-2-0",
+      "tier": "C",
+      "score": 70,
+      "reason": "Pro 版（2026-06-22 快照）LMArena 文生图第 19（1192）高于 MAI-Image-2（1184），AA 文生图第 20；原「曾排第 9」为过时官方口径",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+      ]
+    }
+  ],
+  "remove": [
+    {
+      "id": "qwen-image-2-1-edit",
+      "reason": "与 qwen-image-2-1 是同一个生成/编辑一体模型（LMArena 两榜都叫 qwen-image-2.1），单列会重复计数；编辑成绩并入 qwen-image-2-1 的 benchmarks"
+    }
+  ],
+  "add": [
+    {
+      "vendorId": "alibaba",
+      "model": {
+        "id": "qwen-image-3-0-pro",
+        "name": "Qwen-Image-3.0-Pro",
+        "category": "image",
+        "family": "Qwen-Image",
+        "released": "2026-07-21",
+        "status": "released",
+        "openWeights": false,
+        "params": null,
+        "context": "2K（512–2048px，1:8 至 8:1）",
+        "pricing": "$0.04/张（1K），$0.075/张（2K）",
+        "tier": "A",
+        "score": 83,
+        "tags": [
+          "文生图",
+          "图像编辑",
+          "中文排版",
+          "多语言文字"
+        ],
+        "tagline": "能一次排满整版报纸的阿里闭源旗舰",
+        "highlights": [
+          "LMArena 文生图 1256，第 11，与 Seedream 5.0 Pro 同分",
+          "AA 文生图第 14（1088）、AA 图像编辑第 17（1077）",
+          "约 4.5K token 长提示词，一次生成报纸、分镜、信息图等密排版面",
+          "官方称支持 12 种语言文字渲染，最小约 10px"
+        ],
+        "benchmarks": [
+          {
+            "name": "LMArena Text-to-Image",
+            "value": "1256",
+            "note": "第 11",
+            "source": "https://arena.ai/leaderboard/text-to-image"
+          },
+          {
+            "name": "AA Text-to-Image",
+            "value": "1088",
+            "note": "第 14",
+            "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+          },
+          {
+            "name": "AA Image Editing",
+            "value": "1077",
+            "note": "第 17",
+            "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+          }
+        ],
+        "notes": "7/21 发布、邀请制 API，8 月初全面开放；与 2.x 不同，未开源权重、未发技术报告和官方 benchmark。LMArena 编辑榜前 25 未见。",
+        "sources": [
+          "https://www.unite.ai/alibaba-launches-qwen-image-3-0-without-benchmarks-or-weights/",
+          "https://llm-stats.com/blog/research/qwen-image-3-0-launch",
+          "https://decrypt.co/374084/alibaba-qwen-image-3-ai-useful-not-just-pretty",
+          "https://arena.ai/leaderboard/text-to-image",
+          "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+          "https://artificialanalysis.ai/image/leaderboard/editing"
+        ]
+      }
+    },
+    {
+      "vendorId": "alibaba",
+      "model": {
+        "id": "qwen-image-3-0",
+        "name": "Qwen-Image-3.0",
+        "category": "image",
+        "family": "Qwen-Image",
+        "released": "2026-07-21",
+        "status": "released",
+        "openWeights": false,
+        "params": null,
+        "context": "2K",
+        "pricing": "$0.03/张（1K/2K）",
+        "tier": "B",
+        "score": 78,
+        "tags": [
+          "文生图",
+          "图像编辑"
+        ],
+        "tagline": "3.0 的走量标准版",
+        "highlights": [
+          "AA 文生图第 16（1074），高于 Qwen-Image-2.1",
+          "AA 图像编辑第 24（1053）",
+          "统一 $0.03/张，限速 20 RPM，是 Pro 的 4 倍"
+        ],
+        "benchmarks": [
+          {
+            "name": "AA Text-to-Image",
+            "value": "1074",
+            "note": "第 16",
+            "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+          },
+          {
+            "name": "AA Image Editing",
+            "value": "1053",
+            "note": "第 24",
+            "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+          }
+        ],
+        "notes": "即 Qwen-Image-3.0-Standard；未上 LMArena 前 25。闭源 API。",
+        "sources": [
+          "https://www.unite.ai/alibaba-launches-qwen-image-3-0-without-benchmarks-or-weights/",
+          "https://llm-stats.com/blog/research/qwen-image-3-0-launch",
+          "https://decrypt.co/374084/alibaba-qwen-image-3-ai-useful-not-just-pretty",
+          "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+          "https://artificialanalysis.ai/image/leaderboard/editing"
+        ]
+      }
+    }
+  ],
+  "benchmarkUpdates": [
+    {
+      "id": "gpt-image-2-5-sunburst",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1424",
+          "note": "第 1（10,884 票）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1526",
+          "note": "第 1",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1195",
+          "note": "第 1（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1181",
+          "note": "第 1（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-2-5-flare",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1401",
+          "note": "第 2",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1482",
+          "note": "第 2",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1189",
+          "note": "第 2（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1161",
+          "note": "第 2（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-2",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1383",
+          "note": "第 3（medium）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1461",
+          "note": "第 3（medium）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1171",
+          "note": "第 3（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1122",
+          "note": "第 5（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "mai-image-2.6",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1335",
+          "note": "第 4",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1429",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1148",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1135",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image-2",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1301",
+          "note": "第 6（low）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1430",
+          "note": "第 4（low）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1154",
+          "note": "第 4",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 9",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "muse-image",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1276",
+          "note": "第 7",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1402",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1111",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1117",
+          "note": "第 6",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "reve-2.1",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1302",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1375",
+          "note": "第 14",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ]
+    },
+    {
+      "id": "reve-2.0",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1269",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1358",
+          "note": "第 17",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        }
+      ]
+    },
+    {
+      "id": "nano-banana-2",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1261",
+          "note": "第 9（web-search）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1388",
+          "note": "第 12（web-search）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1124",
+          "note": "第 6",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1108",
+          "note": "第 8",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "seedream-5-0-pro",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1256",
+          "note": "第 10",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1394",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1080",
+          "note": "第 15",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 11",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "mai-image-2.5",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1254",
+          "note": "第 12",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1400",
+          "note": "第 7",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1103",
+          "note": "第 10",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1113",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "nano-banana-pro",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1247",
+          "note": "第 14（2K 版）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1390",
+          "note": "第 9（2K 版）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1100",
+          "note": "第 11",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1099",
+          "note": "第 13",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "mai-image-2.6-flash",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Image",
+          "value": "1103",
+          "note": "第 9",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1124",
+          "note": "第 4",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "mai-image-2.5-pro",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Image",
+          "value": "1099",
+          "note": "第 12",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1106",
+          "note": "第 10",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "nano-banana-2-lite",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1250",
+          "note": "第 13",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1314",
+          "note": "第 21",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1094",
+          "note": "第 13",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1042",
+          "note": "第 25",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "gpt-image-1-5",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1238",
+          "note": "第 15（high-fidelity）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1370",
+          "note": "第 15（high-fidelity）；ChatGPT 版 1388 第 11",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1105",
+          "note": "第 8（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1102",
+          "note": "第 12（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "mai-image-2.5-flash",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Image",
+          "value": "1033",
+          "note": "第 19",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1087",
+          "note": "第 15",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "hy-image-3.5-preview",
+      "benchmarks": [
+        {
+          "name": "AA Image Editing",
+          "value": "1090",
+          "note": "第 14（HunyuanImage 3.5 Preview）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "grok-imagine-image",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1170",
+          "note": "第 23（基础版）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1390",
+          "note": "第 10（quality 20260519）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1046",
+          "note": "第 17（quality）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1083",
+          "note": "第 16（quality）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-2-1",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1228",
+          "note": "第 17",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1367",
+          "note": "第 16",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1034",
+          "note": "第 18",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1072",
+          "note": "第 18",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-2-0",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Image",
+          "value": "1192",
+          "note": "第 19（Pro 2026-06-22）",
+          "source": "https://arena.ai/leaderboard/text-to-image"
+        },
+        {
+          "name": "LMArena Image Edit",
+          "value": "1304",
+          "note": "第 22（Pro 2026-06-22）",
+          "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1030",
+          "note": "第 20（Pro 2026-04-22）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "vendor": {
+    "blurb": "Cheap, fast text models; Hailuo H3 video went open weights and took #1 on image-to-video"
+  },
+  "models": {
+    "minimax-m3-1": {
+      "tagline": "Likely \"Space Bunny\", the anonymous chart-topper",
+      "highlights": [
+        "Anonymous Space Bunny went live 9/23 and topped OpenRouter's daily chart",
+        "#1 on OpenCode for five straight days, ~40T tokens processed in total",
+        "Tokenizer fingerprint matches MiniMax; an open-source repo shipped M3.1 configs early",
+        "1M context, image/video input, adjustable reasoning effort"
+      ],
+      "tags": [
+        "Coding",
+        "3D/Frontend",
+        "Multimodal",
+        "Fast"
+      ],
+      "notes": "Not officially confirmed; it may just be the already-live M3.1-Flash-Preview. Leaks point to an official release around 9/30. Tests say fast and steady, but less striking than GPT-6 Astra.",
+      "bench": {}
+    },
+    "minimax-m3-1-flash-preview": {
+      "tagline": "A fast coding preview for everyday development",
+      "highlights": [
+        "Debuted 9/27 in MiniMax Code, then rolled into Token Plan",
+        "Five reasoning levels: low/medium/high/xhigh/max",
+        "Positioned as high-throughput, low-latency, from bug fixes to full features"
+      ],
+      "tags": [
+        "Coding",
+        "Fast",
+        "Daily dev"
+      ],
+      "notes": "No official scores or third-party leaderboard results yet, so the tier is conservative. After launch, Token Plan quotas temporarily reset twice a day.",
+      "bench": {},
+      "pricing": "Included in Token Plan subscription"
+    },
+    "minimax-m3": {
+      "tagline": "Open weights, 1M context, multimodal, cheap",
+      "highlights": [
+        "Billed as the first open model with frontier coding, 1M context, native multimodal",
+        "Official: SWE-Bench Pro 59.0%, TB 2.1 66.0%",
+        "New attention architecture, MSA (MiniMax Sparse Attention)",
+        "Only 29 on the new AA index; LMArena Text 1440, #91"
+      ],
+      "tags": [
+        "Coding",
+        "Long context",
+        "Multimodal",
+        "Open weights"
+      ],
+      "notes": "Supports a thinking toggle. It was briefly the top open model at launch, but Terminal-Bench 4.0 is just 2% in AA's new index and the ranking fell sharply; the reference chart also puts it in C.",
+      "bench": {
+        "Artificial Analysis Intelligence Index v4.3.2": "Old index score at launch was 55",
+        "LMArena Text": "#91",
+        "LMArena Code": "#54",
+        "SWE-Bench Pro": "Official"
+      },
+      "pricing": "$0.30 / $1.20 per 1M tokens (>512K billed separately)",
+      "params": "428B MoE / 23B active"
+    },
+    "minimax-m2-7": {
+      "tagline": "Small-active coding model, built to self-evolve",
+      "highlights": [
+        "SWE-Pro 56.2%, level with GPT-5.3-Codex at launch",
+        "10B active, plus a highspeed variant",
+        "AA index 23; LMArena Code 1397, #84"
+      ],
+      "tags": [
+        "Coding",
+        "Self-evolving",
+        "Low price"
+      ],
+      "notes": "Weights are open but moved to a non-commercial license, which upset the community. Still listed in MiniMax Code.",
+      "bench": {
+        "SWE-Pro": "Official",
+        "LMArena Code": "#84"
+      },
+      "pricing": "$0.30 / $1.20 per 1M tokens",
+      "params": "230B MoE / 10B active"
+    },
+    "minimax-m2-5": {
+      "tagline": "MIT-licensed coding model at $1 an hour",
+      "highlights": [
+        "SWE-bench Verified 80.2%, close to Opus 4.6 at launch",
+        "About $1 to run for an hour at 100 tok/s",
+        "MIT license, about 34% faster than M2.7"
+      ],
+      "tags": [
+        "Coding",
+        "Open weights",
+        "Value"
+      ],
+      "notes": "A more permissive license than M2.7, and still a cheap pick for many local and agent frameworks.",
+      "bench": {
+        "SWE-bench Verified": "Official",
+        "LMArena Code": "#89"
+      },
+      "pricing": "$0.30 / $1.20 per 1M tokens",
+      "params": "230B MoE / 10B active"
+    },
+    "minimax-h3": {
+      "tagline": "Open-weights omni video, #1 on image-to-video",
+      "highlights": [
+        "LMArena Image-to-Video 1495, #1; Text-to-Video 1460, #8",
+        "AA Text-to-Video (with audio) #4, Image-to-Video #2, both #1 among open models",
+        "Native stereo audio, 2K resolution, 4–15s per clip",
+        "References up to 9 images, 3 videos and 3 audio clips per generation"
+      ],
+      "tags": [
+        "Image-to-video",
+        "Native audio",
+        "Open weights",
+        "Multi-reference"
+      ],
+      "notes": "\"H3\" refers to this model: official name MiniMax H3, brand name Hailuo 3 (Hailuo 3.0). Shown at WAIC on 7/17 and open-sourced 8/3, under a license that excludes the US, EU, UK and South Korea.",
+      "bench": {
+        "LMArena Image-to-Video": "#1",
+        "LMArena Text-to-Video": "#8",
+        "Artificial Analysis Text-to-Video（带音频）": "#4; fal's post-trained H3 Max (1227) is #3",
+        "Artificial Analysis Image-to-Video（带音频）": "#2; H3 Max (fal) is #1"
+      },
+      "pricing": "~$0.13/sec (2K, third-party figure)",
+      "params": "33B dense (~20B active at inference)",
+      "benchName": {
+        "Artificial Analysis Text-to-Video（带音频）": "Artificial Analysis Text-to-Video (with audio)",
+        "Artificial Analysis Image-to-Video（带音频）": "Artificial Analysis Image-to-Video (with audio)"
+      }
+    },
+    "hailuo-2-3": {
+      "tagline": "Last-gen Hailuo, fully superseded by H3",
+      "highlights": [
+        "Improved body motion, facial expression and physical realism",
+        "A faster 2.3-Fast variant also exists",
+        "LMArena Text-to-Video #32, Image-to-Video #29"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Motion"
+      ],
+      "notes": "No native audio, a wide gap from the newer models with sound. The older Hailuo-02 (2025-06) is not listed separately.",
+      "bench": {
+        "LMArena Text-to-Video": "#32",
+        "LMArena Image-to-Video": "#29"
+      }
+    },
+    "minimax-image-01": {
+      "tagline": "MiniMax's only image model, now clearly behind",
+      "highlights": [
+        "Text-to-image plus subject-reference image-to-image, up to 9 images per run",
+        "AA text-to-image 861, #124",
+        "Not updated in a year and a half; not on the LMArena text-to-image board"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Subject reference"
+      ],
+      "notes": "Released over 18 months ago, so borderline under listing criteria; kept as a reference because it is MiniMax's only image model and is still on the API.",
+      "bench": {
+        "Artificial Analysis Text-to-Image": "#124"
+      }
+    }
+  }
+}

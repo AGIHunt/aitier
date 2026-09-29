@@ -1,0 +1,24 @@
+{
+  "vendor": {
+    "blurb": "An early AI video player. No new flagship in ~10 months since Gen-4.5; still sliding."
+  },
+  "models": {
+    "runway-gen-4.5": {
+      "tagline": "Once #1 on AA, now outside the top 20",
+      "highlights": [
+        "Launched at #1 on AA text-to-video with 1247",
+        "LMArena text-to-video 1225, around #27, over 48,000 votes",
+        "Native audio added in 2026-05 via ElevenLabs integration"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Film workflow"
+      ],
+      "notes": "Has dropped out of the AA video top 30. Runway is shifting focus to world models and editing tools; as of September there is no Gen-5.",
+      "bench": {
+        "LMArena Text-to-Video": "~#27"
+      }
+    }
+  }
+}

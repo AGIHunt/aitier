@@ -23,7 +23,12 @@
       "pricing": null,
       "tier": "A",
       "score": 82,
-      "tags": ["文生视频", "音画同出", "长镜头", "多参考"],
+      "tags": [
+        "文生视频",
+        "音画同出",
+        "长镜头",
+        "多参考"
+      ],
       "tagline": "原生 30 秒 4K HDR，可灵的翻身之作",
       "highlights": [
         "原生 30 秒生成，最多 10 个关键帧控制",
@@ -52,7 +57,11 @@
       "pricing": null,
       "tier": "B",
       "score": 75,
-      "tags": ["文生视频", "快速", "音画同出"],
+      "tags": [
+        "文生视频",
+        "快速",
+        "音画同出"
+      ],
       "tagline": "4.0 的先行快速版，仅 Ultra 年费用户可用",
       "highlights": [
         "9/28 起向 Ultra 年费订阅用户开放（国内最高档会员 ¥916/月起）",
@@ -79,7 +88,11 @@
       "pricing": "约 $0.34/秒（1080p Pro）",
       "tier": "B",
       "score": 72,
-      "tags": ["文生视频", "图生视频", "音画同出"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "音画同出"
+      ],
       "tagline": "今年 2 月的 AA 文生视频榜首",
       "highlights": [
         "发布时在 AA 文生视频榜（有声、无声）均排第一",
@@ -88,9 +101,24 @@
         "分 Standard 720p 和 Pro 1080p 两档，另有 Omni 版本"
       ],
       "benchmarks": [
-        {"name": "AA Text-to-Video", "value": "1095", "note": "1080p Pro，约第 12", "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"},
-        {"name": "AA Image-to-Video", "value": "1055", "note": "1080p Pro，约第 19", "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"},
-        {"name": "LMArena Image-to-Video", "value": "1354", "note": "kling-v3-pro，约第 19", "source": "https://arena.ai/leaderboard/image-to-video"}
+        {
+          "name": "AA Text-to-Video",
+          "value": "1095",
+          "note": "1080p Pro，约第 12",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video",
+          "value": "1055",
+          "note": "1080p Pro，约第 19",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1354",
+          "note": "kling-v3-pro，约第 19",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
       ],
       "notes": "Kling 3.0 Omni（多参考与编辑）合并在本条，其 AA 文生视频分为 1075–1082。",
       "sources": [
@@ -112,7 +140,11 @@
       "pricing": null,
       "tier": "C",
       "score": 64,
-      "tags": ["文生图", "4K", "角色一致"],
+      "tags": [
+        "文生图",
+        "4K",
+        "角色一致"
+      ],
       "tagline": "给可灵视频做首帧的配套生图",
       "highlights": [
         "与 Video 3.0 同日发布，另有 Image 3.0 Omni",

@@ -1,18 +1,14 @@
-# AI 模型天梯榜 · 收录任务说明（所有收录子 agent 必读）
+# AI 模型天梯榜 · 收录任务说明（收录子 agent 必读）
 
-今天是 **2026-09-29**。我们在做一个 3D 酷炫的「AI 模型天梯榜」网站（仿 X 上流行的 SSS/SS/S/A/B/C/D/E 天梯表，见 `research/tier_ref_jp.png`，一位日本网友 9/28 发的最新版天梯图）。你负责收录一家（或几家）厂商的模型。
+今天是 **{{TODAY}}**。项目：`/Users/john/workspace/airank`，3D「AI 模型天梯榜」网站（SSS/SS/S/A/B/C/D/E 八档）。你负责收录一家（或几家）厂商的模型，或补录新发布的模型。
 
-⚠️ 你的训练知识很可能停在 2025–2026 上半年，**当前世界已经走得很远**（GPT-6、Claude Opus 5.5、Gemini 3.8 等都已存在）。一切以检索到的最新资料为准，不要凭记忆补名字、日期、分数。查不到的字段宁可留空/null，也不要编。
+先运行 `cd /Users/john/workspace/airank && npm run -s report` 看当前天梯，已有模型的定档是你的参照系；再读 `research/EDITORIAL.md`，那是作者的既定判断，**不要推翻**。
 
-## 已知当前格局（从 agihunt 近几天抓到，作为起点，不是全部）
+⚠️ 你的训练知识很可能落后于今天。一切以检索到的最新资料为准，不要凭记忆补名字、日期、分数。查不到的字段宁可留空/null，也不要编。
 
-- OpenAI：GPT-6 Astra（旗舰，~9 月，Bug Hunt/Terminal-Bench-Science 第一）、GPT-6 Sol / Luna（9/23 发布，价格减半）、GPT-5.6 Sol/Terra/Luna；传 GPT-6.1 Astra 因对齐退步取消 10 月发布；DevDay 2026 即将召开。
-- Anthropic：Claude Opus 5.5（9/23 发布，登顶 Text Arena & Code Arena）、Claude Sonnet 5.5（9/29 发布）、Claude Fable 5.1（Agent Arena 第一）、Fable 5.5 泄露、Opus 5、Fable 5、Sonnet 5、Haiku 4.5；Mythos 需查证。
-- Google：Gemini 3.8 Flash / 3.7 / 3.6 / 3.5 Flash，Gemini 3.5 Pro 被砍，Gemini 4 Pro 在 LMArena 暗测；Nano Banana 2 / 2.1 / 2.5 Flash 痕迹；Veo 3.1；Gemini 3.8 Flash TTS。
-- xAI：Grok 4.7（上架 Bedrock）、Grok 4.6、Grok 4.5、Grok Imagine。
-- 国内：Kimi K3 / K3.1、Qwen3.8 Max / Qwen3.8-Flash-Next / Qwen3.8 27B / Qwen-Image-2.1 / Qwen-Audio-3.0、GLM-5.3 / GLM-5.3 Flash、MiniMax M3 / M3.1-Flash-Preview、DeepSeek V4.1 Flash、腾讯 Hy-4 Preview / Hy-3、小米 MiMo V2.5 Pro、快手可灵 Kling 3.0（AA 文生视频第一）/ Kling 4.0（刚发布）、蚂蚁 Ming-Image-0.1。
-- 其它：Meta Muse Spark 1.3 / 1.2 / Muse Glimmer、Mistral Medium 3.5、NVIDIA Nemotron 3 Ultra、Thinking Machines Inkling、Runway Gen-4.5。
-- 榜单来源：LMArena（Text / WebDev / Code / Vision / Text-to-Image / Image Edit / Text-to-Video / Image-to-Video）、Arena Agent Arena、Artificial Analysis（Intelligence Index、Text-to-Image、Text-to-Video 等 Arena）、Bug Hunt Bench、Terminal-Bench、SWE-bench、Vals AI、OpenRouter 用量榜等。
+## 已知当前格局
+
+由主 agent 在派发时补充（本期新闻线索、需要重点核实的模型）。
 
 ## 可用工具
 
@@ -37,7 +33,7 @@
 
 ## 输出
 
-写到 `/Users/john/workspace/airank/research/vendors/<vendorId>.json`（一家一个文件；如果你负责多家就写多个文件）。严格 JSON，UTF-8，中文内容用中文。**文件较大时先 Write 前半，再用 Edit 追加，避免一次写太长被截断。**写完用 `python3 -m json.tool <file> > /dev/null` 校验。
+**不要直接改 `src/data/vendors/`**。把结果写成修改方案 `research/runs/{{TODAY}}/<你的名字>.patch.json`（格式见 `scripts/apply.mjs` 顶部注释：`changes` / `add` / `remove` / `benchmarkUpdates` / `vendors`），`add` 里是完整模型对象（字段见下方 schema）。严格 JSON，中文内容用中文。**文件较大时先 Write 前半，再用 Edit 追加，避免一次写太长被截断。**写完用 `python3 -m json.tool <file> > /dev/null` 校验，再用 `node scripts/apply.mjs <file> --dry` 试跑确认 id 都能对上。
 
 ```json
 {
@@ -92,7 +88,7 @@
 | D | 55–63 | 明显落后 |
 | E | <55 | 边缘 |
 
-参考外部天梯图（`research/tier_ref_jp.png`）：SSS Opus 5.5；SS GPT-6 Astra；S Fable 5.1、GPT-6 Sol；A Opus 5、Fable 5、GPT-5.6 Sol、Kimi K3、Grok 4.6、Qwen3.8 Max、GLM-5.3、GPT-6 Luna、Muse Spark 1.3、DeepSeek V4.1 Flash、Hy-4 Preview、Grok 4.7；B GPT-5.6 Terra、Qwen3.8-Flash-Next、GLM-5.3 Flash、Sonnet 5、K2 Horizon；C GPT-5.6 Luna、Grok 4.5、Qwen3.8 27B、Muse Spark 1.2、MiMo V2.5 Pro、Hy-3、MiniMax M3；D Inkling、Nemotron 3 Ultra、Muse Glimmer；E Haiku 4.5、Mistral Medium 3.5、Nemotron 3.5 Lightning。这是个人向图，带玩梗成分，**作为参照而非真理**——要结合榜单数据独立判断；它没收录的新模型（如 Sonnet 5.5、Kimi K3.1、M3.1）你来补。图像/视频类要自己按 LMArena / Artificial Analysis 的图像、视频榜定档。
+首期参考过的外部天梯图（`research/tier_ref_jp.png`，2026-09-28）：SSS Opus 5.5；SS GPT-6 Astra；S Fable 5.1、GPT-6 Sol；A Opus 5、Fable 5、GPT-5.6 Sol、Kimi K3、Grok 4.6、Qwen3.8 Max、GLM-5.3、GPT-6 Luna、Muse Spark 1.3、DeepSeek V4.1 Flash、Hy-4 Preview、Grok 4.7；B GPT-5.6 Terra、Qwen3.8-Flash-Next、GLM-5.3 Flash、Sonnet 5、K2 Horizon；C GPT-5.6 Luna、Grok 4.5、Qwen3.8 27B、Muse Spark 1.2、MiMo V2.5 Pro、Hy-3、MiniMax M3；D Inkling、Nemotron 3 Ultra、Muse Glimmer；E Haiku 4.5、Mistral Medium 3.5、Nemotron 3.5 Lightning。这是个人向图，带玩梗成分，**作为参照而非真理**——要结合榜单数据独立判断；它没收录的新模型（如 Sonnet 5.5、Kimi K3.1、M3.1）你来补。图像/视频类要自己按 LMArena / Artificial Analysis 的图像、视频榜定档。
 
 ## 最终回复
 

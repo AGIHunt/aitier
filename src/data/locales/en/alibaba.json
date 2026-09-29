@@ -1,0 +1,293 @@
+{
+  "vendor": {
+    "blurb": "China's biggest open-source ecosystem: Qwen opens every size, Wan video is global top two"
+  },
+  "models": {
+    "qwen3-8-max": {
+      "tagline": "The first open-weights Max-class Qwen",
+      "highlights": [
+        "0902 snapshot debuted #1 on Code Arena WebDev (1691), 3 above Opus 5 (Max)",
+        "AA Intelligence Index 45; Alibaba says 33 RSI auto-training rounds lifted it from 40",
+        "Best non-OpenAI/Anthropic model on Terminal-Bench-Science (12%)",
+        "OSWorld-Verified 86.1, above Fable 5's 85.0 in Alibaba's own table"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Multimodal",
+        "Open weights"
+      ],
+      "notes": "reasoning_effort has three levels: low, medium and xhigh. The open Qwen3.8-2.4T-A95B released 8/12 is text-only with no 1M context and ships under a license with commercial thresholds; the hosted version is closed and multimodal.",
+      "bench": {
+        "AA Intelligence Index": "0902 version, #27/216",
+        "Code Arena WebDev": "#1 at the early-September launch; passed by Opus 5.5 after 9/23",
+        "LMArena Text": "#5 at the August debut",
+        "SWE-Bench Pro": "Initial release, official figure"
+      },
+      "pricing": "$2 / $6 per 1M tokens",
+      "params": "2.4T MoE / 95B active"
+    },
+    "qwen3-8-flash-next": {
+      "tagline": "An early preview of the Qwen4 architecture",
+      "highlights": [
+        "AA Intelligence Index 40, #6 among comparable open models",
+        "Only 6B active, SWE-bench Pro 62.5 vs. 53.4 for Opus 4.6 Max",
+        "Training cost about 1/9 of Qwen3.7-Plus; up to 8.6x prefill throughput at 1M context",
+        "API served as qwen3.8-flash; free on Qoder through 9/30"
+      ],
+      "tags": [
+        "Open weights",
+        "Cheap",
+        "Coding",
+        "Multimodal"
+      ],
+      "notes": "Licensed under qwen-community-1.0; large-scale MaaS use needs a separate license. Community reports say it runs slower than the same-size 27B on a Mac.",
+      "bench": {
+        "AA Intelligence Index": "#6/116 among open peers",
+        "SWE-bench Pro": "Official figure",
+        "GPQA Diamond": "Official figure"
+      },
+      "pricing": "$0.15 / $0.47 per 1M tokens",
+      "context": "262K (extendable to 1M via YaRN; API default 1M)",
+      "params": "125B MoE (plus 51B N-gram embeddings) / 6B active"
+    },
+    "qwen3-8-27b": {
+      "tagline": "The default Qwen for local runners",
+      "highlights": [
+        "AA Intelligence Index 34, #1/142 among open models of its size",
+        "Apache 2.0; Q4 is about 17GB, fits one consumer GPU",
+        "Spawned many fine-tunes (Holo4, ThinkingCap, Swift), a Hugging Face trending regular",
+        "Ternary Bonsai 2 squeezes it to 5.9GB while keeping ~98% of capability"
+      ],
+      "tags": [
+        "Open weights",
+        "Local",
+        "Coding",
+        "Multimodal"
+      ],
+      "notes": "Reasoning goes up to xhigh. Very wordy (200M tokens of output in evals) at roughly 46 tok/s.",
+      "bench": {
+        "AA Intelligence Index": "xhigh setting, #1 in class"
+      },
+      "pricing": "$0.5 / $3 per 1M tokens (Alibaba Cloud API)",
+      "context": "262K (extendable to 1M)",
+      "params": "27B dense"
+    },
+    "qwen3-8-omni-flash": {
+      "tagline": "Omnimodal agent that sees, hears, works",
+      "highlights": [
+        "Unified text, image, audio and video input; up to ~1 hour of audio/video per request",
+        "Sparse MoE built on Qwen3.8-Flash, 74 input languages",
+        "Alibaba claims a 26% average gain over Qwen3.5-Omni-Plus across 30 audio/video tests",
+        "Official SWE-bench Pro 63.3, AndroidWorld 87.1"
+      ],
+      "tags": [
+        "Omnimodal",
+        "Agents",
+        "Audio/video"
+      ],
+      "notes": "Text-only output; no longer generates speech. No independent third-party evals yet, and the weights are not open. Qwen Office's \"enterprise context\" relies on this model.",
+      "bench": {
+        "SWE-bench Pro": "Official figure",
+        "OmniVideoBench": "Official figure"
+      },
+      "pricing": "$0.15 / $0.47 per 1M tokens"
+    },
+    "qwen3-7-max": {
+      "tagline": "The skipped-over closed flagship",
+      "highlights": [
+        "AA Intelligence Index 29, #88/216",
+        "~200 tok/s output, 5x faster than 3.8-Max",
+        "Still sold on Together AI and others; suits long-horizon agent tasks"
+      ],
+      "tags": [
+        "Reasoning",
+        "Agents",
+        "Closed"
+      ],
+      "notes": "AA has marked it deprecated and recommends 3.8-Max; the whole 3.7 line is closed, alongside Qwen3.7-Plus (6/3).",
+      "bench": {
+        "AA Intelligence Index": "#88/216"
+      },
+      "pricing": "$2.5 / $7.5 per 1M tokens"
+    },
+    "qwen3-coder-next": {
+      "tagline": "A local coding agent with 3B active",
+      "highlights": [
+        "SWE-Bench Verified 74.2% with only 3B active",
+        "Apache 2.0; runs locally on a 64GB machine",
+        "Still Qwen's latest dedicated Coder model"
+      ],
+      "tags": [
+        "Coding",
+        "Open weights",
+        "Local"
+      ],
+      "notes": "As of mid-August there is no 3.8-generation Coder; coding has been folded into the main line.",
+      "bench": {
+        "SWE-bench Verified": "Official figure, SWE-Agent scaffold"
+      },
+      "params": "80B MoE / 3B active"
+    },
+    "qwen3-6-35b-a3b": {
+      "tagline": "A small MoE that fits on a laptop",
+      "highlights": [
+        "Only 3B active; a popular pick for local runs on ordinary laptops",
+        "Apache 2.0; the 3.8 generation has no drop-in replacement at this size",
+        "Focused on agentic coding; a dense Qwen3.6-27B shipped alongside"
+      ],
+      "tags": [
+        "Open weights",
+        "Lightweight",
+        "Local"
+      ],
+      "notes": "The 3.8 generation skipped sizes below 27B and between 27B and 125B, so small-model users are still on 3.6/3.5.",
+      "bench": {},
+      "params": "35B MoE / 3B active"
+    },
+    "qwen-image-2-1": {
+      "tagline": "The #1 open-weights text-to-image model",
+      "highlights": [
+        "LMArena Text-to-Image 1228, #1 open and #17 overall",
+        "Just 4 points behind nano-banana-pro and 11 behind GPT-Image-1.5-HF",
+        "Native RGBA transparent output; composes up to 10 reference images",
+        "Runs locally on a single 4090; turbo and distilled LoRAs flooded HF trending within a week"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Open weights",
+        "Transparent layers",
+        "Chinese typography"
+      ],
+      "notes": "The license changed to Qwen Research License, so commercial use needs separate authorization. The community speculates it was distilled from GPT Image 2, with no evidence.",
+      "bench": {
+        "LMArena Text-to-Image": "#17 overall, #1 open (preliminary)"
+      },
+      "params": "7B generator (DiT)"
+    },
+    "qwen-image-2-1-edit": {
+      "tagline": "A new bar for open-weights image editing",
+      "highlights": [
+        "LMArena Image Edit 1367, #1 open and #16 overall",
+        "Just 3 points behind GPT-Image-1.5-HF, but ~160 behind leader GPT-Image-2.5",
+        "Full character sheets without a LoRA; community face-swap and pose tools followed fast"
+      ],
+      "tags": [
+        "Image editing",
+        "Open weights",
+        "Multi-image reference"
+      ],
+      "notes": "2.1 is a unified generation/editing model; this entry lists the editing side separately. Community consensus: open editing Qwen-Image 2.1 > Flux 2 Klein 9B.",
+      "bench": {
+        "LMArena Image Edit": "#16 overall, #1 open (preliminary)"
+      },
+      "params": "7B generator (same weights as text-to-image)"
+    },
+    "qwen-image-2-0": {
+      "tagline": "The last-gen unified generate-and-edit model",
+      "highlights": [
+        "First to merge generation and editing in one 7B model, far smaller than the original 20B",
+        "Supports 1K-token prompts; Chinese text rendering is a strength",
+        "The Pro version once hit #9 on LMArena text-to-image"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Chinese typography"
+      ],
+      "notes": "Served through Alibaba Cloud Model Studio API. No confirmed word on open weights, so treated as closed.",
+      "bench": {
+        "LMArena Text-to-Image": "Pro version once ranked #9 (claimed by Alibaba, since slipped)"
+      },
+      "params": "7B diffusion decoder + 8B Qwen3-VL encoder"
+    },
+    "wan-3-0": {
+      "tagline": "Drop in a slide deck, get a 30-second film",
+      "highlights": [
+        "#1 on AA text-to-video (no audio), Elo 1335",
+        "#2 on AA text-to-video (with audio), just 4 points behind Gemini Omni Flash",
+        "Up to 30s per generation, twice Wan2.7; reads PDF/PPT/Excel directly",
+        "Topped the with-audio video editing arena in August (Elo 1189)"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "Video editing",
+        "Native audio"
+      ],
+      "notes": "Public beta from 8/6, formally launched 8/24. Wan's first fully closed flagship, with no weights released. Alibaba admits audio quality and in-frame text rendering still need work.",
+      "bench": {
+        "AA Text-to-Video（无音频）": "#1",
+        "AA Text-to-Video（带音频）": "#2",
+        "AA Image-to-Video（无音频）": "#3",
+        "Video Edit Arena（带音频）": "#1 in August"
+      },
+      "pricing": "$0.05–0.20/sec (480p–1080p)",
+      "benchName": {
+        "AA Text-to-Video（无音频）": "AA Text-to-Video (no audio)",
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
+        "AA Image-to-Video（无音频）": "AA Image-to-Video (no audio)",
+        "Video Edit Arena（带音频）": "Video Edit Arena (with audio)"
+      }
+    },
+    "wan-2-7": {
+      "tagline": "Four-in-one with first/last-frame control",
+      "highlights": [
+        "One release shipped text-to-video, image-to-video, reference-to-video and editing",
+        "6/12 snapshot ranks #7 on AA with-audio text-to-video (Elo 1149)",
+        "Up to 15s per clip, with first/last-frame control and multi-reference input"
+      ],
+      "tags": [
+        "Text-to-video",
+        "Image-to-video",
+        "First/last frame",
+        "Voice cloning"
+      ],
+      "notes": "The full suite launched in early April, with a snapshot update in June. Some outlets call it open source, but Turing Post found no downloadable weights since Wan2.2.",
+      "bench": {
+        "AA Text-to-Video（带音频）": "Wan2.7-260612 at #7; original 1098 at #10"
+      },
+      "benchName": {
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)"
+      }
+    },
+    "happyhorse-1-1": {
+      "tagline": "Alibaba's dark horse from anonymous leaderboards",
+      "highlights": [
+        "#8 on AA with-audio text-to-video (Elo 1147); version 1.0 was #9",
+        "Audio and video generated together, native lip-sync in 7 languages",
+        "Up to 9 numbered reference images, well suited to multi-character scenes"
+      ],
+      "tags": [
+        "Native audio",
+        "Lip-sync",
+        "Multi-character reference"
+      ],
+      "notes": "Built by Alibaba's ATH AI Innovation unit, not the Wan team. Version 1.0 topped the video leaderboard anonymously in April before its origin was revealed.",
+      "bench": {
+        "AA Text-to-Video（带音频）": "#8"
+      },
+      "pricing": "¥0.9–1.6/sec (720p–1080p)",
+      "benchName": {
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)"
+      }
+    },
+    "wan-2-2": {
+      "tagline": "The last open-weights Wan",
+      "highlights": [
+        "Apache 2.0; still Wan's newest downloadable weights",
+        "The 5B version runs 720p/24fps on a single consumer GPU",
+        "One of the most mature open video base models in ComfyUI, with a huge LoRA ecosystem"
+      ],
+      "tags": [
+        "Open weights",
+        "Text-to-video",
+        "Image-to-video",
+        "Local"
+      ],
+      "notes": "Community tests rank open image-to-video as MiniMax H3 > LTX-2.5 > Wan2.2; newer open models have overtaken it.",
+      "bench": {},
+      "params": "27B MoE (high/low-noise dual experts); also a dense TI2V-5B"
+    }
+  }
+}

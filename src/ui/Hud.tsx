@@ -2,8 +2,9 @@ import { motion } from 'framer-motion'
 import type { CSSProperties } from 'react'
 import { useMemo } from 'react'
 import { audio } from '../audio/engine'
-import { groupByTier, LATEST, META, MODELS_BY_CATEGORY, VENDORS } from '../data'
+import { groupByTier, LATEST, MODELS_BY_CATEGORY, VENDORS } from '../data'
 import { CATEGORIES } from '../data/tiers'
+import { applyDocumentLang, editionLabel, TIER_TEXT, useT, type Key } from '../i18n'
 import { useStore } from '../store'
 import type { Category } from '../types'
 import { Badge, TierChip } from './bits'
@@ -14,6 +15,8 @@ export function TopBar() {
   const view = useStore((s) => s.view)
   const overview = useStore((s) => s.overview)
   const set = useStore((s) => s.set)
+  const lang = useStore((s) => s.lang)
+  const T = useT()
 
   const switchCat = (c: Category) => {
     if (c === category) return
@@ -39,8 +42,8 @@ export function TopBar() {
       <div className="brand">
         <span className="brand__mark">▲</span>
         <div>
-          <div className="brand__name">AI 天梯</div>
-          <div className="brand__ed">{META.edition}</div>
+          <div className="brand__name">{T('title')}</div>
+          <div className="brand__ed">{editionLabel(lang)}</div>
         </div>
       </div>
 
@@ -48,7 +51,7 @@ export function TopBar() {
         {CATEGORIES.map((c) => (
           <button key={c.id} className={`cat ${c.id === category ? 'cat--on' : ''}`} onClick={() => switchCat(c.id)}>
             <span className="cat__icon">{c.icon}</span>
-            <span className="cat__label">{c.label}</span>
+            <span className="cat__label">{T(`cat_${c.id}` as Key)}</span>
             <span className="cat__count">{MODELS_BY_CATEGORY[c.id].length}</span>
             {c.id === category && <motion.span layoutId="cat-glow" className="cat__glow" />}
           </button>
@@ -56,19 +59,20 @@ export function TopBar() {
       </nav>
 
       <div className="actions">
-        <button className="icon-btn" title="搜索 (⌘K)" onClick={() => (audio.tick(), set({ paletteOpen: true, paletteMode: 'search' }))}>
+        <button className="icon-btn" title={T('search')} onClick={() => (audio.tick(), set({ paletteOpen: true, paletteMode: 'search' }))}>
           <span>⌕</span>
           <kbd>⌘K</kbd>
         </button>
         {view === '3d' && (
-          <button className={`icon-btn ${overview ? 'icon-btn--on' : ''}`} title="全景 (O)" onClick={() => (audio.whoosh(0.9, !overview), set({ overview: !overview, selectedId: null }))}>
-            全景
+          <button className={`icon-btn ${overview ? 'icon-btn--on' : ''}`} title={T('overview')} onClick={() => (audio.whoosh(0.9, !overview), set({ overview: !overview, selectedId: null }))}>
+            {T('overview')}
           </button>
         )}
         <button className="icon-btn" title="切换视图 (V)" onClick={() => (audio.tick(), set({ view: view === '3d' ? 'table' : '3d', selectedId: null }))}>
-          {view === '3d' ? '表格' : '3D'}
+          {view === '3d' ? T('table') : '3D'}
         </button>
-        <button className={`icon-btn sound ${muted ? '' : 'sound--on'}`} title="声音 (M)" onClick={toggleMute}>
+        <LangButton />
+        <button className={`icon-btn sound ${muted ? '' : 'sound--on'}`} title={T('sound')} onClick={toggleMute}>
           <span className="eq">
             <i />
             <i />
@@ -86,6 +90,7 @@ export function TierRail() {
   const focus = useStore((s) => s.focus)
   const overview = useStore((s) => s.overview)
   const set = useStore((s) => s.set)
+  const lang = useStore((s) => s.lang)
   const groups = useMemo(() => groupByTier(MODELS_BY_CATEGORY[category]), [category])
   const total = MODELS_BY_CATEGORY[category].length
 
@@ -110,7 +115,7 @@ export function TierRail() {
             </span>
             <span className="rail__count">{models.length}</span>
             <span className="rail__desc">
-              {tier.label} · {tier.desc}
+              {TIER_TEXT[lang][tier.id].label} · {TIER_TEXT[lang][tier.id].desc}
             </span>
           </button>
         )
@@ -123,6 +128,8 @@ export function VendorBar() {
   const category = useStore((s) => s.category)
   const vf = useStore((s) => s.vendorFilter)
   const set = useStore((s) => s.set)
+  const lang = useStore((s) => s.lang)
+  const T = useT()
   const vendors = useMemo(() => {
     const ids = new Set(MODELS_BY_CATEGORY[category].map((m) => m.vendor.id))
     return VENDORS.filter((v) => ids.has(v.id))
@@ -130,7 +137,7 @@ export function VendorBar() {
   return (
     <div className="vendors">
       <button className={`vchip ${vf ? '' : 'vchip--on'}`} onClick={() => (audio.tick(), set({ vendorFilter: null }))}>
-        全部
+        {T('all')}
       </button>
       {vendors.map((v) => (
         <button
@@ -138,7 +145,7 @@ export function VendorBar() {
           className={`vchip ${vf === v.id ? 'vchip--on' : ''}`}
           style={{ '--vc': v.color } as CSSProperties}
           onClick={() => (audio.tick(), set({ vendorFilter: vf === v.id ? null : v.id }))}
-          title={v.blurb}
+          title={v.blurbL[lang]}
         >
           <Badge vendor={v} size={20} />
           <span>{v.name}</span>
@@ -176,5 +183,30 @@ export function Ticker() {
         </div>
       </div>
     </div>
+  )
+}
+
+export function LangButton({ className = '' }: { className?: string }) {
+  const lang = useStore((s) => s.lang)
+  const set = useStore((s) => s.set)
+  const T = useT()
+  return (
+    <button
+      className={`icon-btn lang-btn ${className}`}
+      title={T('langTitle')}
+      onClick={() => {
+        const next = lang === 'zh' ? 'en' : 'zh'
+        audio.tick()
+        set({ lang: next })
+        applyDocumentLang(next)
+        try {
+          localStorage.setItem('airank:lang', next)
+        } catch {
+          /* ignore */
+        }
+      }}
+    >
+      {T('lang')}
+    </button>
   )
 }

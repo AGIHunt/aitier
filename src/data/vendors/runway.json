@@ -23,7 +23,11 @@
       "pricing": null,
       "tier": "D",
       "score": 58,
-      "tags": ["文生视频", "图生视频", "影视工作流"],
+      "tags": [
+        "文生视频",
+        "图生视频",
+        "影视工作流"
+      ],
       "tagline": "曾经的 AA 榜首，如今掉到二十名开外",
       "highlights": [
         "发布时以 1247 分登顶 AA 文生视频",
@@ -31,7 +35,12 @@
         "2026-05 通过接入 ElevenLabs 补上原生音频"
       ],
       "benchmarks": [
-        {"name": "LMArena Text-to-Video", "value": "1225", "note": "约第 27", "source": "https://arena.ai/leaderboard/text-to-video"}
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1225",
+          "note": "约第 27",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
       ],
       "notes": "已跌出 AA 视频榜前 30。Runway 的重心转向世界模型、编辑工具等产品线，截至 9 月没有 Gen-5。",
       "sources": [

@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from 'react'
 import { audio } from './audio/engine'
 import { MODEL_BY_ID, MODELS_BY_CATEGORY } from './data'
 import { TIER_BY_ID, TIERS } from './data/tiers'
+import { useT } from './i18n'
 import { useStore } from './store'
 import { DetailPanel } from './ui/DetailPanel'
 import { Ticker, TierRail, TopBar, VendorBar } from './ui/Hud'
@@ -90,6 +91,7 @@ export default function App() {
   const entered = useStore((s) => s.entered)
   const intro = useStore((s) => s.intro)
   const view = useStore((s) => s.view)
+  const T = useT()
   useKeys()
 
   return (
@@ -112,8 +114,8 @@ export default function App() {
           </div>
           {view === '3d' && (
             <div className="hint">
-              拖动旋转 · 滚轮升降 · 点击卡片 · <kbd>←</kbd>
-              <kbd>→</kbd> 逐名 · <kbd>O</kbd> 全景
+              {T('hint')} <kbd>←</kbd>
+              <kbd>→</kbd> {T('hintNext')} <kbd>O</kbd> {T('hintOverview')}
             </div>
           )}
         </div>

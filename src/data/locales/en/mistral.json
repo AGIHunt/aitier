@@ -1,0 +1,97 @@
+{
+  "vendor": {
+    "blurb": "Europe's sovereign AI: skips the frontier race, sells open weights and private deploys"
+  },
+  "models": {
+    "mistral-medium-3-5": {
+      "tagline": "One model merging Devstral and Magistral",
+      "highlights": [
+        "SWE-bench Verified 77.6%, self-hostable on 4 GPUs",
+        "Merges the Devstral 2 coding line and Magistral reasoning line, with adjustable effort",
+        "AA Intelligence Index 14, Text Arena #113, Code Arena #118"
+      ],
+      "tags": [
+        "Open weights",
+        "Coding",
+        "Agents",
+        "Multimodal"
+      ],
+      "notes": "Modified MIT license (high-revenue companies must use paid channels); powers the Vibe remote coding agent. Sources date the release 4/29 or 4/30.",
+      "bench": {
+        "AA Intelligence Index": "Opus 5.5 max scores 58",
+        "Text Arena": "#113",
+        "Code Arena": "#118",
+        "SWE-bench Verified": "Official"
+      },
+      "pricing": "$1.5 / $7.5 per 1M tokens",
+      "params": "128B dense"
+    },
+    "mistral-small-4": {
+      "tagline": "Instruct, reasoning, coding in one small model",
+      "highlights": [
+        "Apache 2.0; 128 experts, only 4 active per token",
+        "One model for instruct, reasoning and coding, with image input",
+        "AA Intelligence Index 11, output just $0.6/M"
+      ],
+      "tags": [
+        "Open weights",
+        "Lightweight",
+        "Multimodal"
+      ],
+      "pricing": "$0.15 / $0.6 per 1M tokens",
+      "params": "119B MoE / 6.5B active"
+    },
+    "mistral-large-3": {
+      "tagline": "Europe's biggest open model, DeepSeek V3 inside",
+      "highlights": [
+        "Apache 2.0 open weights; 675B total / 41B active",
+        "Raschka's teardown: reuses DeepSeek V3 architecture, half the experts, each twice as big",
+        "AA Intelligence Index 9, Text Arena #139"
+      ],
+      "tags": [
+        "Open weights",
+        "Large",
+        "Multilingual"
+      ],
+      "notes": "No Large 4 yet; the flagship role has effectively passed to Medium 3.5.",
+      "bench": {
+        "Text Arena": "#139"
+      },
+      "params": "675B MoE / 41B active"
+    },
+    "devstral-2": {
+      "tagline": "A Small coding model that runs on a laptop",
+      "highlights": [
+        "SWE-bench Verified 72.2%; Devstral Small 2 at 68.0%",
+        "Small 2 is Apache 2.0 and runs locally on a laptop",
+        "Code Arena 1196 (#129)"
+      ],
+      "tags": [
+        "Coding",
+        "Open weights",
+        "On-device"
+      ],
+      "notes": "The large model uses a modified MIT license; moved to a paid API in 2026-01, and Medium 3.5 took over as the main coding model in April.",
+      "bench": {
+        "SWE-bench Verified": "Official",
+        "Code Arena": "#129"
+      },
+      "params": "123B (Small 2: 24B)"
+    },
+    "ministral-3": {
+      "tagline": "A trio for phones and edge devices",
+      "highlights": [
+        "Apache 2.0; 3B/8B/14B sizes, with vision",
+        "AA Intelligence Index 6 (14B)"
+      ],
+      "tags": [
+        "Open weights",
+        "On-device",
+        "Small model"
+      ],
+      "bench": {
+        "AA Intelligence Index": "14B"
+      }
+    }
+  }
+}

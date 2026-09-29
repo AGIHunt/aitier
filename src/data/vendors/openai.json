@@ -482,7 +482,7 @@
         {
           "name": "LMArena Text-to-Image",
           "value": "1424",
-          "note": "第 1",
+          "note": "第 1（10,884 票）",
           "source": "https://arena.ai/leaderboard/text-to-image"
         },
         {
@@ -490,6 +490,18 @@
           "value": "1526",
           "note": "第 1",
           "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1195",
+          "note": "第 1（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1181",
+          "note": "第 1（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
         }
       ],
       "notes": "ChatGPT Images 2.5 的高端 API 档，主打精修与多轮编辑。社区吐槽噪点伪影未修、审查严格；API 不支持 Batch。",
@@ -512,7 +524,7 @@
       "context": "4K（最长边 3840px）",
       "pricing": "图像输入 $8 / 输出 $30 每百万 token",
       "tier": "SS",
-      "score": 95,
+      "score": 96,
       "tags": [
         "文生图",
         "图像编辑",
@@ -536,6 +548,18 @@
           "value": "1482",
           "note": "第 2",
           "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1189",
+          "note": "第 2（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1161",
+          "note": "第 2（max）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
         }
       ],
       "notes": "API 不支持 Batch，批量出图成本高于 GPT-Image-2。",
@@ -556,8 +580,8 @@
       "params": null,
       "context": "4K",
       "pricing": "图像输入 $8 / 输出 $30 每百万 token（约 $0.03–0.08/张）",
-      "tier": "S",
-      "score": 91,
+      "tier": "SS",
+      "score": 93,
       "tags": [
         "文生图",
         "图像编辑",
@@ -581,6 +605,18 @@
           "value": "1461",
           "note": "第 3（medium）",
           "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1171",
+          "note": "第 3（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1122",
+          "note": "第 5（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
         }
       ],
       "notes": "ChatGPT Images 2.0 底层模型，支持 Batch API，批量场景仍有价格优势。",
@@ -601,8 +637,8 @@
       "params": null,
       "context": "1536×1024",
       "pricing": null,
-      "tier": "B",
-      "score": 74,
+      "tier": "A",
+      "score": 81,
       "tags": [
         "文生图",
         "图像编辑"
@@ -623,8 +659,20 @@
         {
           "name": "LMArena Image Edit",
           "value": "1370",
-          "note": "第 15（high-fidelity）",
+          "note": "第 15（high-fidelity）；ChatGPT 版 1388 第 11",
           "source": "https://arena.ai/leaderboard/image-edit"
+        },
+        {
+          "name": "AA Text-to-Image",
+          "value": "1105",
+          "note": "第 8（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+        },
+        {
+          "name": "AA Image Editing",
+          "value": "1102",
+          "note": "第 12（high）",
+          "source": "https://artificialanalysis.ai/image/leaderboard/editing"
         }
       ],
       "notes": null,

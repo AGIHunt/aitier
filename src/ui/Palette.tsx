@@ -2,11 +2,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { audio } from '../audio/engine'
 import { ALL_MODELS } from '../data'
-import { CATEGORIES, TIER_BY_ID } from '../data/tiers'
+import { TIER_BY_ID } from '../data/tiers'
+import { useT, type Key } from '../i18n'
 import { useStore } from '../store'
 import { Badge, TierChip } from './bits'
-
-const CAT_LABEL = Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label]))
 
 /** ⌘K 搜索；对决模式下用来挑第二个选手 */
 export function Palette() {
@@ -14,6 +13,8 @@ export function Palette() {
   const mode = useStore((s) => s.paletteMode)
   const selectedId = useStore((s) => s.selectedId)
   const set = useStore((s) => s.set)
+  const lang = useStore((s) => s.lang)
+  const T = useT()
   const [q, setQ] = useState('')
   const [idx, setIdx] = useState(0)
   const input = useRef<HTMLInputElement>(null)
@@ -26,7 +27,7 @@ export function Palette() {
     if (!k) return pool.slice(0, 40)
     return pool
       .filter((m) =>
-        [m.name, m.vendor.name, m.vendor.nameZh, m.family ?? '', m.tier, ...m.tags].join(' ').toLowerCase().includes(k),
+        [m.name, m.vendor.name, m.vendor.nameZh, m.family ?? '', m.tier, ...m.text.zh.tags, ...m.text.en.tags].join(' ').toLowerCase().includes(k),
       )
       .slice(0, 40)
   }, [q, mode, self])
@@ -68,7 +69,7 @@ export function Palette() {
               <input
                 ref={input}
                 value={q}
-                placeholder={mode === 'vs' ? '选择对手…' : '搜索模型 / 厂商 / 能力标签…'}
+                placeholder={mode === 'vs' ? T('vsPh') : T('searchPh')}
                 onChange={(e) => {
                   setQ(e.target.value)
                   setIdx(0)
@@ -93,13 +94,13 @@ export function Palette() {
                   <Badge vendor={m.vendor} size={24} />
                   <span className="prow__name">{m.name}</span>
                   <span className="prow__meta">
-                    {m.vendor.nameZh} · {CAT_LABEL[m.category]}
+                    {m.vendor.label[lang]} · {T(`cat_${m.category}` as Key)}
                   </span>
                   <TierChip tier={m.tier} size="sm" />
                   <b className="prow__score">{Math.round(m.score)}</b>
                 </button>
               ))}
-              {!results.length && <div className="palette__empty">没有匹配的模型</div>}
+              {!results.length && <div className="palette__empty">{T('noMatch')}</div>}
             </div>
           </motion.div>
         </motion.div>

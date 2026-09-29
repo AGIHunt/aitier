@@ -1,0 +1,44 @@
+{
+  "vendor": {
+    "blurb": "Native omnimodal startup; its new video model debuted in AA's image-to-video top five"
+  },
+  "models": {
+    "hidream-o1-video-1.0": {
+      "tagline": "Dark-horse image-to-video, top five at launch",
+      "highlights": [
+        "AA Image-to-Video 1174, #5",
+        "LMArena Image-to-Video 1456, ~#7, tied with Grok Imagine Video 1.5",
+        "Text, image and video inputs; 5–20s 1080p output",
+        "Pitches narrative planning, character consistency and physical plausibility"
+      ],
+      "tags": [
+        "Image-to-video",
+        "Omnimodal",
+        "Physical consistency",
+        "Native audio"
+      ],
+      "notes": "Also called HiDream V1. AA lists an August 2026 launch; the official release was 9/17. Neither leaderboard has it in the text-to-video top 30.",
+      "bench": {
+        "AA Image-to-Video": "#5",
+        "LMArena Image-to-Video": "~#7"
+      },
+      "pricing": "~$5.8/min"
+    },
+    "hidream-o1-image-1.5": {
+      "tagline": "The image model in the O1 omnimodal family",
+      "highlights": [
+        "AA Text-to-Image 1021, ~#28",
+        "The previous HiDream-O1-Image released open weights on Hugging Face"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Omnimodal"
+      ],
+      "notes": "Whether 1.5 is open-sourced is unverified.",
+      "bench": {
+        "AA Text-to-Image": "~#28"
+      },
+      "pricing": "~$0.08/image"
+    }
+  }
+}
