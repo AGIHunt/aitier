@@ -21,8 +21,8 @@
       "params": null,
       "context": "2M（传闻）",
       "pricing": "传闻 $2.25 / $11.25 每百万 token",
-      "tier": "S",
-      "score": 91,
+      "tier": "C",
+      "score": 70,
       "tags": [
         "Agent",
         "编程",
@@ -98,7 +98,7 @@
         },
         {
           "name": "AA Intelligence Index",
-          "value": "41",
+          "value": "40.9",
           "note": "high 档",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
@@ -113,6 +113,18 @@
           "value": "54.9%",
           "note": "官方",
           "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1580",
+          "note": "第 28（high 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+3.8%",
+          "note": "第 18（high 档）",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "low/medium/high 档合并收录。OSWorld-2.0 59%，落后 Opus 5 的 75.4%，长链路 Agent 仍弱。",
@@ -838,8 +850,8 @@
       "params": null,
       "context": "1080p/4K 超分·单段 10s，可续到 40s",
       "pricing": "约 $0.10/秒（720p），360p 草稿约为 1/3",
-      "tier": "SSS",
-      "score": 97,
+      "tier": "SS",
+      "score": 96,
       "tags": [
         "文生视频",
         "图生视频",
@@ -857,13 +869,13 @@
         {
           "name": "LMArena Text-to-Video",
           "value": "1516",
-          "note": "第 1",
+          "note": "第 1（±15，1,784 票，名次区间 1–4）",
           "source": "https://arena.ai/leaderboard/text-to-video"
         },
         {
           "name": "LMArena Image-to-Video",
           "value": "1488",
-          "note": "第 2",
+          "note": "第 2（±11，3,734 票，名次区间 1–5）",
           "source": "https://arena.ai/leaderboard/image-to-video"
         }
       ],
@@ -886,8 +898,8 @@
       "params": null,
       "context": "720p·10s",
       "pricing": "$0.10/秒",
-      "tier": "SS",
-      "score": 95,
+      "tier": "S",
+      "score": 92,
       "tags": [
         "文生视频",
         "任意模态输入",
@@ -902,16 +914,40 @@
       ],
       "benchmarks": [
         {
-          "name": "AA Text-to-Video（含音频）",
+          "name": "AA Text-to-Video（带音频）",
           "value": "1233",
-          "note": "第 1",
+          "note": "第 1（与 Wan 3.0 1229、H3 Max 1227 CI 内并列）",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1332",
+          "note": "第 2",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（无音频）",
+          "value": "1369",
+          "note": "第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1178",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
         },
         {
           "name": "LMArena Text-to-Video",
           "value": "1513",
-          "note": "第 2",
+          "note": "第 2（26.6k 票）",
           "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1465",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/image-to-video"
         }
       ],
       "notes": "API 首版不支持音频参考和场景延展，1.1 版已补上。",
@@ -980,8 +1016,8 @@
       "params": null,
       "context": "1080p·8s",
       "pricing": "$0.05/秒（720p），$0.08/秒（1080p）",
-      "tier": "C",
-      "score": 68,
+      "tier": "B",
+      "score": 73,
       "tags": [
         "文生视频",
         "低成本",
@@ -993,7 +1029,20 @@
         "支持 720p/1080p、横竖屏和 4/6/8 秒",
         "带原生音频"
       ],
-      "benchmarks": [],
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（带音频）",
+          "value": "1083",
+          "note": "第 16",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1072",
+          "note": "第 14",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
+      ],
       "notes": "没有查到独立的竞技场排名，按价位和定位估档。",
       "sources": [
         "https://openrouter.ai/google/veo-3.1-lite",
@@ -1011,8 +1060,8 @@
       "params": null,
       "context": "720p·24fps，可交互数分钟",
       "pricing": null,
-      "tier": "A",
-      "score": 80,
+      "tier": "B",
+      "score": 74,
       "tags": [
         "世界模型",
         "实时交互",

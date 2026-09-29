@@ -24,7 +24,8 @@
         "Agent Arena": "#16, median cost per task $1.14",
         "Terminal-Bench 4.0": "As relayed by dl_weekly"
       },
-      "pricing": "$2 / $6 per 1M tokens (doubles above 200K)"
+      "pricing": "$2 / $6 per 1M tokens (doubles above 200K)",
+      "_zh": "f48ed761e9"
     },
     "grok-4-6": {
       "tagline": "The default engine of Grok Build 1.0",
@@ -46,7 +47,8 @@
         "Text Arena": "#72 (high)"
       },
       "pricing": "$2 / $6 per 1M tokens (doubles above 200K)",
-      "params": "~1.5T (V9 base)"
+      "params": "~1.5T (V9 base)",
+      "_zh": "5c2ffacc13"
     },
     "grok-4-5": {
       "tagline": "The first Grok co-trained with Cursor",
@@ -65,7 +67,8 @@
         "Text Arena": "#47"
       },
       "pricing": "$2 / $6 per 1M tokens (doubles above 200K)",
-      "params": "~1.5T (V9 base)"
+      "params": "~1.5T (V9 base)",
+      "_zh": "66ed5c30e8"
     },
     "grok-4-3": {
       "tagline": "The budget Grok with 1M context",
@@ -84,7 +87,8 @@
         "Text Arena": "#89",
         "Code Arena": "#101"
       },
-      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)"
+      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)",
+      "_zh": "f2827472b0"
     },
     "grok-4-20": {
       "tagline": "The meme-named multi-agent Grok",
@@ -103,7 +107,8 @@
         "Text Arena": "#34 (beta1)",
         "Code Arena": "#93"
       },
-      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)"
+      "pricing": "$1.25 / $2.5 per 1M tokens (doubles above 200K)",
+      "_zh": "a52566884c"
     },
     "grok-build-0-1": {
       "tagline": "A terminal coding model at 100 tokens a second",
@@ -119,20 +124,8 @@
       ],
       "notes": "Public beta on the API; from Grok Build 1.0 the default switched to Grok 4.6/4.7. No independent leaderboard results.",
       "bench": {},
-      "pricing": "$1 / $2 per 1M tokens (doubles at long context)"
-    },
-    "grok-4-8": {
-      "tagline": "Spotted in Cursor a week after 4.7 shipped",
-      "highlights": [
-        "Variants like grok-4.8-high and xhigh-fast appeared on Cursor's server list",
-        "A commit labels it the \"next-gen Grok release\"; rumored to land in about a month"
-      ],
-      "tags": [
-        "Rumored",
-        "Coding"
-      ],
-      "notes": "A leak only; the tier is a speculative placeholder.",
-      "bench": {}
+      "pricing": "$1 / $2 per 1M tokens (doubles at long context)",
+      "_zh": "8f9c4b4861"
     },
     "grok-imagine-image-2": {
       "tagline": "The runner-up artist, beaten only by GPT Image",
@@ -149,9 +142,12 @@
       "notes": "Called Quality Mode inside Grok. AA lists $60 per 1K images; the official API docs say $0.04 per image.",
       "bench": {
         "AA Text-to-Image": "#4",
-        "Arena Text-to-Image": "#6 (low)"
+        "LMArena Text-to-Image": "#6 (low)",
+        "LMArena Image Edit": "#4 (low)",
+        "AA Image Editing": "#9"
       },
-      "pricing": "$0.04/image"
+      "pricing": "$0.04/image",
+      "_zh": "d99d32388e"
     },
     "grok-imagine-image": {
       "tagline": "The two-cent baseline Grok image model",
@@ -168,9 +164,12 @@
       "notes": "Merges the 1.x variants (grok-imagine-image, -quality, -pro and others); the exact launch date is unverified.",
       "bench": {
         "AA Text-to-Image": "Quality version #17",
-        "Arena Text-to-Image": "#23"
+        "LMArena Text-to-Image": "#23 (base version)",
+        "LMArena Image Edit": "#10 (quality 20260519)",
+        "AA Image Editing": "#16 (quality)"
       },
-      "pricing": "$0.02/image (quality version $0.05)"
+      "pricing": "$0.02/image (quality version $0.05)",
+      "_zh": "dfa7496258"
     },
     "grok-imagine-video-1-5": {
       "tagline": "The Grok video model you can actually direct",
@@ -191,7 +190,8 @@
         "AA Image-to-Video": "#8"
       },
       "pricing": "$0.08/sec",
-      "context": "1080p, native audio"
+      "context": "1080p, native audio",
+      "_zh": "e328366210"
     },
     "grok-imagine-video": {
       "tagline": "The original that topped AA video in January",
@@ -212,7 +212,8 @@
         "Arena Text-to-Video": "#18 (720p)"
       },
       "pricing": "$0.05/sec",
-      "context": "720p, native audio"
+      "context": "720p, native audio",
+      "_zh": "cfd0c7a4a2"
     }
   }
 }

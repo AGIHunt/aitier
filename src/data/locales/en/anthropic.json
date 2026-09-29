@@ -6,9 +6,9 @@
     "claude-opus-5-5": {
       "tagline": "Fable-class smarts, Opus price cut by 40%",
       "highlights": [
-        "Debuts #1 on LMArena Text Arena at 1509; Anthropic takes the top six",
-        "#1 on Code Arena WebDev at 1818, 26 points ahead of GPT-6 Astra",
-        "#1 on AA Intelligence Index at 58, 5 points above Fable 5.1 / GPT-6 Astra",
+        "LMArena Text Arena #1 at 1509 (only 2,307 votes; rank range 1–10)",
+        "#1 on Code Arena WebDev at 1827, 35 points ahead of GPT-6 Astra",
+        "#1 on AA Intelligence Index at 57.6, ~4–5 points above Fable 5.1 and GPT-6 Astra",
         "Anthropic says typical workloads cost 40% less than Opus 5, output 30%+ faster"
       ],
       "tags": [
@@ -19,15 +19,17 @@
       ],
       "notes": "Effort levels low/medium (default)/high/xhigh/max, merged here; Fast mode $8/$40. Still rated behind Astra on writing, and some developers think it trails Fable 5.1 on hardcore coding.",
       "bench": {
-        "LMArena Text": "#1 (High)",
-        "Code Arena WebDev": "#1 (Max)",
-        "Agent Arena": "#2, behind only Fable 5.1 Max; median cost $1.31 per task",
-        "AA Intelligence Index": "#1 (max)",
+        "LMArena Text": "#1 (High; only 2,307 votes, rank range 1–10, pulled 9/29)",
+        "Code Arena WebDev": "#1 (Max), 35 points ahead of GPT-6 Astra (pulled 9/29)",
+        "Agent Arena": "#2 (High), behind only Fable 5.1 Max (pulled 9/29)",
+        "AA Intelligence Index": "#1 (max, pulled 9/29)",
         "Terminal-Bench 4.0": "Official; GPT-6 Astra 57.9%",
         "SimpleBench": "#1",
-        "Vals AI Index": "#1"
+        "Vals AI Index": "#1",
+        "AA Coding Agent Index": "#2 (Claude Code, max), behind only Sonnet 5.5"
       },
-      "pricing": "$4 / $20 per 1M tokens (cache read $0.20)"
+      "pricing": "$4 / $20 per 1M tokens (cache read $0.20)",
+      "_zh": "28db21b93e"
     },
     "claude-sonnet-5-5": {
       "tagline": "Half the price of Opus, two points behind",
@@ -44,17 +46,19 @@
       ],
       "notes": "Five effort levels merged. At max, about 193K output tokens and $7.60 per task, the highest token burn AA measured; AA tested a pre-release build. LMArena rank pending, with a shot at SS.",
       "bench": {
-        "AA Intelligence Index": "#2 (max)",
+        "AA Intelligence Index": "#2 (max); not yet on LMArena",
         "Terminal-Bench 4.0": "Official; AA measured 64%",
         "GDPval-AA v2.1": "Opus 5.5 at 1846",
-        "OSWorld 2.1": "partial"
+        "OSWorld 2.1": "partial",
+        "AA Coding Agent Index": "#1 (Claude Code + max)"
       },
-      "pricing": "$2 / $10 per 1M tokens"
+      "pricing": "$2 / $10 per 1M tokens",
+      "_zh": "70d26a377c"
     },
     "claude-fable-5-1": {
       "tagline": "The public version of a Mythos-class brain",
       "highlights": [
-        "#1 on Agent Arena (Max), net improvement +13.84%",
+        "#1 on Agent Arena (Max), net improvement +14.1%",
         "Terminal-Bench 4.0 55.8%, 13.8 points above Fable 5",
         "GDPval-AA v2 1853, HLE (with tools) 65.0%",
         "Anthropic says typical workloads ~25% cheaper than Fable 5, cache reads down 75%"
@@ -67,51 +71,23 @@
       ],
       "notes": "A Mythos-class tier above Opus. Same model as Mythos 5.1 but with safety classifiers; default effort is high. After Opus 5.5 shipped its value took a hit, and many users moved over.",
       "bench": {
-        "Agent Arena": "#1 (Max), $3.51 per task",
-        "AA Intelligence Index": "Tied with GPT-6 Astra",
-        "Terminal-Bench 4.0": "Official",
-        "GDPval-AA v2": "Official"
+        "Agent Arena": "#1 (Max, pulled 9/29)",
+        "AA Intelligence Index": "Max; #3 after per-model dedup, slightly above GPT-6 Astra at 52.7",
+        "Terminal-Bench 4.0": "Official; Mythos 5.1 (the same model with relaxed guardrails) scores 60.9%",
+        "GDPval-AA v2": "Official",
+        "LMArena Text": "#5 (Max)",
+        "Code Arena WebDev": "#3 (Max)",
+        "AA Coding Agent Index": "Claude Code + max, 4th row (Astra at 61.6)"
       },
-      "pricing": "$10 / $50 per 1M tokens (cache read $0.25)"
-    },
-    "claude-mythos-5-1": {
-      "tagline": "Fable at full strength, not for sale",
-      "highlights": [
-        "Same model as Fable 5.1, with cyber and bio guardrails relaxed",
-        "Terminal-Bench 4.0 60.9%, above Fable 5.1's 55.8%",
-        "Project Glasswing members only (AWS, Apple, Microsoft, etc.)",
-        "Mythos 5 autonomously discovered ART, a CRISPR-like enzyme system"
-      ],
-      "tags": [
-        "Cybersecurity",
-        "Life sciences",
-        "Long-horizon agents"
-      ],
-      "notes": "Mythos is the top tier above Opus: Mythos Preview (2026-04-07), then Mythos 5 (06-09, same model as Fable 5), then Mythos 5.1. Invite-only, with no plans for public release.",
-      "bench": {
-        "Terminal-Bench 4.0": "Official"
-      },
-      "pricing": "$10 / $50 per 1M tokens (invite only)"
-    },
-    "claude-fable-5-5": {
-      "tagline": "The rumored next Fable",
-      "highlights": [
-        "Since 9/25, chatter about Fable 5.5 inside Anthropic's Slack has circulated online",
-        "On 9/29 World of AI led with a \"Fable 5.5 leak\"; unconfirmed",
-        "Community consensus: Opus 5.5 has caught Fable 5.1, so Fable 5.5 can't be far"
-      ],
-      "tags": [
-        "Long-horizon agents",
-        "Reasoning"
-      ],
-      "notes": "No official information or benchmarks. A separate 9/5 rumor claims a new pretrained model (dubbed Fable 5.2) arrives in early October. The tier is a placeholder, to be re-rated at release."
+      "pricing": "$10 / $50 per 1M tokens (cache read $0.25)",
+      "_zh": "e7ca833f6c"
     },
     "claude-opus-5": {
       "tagline": "Last-gen workhorse, near Fable 5 at half price",
       "highlights": [
         "Anthropic says it nears Fable 5's frontier level at half the price",
-        "AA Intelligence Index 51, Terminal-Bench 4.0 52.3%",
-        "Code Arena WebDev 1692 (Max), 126 points behind Opus 5.5",
+        "AA Intelligence Index 50.8, Terminal-Bench 4.0 52.3%",
+        "Code Arena WebDev 1693 (Max), 134 points behind Opus 5.5",
         "Anthropic says its ARC-AGI 3 score is triple the next-best model's"
       ],
       "tags": [
@@ -122,9 +98,14 @@
       "notes": "Scores above Fable 5 but reception was lukewarm, with complaints it is hard to work with. Now legacy; Anthropic recommends migrating to Opus 5.5.",
       "bench": {
         "LMArena Text": "#11 (High)",
-        "Terminal-Bench 4.0": "Official"
+        "Terminal-Bench 4.0": "Official",
+        "AA Intelligence Index": "Max; #5 after per-model dedup, above GPT-6 Sol at 47.5",
+        "Code Arena WebDev": "#4 (Max), above GPT-6 Sol at 1681",
+        "Agent Arena": "#4 (Max), above GPT-6 Sol (#6)",
+        "AA Coding Agent Index": "Claude Code + max"
       },
-      "pricing": "$5 / $25 per 1M tokens"
+      "pricing": "$5 / $25 per 1M tokens",
+      "_zh": "3a63ef9a8e"
     },
     "claude-fable-5": {
       "tagline": "The first public Mythos-class model",
@@ -142,12 +123,17 @@
       "notes": "Same model as Mythos 5; Fable adds a refusal classifier. Knowledge cutoff 2026-01. Superseded by Fable 5.1 but still available.",
       "bench": {
         "Terminal-Bench 4.0": "Official",
-        "HLE（带工具）": "Official"
+        "HLE（带工具）": "Official",
+        "AA Intelligence Index": "Max (marked superseded by AA)",
+        "LMArena Text": "#3 (High)",
+        "Code Arena WebDev": "#14 (High)",
+        "Agent Arena": "#7 (High)"
       },
       "pricing": "$10 / $50 per 1M tokens",
       "benchName": {
         "HLE（带工具）": "HLE (with tools)"
-      }
+      },
+      "_zh": "b15c371e11"
     },
     "claude-sonnet-5": {
       "tagline": "Last-gen mid-tier: cheap, not exciting",
@@ -164,7 +150,8 @@
       "bench": {
         "GDPval-AA v2.1": "Official"
       },
-      "pricing": "$2 / $10 per 1M tokens"
+      "pricing": "$2 / $10 per 1M tokens",
+      "_zh": "88b04f8605"
     },
     "claude-opus-4-8": {
       "tagline": "The Claude 4 finale and the safety fallback",
@@ -178,7 +165,13 @@
         "Agents"
       ],
       "notes": "Legacy but still serving; supports Fast mode ($10/$50). Knowledge cutoff 2026-01.",
-      "pricing": "$5 / $25 per 1M tokens"
+      "pricing": "$5 / $25 per 1M tokens",
+      "bench": {
+        "AA Intelligence Index": "Max (superseded)",
+        "Agent Arena": "#8 (High), above GPT-5.6 Sol",
+        "LMArena Text": "#22 (High)"
+      },
+      "_zh": "07c8e380d3"
     },
     "claude-opus-4-6": {
       "tagline": "Old guard, still #2 on Text Arena",
@@ -192,12 +185,13 @@
         "Coding",
         "Writing"
       ],
-      "notes": "Strong on chat preference boards, but clearly behind the 5 series on agents and coding. Opus 4.7 (2026-04) and Opus 4.5 (2025-11) of the same generation are still serving and not listed separately.",
+      "notes": "Strong on chat preference boards, but clearly behind the 5 series on agents and coding. Opus 4.5 (2025-11) of the same generation is still serving and not listed separately.",
       "bench": {
         "LMArena Text": "#2 (High)",
         "SWE-bench Verified": "Official"
       },
-      "pricing": "$5 / $25 per 1M tokens"
+      "pricing": "$5 / $25 per 1M tokens",
+      "_zh": "120067771c"
     },
     "claude-mythos-preview": {
       "tagline": "The original Glasswing cyber weapon",
@@ -214,7 +208,8 @@
       "bench": {
         "SWE-bench Verified": "Official",
         "CyberGym": "Official"
-      }
+      },
+      "_zh": "9e0f00e8e3"
     },
     "claude-sonnet-4-6": {
       "tagline": "Old Sonnet workhorse, still all over production",
@@ -228,7 +223,8 @@
         "General"
       ],
       "notes": "Still Active; Anthropic points Sonnet 3.7/4 migrations to it. Sonnet 4.5 (2025-09) of the same generation is not listed separately.",
-      "pricing": "$3 / $15 per 1M tokens"
+      "pricing": "$3 / $15 per 1M tokens",
+      "_zh": "84eabd171f"
     },
     "claude-haiku-4-5": {
       "tagline": "The small one, a year without a refresh",
@@ -245,7 +241,8 @@
       "bench": {
         "SWE-bench Verified": "Official figure at the 2025-10 launch"
       },
-      "pricing": "$1 / $5 per 1M tokens"
+      "pricing": "$1 / $5 per 1M tokens",
+      "_zh": "f150c7855f"
     },
     "claude-haiku-5-5": {
       "tagline": "The announced 5.5 small model, on its way",
@@ -258,7 +255,31 @@
         "Lightweight",
         "Low cost"
       ],
-      "notes": "Announced but not released; no specs or benchmarks. The tier is a placeholder."
+      "notes": "Announced but not released; no specs or benchmarks. The tier is a placeholder.",
+      "_zh": "be7f3ae2dc"
+    },
+    "claude-opus-4-7": {
+      "tagline": "The 4-series workhorse, still top 5 on Text",
+      "highlights": [
+        "Still #4 on Text Arena in 2026-09 (1502, 64K votes)",
+        "First model with an xhigh effort level; Claude Code defaults to it",
+        "CursorBench 70%, a big jump from Opus 4.6's 58%",
+        "New tokenizer: the same text uses ~0–35% more tokens"
+      ],
+      "tags": [
+        "Coding",
+        "Chat",
+        "Agents"
+      ],
+      "notes": "Legacy but still serving; retirement no earlier than 2027-04-16; knowledge cutoff 2026-01. Anthropic says it trails the contemporaneous Mythos Preview, and it blocks high-risk cybersecurity requests.",
+      "bench": {
+        "LMArena Text": "#4 (High, 9/29 snapshot)",
+        "Code Arena WebDev": "#30 (High)",
+        "AA Intelligence Index": "max effort, AA estimate (superseded)",
+        "CursorBench": "Official"
+      },
+      "pricing": "$5 / $25 per 1M tokens",
+      "_zh": "dc0669a3fd"
     }
   }
 }

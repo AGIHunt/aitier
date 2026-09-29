@@ -20,8 +20,9 @@
       "notes": "Not in AA's text-to-image top 30. Non-English text rendering and world knowledge are improved over 2.0.",
       "bench": {
         "LMArena Text-to-Image": "#5",
-        "LMArena Image Edit": "~#14"
-      }
+        "LMArena Image Edit": "#14"
+      },
+      "_zh": "db13163d1b"
     },
     "reve-2.0": {
       "tagline": "The release that put Reve in the top tier",
@@ -35,9 +36,10 @@
         "Typography"
       ],
       "bench": {
-        "LMArena Text-to-Image": "~#8",
-        "LMArena Image Edit": "~#17"
-      }
+        "LMArena Text-to-Image": "#8",
+        "LMArena Image Edit": "#17"
+      },
+      "_zh": "3db5ca48e9"
     }
   }
 }

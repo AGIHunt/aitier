@@ -17,7 +17,8 @@
         "Long shots",
         "Multi-reference"
       ],
-      "notes": "Announced 9/28; full release in October, currently in closed beta. Cello, an anonymous entry on AA, is suspected to be this model. No public leaderboard results yet; the tier is provisional."
+      "notes": "Announced 9/28; full release in October, currently in closed beta. Cello, an anonymous entry on AA, is suspected to be this model. No public leaderboard results yet; the tier is provisional.",
+      "_zh": "fc42bf010c"
     },
     "kling-4.0-flash": {
       "tagline": "Fast early cut of 4.0, Ultra annual plans only",
@@ -31,7 +32,8 @@
         "Fast",
         "Native audio"
       ],
-      "notes": "No leaderboard results yet; tier B is provisional, following the usual lightweight-model convention."
+      "notes": "No leaderboard results yet; tier B is provisional, following the usual lightweight-model convention.",
+      "_zh": "1850050d61"
     },
     "kling-3.0": {
       "tagline": "February's #1 on the AA text-to-video board",
@@ -52,7 +54,8 @@
         "AA Image-to-Video": "1080p Pro, ~#19",
         "LMArena Image-to-Video": "kling-v3-pro, ~#19"
       },
-      "pricing": "~$0.34/sec (1080p Pro)"
+      "pricing": "~$0.34/sec (1080p Pro)",
+      "_zh": "865c4d653e"
     },
     "kling-image-3.0": {
       "tagline": "The image model that makes Kling's first frames",
@@ -66,7 +69,8 @@
         "4K",
         "Character consistency"
       ],
-      "notes": "Not in the top 30 of LMArena or AA image boards. Its predecessor Kolors has largely left the mainstream and isn't listed. Kling Image 4.0 has leaked but isn't out."
+      "notes": "Not in the top 30 of LMArena or AA image boards. Its predecessor Kolors has largely left the mainstream and isn't listed. Kling Image 4.0 has leaked but isn't out.",
+      "_zh": "8821dd618c"
     }
   }
 }

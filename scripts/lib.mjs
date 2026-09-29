@@ -42,3 +42,10 @@ export function sortModels(list) {
 export function today() {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date())
 }
+
+import { createHash } from 'node:crypto'
+/** 模型中文文案的指纹：英文覆盖层记录它（_zh），中文改了就能发现译文过期 */
+export function zhHash(m) {
+  const src = [m.tagline, m.highlights, m.tags, m.notes ?? '', m.pricing ?? '', m.context ?? '', m.params ?? '', m.benchmarks.map((b) => [b.name, b.value, b.note ?? ''])]
+  return createHash('sha1').update(JSON.stringify(src)).digest('hex').slice(0, 10)
+}

@@ -21,8 +21,8 @@ const enFiles = import.meta.glob<LocaleFile>('./locales/en/*.json', { eager: tru
 const enByVendor: Record<string, LocaleFile> = {}
 for (const [path, f] of Object.entries(enFiles)) enByVendor[path.split('/').pop()!.replace('.json', '')] = f
 
-export const META = meta as MetaFile
-const HISTORY = history as HistoryFile
+export const META = meta as unknown as MetaFile
+const HISTORY = history as unknown as HistoryFile
 
 /** 上一期快照：当前期之前最近的一期 */
 const prevEdition = [...HISTORY.editions].filter((e) => e.id < META.edition).sort((a, b) => b.id.localeCompare(a.id))[0]

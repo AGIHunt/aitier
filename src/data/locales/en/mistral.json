@@ -24,7 +24,8 @@
         "SWE-bench Verified": "Official"
       },
       "pricing": "$1.5 / $7.5 per 1M tokens",
-      "params": "128B dense"
+      "params": "128B dense",
+      "_zh": "588dbb81d7"
     },
     "mistral-small-4": {
       "tagline": "Instruct, reasoning, coding in one small model",
@@ -39,7 +40,8 @@
         "Multimodal"
       ],
       "pricing": "$0.15 / $0.6 per 1M tokens",
-      "params": "119B MoE / 6.5B active"
+      "params": "119B MoE / 6.5B active",
+      "_zh": "6fc6b001fe"
     },
     "mistral-large-3": {
       "tagline": "Europe's biggest open model, DeepSeek V3 inside",
@@ -57,7 +59,8 @@
       "bench": {
         "Text Arena": "#139"
       },
-      "params": "675B MoE / 41B active"
+      "params": "675B MoE / 41B active",
+      "_zh": "86ae601541"
     },
     "devstral-2": {
       "tagline": "A Small coding model that runs on a laptop",
@@ -76,7 +79,8 @@
         "SWE-bench Verified": "Official",
         "Code Arena": "#129"
       },
-      "params": "123B (Small 2: 24B)"
+      "params": "123B (Small 2: 24B)",
+      "_zh": "b3723047b4"
     },
     "ministral-3": {
       "tagline": "A trio for phones and edge devices",
@@ -91,7 +95,8 @@
       ],
       "bench": {
         "AA Intelligence Index": "14B"
-      }
+      },
+      "_zh": "432978a09b"
     }
   }
 }

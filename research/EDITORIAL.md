@@ -16,3 +16,6 @@
 - [2026-09-29] video：**Seedance 2.5 是当前最强的视频模型**（作者原话：「视频生成显然是 seedance 2.5 最强」）。首期曾把 Gemini Omni 1.1 Flash 放在 SSS，被作者否定。
 - [2026-09-29] llm：腾讯混元 Hy3 / Hy4 Preview 要收；混元的图像、视频等其它模态也收，但如实定档，别拔高（作者印象是能力一般）。
 - [2026-09-29] video：MiniMax「H3」即海螺 Hailuo 3。
+- [2026-09-29] video：SSS 只放 Seedance 2.5；Gemini Omni 1.1 Flash 虽 Arena 文生视频第 1，但样本小（1.8k 票）、AA 未收录、仍为 preview，放 SS。
+- [2026-09-29] llm：Claude Mythos 5.1 与 Fable 5.1 是同一模型（仅护栏 / 开放范围不同），只收 Fable 5.1。
+- [2026-09-29] llm：没有任何成绩的传闻模型（Fable 5.5、Kimi K3.1、Grok 4.8、Doubao-Seed-2.2、GPT-6.1 Astra 等）不收；官方确认存在但无成绩的（Gemini 4 Pro、DeepSeek-V4.1-Pro）以 C 70 占位，出成绩后重评。

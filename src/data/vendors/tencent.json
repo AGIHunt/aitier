@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$0.834 / $2.501 每百万 token（缓存 $0.042）",
       "tier": "A",
-      "score": 82,
+      "score": 84,
       "tags": [
         "开源",
         "编程",
@@ -54,6 +54,18 @@
           "value": "2.99/4",
           "note": "GLM-5.3 2.92，Kimi K3 2.94",
           "source": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1631",
+          "note": "第 12，高于 Grok 4.7 / DeepSeek V4.1 Flash / GLM-5.3",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+4.1%",
+          "note": "第 12，国产模型中最高",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "尚未见 AA 智能指数和 LMArena 成绩。领先的对比来自腾讯自家盲评，公开基准上大体落后 Opus 5、GPT-5.6。参照天梯图放在 A 档。",

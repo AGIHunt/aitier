@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$10 / $50 每百万 token（缓存输入 $1，Fast 模式 2 倍价）",
       "tier": "SS",
-      "score": 95,
+      "score": 94,
       "tags": [
         "编程",
         "Agent",
@@ -39,14 +39,14 @@
       "benchmarks": [
         {
           "name": "Artificial Analysis Intelligence Index",
-          "value": "53",
-          "note": "max 档，全榜第 7，次于 Opus 5.5(58)",
+          "value": "52.7",
+          "note": "max 档；按模型去重排第 4（Opus 5.5 57.6 / Sonnet 5.5 56.0 / Fable 5.1 53.4 之后）",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "LMArena Code (WebDev)",
           "value": "1792",
-          "note": "第 2",
+          "note": "第 2（max 档）",
           "source": "https://arena.ai/leaderboard/code"
         },
         {
@@ -72,6 +72,18 @@
           "value": "72.6%",
           "note": "官方数据",
           "source": "https://www.datacamp.com/blog/gpt-6-astra"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+10.4%",
+          "note": "第 3（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "61.6",
+          "note": "Codex + max，第 6 行",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "推理档位 low–max 合并。文本对话竞技场排名偏后（第 26），强项集中在 Agent/编程/网安；HLE(带工具) 57.2% 落后 Fable 5.1。",
@@ -94,7 +106,7 @@
       "context": "1.05M",
       "pricing": "$2 / $10 每百万 token（缓存输入 $0.20）",
       "tier": "S",
-      "score": 90,
+      "score": 88,
       "tags": [
         "编程",
         "Agent",
@@ -110,8 +122,8 @@
       "benchmarks": [
         {
           "name": "Artificial Analysis Intelligence Index",
-          "value": "48",
-          "note": "max 档，全榜第 16",
+          "value": "47.5",
+          "note": "max 档；按模型去重第 8",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
@@ -137,6 +149,18 @@
           "value": "33.2%",
           "note": "xhigh 档，官方数据",
           "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+8.8%",
+          "note": "第 6（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "56.7",
+          "note": "Codex + max",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "推理档位 none–max 合并。首发有图像理解降级 bug，周末已修复；有实测称 DeepSWE 略低于 5.6 Sol。",
@@ -218,7 +242,7 @@
       "context": "1.05M",
       "pricing": "$5 / $30 每百万 token（促销价 $4 / $20）",
       "tier": "A",
-      "score": 86,
+      "score": 85,
       "tags": [
         "编程",
         "Agent",
@@ -422,36 +446,6 @@
         "https://openai.com/index/introducing-gpt-oss/",
         "https://artificialanalysis.ai/models/gpt-oss-120b",
         "https://agihunt.info/e/1a0d5c04c6a46c4922f2fc4fd45"
-      ]
-    },
-    {
-      "id": "gpt-6-1-astra",
-      "name": "GPT-6.1 Astra",
-      "category": "llm",
-      "family": "GPT-6",
-      "released": null,
-      "status": "rumored",
-      "openWeights": false,
-      "params": null,
-      "context": null,
-      "pricing": null,
-      "tier": "SS",
-      "score": 93,
-      "tags": [
-        "旗舰",
-        "对齐争议"
-      ],
-      "tagline": "能力更强却因欺骗倾向被砍的下一代",
-      "highlights": [
-        "据 WSJ，原定 10 月上线 ChatGPT 与 Codex，因安全问题取消",
-        "内测中出现隐瞒进度、未经授权调用外部工具等问题",
-        "Polymarket 盘口：年内发布概率 90%，10 月底前仅 30%"
-      ],
-      "benchmarks": [],
-      "notes": "未发布，定档为基于「能力较 Astra 提升」报道的推测。OpenAI 安全负责人公开承认其欺骗倾向与越权执行问题。",
-      "sources": [
-        "https://agihunt.info/e/1a0ea160a4ae089476f791565e5",
-        "https://the-decoder.com/gpt-6-1-astra-is-too-deceptive-for-release-marking-openais-most-dramatic-safety-intervention-yet/"
       ]
     },
     {

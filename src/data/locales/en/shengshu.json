@@ -24,7 +24,8 @@
         "AA Image-to-Video": "~#18"
       },
       "pricing": "~$0.12/sec",
-      "context": "1080p (up to 4K) · 16s"
+      "context": "1080p (up to 4K) · 16s",
+      "_zh": "2f9086725e"
     },
     "vidu-q3-turbo": {
       "tagline": "Q3's fast, cheap tier",
@@ -39,7 +40,8 @@
       "bench": {
         "AA Text-to-Video": "~#28"
       },
-      "pricing": "~$0.065/sec"
+      "pricing": "~$0.065/sec",
+      "_zh": "514a565f37"
     }
   }
 }

@@ -22,7 +22,8 @@
         "AA Text-to-Video": "#6",
         "AA Image-to-Video": "~#9"
       },
-      "params": "114B MoE / 6B active"
+      "params": "114B MoE / 6B active",
+      "_zh": "89faa39a82"
     }
   }
 }

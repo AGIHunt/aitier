@@ -27,7 +27,8 @@
         "GPQA Diamond": "Self-reported"
       },
       "pricing": "$0.30 / $1.20 per 1M tokens (peak price, 50% off-peak; cached read $0.006)",
-      "params": "552B MoE / 8B active on input, 16B on output"
+      "params": "552B MoE / 8B active on input, 16B on output",
+      "_zh": "416f326049"
     },
     "deepseek-v4-pro": {
       "tagline": "The 1.6T ex-flagship, overtaken by its own Flash",
@@ -51,7 +52,8 @@
         "GPQA Diamond": "Self-reported, higher than V4.1 Flash"
       },
       "pricing": "$1.32 / $3.96 per 1M tokens (peak price, 50% off-peak)",
-      "params": "1.6T MoE / 49B active"
+      "params": "1.6T MoE / 49B active",
+      "_zh": "86a020c20d"
     },
     "deepseek-v4-flash": {
       "tagline": "Last-gen bargain workhorse, weights still around",
@@ -73,7 +75,8 @@
         "AA Intelligence Index": "Old April launch index, max tier"
       },
       "pricing": "$0.14 / $0.28 per 1M tokens (final official price before retirement)",
-      "params": "284B MoE / 13B active"
+      "params": "284B MoE / 13B active",
+      "_zh": "0b8f6774d2"
     },
     "deepseek-v3-2": {
       "tagline": "The one that pioneered DSA sparse attention",
@@ -92,7 +95,8 @@
         "LMArena Text": "#117",
         "Code Arena WebDev": "#97 (thinking)"
       },
-      "params": "671B MoE / 37B active"
+      "params": "671B MoE / 37B active",
+      "_zh": "2a03cc6c33"
     },
     "deepseek-v4-1-pro": {
       "tagline": "The bigger sibling DeepSeek has promised",
@@ -104,7 +108,8 @@
         "Flagship",
         "Rumored"
       ],
-      "notes": "Unreleased; parameters, pricing and scores unknown. Tier/score are placeholder estimates extrapolated from V4.1 Flash and need re-rating at launch."
+      "notes": "Unreleased; parameters, pricing and scores unknown. Tier/score are placeholder estimates extrapolated from V4.1 Flash and need re-rating at launch.",
+      "_zh": "5a18814a5c"
     }
   }
 }

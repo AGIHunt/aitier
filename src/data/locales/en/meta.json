@@ -22,12 +22,14 @@
         "AA Intelligence Index": "Max; xhigh is 45",
         "Code Arena": "#10 (max)",
         "Text Arena": "#9 (max)",
-        "105 植入 bug 实测": "GPT-6 Astra 45, Opus 5.5 41.7"
+        "105 植入 bug 实测": "GPT-6 Astra 45, Opus 5.5 41.7",
+        "Agent Arena": "#17 (max)"
       },
       "pricing": "$1.25 / $4.25 per 1M tokens (Contributor tier $0.10 / $0.20)",
       "benchName": {
         "105 植入 bug 实测": "105 planted-bug test"
-      }
+      },
+      "_zh": "6ad15cbd3d"
     },
     "muse-spark-1-2": {
       "tagline": "The chat-first Muse, #7 on Text Arena",
@@ -46,7 +48,8 @@
         "Text Arena": "#7 (xHigh)",
         "Code Arena": "#40 (xHigh)"
       },
-      "pricing": "$1.25 / $4.25 per 1M tokens"
+      "pricing": "$1.25 / $4.25 per 1M tokens",
+      "_zh": "80b67d7e34"
     },
     "muse-spark-1-1": {
       "tagline": "The first Muse MSL shipped for real",
@@ -63,7 +66,8 @@
       "bench": {
         "Text Arena": "#12",
         "Code Arena": "#35"
-      }
+      },
+      "_zh": "764c9b3432"
     },
     "muse-glimmer": {
       "tagline": "Meta's open model that fits on one 24GB GPU",
@@ -83,7 +87,8 @@
         "Text Arena": "#118",
         "Code Arena": "#102"
       },
-      "pricing": "Open weights (Apache 2.0)"
+      "pricing": "Open weights (Apache 2.0)",
+      "_zh": "24dbb52bb4"
     },
     "llama-4-maverick": {
       "tagline": "The last mainstay of the Llama line",
@@ -101,7 +106,8 @@
         "AA Intelligence Index": "Scout: 8"
       },
       "pricing": "Open weights (Llama 4 Community License)",
-      "params": "400B MoE / 17B active"
+      "params": "400B MoE / 17B active",
+      "_zh": "3a7e24de89"
     },
     "muse-image": {
       "tagline": "A top-10 painter at a cent an image",
@@ -119,9 +125,12 @@
       "notes": "MSL's first image model; sparked controversy after launch over its use of user photos.",
       "bench": {
         "AA Text-to-Image": "#7",
-        "Arena Text-to-Image": "#7"
+        "LMArena Text-to-Image": "#7",
+        "LMArena Image Edit": "#6",
+        "AA Image Editing": "#6"
       },
-      "pricing": "$0.01/image"
+      "pricing": "$0.01/image",
+      "_zh": "034d5980c8"
     },
     "muse-video": {
       "tagline": "All leaderboard, no API: a trailer for now",
@@ -137,7 +146,8 @@
       "notes": "The released field is the preview date; resolution and duration undisclosed; not on the AA video leaderboard.",
       "bench": {
         "Arena Text-to-Video": "#9"
-      }
+      },
+      "_zh": "6f1aeda52d"
     }
   }
 }

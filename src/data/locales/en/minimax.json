@@ -3,23 +3,6 @@
     "blurb": "Cheap, fast text models; Hailuo H3 video went open weights and took #1 on image-to-video"
   },
   "models": {
-    "minimax-m3-1": {
-      "tagline": "Likely \"Space Bunny\", the anonymous chart-topper",
-      "highlights": [
-        "Anonymous Space Bunny went live 9/23 and topped OpenRouter's daily chart",
-        "#1 on OpenCode for five straight days, ~40T tokens processed in total",
-        "Tokenizer fingerprint matches MiniMax; an open-source repo shipped M3.1 configs early",
-        "1M context, image/video input, adjustable reasoning effort"
-      ],
-      "tags": [
-        "Coding",
-        "3D/Frontend",
-        "Multimodal",
-        "Fast"
-      ],
-      "notes": "Not officially confirmed; it may just be the already-live M3.1-Flash-Preview. Leaks point to an official release around 9/30. Tests say fast and steady, but less striking than GPT-6 Astra.",
-      "bench": {}
-    },
     "minimax-m3-1-flash-preview": {
       "tagline": "A fast coding preview for everyday development",
       "highlights": [
@@ -34,7 +17,8 @@
       ],
       "notes": "No official scores or third-party leaderboard results yet, so the tier is conservative. After launch, Token Plan quotas temporarily reset twice a day.",
       "bench": {},
-      "pricing": "Included in Token Plan subscription"
+      "pricing": "Included in Token Plan subscription",
+      "_zh": "c80a7c43f9"
     },
     "minimax-m3": {
       "tagline": "Open weights, 1M context, multimodal, cheap",
@@ -58,7 +42,8 @@
         "SWE-Bench Pro": "Official"
       },
       "pricing": "$0.30 / $1.20 per 1M tokens (>512K billed separately)",
-      "params": "428B MoE / 23B active"
+      "params": "428B MoE / 23B active",
+      "_zh": "1024c3ea54"
     },
     "minimax-m2-7": {
       "tagline": "Small-active coding model, built to self-evolve",
@@ -78,7 +63,8 @@
         "LMArena Code": "#84"
       },
       "pricing": "$0.30 / $1.20 per 1M tokens",
-      "params": "230B MoE / 10B active"
+      "params": "230B MoE / 10B active",
+      "_zh": "8833adb07d"
     },
     "minimax-m2-5": {
       "tagline": "MIT-licensed coding model at $1 an hour",
@@ -98,7 +84,8 @@
         "LMArena Code": "#89"
       },
       "pricing": "$0.30 / $1.20 per 1M tokens",
-      "params": "230B MoE / 10B active"
+      "params": "230B MoE / 10B active",
+      "_zh": "cbac0bf9e1"
     },
     "minimax-h3": {
       "tagline": "Open-weights omni video, #1 on image-to-video",
@@ -116,17 +103,21 @@
       ],
       "notes": "\"H3\" refers to this model: official name MiniMax H3, brand name Hailuo 3 (Hailuo 3.0). Shown at WAIC on 7/17 and open-sourced 8/3, under a license that excludes the US, EU, UK and South Korea.",
       "bench": {
-        "LMArena Image-to-Video": "#1",
+        "LMArena Image-to-Video": "#1 (57k votes, ±5)",
         "LMArena Text-to-Video": "#8",
         "Artificial Analysis Text-to-Video（带音频）": "#4; fal's post-trained H3 Max (1227) is #3",
-        "Artificial Analysis Image-to-Video（带音频）": "#2; H3 Max (fal) is #1"
+        "Artificial Analysis Image-to-Video（带音频）": "#2; H3 Max (fal) at 1194 is #1",
+        "Arena Video Edit": "#3",
+        "Artificial Analysis Text-to-Video（无音频）": "#3"
       },
       "pricing": "~$0.13/sec (2K, third-party figure)",
       "params": "33B dense (~20B active at inference)",
       "benchName": {
         "Artificial Analysis Text-to-Video（带音频）": "Artificial Analysis Text-to-Video (with audio)",
-        "Artificial Analysis Image-to-Video（带音频）": "Artificial Analysis Image-to-Video (with audio)"
-      }
+        "Artificial Analysis Image-to-Video（带音频）": "Artificial Analysis Image-to-Video (with audio)",
+        "Artificial Analysis Text-to-Video（无音频）": "Artificial Analysis Text-to-Video (no audio)"
+      },
+      "_zh": "14dfa69bd4"
     },
     "hailuo-2-3": {
       "tagline": "Last-gen Hailuo, fully superseded by H3",
@@ -144,7 +135,8 @@
       "bench": {
         "LMArena Text-to-Video": "#32",
         "LMArena Image-to-Video": "#29"
-      }
+      },
+      "_zh": "4e0b28bc70"
     },
     "minimax-image-01": {
       "tagline": "MiniMax's only image model, now clearly behind",
@@ -160,7 +152,8 @@
       "notes": "Released over 18 months ago, so borderline under listing criteria; kept as a reference because it is MiniMax's only image model and is still on the API.",
       "bench": {
         "Artificial Analysis Text-to-Image": "#124"
-      }
+      },
+      "_zh": "dedf82f585"
     }
   }
 }

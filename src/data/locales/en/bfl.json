@@ -22,7 +22,8 @@
         "LMArena Text-to-Video": "#3 (~1,300 votes, ±17)",
         "LMArena Image-to-Video": "~#9"
       },
-      "pricing": "2K $0.40/sec, 4K $0.80/sec"
+      "pricing": "2K $0.40/sec, 4K $0.80/sec",
+      "_zh": "34d854a35c"
     },
     "flux-2-max": {
       "tagline": "FLUX.2's top-quality tier, a developer favorite",
@@ -41,7 +42,8 @@
         "LMArena Text-to-Image": "~#27",
         "AA Text-to-Image": "~#27"
       },
-      "pricing": "~$0.07/image"
+      "pricing": "~$0.07/image",
+      "_zh": "7f60aca5be"
     },
     "flux-2-klein": {
       "tagline": "Sub-second images in 13GB of VRAM",
@@ -56,7 +58,8 @@
         "Local"
       ],
       "notes": "Not in the image top 30; listed for its influence in the open-source ecosystem.",
-      "pricing": "$0.014–0.015/image"
+      "pricing": "$0.014–0.015/image",
+      "_zh": "72d85ecfdc"
     }
   }
 }

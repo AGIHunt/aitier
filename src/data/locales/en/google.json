@@ -23,7 +23,8 @@
         "GDPval-AA v2": "Leaked, unconfirmed"
       },
       "pricing": "Rumored $2.25 / $11.25 per 1M tokens",
-      "context": "2M (rumored)"
+      "context": "2M (rumored)",
+      "_zh": "4fc4ed02bc"
     },
     "gemini-3-8-flash": {
       "tagline": "Google's best live model at Flash prices",
@@ -44,9 +45,12 @@
         "LMArena Text": "#10 (high)",
         "AA Intelligence Index": "high",
         "DeepSWE v1.1": "Opus 5 at 74.0%",
-        "HLE-Verified": "Official"
+        "HLE-Verified": "Official",
+        "Code Arena WebDev": "#28 (high)",
+        "Agent Arena": "#18 (high)"
       },
-      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)",
+      "_zh": "4e5fbd8f45"
     },
     "gemini-3-7-flash": {
       "tagline": "The coding workhorse replaced in three weeks",
@@ -66,7 +70,8 @@
         "LMArena Text": "#15 (high)",
         "DeepSWE v1.1": "Official"
       },
-      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)",
+      "_zh": "c0012b2bb7"
     },
     "gemini-3-6-flash": {
       "tagline": "The stopgap after 3.5 Pro got cut",
@@ -87,7 +92,8 @@
         "DeepSWE v1.1": "Official",
         "OSWorld-Verified": "Official"
       },
-      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)"
+      "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)",
+      "_zh": "7c6b2a4a1f"
     },
     "gemini-3-5-flash": {
       "tagline": "I/O 2026 launch model, pricier than successors",
@@ -106,7 +112,8 @@
         "LMArena Text": "#27 (high)",
         "OSWorld-Verified": "Official"
       },
-      "pricing": "$1.5 / $9 per 1M tokens"
+      "pricing": "$1.5 / $9 per 1M tokens",
+      "_zh": "136684ba36"
     },
     "gemini-3-5-flash-lite": {
       "tagline": "350 tokens a second, a pipeline mini-cannon",
@@ -126,7 +133,8 @@
         "LMArena Text": "#65",
         "Terminal-Bench 2.1": "Official"
       },
-      "pricing": "$0.3 / $2.5 per 1M tokens"
+      "pricing": "$0.3 / $2.5 per 1M tokens",
+      "_zh": "3fd9a10b42"
     },
     "gemini-3-1-pro": {
       "tagline": "Google's last Pro, in preview for seven months",
@@ -147,7 +155,8 @@
         "ARC-AGI-2": "Official, 2026-02",
         "GPQA Diamond": "Official, 2026-02"
       },
-      "pricing": "$2 / $12 per 1M tokens"
+      "pricing": "$2 / $12 per 1M tokens",
+      "_zh": "609fa20b23"
     },
     "gemma-4-31b": {
       "tagline": "The US open-weights bar that fits on one GPU",
@@ -168,7 +177,8 @@
         "AA Intelligence Index": "Reasoning mode",
         "AIME 2026": "Official"
       },
-      "pricing": "Open weights, free (Apache 2.0)"
+      "pricing": "Open weights, free (Apache 2.0)",
+      "_zh": "e5e2f18f59"
     },
     "gemma-4-26b-a4b": {
       "tagline": "Only 4B active: agents on a laptop",
@@ -188,7 +198,8 @@
         "AA Intelligence Index": "Reasoning mode"
       },
       "pricing": "Open weights, free (Apache 2.0)",
-      "params": "26B MoE / 4B active"
+      "params": "26B MoE / 4B active",
+      "_zh": "0102076aad"
     },
     "gemma-4-12b-unified": {
       "tagline": "The mid-size slot filled in the Gemma 4 family",
@@ -205,7 +216,8 @@
       "bench": {
         "AA Intelligence Index": "Reasoning mode"
       },
-      "pricing": "Open weights, free"
+      "pricing": "Open weights, free",
+      "_zh": "96feedaea2"
     },
     "gemma-4-e4b": {
       "tagline": "On-device model that translates offline on a Pi",
@@ -224,7 +236,8 @@
         "AA Intelligence Index": "E4B, reasoning mode"
       },
       "pricing": "Open weights, free (Apache 2.0)",
-      "params": "4B / 2B effective"
+      "params": "4B / 2B effective",
+      "_zh": "e161fc7be1"
     },
     "nano-banana-2": {
       "tagline": "Google's image workhorse, now behind GPT Image",
@@ -241,10 +254,13 @@
       ],
       "notes": "The text-to-image leader is gpt-image-2.5 (1424), a gap of about 160 points. Traces of Nano Banana 2.1 have appeared in Flow.",
       "bench": {
-        "LMArena Text-to-Image": "#9",
-        "LMArena Image Edit": "#12"
+        "LMArena Text-to-Image": "#9 (web-search)",
+        "LMArena Image Edit": "#12 (web-search)",
+        "AA Text-to-Image": "#6",
+        "AA Image Editing": "#8"
       },
-      "pricing": "~$0.045 (512px) to $0.151 (4K) per image"
+      "pricing": "~$0.045 (512px) to $0.151 (4K) per image",
+      "_zh": "10c8e8f7b0"
     },
     "nano-banana-pro": {
       "tagline": "The 4K pro tier, still Google's best editor",
@@ -262,8 +278,11 @@
       "notes": "API codename gemini-3-pro-image, now GA. Could not find the current official per-image price, so it is left blank.",
       "bench": {
         "LMArena Image Edit": "#9 (2K)",
-        "LMArena Text-to-Image": "#14 (2K)"
-      }
+        "LMArena Text-to-Image": "#14 (2K)",
+        "AA Text-to-Image": "#11",
+        "AA Image Editing": "#13"
+      },
+      "_zh": "45c67b3557"
     },
     "nano-banana-2-lite": {
       "tagline": "Four seconds an image, pennies each",
@@ -280,9 +299,12 @@
       "notes": "API codename gemini-3.1-flash-lite-image. Live in consumer products including Search AI Mode, Photos and NotebookLM.",
       "bench": {
         "LMArena Text-to-Image": "#13",
-        "LMArena Image Edit": "#21"
+        "LMArena Image Edit": "#21",
+        "AA Text-to-Image": "#13",
+        "AA Image Editing": "#25"
       },
-      "pricing": "$0.034 per image (1K)"
+      "pricing": "$0.034 per image (1K)",
+      "_zh": "9b81990486"
     },
     "nano-banana-2-1": {
       "tagline": "The next image model spotted in Flow's code",
@@ -295,7 +317,8 @@
         "Text-to-image",
         "Image editing"
       ],
-      "notes": "Code traces only, no hands-on tests yet. Score is a placeholder based on Nano Banana 2, to be re-rated at launch."
+      "notes": "Code traces only, no hands-on tests yet. Score is a placeholder based on Nano Banana 2, to be re-rated at launch.",
+      "_zh": "cfc9d82a51"
     },
     "nano-banana": {
       "tagline": "The original that sparked the banana-edit craze",
@@ -310,7 +333,8 @@
       "notes": "Google now suggests migrating to Nano Banana 2 Lite; the API lists it under the access-restricted 2.5 series.",
       "bench": {
         "LMArena Image Edit": "#28"
-      }
+      },
+      "_zh": "4eef0c05eb"
     },
     "imagen-4": {
       "tagline": "The pure-diffusion line Nano Banana replaced",
@@ -325,7 +349,8 @@
       "notes": "Standard, Ultra and Fast merged. Google image generation has moved fully to Gemini-native images (Nano Banana); this entry is a historical reference only.",
       "bench": {
         "LMArena Text-to-Image": "#34 (Ultra)"
-      }
+      },
+      "_zh": "e198899b04"
     },
     "gemini-omni-1-1-flash": {
       "tagline": "Any-modality model, #1 on text-to-video",
@@ -343,11 +368,12 @@
       ],
       "notes": "API is still in preview. Google Vids has fully switched to it, though one Chinese blogger found Vids output underwhelming.",
       "bench": {
-        "LMArena Text-to-Video": "#1",
-        "LMArena Image-to-Video": "#2"
+        "LMArena Text-to-Video": "#1 (±15, 1,784 votes, rank range 1–4)",
+        "LMArena Image-to-Video": "#2 (±11, 3,734 votes, rank range 1–5)"
       },
       "pricing": "~$0.10/sec (720p); 360p drafts ~1/3",
-      "context": "1080p/4K upscale · 10s per clip, extendable to 40s"
+      "context": "1080p/4K upscale · 10s per clip, extendable to 40s",
+      "_zh": "929e6c4f35"
     },
     "gemini-omni-flash": {
       "tagline": "Google's first any-input, video-out model",
@@ -364,13 +390,21 @@
       ],
       "notes": "The first API release lacked audio references and scene extension; 1.1 added both.",
       "bench": {
-        "AA Text-to-Video（含音频）": "#1",
-        "LMArena Text-to-Video": "#2"
+        "LMArena Text-to-Video": "#2 (26.6k votes)",
+        "AA Text-to-Video（带音频）": "#1, tied within CI with Wan 3.0 (1229) and H3 Max (1227)",
+        "AA Text-to-Video（无音频）": "#2",
+        "AA Image-to-Video（无音频）": "#1",
+        "AA Image-to-Video（带音频）": "#3",
+        "LMArena Image-to-Video": "#6"
       },
       "pricing": "$0.10/sec",
       "benchName": {
-        "AA Text-to-Video（含音频）": "AA Text-to-Video (with audio)"
-      }
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
+        "AA Text-to-Video（无音频）": "AA Text-to-Video (no audio)",
+        "AA Image-to-Video（无音频）": "AA Image-to-Video (no audio)",
+        "AA Image-to-Video（带音频）": "AA Image-to-Video (with audio)"
+      },
+      "_zh": "3d350af685"
     },
     "veo-3-1": {
       "tagline": "Last-gen audio-video benchmark, now Omni's",
@@ -394,7 +428,8 @@
       "context": "Up to 4K · 8s",
       "benchName": {
         "AA Text-to-Video（含音频）": "AA Text-to-Video (with audio)"
-      }
+      },
+      "_zh": "f4810b5526"
     },
     "veo-3-1-lite": {
       "tagline": "Five cents a second, the bulk-output tier",
@@ -409,7 +444,16 @@
         "Batch"
       ],
       "notes": "No standalone arena ranking found; tier is estimated from price and positioning.",
-      "pricing": "$0.05/sec (720p), $0.08/sec (1080p)"
+      "pricing": "$0.05/sec (720p), $0.08/sec (1080p)",
+      "bench": {
+        "AA Text-to-Video（带音频）": "#16",
+        "AA Image-to-Video（带音频）": "#14"
+      },
+      "benchName": {
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
+        "AA Image-to-Video（带音频）": "AA Image-to-Video (with audio)"
+      },
+      "_zh": "a43f7a232a"
     },
     "genie-3": {
       "tagline": "One sentence, a real-time world to walk into",
@@ -425,7 +469,8 @@
         "Explorable 3D"
       ],
       "notes": "World models have no leaderboard comparable to video generation; tier reflects uniqueness and influence. No reliable news on Genie 4 found.",
-      "context": "720p · 24fps, interactive for several minutes"
+      "context": "720p · 24fps, interactive for several minutes",
+      "_zh": "6efc3c0a2f"
     }
   }
 }

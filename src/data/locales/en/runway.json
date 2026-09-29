@@ -18,7 +18,8 @@
       "notes": "Has dropped out of the AA video top 30. Runway is shifting focus to world models and editing tools; as of September there is no Gen-5.",
       "bench": {
         "LMArena Text-to-Video": "~#27"
-      }
+      },
+      "_zh": "a3e1e9d6b5"
     }
   }
 }

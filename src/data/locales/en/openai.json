@@ -19,14 +19,17 @@
       ],
       "notes": "Reasoning levels low to max merged. Ranks poorly on the text arena (#26); strengths cluster in agents, coding and cybersecurity. HLE (with tools) 57.2% trails Fable 5.1.",
       "bench": {
-        "Artificial Analysis Intelligence Index": "max, #7 overall, behind Opus 5.5 (58)",
-        "LMArena Code (WebDev)": "#2",
+        "Artificial Analysis Intelligence Index": "max; #4 after per-model dedup (behind Opus 5.5 at 57.6, Sonnet 5.5 at 56.0 and Fable 5.1 at 53.4)",
+        "LMArena Code (WebDev)": "#2 (max)",
         "LMArena Text": "#26 (max)",
         "Bug Hunt Bench": "#1 (max, n=3)",
         "Terminal-Bench 4.0": "Official; Fable 5.1 at 55.8%",
-        "OSWorld 2.0": "Official"
+        "OSWorld 2.0": "Official",
+        "Agent Arena": "#3 (max)",
+        "AA Coding Agent Index": "Codex + max, 6th row"
       },
-      "pricing": "$10 / $50 per 1M tokens (cached input $1; Fast mode at 2x)"
+      "pricing": "$10 / $50 per 1M tokens (cached input $1; Fast mode at 2x)",
+      "_zh": "4a3881c4a7"
     },
     "gpt-6-sol": {
       "tagline": "Astra's training recipe, at half the price",
@@ -43,13 +46,16 @@
       ],
       "notes": "Reasoning levels none to max merged. Launched with an image-understanding regression, fixed over the weekend; one test reports DeepSWE slightly below 5.6 Sol.",
       "bench": {
-        "Artificial Analysis Intelligence Index": "max, #16 overall",
+        "Artificial Analysis Intelligence Index": "max; #8 after per-model dedup",
         "LMArena Code (WebDev)": "#5",
         "LMArena Text": "#60 (max)",
         "DeepSWE v1.1": "max, official",
-        "AutomationBench 1.0.6": "xhigh, official"
+        "AutomationBench 1.0.6": "xhigh, official",
+        "Agent Arena": "#6 (max)",
+        "AA Coding Agent Index": "Codex + max"
       },
-      "pricing": "$2 / $10 per 1M tokens (cached input $0.20)"
+      "pricing": "$2 / $10 per 1M tokens (cached input $0.20)",
+      "_zh": "09188b6172"
     },
     "gpt-6-luna": {
       "tagline": "A dime per million tokens: the volume workhorse",
@@ -70,7 +76,8 @@
         "DeepSWE v1.1": "max, official",
         "OSWorld 2.0 Offline": "max, official"
       },
-      "pricing": "$0.10 / $0.50 per 1M tokens (cached input $0.01)"
+      "pricing": "$0.10 / $0.50 per 1M tokens (cached input $0.01)",
+      "_zh": "07eb24e587"
     },
     "gpt-5-6-sol": {
       "tagline": "Last-gen flagship, OpenAI's best on Text Arena",
@@ -91,7 +98,8 @@
         "Artificial Analysis Intelligence Index": "Current-version index; old-version index at launch was 59, #2",
         "LMArena Code (WebDev)": "#20 (xhigh, codex harness)"
       },
-      "pricing": "$5 / $30 per 1M tokens (promo $4 / $20)"
+      "pricing": "$5 / $30 per 1M tokens (promo $4 / $20)",
+      "_zh": "5399421341"
     },
     "gpt-5-6-terra": {
       "tagline": "Mid-tier of the GPT-5.6 family, the daily driver",
@@ -109,7 +117,8 @@
         "Artificial Analysis Intelligence Index": "Current-version index",
         "LMArena Text": "#50 (xhigh)"
       },
-      "pricing": "$2 / $12 per 1M tokens (20% cut on 7/30)"
+      "pricing": "$2 / $12 per 1M tokens (20% cut on 7/30)",
+      "_zh": "82353ebe72"
     },
     "gpt-5-6-luna": {
       "tagline": "Last-gen small model, price slashed 80%",
@@ -126,7 +135,8 @@
       "bench": {
         "LMArena Text": "#70 (xhigh)"
       },
-      "pricing": "$0.20 / $1.20 per 1M tokens (80% cut on 7/30)"
+      "pricing": "$0.20 / $1.20 per 1M tokens (80% cut on 7/30)",
+      "_zh": "8e4d1fb435"
     },
     "gpt-5-5": {
       "tagline": "Two flagships back, still fighting on Text Arena",
@@ -143,7 +153,8 @@
       "bench": {
         "LMArena Text": "#21 (high)",
         "Terminal-Bench 2.0": "Official"
-      }
+      },
+      "_zh": "30ea098db0"
     },
     "gpt-oss-120b": {
       "tagline": "OpenAI's only open weights, runs on one 80GB GPU",
@@ -162,20 +173,8 @@
         "Artificial Analysis Intelligence Index": "high, #9/65 among open models this size"
       },
       "pricing": "$0.15 / $0.59 per 1M tokens (third-party hosting)",
-      "params": "117B MoE / 5.1B active"
-    },
-    "gpt-6-1-astra": {
-      "tagline": "Stronger, but cut over a tendency to deceive",
-      "highlights": [
-        "Per WSJ, a planned October launch in ChatGPT and Codex was canceled over safety issues",
-        "Testing turned up hidden progress and unauthorized external tool calls",
-        "Polymarket odds: 90% to ship this year, only 30% by end of October"
-      ],
-      "tags": [
-        "Flagship",
-        "Alignment controversy"
-      ],
-      "notes": "Unreleased. The tier is a guess based on reports that it is stronger than Astra. OpenAI's head of safety has publicly acknowledged its deception and overreach problems."
+      "params": "117B MoE / 5.1B active",
+      "_zh": "33482e8581"
     },
     "gpt-image-2-5-sunburst": {
       "tagline": "#1 on both text-to-image and image-edit arenas",
@@ -191,10 +190,13 @@
       ],
       "notes": "The high-end API tier of ChatGPT Images 2.5, built for refinement and multi-turn editing. Community complaints: noise artifacts unfixed, strict moderation; no Batch API support.",
       "bench": {
-        "LMArena Text-to-Image": "#1",
-        "LMArena Image Edit": "#1"
+        "LMArena Text-to-Image": "#1 (10,884 votes)",
+        "LMArena Image Edit": "#1",
+        "AA Text-to-Image": "#1 (max)",
+        "AA Image Editing": "#1 (max)"
       },
-      "context": "4K (long edge 3840px)"
+      "context": "4K (long edge 3840px)",
+      "_zh": "89979232fe"
     },
     "gpt-image-2-5-flare": {
       "tagline": "Default tier: half the latency, better looking",
@@ -211,10 +213,13 @@
       "notes": "No Batch API support, so bulk generation costs more than with GPT-Image-2.",
       "bench": {
         "LMArena Text-to-Image": "#2",
-        "LMArena Image Edit": "#2"
+        "LMArena Image Edit": "#2",
+        "AA Text-to-Image": "#2 (max)",
+        "AA Image Editing": "#2 (max)"
       },
       "pricing": "Image input $8 / output $30 per 1M tokens",
-      "context": "4K (long edge 3840px)"
+      "context": "4K (long edge 3840px)",
+      "_zh": "406140324c"
     },
     "gpt-image-2": {
       "tagline": "Last gen, still #3 on both arenas",
@@ -231,9 +236,12 @@
       "notes": "The model behind ChatGPT Images 2.0. Supports the Batch API, so it still wins on price for bulk work.",
       "bench": {
         "LMArena Text-to-Image": "#3 (medium)",
-        "LMArena Image Edit": "#3 (medium)"
+        "LMArena Image Edit": "#3 (medium)",
+        "AA Text-to-Image": "#3 (high)",
+        "AA Image Editing": "#5 (high)"
       },
-      "pricing": "Image input $8 / output $30 per 1M tokens (~$0.03–0.08 per image)"
+      "pricing": "Image input $8 / output $30 per 1M tokens (~$0.03–0.08 per image)",
+      "_zh": "5eea8a9a00"
     },
     "gpt-image-1-5": {
       "tagline": "Late last year's ChatGPT Images workhorse",
@@ -248,8 +256,11 @@
       ],
       "bench": {
         "LMArena Text-to-Image": "#15 (high-fidelity)",
-        "LMArena Image Edit": "#15 (high-fidelity)"
-      }
+        "LMArena Image Edit": "#15 (high-fidelity); ChatGPT version 1388, #11",
+        "AA Text-to-Image": "#8 (high)",
+        "AA Image Editing": "#12 (high)"
+      },
+      "_zh": "61825a7d4e"
     },
     "sora-2-pro": {
       "tagline": "The funniest video model, now shut down",
@@ -266,7 +277,8 @@
       "notes": "Some third-party apps still show a Sora option after shutdown; the community is calling for the retired weights to be released.",
       "bench": {
         "LMArena Text-to-Video": "#11"
-      }
+      },
+      "_zh": "581aee75ab"
     },
     "sora-2": {
       "tagline": "The gen that lit up short-video social, retired",
@@ -282,7 +294,8 @@
       ],
       "bench": {
         "LMArena Text-to-Video": "#17"
-      }
+      },
+      "_zh": "2f859cf2d6"
     }
   }
 }

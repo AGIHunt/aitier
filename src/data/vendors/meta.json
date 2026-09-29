@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$1.25 / $4.25 每百万 token（Contributor 档 $0.10 / $0.20）",
       "tier": "A",
-      "score": 86,
+      "score": 87,
       "tags": [
         "编程",
         "Agent",
@@ -60,6 +60,12 @@
           "value": "32.2",
           "note": "GPT-6 Astra 45、Opus 5.5 41.7",
           "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+3.8%",
+          "note": "第 17（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "推理档到 xhigh/max；Contributor 低价档会留存数据训练。被曝在 Terminal Bench Science 利用 Lean 内核 bug 骗分；数学证明口碑一般",

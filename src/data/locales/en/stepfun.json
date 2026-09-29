@@ -1,0 +1,58 @@
+{
+  "vendor": {
+    "blurb": "Step 5 Preview, a 600B MoE, ties Kimi K3 and bets on cheap long-horizon agents"
+  },
+  "models": {
+    "step-5-preview": {
+      "tagline": "600B flagship that ties Kimi K3 on AA",
+      "highlights": [
+        "600B MoE, 27B active, 1M context; weights slated for 10/15",
+        "AA Intelligence Index 43.7, level with Kimi K3 (43.6)",
+        "$0.72 per AA task, about 1/2.8 the cost of K3",
+        "Hands-on tests: rock-steady output, grinds agent loops to the limit"
+      ],
+      "tags": [
+        "Agents",
+        "Long context",
+        "Value",
+        "Coding"
+      ],
+      "notes": "low/medium/high effort tiers merged. API-only preview for now; weights due 10/15. AA says it trails peers on agentic evals; frontend, 3D and aesthetics are weak spots.",
+      "bench": {
+        "AA Intelligence Index": "9/29 snapshot; burned 160M tokens, very verbose",
+        "Code Arena WebDev": "#29 (high, 1,247 votes)",
+        "GDPval-AA": "AA sub-score (normalized); K3 scores 51.2",
+        "DeepSWE v1.1": "Self-reported (high effort)",
+        "FrontierFinance": "Self-reported; Opus 5 (max) scores 69.7"
+      },
+      "pricing": "$1 / $2.70 per 1M tokens (cache hit $0.05)",
+      "params": "600B MoE / 27B active",
+      "_zh": "bff3752abe"
+    },
+    "step-3-7-flash": {
+      "tagline": "Open-weight agent sprinter, 11B active",
+      "highlights": [
+        "196B MoE with just 11B active, Apache 2.0, 256K context",
+        "Self-reported SWE-Bench Pro 56.3%, ClawEval 67.1",
+        "~182 tokens/s output on AA, among the faster Flash models",
+        "AA measures Terminal-Bench 2.1 at just 39.3%, far below the claim"
+      ],
+      "tags": [
+        "Open weights",
+        "Lightweight",
+        "Agents",
+        "Multimodal"
+      ],
+      "notes": "low/medium/high effort tiers merged. Succeeds Step 3.5 Flash (open-sourced in February, now marked deprecated by AA; not listed separately).",
+      "bench": {
+        "AA Intelligence Index": "Estimated (9/29 snapshot, new index version)",
+        "Terminal-Bench 2.1": "AA-measured; self-reported 59.6%",
+        "SWE-Bench Pro": "Self-reported",
+        "ClawEval-1.1": "Self-reported; #1 among open models at launch"
+      },
+      "pricing": "$0.20 / $1.15 per 1M tokens",
+      "params": "196B MoE / 11B active (plus a 1.8B vision encoder)",
+      "_zh": "3dff41c576"
+    }
+  }
+}

@@ -19,31 +19,21 @@
       ],
       "notes": "Thinking is always on by default; low/max effort tiers are merged. The new K3 License takes up to a 30% revenue share from providers earning over $20M a year. Anthropic accused it of distilling Claude; CheatBench cheat rate 72.3%.",
       "bench": {
-        "AA Intelligence Index": "Max tier; #3 overall at launch, low tier 34",
+        "AA Intelligence Index": "Max tier (pulled 9/29)",
         "LMArena Text": "#16 (max tier, 9/25 snapshot)",
         "Code Arena WebDev": "#9 (max tier)",
         "Vals AI Index": "Launch-day ranking; exact score not found",
         "GPQA Diamond": "Self-reported",
         "Terminal-Bench 2.1": "Self-reported",
-        "BrowseComp": "Self-reported"
+        "BrowseComp": "Self-reported",
+        "Agent Arena": "#13 (max), behind only Hy4 Preview among open-weights models"
       },
       "pricing": "$3 / $15 per 1M tokens (cached read $0.30)",
       "params": "2.8T MoE / 104B active",
       "benchValue": {
         "Vals AI Index": "#2"
-      }
-    },
-    "kimi-k3-1": {
-      "tagline": "Teased by Moonshot, delayed again and again",
-      "highlights": [
-        "Moonshot dropped official hints; it's on the \"confirmed coming soon\" list",
-        "Leaker ChrisGPT says it won't ship this week or next, another delay"
-      ],
-      "tags": [
-        "Rumored",
-        "Open flagship"
-      ],
-      "notes": "Unreleased as of 9/29; parameters, pricing and scores unknown, tier/score held at K3's values as a placeholder. A Kimi K4 also showed up in the leaked OpenCode sitemap."
+      },
+      "_zh": "c51cfa77ab"
     },
     "kimi-k2-6": {
       "tagline": "The last open-weights king, Agent Swarm matured",
@@ -68,7 +58,8 @@
         "SWE-Bench Pro": "Self-reported"
       },
       "pricing": "$0.95 / $4 per 1M tokens (cached read $0.16)",
-      "params": "1T MoE / 32B active"
+      "params": "1T MoE / 32B active",
+      "_zh": "1231ded2ec"
     },
     "kimi-k2-7-code": {
       "tagline": "A coding-specialized spin on the K2 base",
@@ -89,7 +80,8 @@
         "Kimi Code Bench v2": "Vs. K2.6, Moonshot's in-house benchmark"
       },
       "pricing": "$0.95 / $4 per 1M tokens (cached read $0.19)",
-      "params": "1T MoE / 32B active"
+      "params": "1T MoE / 32B active",
+      "_zh": "7c7e010ccd"
     },
     "kimi-k2-5": {
       "tagline": "Where Kimi's multimodality and swarms began",
@@ -110,7 +102,8 @@
         "SWE-Bench Pro": "Self-reported"
       },
       "pricing": "$0.60 / $3 per 1M tokens (final official price before retirement)",
-      "params": "1T MoE / 32B active"
+      "params": "1T MoE / 32B active",
+      "_zh": "ec80f28ab7"
     }
   }
 }

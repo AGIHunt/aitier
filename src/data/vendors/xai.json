@@ -293,34 +293,6 @@
       ]
     },
     {
-      "id": "grok-4-8",
-      "name": "Grok 4.8",
-      "category": "llm",
-      "family": "Grok 4",
-      "released": null,
-      "status": "rumored",
-      "openWeights": false,
-      "params": null,
-      "context": null,
-      "pricing": null,
-      "tier": "A",
-      "score": 85,
-      "tags": [
-        "传闻",
-        "编程"
-      ],
-      "tagline": "4.7 刚发一周就现身 Cursor",
-      "highlights": [
-        "Cursor 服务端列表出现 grok-4.8-high / xhigh-fast 等变体",
-        "commit 注明为「下一代 Grok 发布」，传约一个月后上线"
-      ],
-      "benchmarks": [],
-      "notes": "仅为泄露，档位为推测占位",
-      "sources": [
-        "https://agihunt.info/e/1a0e7877f9640a85a9a1369f332"
-      ]
-    },
-    {
       "id": "grok-imagine-image-2",
       "name": "Grok Imagine Image 2.0",
       "category": "image",
@@ -444,7 +416,7 @@
       "context": "1080p·带原生音频",
       "pricing": "$0.08/秒",
       "tier": "S",
-      "score": 89,
+      "score": 88,
       "tags": [
         "文生视频",
         "图生视频",

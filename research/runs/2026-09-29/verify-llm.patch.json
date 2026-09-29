@@ -1,0 +1,821 @@
+{
+  "changes": [
+    {
+      "id": "gpt-6-astra",
+      "tier": "SS",
+      "score": 94,
+      "reason": "AA 52.7（去重第 4）、Code Arena 第 2、Agent Arena 第 3；与 Fable 5.1 互有胜负，按并列处理，略下调 1 分",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "claude-fable-5-1",
+      "tier": "SS",
+      "score": 94,
+      "reason": "AA 53.4 略高于 Astra，Text 第 5（Astra 第 26）、Agent Arena 第 1、Code Arena 第 3；两榜均不弱于 Astra，应与其同档",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent",
+        "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "tier": "S",
+      "score": 89,
+      "reason": "AA 50.8 / Code Arena 1693 第 4 / Agent Arena 第 4 / Text 第 11，四项全部高于 GPT-6 Sol，不应比 Sol 低一档；已被 Opus 5.5 取代，故只放 S 下沿",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "tier": "S",
+      "score": 88,
+      "reason": "AA 47.5 去重第 8、Code Arena 第 5、Agent Arena 第 6，但 Text 第 60；全面略逊 Opus 5，放 S 底线",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "claude-fable-5",
+      "tier": "A",
+      "score": 87,
+      "reason": "Text 第 3、AA 49.6 与 Sol 接近，但 Code Arena 第 14，且已被更便宜更强的 Fable 5.1 取代，放 A 顶",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "muse-spark-1-3",
+      "tier": "A",
+      "score": 87,
+      "reason": "AA 48.1（非 Anthropic/OpenAI 最高）、Text 第 9、Code 第 10，但 Agent Arena 仅第 17，放 A 顶",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "kimi-k3",
+      "tier": "A",
+      "score": 86,
+      "reason": "AA 43.6 低于 Qwen/GLM/MiMo，但 Text 1488（国产最高）、Code 第 9、Agent 第 13 均领先同档国产，微调 1 分",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "qwen3-8-max",
+      "tier": "A",
+      "score": 85,
+      "reason": "AA 45.4、Code Arena 1662 第 8，但 Text 第 25、Agent Arena 第 20，与 GLM-5.3/MiMo 同分段",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "glm-5-3",
+      "tier": "A",
+      "score": 85,
+      "reason": "AA 44.8、Text 第 24、Code 第 18、Agent 第 19，与 Qwen3.8 Max 同分段",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "tier": "A",
+      "score": 85,
+      "reason": "AA 46.3 开源第一，但 Code Arena 仅第 19、未进 Agent Arena，与 Qwen/GLM 同分段",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code"
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol",
+      "tier": "A",
+      "score": 85,
+      "reason": "已被 GPT-6 Sol 取代（AA 标记 deprecated），AA 47.0 与 6 Sol 接近但 Code/Agent 均更低，不应与 Muse/Kimi 并列 86",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "hy4-preview",
+      "tier": "A",
+      "score": 84,
+      "reason": "原数据称无 Arena 成绩，实际 Code Arena 1631 第 12、Agent Arena 第 12（国产最高）；已开源并上 OpenRouter，上调 2 分",
+      "evidence": [
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "claude-opus-4-8",
+      "tier": "B",
+      "score": 78,
+      "reason": "AA 41.8 与 GLM-5.3-Flash 相当，Agent Arena 第 8 高于 GPT-5.6 Sol；已被取代，放 B 上段",
+      "evidence": [
+        "https://artificialanalysis.ai/leaderboards/models",
+        "https://arena.ai/leaderboard/agent",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "gemini-4-pro",
+      "tier": "C",
+      "score": 70,
+      "reason": "仅 DeepMind SVP 确认「年底前发 Gemini 4」，Arena 匿名 checkpoint 身份与泄露跑分均未证实；按 brief 无硬证据降到 B 以下，发布后重评",
+      "evidence": [
+        "https://agihunt.info/e/1a0d14a027be464602f2374e568",
+        "https://agihunt.info/e/1a0d9628023276a889ff0730401"
+      ]
+    },
+    {
+      "id": "deepseek-v4-1-pro",
+      "tier": "C",
+      "score": 70,
+      "reason": "DeepSeek 官方公告写明 V4.1-Pro 将上线（存在性可信），但无任何分数，占位降到 C",
+      "evidence": [
+        "https://api-docs.deepseek.com/news/news260910/"
+      ]
+    }
+  ],
+  "remove": [
+    {
+      "id": "claude-mythos-5-1",
+      "reason": "官方原话 Fable 5.1 与 Mythos 5.1 是同一模型、仅护栏不同；Mythos 仅限美国机构邀请制。合并进 Fable 5.1（已在其 Terminal-Bench 4.0 注明 Mythos 版 60.9%）"
+    },
+    {
+      "id": "gpt-6-1-astra",
+      "reason": "WSJ / The Decoder 9/29：因欺骗与越权问题取消 10 月上线，OpenAI 称将以其基座重做更安全版本；无任何跑分，不应占 SS"
+    },
+    {
+      "id": "claude-fable-5-5",
+      "reason": "只有 Slack 梗图与 YouTube「泄露」标题，官方未提及，无任何跑分"
+    },
+    {
+      "id": "kimi-k3-1",
+      "reason": "仅有「官方暗示」转述且一再跳票，无规格无分数"
+    },
+    {
+      "id": "grok-4-8",
+      "reason": "仅 Cursor 服务端 commit 泄露模型名，无分数无发布日期"
+    },
+    {
+      "id": "doubao-seed-2-2",
+      "reason": "仅媒体报道已延期，无规格无分数"
+    },
+    {
+      "id": "minimax-m3-1",
+      "reason": "「Space Bunny」已被普遍对应到 9/28 公测的 M3.1-Flash-Preview（已单独收录），完整版 M3.1 无官方信息，属重复/无证据"
+    }
+  ],
+  "add": [],
+  "benchmarkUpdates": [
+    {
+      "id": "claude-opus-5-5",
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1509",
+          "note": "第 1（High 档；仅 2307 票，名次区间 1–10，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1827",
+          "note": "第 1（Max 档，领先 GPT-6 Astra 35 分，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+11.8%",
+          "note": "第 2（High 档），仅次 Fable 5.1 Max（9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "57.6",
+          "note": "第 1（max 档，9/29 抓取）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "66.4%",
+          "note": "官方；GPT-6 Astra 57.9%",
+          "source": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "SimpleBench",
+          "value": "88.4%",
+          "note": "第 1",
+          "source": "https://agihunt.info/e/1a0d47069a370628d4c7cddb80e"
+        },
+        {
+          "name": "Vals AI Index",
+          "value": "69.69%",
+          "note": "第 1",
+          "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "66.0",
+          "note": "第 2（Claude Code，max），仅次 Sonnet 5.5",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "52.7",
+          "note": "max 档；按模型去重排第 4（Opus 5.5 57.6 / Sonnet 5.5 56.0 / Fable 5.1 53.4 之后）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Code (WebDev)",
+          "value": "1792",
+          "note": "第 2（max 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1478",
+          "note": "第 26（max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Bug Hunt Bench",
+          "value": "45/105",
+          "note": "第 1（max，n=3）",
+          "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "57.7%",
+          "note": "官方数据，Fable 5.1 为 55.8%",
+          "source": "https://www.datacamp.com/blog/gpt-6-astra"
+        },
+        {
+          "name": "OSWorld 2.0",
+          "value": "72.6%",
+          "note": "官方数据",
+          "source": "https://www.datacamp.com/blog/gpt-6-astra"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+10.4%",
+          "note": "第 3（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "61.6",
+          "note": "Codex + max，第 6 行",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-1",
+      "benchmarks": [
+        {
+          "name": "Agent Arena",
+          "value": "+14.1%",
+          "note": "第 1（Max 档，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "53.4",
+          "note": "max 档；按模型去重第 3，略高于 GPT-6 Astra 52.7",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "55.8%",
+          "note": "官方；同一模型的 Mythos 5.1（放宽护栏版）为 60.9%",
+          "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "GDPval-AA v2",
+          "value": "1853",
+          "note": "官方",
+          "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1501",
+          "note": "第 5（Max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1751",
+          "note": "第 3（Max 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "62.2",
+          "note": "Claude Code + max，第 4 行（Astra 61.6）",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "56.0",
+          "note": "第 2（max 档）；LMArena 尚未入榜",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "70.6%",
+          "note": "官方；AA 实测 64%",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "GDPval-AA v2.1",
+          "value": "1844",
+          "note": "Opus 5.5 为 1846",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "OSWorld 2.1",
+          "value": "80.1%",
+          "note": "partial",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "68.4",
+          "note": "第 1（Claude Code + max）",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "50.8",
+          "note": "max 档；按模型去重第 5，高于 GPT-6 Sol 47.5",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1491",
+          "note": "第 11（High 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "52.3%",
+          "note": "官方",
+          "source": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1693",
+          "note": "第 4（Max 档），高于 GPT-6 Sol 1681",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+9.5%",
+          "note": "第 4（Max 档），高于 GPT-6 Sol（第 6）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "59.7",
+          "note": "Claude Code + max",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-sol",
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "47.5",
+          "note": "max 档；按模型去重第 8",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Code (WebDev)",
+          "value": "1681",
+          "note": "第 5",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1457",
+          "note": "第 60（max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "68.8%",
+          "note": "max 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        },
+        {
+          "name": "AutomationBench 1.0.6",
+          "value": "33.2%",
+          "note": "xhigh 档，官方数据",
+          "source": "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+8.8%",
+          "note": "第 6（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "56.7",
+          "note": "Codex + max",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5",
+      "benchmarks": [
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "42.0%",
+          "note": "官方",
+          "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "HLE（带工具）",
+          "value": "63.8%",
+          "note": "官方",
+          "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "49.6",
+          "note": "max 档（AA 已标为被取代）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1504",
+          "note": "第 3（High 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1627",
+          "note": "第 14（High 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+8.0%",
+          "note": "第 7（High 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "kimi-k3",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "43.6",
+          "note": "max 档（9/29 抓取）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1488",
+          "note": "第 16（max 档，9/25 快照）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1660",
+          "note": "第 9（max 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Vals AI Index",
+          "value": "第 2",
+          "note": "发布时排名，具体分数未查到",
+          "source": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation"
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": "93.5",
+          "note": "官方自报",
+          "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "88.3",
+          "note": "官方自报",
+          "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"
+        },
+        {
+          "name": "BrowseComp",
+          "value": "91.2",
+          "note": "官方自报",
+          "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+4.0%",
+          "note": "第 13（max 档），开源权重中仅次 Hy4 Preview",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "hy4-preview",
+      "benchmarks": [
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "85.4",
+          "note": "第三方整理",
+          "source": "https://iadecider.com/articles/tencent-hy-review"
+        },
+        {
+          "name": "DeepSWE",
+          "value": "64.3",
+          "note": "第三方整理",
+          "source": "https://iadecider.com/articles/tencent-hy-review"
+        },
+        {
+          "name": "腾讯内部盲评（203 个工程任务）",
+          "value": "2.99/4",
+          "note": "GLM-5.3 2.92，Kimi K3 2.94",
+          "source": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1631",
+          "note": "第 12，高于 Grok 4.7 / DeepSeek V4.1 Flash / GLM-5.3",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+4.1%",
+          "note": "第 12，国产模型中最高",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "mimo-v2.6-pro",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "46",
+          "note": "开源权重第一，总榜约第 21",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "约第 23",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "71.9",
+          "note": "官方",
+          "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "89.9",
+          "note": "官方",
+          "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1618",
+          "note": "第 19",
+          "source": "https://arena.ai/leaderboard/code"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash",
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1492",
+          "note": "第 10（high 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "40.9",
+          "note": "high 档",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "73.7%",
+          "note": "Opus 5 为 74.0%",
+          "source": "https://www.vellum.ai/blog/gemini-3-8-flash-benchmarks-explained"
+        },
+        {
+          "name": "HLE-Verified",
+          "value": "54.9%",
+          "note": "官方",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1580",
+          "note": "第 28（high 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+3.8%",
+          "note": "第 18（high 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "muse-spark-1-3",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "48",
+          "note": "max；xhigh 为 45",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena",
+          "value": "1656",
+          "note": "第 10（max）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Text Arena",
+          "value": "1494",
+          "note": "第 9（max）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "105 植入 bug 实测",
+          "value": "32.2",
+          "note": "GPT-6 Astra 45、Opus 5.5 41.7",
+          "source": "https://agihunt.info/e/1a0c56ee48f6d7beaf2e5f5be49"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+3.8%",
+          "note": "第 17（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "qwen3-8-max",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "45",
+          "note": "0902 版，第 27/216",
+          "source": "https://artificialanalysis.ai/models/qwen3-8-max"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1691",
+          "note": "9 月初首发第 1，9/23 后被 Opus 5.5 超过",
+          "source": "https://x.com/arena/status/2094974637704913198"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1496",
+          "note": "8 月首版第 5",
+          "source": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen3-8-max?_p_lc=1"
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "value": "67.7",
+          "note": "首版，官方数据",
+          "source": "https://www.datacamp.com/blog/qwen3-8-max"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+2.5%",
+          "note": "第 20",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3",
+      "benchmarks": [
+        {
+          "name": "Artificial Analysis Intelligence Index",
+          "value": "45",
+          "note": "max 档；开源权重第 2",
+          "source": "https://artificialanalysis.ai/models/glm-5-3"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "第 24（glm-5.3-max）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "LMArena Code",
+          "value": "1619",
+          "note": "第 18（glm-5.3-max）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "66.9",
+          "note": "Kimi K3 67.5，Fable 5 69.7",
+          "source": "https://decrypt.co/375684/china-z-ai-glm-5-3-top-open-weight-coding-model"
+        },
+        {
+          "name": "Terminal-Bench 3.0",
+          "value": "28.3",
+          "note": "GPT-5.6 Sol 34.6",
+          "source": "https://decrypt.co/375684/china-z-ai-glm-5-3-top-open-weight-coding-model"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+2.8%",
+          "note": "第 19（max 档）",
+          "source": "https://arena.ai/leaderboard/agent"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-4-8",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "41.8",
+          "note": "max 档（已被取代）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+6.9%",
+          "note": "第 8（High 档），高于 GPT-5.6 Sol",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "第 22（High 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ]
+    }
+  ]
+}

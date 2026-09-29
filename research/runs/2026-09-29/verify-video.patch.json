@@ -1,0 +1,349 @@
+{
+  "changes": [
+    {
+      "id": "seedance-2-5",
+      "tier": "SSS",
+      "score": 97,
+      "reason": "与 Omni 1.1 Flash 并列 SSS：Arena Video Edit 第 2（1410，与第 1 统计并列）、Design Arena 多图生视频第 1、Arena I2V 第 4 / T2V 第 7 均在头部 CI 内；30 秒单镜 + 50 份参考为代际能力领先，落地平台最广；但 AA 未收录，纯短片偏好未明显超过 Seedance 2.0",
+      "evidence": [
+        "https://arena.ai/leaderboard/video-edit",
+        "https://arena.ai/leaderboard/image-to-video",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://x.com/DesignArena/status/2089139856660476065",
+        "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+      ]
+    },
+    {
+      "id": "gemini-omni-1-1-flash",
+      "tier": "SSS",
+      "score": 97,
+      "reason": "维持 SSS 但改为与 Seedance 2.5 并列：Arena T2V 第 1（1516，领先 Seedance 2.5 且 CI 不重叠）、I2V 第 2；但仅 1.8k/3.7k 票、AA 未收录、Cloud 文档仍为 Preview（公开付费可用）",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/image-to-video",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash"
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "tier": "SS",
+      "score": 95,
+      "reason": "Arena I2V 第 1（57k 票 ±5，全类别最稳的第 1），AA I2V 带音频第 2 / T2V 带音频第 4，Arena 编辑第 3，且开放权重",
+      "evidence": [
+        "https://arena.ai/leaderboard/image-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/video-edit"
+      ]
+    },
+    {
+      "id": "wan-3-0",
+      "tier": "SS",
+      "score": 94,
+      "reason": "AA T2V 无音频第 1、带音频第 2（CI 内并列），AA 与 Arena 视频编辑榜均第 1，Arena I2V 第 3",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/video-editing",
+        "https://arena.ai/leaderboard/video-edit",
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "gemini-omni-flash",
+      "tier": "S",
+      "score": 92,
+      "reason": "榜单成绩依然顶级（AA T2V 带音频第 1、I2V 无音频第 1、Arena T2V 第 2），但已被同家族 1.1 版取代，不宜两版同时占 SS 以上",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+        "https://arena.ai/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "grok-imagine-video-1-5",
+      "tier": "S",
+      "score": 88,
+      "reason": "Arena I2V 第 8（137k 票），T2V 第 4 仅 agent 版小样本；AA I2V 带音频 1099 明显落后头部",
+      "evidence": [
+        "https://arena.ai/leaderboard/image-to-video",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "hidream-o1-video-1.0",
+      "tier": "S",
+      "score": 88,
+      "reason": "AA I2V 带音频 1174 第 5，与 Seedance 2.0（1176）持平；Arena I2V 1456 与 Grok 1.5 同分；仅图生视频",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "flux-3-video",
+      "tier": "A",
+      "score": 87,
+      "reason": "Arena T2V 第 3 仅 1.3k 票且标 pre_release；I2V 大样本（37k 票）仅第 9；AA 未收录",
+      "evidence": [
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "happyhorse-1-1",
+      "tier": "A",
+      "score": 83,
+      "reason": "AA T2V 带音频 1147 第 8、无音频 1272 第 5，I2V 带音频 1104 第 7，与 MAGI-2 同水平",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+      ]
+    },
+    {
+      "id": "kling-4.0",
+      "tier": "B",
+      "score": 78,
+      "reason": "9/28 官宣、10 月才完整上线，所有榜单均无成绩，不应排在有实测分的 A 档模型前；暂定，上榜后再调。released 建议改为 2026-09-28",
+      "evidence": [
+        "https://agihunt.info/e/1a0e8a8bf630d376fc95e5597c2"
+      ]
+    },
+    {
+      "id": "genie-3",
+      "tier": "B",
+      "score": 74,
+      "reason": "2025 年交互式世界模型预览，无视频榜成绩，不宜压过有实测的 Veo 3.1；或考虑移出视频类",
+      "evidence": []
+    },
+    {
+      "id": "veo-3-1-lite",
+      "tier": "B",
+      "score": 73,
+      "reason": "AA 有成绩：T2V 带音频 1083（第 16，仅比 Veo 3.1 低 5 分）、I2V 带音频 1072 第 14",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+      ]
+    }
+  ],
+  "remove": [],
+  "add": [],
+  "benchmarkUpdates": [
+    {
+      "id": "seedance-2-5",
+      "benchmarks": [
+        {
+          "name": "Arena Video Edit",
+          "value": "1410",
+          "note": "第 2（名次区间 1–3，与 Wan3.0 1414 统计并列；429 票）",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1477",
+          "note": "第 4（名次区间 2–6；15.7k 票）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1474",
+          "note": "第 7（名次区间 3–9；8k 票）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "Design Arena Multi-Image-to-Video",
+          "value": "1400",
+          "note": "第 1（8/16 快照，H3 1355 第 2）",
+          "source": "https://x.com/DesignArena/status/2089139856660476065"
+        }
+      ]
+    },
+    {
+      "id": "gemini-omni-1-1-flash",
+      "benchmarks": [
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1516",
+          "note": "第 1（±15，1,784 票，名次区间 1–4）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1488",
+          "note": "第 2（±11，3,734 票，名次区间 1–5）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
+      ]
+    },
+    {
+      "id": "gemini-omni-flash",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（带音频）",
+          "value": "1233",
+          "note": "第 1（与 Wan 3.0 1229、H3 Max 1227 CI 内并列）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1332",
+          "note": "第 2",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（无音频）",
+          "value": "1369",
+          "note": "第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1178",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1513",
+          "note": "第 2（26.6k 票）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1465",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
+      ]
+    },
+    {
+      "id": "wan-3-0",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1335",
+          "note": "第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video（带音频）",
+          "value": "1229",
+          "note": "第 2",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（无音频）",
+          "value": "1362",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Video Editing（带音频）",
+          "value": "1188",
+          "note": "第 1（领先第 2 名 56 分）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/video-editing"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1414",
+          "note": "第 1（名次区间 1–3）",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1480",
+          "note": "第 3",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1476",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "benchmarks": [
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1495",
+          "note": "第 1（57k 票 ±5）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1460",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1392",
+          "note": "第 3",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "Artificial Analysis Text-to-Video（带音频）",
+          "value": "1220",
+          "note": "第 4；fal 后训练版 H3 Max 1227 第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "Artificial Analysis Image-to-Video（带音频）",
+          "value": "1181",
+          "note": "第 2；H3 Max（fal）1194 第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "Artificial Analysis Text-to-Video（无音频）",
+          "value": "1302",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        }
+      ]
+    },
+    {
+      "id": "veo-3-1-lite",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（带音频）",
+          "value": "1083",
+          "note": "第 16",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1072",
+          "note": "第 14",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
+      ]
+    },
+    {
+      "id": "happyhorse-1-1",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（带音频）",
+          "value": "1147",
+          "note": "第 8",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1272",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1104",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        }
+      ]
+    }
+  ]
+}

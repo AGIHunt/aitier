@@ -19,11 +19,13 @@
       ],
       "notes": "Debuted on Arena 8/10; public preview on Foundry 9/4 alongside Flash. Microsoft claims #1 in AA image editing; not independently verified.",
       "bench": {
-        "LMArena Text-to-Image": "#4 (#2 at launch)",
+        "LMArena Text-to-Image": "#4",
         "LMArena Image Edit": "#5",
-        "AA Text-to-Image": "#5"
+        "AA Text-to-Image": "#5",
+        "AA Image Editing": "#3"
       },
-      "pricing": "~$0.039/image (AA-converted $38.9/1K images)"
+      "pricing": "~$0.039/image (AA-converted $38.9/1K images)",
+      "_zh": "7b9818bd59"
     },
     "mai-image-2.6-flash": {
       "tagline": "Half the price, last-gen flagship quality",
@@ -39,9 +41,11 @@
       ],
       "notes": "Not yet on the LMArena leaderboard; Foundry bills per token, image output $19 per million tokens.",
       "bench": {
-        "AA Text-to-Image": "#9"
+        "AA Text-to-Image": "#9",
+        "AA Image Editing": "#4"
       },
-      "pricing": "~$0.02/image (AA-converted $19.5/1K images)"
+      "pricing": "~$0.02/image (AA-converted $19.5/1K images)",
+      "_zh": "6a1e1652b7"
     },
     "mai-image-2.5": {
       "tagline": "The last-gen workhorse that landed in PowerPoint",
@@ -60,9 +64,11 @@
       "bench": {
         "LMArena Text-to-Image": "#12",
         "LMArena Image Edit": "#7",
-        "AA Text-to-Image": "#10"
+        "AA Text-to-Image": "#10",
+        "AA Image Editing": "#7"
       },
-      "pricing": "~$0.048/image (AA-converted $48.1/1K images)"
+      "pricing": "~$0.048/image (AA-converted $48.1/1K images)",
+      "_zh": "d299f5d006"
     },
     "mai-image-2.5-pro": {
       "tagline": "Twice the price, no better score",
@@ -76,9 +82,11 @@
       ],
       "notes": "Appears only on the AA leaderboard with little official documentation; release date taken from AA.",
       "bench": {
-        "AA Text-to-Image": "#12"
+        "AA Text-to-Image": "#12",
+        "AA Image Editing": "#10"
       },
-      "pricing": "~$0.11/image (AA-converted $108.5/1K images)"
+      "pricing": "~$0.11/image (AA-converted $108.5/1K images)",
+      "_zh": "be7786df48"
     },
     "mai-image-2.5-flash": {
       "tagline": "The budget tier, already outclassed by 2.6-Flash",
@@ -91,9 +99,11 @@
         "Cheap"
       ],
       "bench": {
-        "AA Text-to-Image": "#19"
+        "AA Text-to-Image": "#19",
+        "AA Image Editing": "#15"
       },
-      "pricing": "~$0.02/image (AA-converted $20/1K images)"
+      "pricing": "~$0.02/image (AA-converted $20/1K images)",
+      "_zh": "5dc0d6fe75"
     },
     "mai-image-2": {
       "tagline": "The one that put Microsoft in the top 3",
@@ -110,7 +120,8 @@
       "notes": "A faster MAI-Image-2-Efficient is also on Foundry and not listed separately.",
       "bench": {
         "LMArena Text-to-Image": "#21"
-      }
+      },
+      "_zh": "a59eb94629"
     },
     "mai-thinking-1": {
       "tagline": "Microsoft's first in-house reasoner, undistilled",
@@ -132,7 +143,8 @@
         "AIME 2025": "Self-reported"
       },
       "pricing": "$2 / $8 per 1M tokens",
-      "params": "~1T MoE / 35B active"
+      "params": "~1T MoE / 35B active",
+      "_zh": "dfd006e2fa"
     },
     "mai-code-1.1-flash": {
       "tagline": "A small in-house powerhouse inside Copilot",
@@ -149,7 +161,8 @@
       ],
       "notes": "The previous MAI-Code-1-Flash (6/2) was retired from Copilot on 9/10; parameter count follows the 1-Flash figure, as 1.1 hasn't published its own.",
       "pricing": "Copilot 0.25x premium request multiplier",
-      "params": "137B MoE / 5B active (1-Flash figure)"
+      "params": "137B MoE / 5B active (1-Flash figure)",
+      "_zh": "28aa75bf1b"
     }
   }
 }

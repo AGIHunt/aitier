@@ -18,31 +18,40 @@ npm run build      # 校验 + 类型检查 + 打包到 dist/
 
 快捷键：`1/2/3` 切类别 · `↑↓` 升降档 · `←→` 逐名浏览 · `O` 全景 · `V` 3D/表格 · `M` 静音 · `Esc` 返回 · `⌘K` 搜索
 
-## 数据怎么更新
+## 语言
 
-所有数据在 `src/data/`：
+中文浏览器（`navigator.languages` 首选 zh-*）显示中文，其他一律英文；右上角 `中 / EN` 可切换并记住。
 
-| 文件 | 作用 |
+## 数据怎么存
+
+所有数据在 `src/data/`，中文是主语言，英文是覆盖层：
+
+| 路径 | 作用 |
 |---|---|
-| `vendors/<厂商>.json` | 一家一个文件。新增厂商 = 丢一个新文件，无需改代码 |
-| `meta.json` | 期号、更新日期、更新日志 |
-| `tiers.ts` | 档位颜色 / 名称 / 音高（一般不用动） |
+| `vendors/<厂商>.json` | 厂商 + 模型：事实、`tier`、`score`、中文文案。**唯一的排名真相源**。新增厂商 = 丢一个新文件 |
+| `locales/en/<厂商>.json` | 英文覆盖层，按模型 id 索引（tagline / highlights / tags / notes / bench 备注 / 含中文的价格等） |
+| `meta.json` | 当前期 `edition`（日期）、`issue`（期号）、`changelog`（中英） |
+| `history.json` | 每期发布时的快照 `{模型 id: [tier, score]}`。界面上的 ▲▼ / NEW **由当前数据对比上一期快照自动算出**，不用手填 |
+| `tiers.ts` | 档位颜色 / 音高（一般不用动） |
 
-模型字段见 `src/types.ts`，关键几个：
+字段定义见 `src/types.ts`。分档：SSS 97–100 · SS 93–96 · S 88–92 · A 80–87 · B 72–79 · C 64–71 · D 55–63 · E <55。
 
-- `tier`：`SSS | SS | S | A | B | C | D | E`，同类别内相对当期全球前沿
-- `score`：0–100，须落在档位区间（SSS 97–100 · SS 93–96 · S 88–92 · A 80–87 · B 72–79 · C 64–71 · D 55–63 · E <55），`npm run validate` 会提醒
-- `prevTier`：**每期更新时把上一期的 tier 填进来**，界面就会显示 ▲▼ 升降；新上榜留空（两周内发布的自动显示 NEW）
-- `status`：`released | preview | rumored | deprecated`；`rumored` 在 3D 里是故障风
-- `category`：`llm | image | video`
+`research/` 是更新过程的工作区：`EDITORIAL.md`（作者拍板过的判断，更新时不能推翻）、`runs/<日期>/`（每次更新的子 agent 报告与 patch 文件）、`showcase_inspiration.md`、`tier_ref_jp.png`。
 
-每期更新流程：
+## 怎么更新
 
-1. 改 `meta.json` 的 `updatedAt` / `edition`，在 `changelog` 追加一条
-2. 已有模型：先把当前 `tier` 复制到 `prevTier`，再改新 `tier` / `score`
-3. 新模型：往对应厂商文件的 `models` 里加一条
-4. `npm run validate && npm run dev` 看一眼
+推荐直接在 Claude Code 里说「更新天梯榜」/「XX 发布了，加到天梯榜」，会触发 `airank-update` skill（`.claude/skills/airank-update/`，已软链到 `~/.claude/skills/`，任何目录下的会话都能用）。它会扫描 agihunt 新发布、派子 agent 收录与复核、生成 patch、翻译英文、开新一期并发布。
 
-`research/` 下是首期收录的原始资料：`BRIEF.md`（给子 agent 的收录规范，可复用来做下一期）、`vendors/`（原始收录结果）、`showcase_inspiration.md`（视觉灵感调研）、`tier_ref_jp.png`（参照的网友天梯图）。
+手动更新用这些命令：
 
-数据来源：LMArena、Artificial Analysis、Agent Arena、Bug Hunt Bench、Terminal-Bench、各家官方发布，以及 [AGI HUNT](https://agihunt.info)。
+```bash
+npm run report [llm|image|video] [-- --bench]   # 看当前天梯及相对上期的变化
+npm run edition new                             # 开新一期（先快照当前期，再切到今天、期号 +1）
+npm run apply <patch.json> [-- --dry]           # 应用修改方案：changes / add / remove / benchmarkUpdates / vendors
+npm run validate [-- --strict]                  # 校验；--strict 时缺英文也算错误（build 用）
+npm run edition log "<中文>" "<English>"         # 追加本期更新日志
+npm run edition publish                         # 快照本期（可重复执行覆盖）
+npm run build
+```
+
+数据来源：LMArena、Artificial Analysis、Agent Arena、Design Arena、Bug Hunt Bench、Terminal-Bench、各家官方发布，以及 [AGI HUNT](https://agihunt.info)。

@@ -23,7 +23,7 @@ cat src/data/meta.json      # 当前期号、日期
 | 路径 | 内容 | 谁改 |
 |---|---|---|
 | `src/data/vendors/<id>.json` | 厂商 + 模型（事实、tier、score、中文文案）。**唯一的排名真相源** | 只通过 `npm run apply` 或手工小改 |
-| `src/data/locales/en/<id>.json` | 英文覆盖层，按模型 id 索引 | 翻译子 agent |
+| `src/data/locales/en/<id>.json` | 英文覆盖层，按模型 id 索引，`_zh` 记录译自哪版中文 | 翻译子 agent |
 | `src/data/meta.json` | 当前期 `edition`（日期）、`issue`、`changelog` | `npm run edition` |
 | `src/data/history.json` | 每期发布时的快照 `{id: [tier, score]}`。界面上的 ▲▼ / NEW 由「当前数据 vs 上一期快照」自动算出，**不要手填升降** | `npm run edition publish` |
 | `research/EDITORIAL.md` | 作者的既定判断 | 主 agent |
@@ -74,7 +74,7 @@ npm run -s report                                                   # 看整体�
 
 ## 6. 英文
 
-新增或改了中文文案的模型，派一个翻译子 agent（`references/translate-brief.md`，`model: "sonnet"`），只写 `src/data/locales/en/`。完成标准：`npm run -s validate -- --strict` 零错误。
+新增或改了中文文案 / benchmarks 的模型，派一个翻译子 agent（`references/translate-brief.md`，`model: "sonnet"`），只写 `src/data/locales/en/`。覆盖层每条带 `_zh` 中文指纹：中文一改，validate 就提示「英文可能过期」，译者核对后用 `node scripts/i18n-stamp.mjs <id ...>` 重新盖戳。完成标准：`npm run -s validate -- --strict` 零错误、零「过期」提示。
 
 ## 7. 发布
 

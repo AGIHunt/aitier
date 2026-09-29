@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$0.435 / $0.87 每百万 token（缓存命中 99% 折扣）",
       "tier": "A",
-      "score": 86,
+      "score": 85,
       "tags": [
         "开源",
         "Agent",
@@ -60,6 +60,12 @@
           "value": "89.9",
           "note": "官方",
           "source": "https://agihunt.info/e/1a0c59a045b3bc132537ec13f6d"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1618",
+          "note": "第 19",
+          "source": "https://arena.ai/leaderboard/code"
         }
       ],
       "notes": "架构沿用 V2.5，新增 1M 上下文与 MTP drafter；RL 训练过程公开直播。首发用户反馈表现波动较大。",

@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$3 / $15 每百万 token（缓存读 $0.30）",
       "tier": "A",
-      "score": 87,
+      "score": 86,
       "tags": [
         "开源旗舰",
         "Agent",
@@ -39,9 +39,9 @@
       "benchmarks": [
         {
           "name": "AA Intelligence Index",
-          "value": "44",
-          "note": "max 档；发布时总榜第 3，low 档 34",
-          "source": "https://artificialanalysis.ai/models/kimi-k3"
+          "value": "43.6",
+          "note": "max 档（9/29 抓取）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "LMArena Text",
@@ -78,6 +78,12 @@
           "value": "91.2",
           "note": "官方自报",
           "source": "https://www.eigent.ai/blog/kimi-k3-open-weight-frontier-model"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+4.0%",
+          "note": "第 13（max 档），开源权重中仅次 Hy4 Preview",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "默认常开思考，effort 分 low/max 已合并。新 K3 License：年收入超 2000 万美元的服务商需分成最高 30%。被 Anthropic 点名蒸馏 Claude；CheatBench 作弊率 72.3%。",
@@ -88,37 +94,6 @@
         "https://artificialanalysis.ai/models/kimi-k3",
         "https://agihunt.info/e/1a0cf99a88dd27de1f35430eb30",
         "https://agihunt.info/e/1a0ce7faa941ab8af10d0852259"
-      ]
-    },
-    {
-      "id": "kimi-k3-1",
-      "name": "Kimi K3.1",
-      "category": "llm",
-      "family": "Kimi K3",
-      "released": null,
-      "status": "rumored",
-      "openWeights": null,
-      "params": null,
-      "context": null,
-      "pricing": null,
-      "tier": "A",
-      "score": 87,
-      "tags": [
-        "传闻",
-        "开源旗舰"
-      ],
-      "tagline": "官方暗示过、却一再跳票",
-      "highlights": [
-        "月之暗面官方发过暗示，被列入「确认即将发布」名单",
-        "爆料人 ChrisGPT 称本周及下周都不会发布，再度跳票"
-      ],
-      "benchmarks": [],
-      "notes": "截至 9/29 未发布，参数/价格/分数均未知，tier/score 暂按 K3 占位。另有 Kimi K4 出现在 OpenCode 站点地图泄露中。",
-      "sources": [
-        "https://agihunt.info/e/1a0d9d239c00fb39b86b2882e9c",
-        "https://agihunt.info/e/1a0ec692c8a21f99f12aced0904",
-        "https://agihunt.info/e/1a0e6a0b21fdecfffc6125583a0",
-        "https://agihunt.info/e/1a0d8e52e54a9904524da1dd6ff"
       ]
     },
     {

@@ -1,0 +1,143 @@
+{
+  "vendor": {
+    "id": "stepfun",
+    "name": "StepFun",
+    "nameZh": "阶跃星辰",
+    "country": "CN",
+    "color": "#0b1f33",
+    "accent": "#00f5e7",
+    "monogram": "St",
+    "blurb": "Step 5 Preview 以 600B MoE 追平 K3，主打低价长程任务"
+  },
+  "tierRationale": "Step 5 Preview 的 AA 智能指数 43.7，与 Kimi K3（43.6，A 86）、GLM-5.3（44.8，A 85）、Grok 4.6（44.3，A 81）同一水位，AA 口径足以进 A；但 Code Arena 仅第 29（1565，低于 Gemini 3.8 Flash 与 DeepSeek-V4-Pro），未进 Text Arena 与 Agent Arena，AA 也指出其 Agent 类评测落后同级、输出很啰嗦，加上仍是 API 预览、权重未放出，故取 A 档下沿 80，排在 K3 与 Grok 4.6 之后。Step 3.7 Flash 是现役开源轻量款，新版 AA 指数仅 19.5（估算），与 Gemma 4 31B（19，C 65）、Muse Glimmer（17，D 60）相近，且无 Arena 成绩、AA 实测 Terminal-Bench 2.1 远低于官方自报，定 D 62。Step 3.5 Flash 已被 AA 标记淘汰、Step 3 在 Text Arena 仅第 210，不收。图像/视频：Step1X-Edit 在 LMArena 图像编辑榜垫底（56/56），Step Image Edit 2 与 Step-Video 系列（2025-02）均无当前榜单成绩，不收。",
+  "models": [
+    {
+      "id": "step-5-preview",
+      "name": "Step 5 Preview",
+      "category": "llm",
+      "family": "Step 5",
+      "released": "2026-09-20",
+      "status": "preview",
+      "openWeights": false,
+      "params": "600B MoE / 27B 激活",
+      "context": "1M",
+      "pricing": "$1 / $2.70 每百万 token（缓存命中 $0.05）",
+      "tier": "A",
+      "score": 80,
+      "tags": [
+        "Agent",
+        "长上下文",
+        "性价比",
+        "编程"
+      ],
+      "tagline": "600B 新旗舰，AA 指数追平 Kimi K3",
+      "highlights": [
+        "600B MoE、27B 激活，1M 上下文，权重定于 10/15 开放",
+        "AA 智能指数 43.7，与 Kimi K3（43.6）持平",
+        "AA 单任务成本 $0.72，约为 K3 的 1/2.8",
+        "社区实测输出极稳，Agent Loop 能卡极限反复打磨"
+      ],
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "43.7",
+          "note": "9/29 抓取；跑分耗 160M token，偏啰嗦",
+          "source": "https://artificialanalysis.ai/models/step-5"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1565",
+          "note": "第 29（high 档，1,247 票）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "GDPval-AA",
+          "value": "53.3",
+          "note": "AA 分项（归一化），K3 为 51.2",
+          "source": "https://artificialanalysis.ai/models/step-5"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "67.7",
+          "note": "官方自报（high 档）",
+          "source": "https://www.marktechpost.com/2026/09/20/stepfun-launches-step-5-preview/"
+        },
+        {
+          "name": "FrontierFinance",
+          "value": "66.4",
+          "note": "官方自报，Opus 5（max）为 69.7",
+          "source": "https://www.marktechpost.com/2026/09/20/stepfun-launches-step-5-preview/"
+        }
+      ],
+      "notes": "effort 分 low/medium/high 已合并。仅 API 预览，权重 10/15 开放。AA 称其 Agent 评测落后同级；前端、3D、审美偏弱。",
+      "sources": [
+        "https://www.marktechpost.com/2026/09/20/stepfun-launches-step-5-preview/",
+        "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+        "https://artificialanalysis.ai/models/step-5",
+        "https://news.qq.com/rain/a/20260920A07QYH00",
+        "https://arena.ai/leaderboard/code",
+        "https://agihunt.info/e/1a0d8b4a461536f3297e61e70f3"
+      ]
+    },
+    {
+      "id": "step-3-7-flash",
+      "name": "Step 3.7 Flash",
+      "category": "llm",
+      "family": "Step 3",
+      "released": "2026-05-29",
+      "status": "released",
+      "openWeights": true,
+      "params": "196B MoE / 11B 激活（另含 1.8B 视觉编码器）",
+      "context": "256K",
+      "pricing": "$0.20 / $1.15 每百万 token",
+      "tier": "D",
+      "score": 62,
+      "tags": [
+        "开源",
+        "轻量",
+        "Agent",
+        "多模态"
+      ],
+      "tagline": "11B 激活的开源 Agent 快枪手",
+      "highlights": [
+        "196B MoE 仅激活 11B，Apache 2.0 开源，256K 上下文",
+        "官方自报 SWE-Bench Pro 56.3%、ClawEval 67.1",
+        "AA 实测输出约 182 token/s，Flash 档速度靠前",
+        "AA 实测 Terminal-Bench 2.1 仅 39.3%，远低于自报"
+      ],
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "19.5",
+          "note": "估算值（9/29 抓取，新版指数）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "value": "39.3%",
+          "note": "AA 实测；官方自报 59.6%",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "value": "56.3%",
+          "note": "官方自报",
+          "source": "https://static.stepfun.com/blog/step-3.7-flash/"
+        },
+        {
+          "name": "ClawEval-1.1",
+          "value": "67.1",
+          "note": "官方自报，发布时开源第一",
+          "source": "https://static.stepfun.com/blog/step-3.7-flash/"
+        }
+      ],
+      "notes": "effort 分 low/medium/high 已合并。接替 2 月开源的 Step 3.5 Flash（AA 已标记淘汰，未单列）。",
+      "sources": [
+        "https://static.stepfun.com/blog/step-3.7-flash/",
+        "https://github.com/stepfun-ai/Step-3.7-Flash",
+        "https://artificialanalysis.ai/providers/stepfun",
+        "https://openrouter.ai/stepfun/step-3.7-flash"
+      ]
+    }
+  ]
+}

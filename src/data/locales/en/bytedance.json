@@ -23,7 +23,8 @@
         "MathVision": "Official figure",
         "Video-MME": "Official figure"
       },
-      "pricing": "¥6 / ¥30 per 1M tokens (~$0.88 / $4.42), cache hit ¥1.2"
+      "pricing": "¥6 / ¥30 per 1M tokens (~$0.88 / $4.42), cache hit ¥1.2",
+      "_zh": "514cdd2a07"
     },
     "doubao-seed-2-1-turbo": {
       "tagline": "Near-Pro capability at half the price",
@@ -39,7 +40,8 @@
       ],
       "notes": "No independent third-party leaderboard results; the tier is set by marking down from 2.1 Pro.",
       "bench": {},
-      "pricing": "¥3 / ¥15 per 1M tokens, cache hit ¥0.6"
+      "pricing": "¥3 / ¥15 per 1M tokens, cache hit ¥0.6",
+      "_zh": "f9ec9971f2"
     },
     "doubao-seed-2-0-pro": {
       "tagline": "The last flagship, out before Spring Gala",
@@ -59,7 +61,8 @@
         "LMArena Vision": "#43",
         "SWE-bench Verified": "Official figure"
       },
-      "pricing": "$0.47 / $2.37 per 1M tokens"
+      "pricing": "$0.47 / $2.37 per 1M tokens",
+      "_zh": "d7465008e1"
     },
     "doubao-seed-2-0-lite": {
       "tagline": "The lightweight tier for everyday Doubao chats",
@@ -76,7 +79,8 @@
       "bench": {
         "GPQA Diamond": "Official figure"
       },
-      "pricing": "$0.09 / $0.53 per 1M tokens"
+      "pricing": "$0.09 / $0.53 per 1M tokens",
+      "_zh": "664ee88903"
     },
     "seed-oss-36b": {
       "tagline": "ByteDance's only open-weights LLM to date",
@@ -91,21 +95,8 @@
         "Controllable thinking"
       ],
       "notes": "Released over a year ago; ByteDance has not open-sourced a newer LLM since.",
-      "bench": {}
-    },
-    "doubao-seed-2-2": {
-      "tagline": "Slated for August, delayed to grind on coding",
-      "highlights": [
-        "Originally due August 2026; a formal delay was reported on 8/30",
-        "The delay is mainly to polish coding, tool calling and agent architecture"
-      ],
-      "tags": [
-        "Coding",
-        "Agents",
-        "Rumored"
-      ],
-      "notes": "Unreleased; the tier is a placeholder estimate. ByteDance is also rumored to be working on a next-gen giant model codenamed \"Atlas\".",
-      "bench": {}
+      "bench": {},
+      "_zh": "6d31f20c37"
     },
     "seedream-5-0-pro": {
       "tagline": "The design-savvy flagship for commercial imagery",
@@ -121,11 +112,13 @@
       ],
       "notes": "ByteDance concedes fine-grained text rendering and edit consistency still have room to improve; the gap to GPT Image 2.5 is clear.",
       "bench": {
-        "LMArena Text-to-Image": "#10 (leader GPT Image 2.5 Sunburst at 1424)",
+        "LMArena Text-to-Image": "#10",
         "LMArena Image Edit": "#8",
-        "AA Text-to-Image": "#15"
+        "AA Text-to-Image": "#15",
+        "AA Image Editing": "#11"
       },
-      "pricing": "$0.09/image (AA figure)"
+      "pricing": "$0.09/image (AA figure)",
+      "_zh": "3ff01b874d"
     },
     "seedream-5-0-lite": {
       "tagline": "The lightweight pick for fast everyday images",
@@ -142,7 +135,8 @@
         "LMArena Text-to-Image": "#38",
         "LMArena Image Edit": "#27"
       },
-      "pricing": "$0.035/image (AA figure)"
+      "pricing": "$0.035/image (AA figure)",
+      "_zh": "04db04a78c"
     },
     "seedream-4-5": {
       "tagline": "Last-gen workhorse, still ahead on editing",
@@ -160,7 +154,8 @@
         "LMArena Image Edit": "#25",
         "AA Text-to-Image": "#25"
       },
-      "pricing": "$0.04/image (AA figure)"
+      "pricing": "$0.04/image (AA figure)",
+      "_zh": "2c03062765"
     },
     "seedance-2-5": {
       "tagline": "30 seconds in one take, 50 assets at once",
@@ -177,10 +172,13 @@
       ],
       "notes": "Shown at the FORCE conference 6/23 and live on Jimeng/Doubao 7/31. Community chatter often calls it the video king, but it isn't on the AA video leaderboards yet.",
       "bench": {
-        "LMArena Image-to-Video": "#4 (leader MiniMax H3 at 1495)",
-        "LMArena Text-to-Video": "#7 (leader Gemini Omni 1.1 Flash at 1516)"
+        "LMArena Image-to-Video": "#4 (rank range 2–6; 15.7k votes)",
+        "LMArena Text-to-Video": "#7 (rank range 3–9; 8k votes)",
+        "Arena Video Edit": "#2 (rank range 1–3, statistically tied with Wan3.0 at 1414; 429 votes)",
+        "Design Arena Multi-Image-to-Video": "#1 (8/16 snapshot; H3 1355 is #2)"
       },
-      "pricing": "~$0.23/sec (720p, ModelArk); 1080p ~$0.6/sec"
+      "pricing": "~$0.23/sec (720p, ModelArk); 1080p ~$0.6/sec",
+      "_zh": "bf58b4b663"
     },
     "seedance-2-0": {
       "tagline": "The one that drew Hollywood's legal letters",
@@ -201,7 +199,8 @@
         "AA Text-to-Video": "#5",
         "AA Image-to-Video": "#4"
       },
-      "pricing": "$9.07/min (AA figure, 720p)"
+      "pricing": "$9.07/min (AA figure, 720p)",
+      "_zh": "e4c3d4f440"
     },
     "seedance-1-5-pro": {
       "tagline": "ByteDance's first video model with native audio",
@@ -217,7 +216,8 @@
       "bench": {
         "LMArena Text-to-Video": "#22",
         "LMArena Image-to-Video": "#24"
-      }
+      },
+      "_zh": "498901d3f0"
     }
   }
 }

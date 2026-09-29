@@ -21,13 +21,16 @@
       "bench": {
         "Terminal-Bench 2.1": "Third-party compilation",
         "DeepSWE": "Third-party compilation",
-        "腾讯内部盲评（203 个工程任务）": "GLM-5.3 2.92, Kimi K3 2.94"
+        "腾讯内部盲评（203 个工程任务）": "GLM-5.3 2.92, Kimi K3 2.94",
+        "Code Arena WebDev": "#12, above Grok 4.7 / DeepSeek V4.1 Flash / GLM-5.3",
+        "Agent Arena": "#12, highest among Chinese models"
       },
       "pricing": "$0.834 / $2.501 per 1M tokens (cached $0.042)",
       "params": "770B MoE / 49B active",
       "benchName": {
         "腾讯内部盲评（203 个工程任务）": "Tencent internal blind eval (203 engineering tasks)"
-      }
+      },
+      "_zh": "e16dc9c677"
     },
     "hy3": {
       "tagline": "The workhorse behind Tencent's app family",
@@ -46,7 +49,8 @@
       "bench": {
         "LMArena Text": "~#62"
       },
-      "params": "295B MoE / 21B active"
+      "params": "295B MoE / 21B active",
+      "_zh": "cd33abd6ed"
     },
     "hy3-preview": {
       "tagline": "The first release after the Hunyuan rebuild",
@@ -63,7 +67,8 @@
       "bench": {
         "LMArena Text": "~#145"
       },
-      "params": "295B MoE / 21B active"
+      "params": "295B MoE / 21B active",
+      "_zh": "58f9edc101"
     },
     "hy-image-3.5-preview": {
       "tagline": "Thinks before it draws, and it's cheap",
@@ -79,7 +84,11 @@
         "Text rendering"
       ],
       "notes": "Not yet in the top 30 of LMArena or AA image boards. Tier is set from the previous generation's ranking plus the self-reported gain, without upgrading it.",
-      "pricing": "$0.024/image (GMI Cloud); official API ¥0.15/image"
+      "pricing": "$0.024/image (GMI Cloud); official API ¥0.15/image",
+      "bench": {
+        "AA Image Editing": "#14 (HunyuanImage 3.5 Preview)"
+      },
+      "_zh": "745a2ed679"
     },
     "hunyuanimage-3.0": {
       "tagline": "One of the biggest open multimodal image models",
@@ -97,7 +106,8 @@
       "bench": {
         "LMArena Image Edit": "hunyuan-image-3.0-instruct, ~#23"
       },
-      "params": "80B MoE / 13B active"
+      "params": "80B MoE / 13B active",
+      "_zh": "4de9793891"
     },
     "hunyuanvideo-1.5": {
       "tagline": "Open video model that runs on a consumer GPU",
@@ -113,7 +123,8 @@
         "Lightweight"
       ],
       "notes": "Not in the top 30 of LMArena or AA video boards. Tencent currently has no video model that competes with closed frontier ones like Seedance or Veo; a rumored HunyuanVideo 2.0 is unconfirmed.",
-      "context": "1080p (upscaled) · 10s"
+      "context": "1080p (upscaled) · 10s",
+      "_zh": "c7e12a6cd1"
     }
   }
 }

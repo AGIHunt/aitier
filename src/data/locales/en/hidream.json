@@ -22,7 +22,8 @@
         "AA Image-to-Video": "#5",
         "LMArena Image-to-Video": "~#7"
       },
-      "pricing": "~$5.8/min"
+      "pricing": "~$5.8/min",
+      "_zh": "69ee0441ac"
     },
     "hidream-o1-image-1.5": {
       "tagline": "The image model in the O1 omnimodal family",
@@ -38,7 +39,8 @@
       "bench": {
         "AA Text-to-Image": "~#28"
       },
-      "pricing": "~$0.08/image"
+      "pricing": "~$0.08/image",
+      "_zh": "7978200f6b"
     }
   }
 }

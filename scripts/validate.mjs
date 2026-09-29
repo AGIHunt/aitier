@@ -1,6 +1,6 @@
 // 校验数据：字段、枚举、重复 id、tier/score 对齐、档位名额、英文覆盖层完整性
 // 用法：node scripts/validate.mjs [--strict]   （--strict 时缺英文翻译也算错误，打包前用）
-import { CATS, TIER_RANGE, allModels, loadLocale, loadVendors } from './lib.mjs'
+import { CATS, TIER_RANGE, allModels, loadLocale, loadVendors, zhHash } from './lib.mjs'
 
 const strict = process.argv.includes('--strict')
 const CJK = /[\u4e00-\u9fff]/
@@ -43,6 +43,7 @@ for (const { id: vid, data: d } of loadVendors()) {
       const e = en.models?.[m.id]
       if (!e) miss(`${m.id} 缺英文`)
       else {
+        if (e._zh !== zhHash(m)) warn(file, `${m.id} 中文已改动，英文可能过期（改完译文后运行 node scripts/i18n-stamp.mjs ${m.id}）`)
         if (!e.tagline) miss(`${m.id} 缺英文 tagline`)
         if ((e.highlights ?? []).length !== m.highlights.length) miss(`${m.id} 英文 highlights 条数不一致`)
         if ((e.tags ?? []).length !== m.tags.length) miss(`${m.id} 英文 tags 条数不一致`)

@@ -22,7 +22,7 @@
       "context": "1M",
       "pricing": "$2 / $6 每百万 token",
       "tier": "A",
-      "score": 86,
+      "score": 85,
       "tags": [
         "编程",
         "Agent",
@@ -60,6 +60,12 @@
           "value": "67.7",
           "note": "首版，官方数据",
           "source": "https://www.datacamp.com/blog/qwen3-8-max"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+2.5%",
+          "note": "第 20",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "reasoning_effort 分 low/medium/xhigh 三档。8/12 放出的开源版 Qwen3.8-2.4T-A95B 只有文本、无 1M 上下文，自带商用门槛许可；托管版为闭源多模态。",
@@ -447,7 +453,7 @@
       "context": "1080p·30s",
       "pricing": "$0.05–0.20/秒（480p–1080p）",
       "tier": "SS",
-      "score": 93,
+      "score": 94,
       "tags": [
         "文生视频",
         "图生视频",
@@ -481,10 +487,28 @@
           "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
         },
         {
-          "name": "Video Edit Arena（带音频）",
-          "value": "1189",
-          "note": "8 月第 1",
-          "source": "https://www.atlascloud.ai/blog/tips/wan-3.0-video-edit-arena"
+          "name": "AA Video Editing（带音频）",
+          "value": "1188",
+          "note": "第 1（领先第 2 名 56 分）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/video-editing"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1414",
+          "note": "第 1（名次区间 1–3）",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1480",
+          "note": "第 3",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1476",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/text-to-video"
         }
       ],
       "notes": "8/6 起公测，8/24 正式上线；万相首个纯闭源旗舰，未放权重。官方承认音质和画面文字渲染仍待改进。",
@@ -547,7 +571,7 @@
       "context": "1080p·15s",
       "pricing": "¥0.9–1.6/秒（720p–1080p）",
       "tier": "A",
-      "score": 80,
+      "score": 83,
       "tags": [
         "音画同出",
         "口型同步",
@@ -565,6 +589,18 @@
           "value": "1147",
           "note": "第 8",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1272",
+          "note": "第 5",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（带音频）",
+          "value": "1104",
+          "note": "第 7",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
         }
       ],
       "notes": "出自阿里 ATH AI 创新事业部，不属通义万相团队；1.0 版 4 月匿名登顶视频榜后才公布身份。",

@@ -31,35 +31,35 @@
       ],
       "tagline": "Fable 级智力，Opus 价格再砍四成",
       "highlights": [
-        "LMArena Text Arena 1509 分空降第一，Anthropic 包揽前六",
-        "Code Arena WebDev 1818 分第一，领先 GPT-6 Astra 26 分",
-        "AA 智能指数 58 分第一，领先 Fable 5.1 / GPT-6 Astra 5 分",
+        "LMArena Text Arena 1509 分第一（仅 2307 票，名次区间 1–10）",
+        "Code Arena WebDev 1827 分第一，领先 GPT-6 Astra 35 分",
+        "AA 智能指数 57.6 第一，领先 Fable 5.1 与 GPT-6 Astra 约 4–5 分",
         "官方称典型负载成本比 Opus 5 低 40%，输出快 30% 以上"
       ],
       "benchmarks": [
         {
           "name": "LMArena Text",
           "value": "1509",
-          "note": "第 1（High 档）",
-          "source": "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"
+          "note": "第 1（High 档；仅 2307 票，名次区间 1–10，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/text"
         },
         {
           "name": "Code Arena WebDev",
-          "value": "1818",
-          "note": "第 1（Max 档）",
-          "source": "https://agihunt.info/e/1a0d1f26389003f0e8e4c2bd7b6"
+          "value": "1827",
+          "note": "第 1（Max 档，领先 GPT-6 Astra 35 分，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "Agent Arena",
-          "value": "+12.15%",
-          "note": "第 2，仅次 Fable 5.1 Max；每任务中位成本 $1.31",
-          "source": "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3"
+          "value": "+11.8%",
+          "note": "第 2（High 档），仅次 Fable 5.1 Max（9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/agent"
         },
         {
           "name": "AA Intelligence Index",
-          "value": "58",
-          "note": "第 1（max 档）",
-          "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+          "value": "57.6",
+          "note": "第 1（max 档，9/29 抓取）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "Terminal-Bench 4.0",
@@ -78,6 +78,12 @@
           "value": "69.69%",
           "note": "第 1",
           "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "66.0",
+          "note": "第 2（Claude Code，max），仅次 Sonnet 5.5",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "effort 分 low/medium(默认)/high/xhigh/max，已合并；Fast 模式 $8/$40。写作仍被评落后 Astra，部分开发者认为硬核编码不及 Fable 5.1。",
@@ -116,9 +122,9 @@
       "benchmarks": [
         {
           "name": "AA Intelligence Index",
-          "value": "56",
-          "note": "第 2（max 档）",
-          "source": "https://agihunt.info/e/1a0e954eb0a26a9b53112e759a0"
+          "value": "56.0",
+          "note": "第 2（max 档）；LMArena 尚未入榜",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "Terminal-Bench 4.0",
@@ -137,6 +143,12 @@
           "value": "80.1%",
           "note": "partial",
           "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "68.4",
+          "note": "第 1（Claude Code + max）",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "五档 effort 已合并。max 档单任务约 19.3 万输出 token、$7.60/任务，AA 测到的最高耗 token；AA 评测基于预发布版。LMArena 名次待出，有望冲 SS。",
@@ -158,8 +170,8 @@
       "params": null,
       "context": "1M",
       "pricing": "$10 / $50 每百万 token（缓存读 $0.25）",
-      "tier": "S",
-      "score": 91,
+      "tier": "SS",
+      "score": 94,
       "tags": [
         "长程 Agent",
         "编程",
@@ -168,7 +180,7 @@
       ],
       "tagline": "Mythos 级大脑的公开版",
       "highlights": [
-        "Agent Arena 第一（Max 档），净改进 +13.84%",
+        "Agent Arena 第一（Max 档），净改进 +14.1%",
         "Terminal-Bench 4.0 55.8%，比 Fable 5 高 13.8 个点",
         "GDPval-AA v2 1853，HLE（带工具）65.0%",
         "官方称典型负载比 Fable 5 便宜约 25%，缓存读降 75%"
@@ -176,20 +188,20 @@
       "benchmarks": [
         {
           "name": "Agent Arena",
-          "value": "+13.84%",
-          "note": "第 1（Max 档），每任务 $3.51",
-          "source": "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3"
+          "value": "+14.1%",
+          "note": "第 1（Max 档，9/29 抓取）",
+          "source": "https://arena.ai/leaderboard/agent"
         },
         {
           "name": "AA Intelligence Index",
-          "value": "53",
-          "note": "与 GPT-6 Astra 并列",
-          "source": "https://agihunt.info/e/1a0cc10520e07e502c3036bd6ae"
+          "value": "53.4",
+          "note": "max 档；按模型去重第 3，略高于 GPT-6 Astra 52.7",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "Terminal-Bench 4.0",
           "value": "55.8%",
-          "note": "官方",
+          "note": "官方；同一模型的 Mythos 5.1（放宽护栏版）为 60.9%",
           "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
         },
         {
@@ -197,6 +209,24 @@
           "value": "1853",
           "note": "官方",
           "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1501",
+          "note": "第 5（Max 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1751",
+          "note": "第 3（Max 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "62.2",
+          "note": "Claude Code + max，第 4 行（Astra 61.6）",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "Opus 之上的 Mythos 级档位，与 Mythos 5.1 同一模型但带安全分类器；默认 effort high。Opus 5.5 发布后性价比被压，不少用户转投 Opus 5.5。",
@@ -205,78 +235,6 @@
         "https://platform.claude.com/docs/en/models/fable-5-1/overview",
         "https://agihunt.info/e/1a0e8fdfe57f38cdfa0884287a3",
         "https://agihunt.info/e/1a0d9c67144ec4c679d4ad63775"
-      ]
-    },
-    {
-      "id": "claude-mythos-5-1",
-      "name": "Claude Mythos 5.1",
-      "category": "llm",
-      "family": "Claude Mythos",
-      "released": "2026-09-01",
-      "status": "released",
-      "openWeights": false,
-      "params": null,
-      "context": "1M",
-      "pricing": "$10 / $50 每百万 token（仅限邀请）",
-      "tier": "S",
-      "score": 91,
-      "tags": [
-        "网络安全",
-        "生命科学",
-        "长程 Agent"
-      ],
-      "tagline": "不对外开放的满血 Fable",
-      "highlights": [
-        "与 Fable 5.1 同一模型，放宽网络安全与生物护栏",
-        "Terminal-Bench 4.0 60.9%，高于 Fable 5.1 的 55.8%",
-        "仅 Project Glasswing 成员可用（AWS、苹果、微软等）",
-        "Mythos 5 已自主发现类 CRISPR 新酶系统 ART"
-      ],
-      "benchmarks": [
-        {
-          "name": "Terminal-Bench 4.0",
-          "value": "60.9%",
-          "note": "官方",
-          "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
-        }
-      ],
-      "notes": "Mythos 为 Opus 之上顶配层：Mythos Preview（2026-04-07）→ Mythos 5（06-09，与 Fable 5 同模型）→ Mythos 5.1。邀请制，不计划公开发布。",
-      "sources": [
-        "https://platform.claude.com/docs/en/models/mythos-5-1/overview",
-        "https://anthropic.com/glasswing",
-        "https://platform.claude.com/docs/en/about-claude/pricing",
-        "https://agihunt.info/e/1a0cf79e04b1f4547107c66bfc4"
-      ]
-    },
-    {
-      "id": "claude-fable-5-5",
-      "name": "Claude Fable 5.5",
-      "category": "llm",
-      "family": "Claude Fable",
-      "released": null,
-      "status": "rumored",
-      "openWeights": false,
-      "params": null,
-      "context": null,
-      "pricing": null,
-      "tier": "S",
-      "score": 90,
-      "tags": [
-        "长程 Agent",
-        "推理"
-      ],
-      "tagline": "传闻中的下一代 Fable",
-      "highlights": [
-        "9/25 起网传 Anthropic 内部 Slack 热议 Fable 5.5",
-        "9/29 World of AI 以「Fable 5.5 泄露」为头条，内容未证实",
-        "社区普遍认为 Opus 5.5 已追平 Fable 5.1，Fable 5.5 不会太远"
-      ],
-      "benchmarks": [],
-      "notes": "无官方信息、无跑分；另有 9/5 传闻称新预训练模型（被称 Fable 5.2）10 月初到来。档位为占位，发布后重评。",
-      "sources": [
-        "https://agihunt.info/e/1a0dac6b57ca79b30e045a087c7",
-        "https://agihunt.info/e/1a0ebfa54c45ad690c610791643",
-        "https://agihunt.info/e/1a0ca24157b4509cf02670c367e"
       ]
     },
     {
@@ -290,8 +248,8 @@
       "params": null,
       "context": "1M",
       "pricing": "$5 / $25 每百万 token",
-      "tier": "A",
-      "score": 86,
+      "tier": "S",
+      "score": 89,
       "tags": [
         "编程",
         "Agent",
@@ -300,28 +258,46 @@
       "tagline": "半价逼近 Fable 5 的上代主力",
       "highlights": [
         "官方称以一半价格接近 Fable 5 前沿水平",
-        "AA 智能指数 51 分，Terminal-Bench 4.0 52.3%",
-        "Code Arena WebDev 1692 分（Max），被 Opus 5.5 超 126 分",
+        "AA 智能指数 50.8，Terminal-Bench 4.0 52.3%",
+        "Code Arena WebDev 1693 分（Max），被 Opus 5.5 超 134 分",
         "官方称 ARC-AGI 3 分数为次优模型三倍"
       ],
       "benchmarks": [
         {
           "name": "AA Intelligence Index",
-          "value": "51",
-          "note": null,
-          "source": "https://agihunt.info/e/1a0cc10520e07e502c3036bd6ae"
+          "value": "50.8",
+          "note": "max 档；按模型去重第 5，高于 GPT-6 Sol 47.5",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "LMArena Text",
           "value": "1491",
           "note": "第 11（High 档）",
-          "source": "https://agihunt.info/e/1a0deb33b117945c68f9fd3ec5c"
+          "source": "https://arena.ai/leaderboard/text"
         },
         {
           "name": "Terminal-Bench 4.0",
           "value": "52.3%",
           "note": "官方",
           "source": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1693",
+          "note": "第 4（Max 档），高于 GPT-6 Sol 1681",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+9.5%",
+          "note": "第 4（Max 档），高于 GPT-6 Sol（第 6）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "59.7",
+          "note": "Claude Code + max",
+          "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
       "notes": "跑分高于 Fable 5，但口碑一般、被嫌难沟通；现为 legacy，官方建议迁移 Opus 5.5。",
@@ -343,7 +319,7 @@
       "context": "1M",
       "pricing": "$10 / $50 每百万 token",
       "tier": "A",
-      "score": 85,
+      "score": 87,
       "tags": [
         "长程 Agent",
         "编程",
@@ -368,6 +344,30 @@
           "value": "63.8%",
           "note": "官方",
           "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "49.6",
+          "note": "max 档（AA 已标为被取代）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1504",
+          "note": "第 3（High 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1627",
+          "note": "第 14（High 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+8.0%",
+          "note": "第 7（High 档）",
+          "source": "https://arena.ai/leaderboard/agent"
         }
       ],
       "notes": "与 Mythos 5 同一模型，Fable 带拒答分类器；知识截止 2026-01；已被 Fable 5.1 取代，仍可用。",
@@ -426,7 +426,7 @@
       "context": "1M",
       "pricing": "$5 / $25 每百万 token",
       "tier": "B",
-      "score": 76,
+      "score": 78,
       "tags": [
         "编程",
         "Agent"
@@ -437,7 +437,26 @@
         "Opus 5.5 网络滥用类请求会回退到 Opus 4.8",
         "Opus 5 在 Frontier-Bench 上成绩超其两倍"
       ],
-      "benchmarks": [],
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "41.8",
+          "note": "max 档（已被取代）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+6.9%",
+          "note": "第 8（High 档），高于 GPT-5.6 Sol",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "LMArena Text",
+          "value": "1480",
+          "note": "第 22（High 档）",
+          "source": "https://arena.ai/leaderboard/text"
+        }
+      ],
       "notes": "legacy 仍在服务，支持 Fast 模式（$10/$50）；知识截止 2026-01。",
       "sources": [
         "https://platform.claude.com/docs/en/models/opus-4-8/overview",
@@ -483,7 +502,7 @@
           "source": "https://anthropic.com/glasswing"
         }
       ],
-      "notes": "聊天偏好榜强，但 Agent/编程已明显落后 5 代；同代还有 Opus 4.7（2026-04）、Opus 4.5（2025-11）仍在服务，未单列。",
+      "notes": "聊天偏好榜强，但 Agent/编程已明显落后 5 代；同代 Opus 4.5（2025-11）仍在服务，未单列。",
       "sources": [
         "https://platform.claude.com/docs/en/about-claude/model-deprecations",
         "https://anthropic.com/glasswing",
@@ -629,6 +648,65 @@
       "sources": [
         "https://www.anthropic.com/claude-sonnet-5-5",
         "https://agihunt.info/e/1a0ca10ebe321c83ce4dafc1725"
+      ]
+    },
+    {
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "category": "llm",
+      "family": "Claude 4",
+      "released": "2026-04-16",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1M",
+      "pricing": "$5 / $25 每百万 token",
+      "tier": "B",
+      "score": 76,
+      "tags": [
+        "编程",
+        "对话",
+        "Agent"
+      ],
+      "tagline": "4 代中坚，Text Arena 仍居前五",
+      "highlights": [
+        "2026-09 Text Arena 仍排第 4（1502 分，6.4 万票）",
+        "首个开放 xhigh 档，Claude Code 默认用 xhigh",
+        "CursorBench 70%，较 Opus 4.6 的 58% 大幅跃升",
+        "换新分词器，同样文本约多 0–35% token"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1502",
+          "note": "第 4（High 档，9/29 快照）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1557",
+          "note": "第 30（High 档）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "40.7",
+          "note": "max 档，AA 估算值（已被取代）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "CursorBench",
+          "value": "70%",
+          "note": "官方",
+          "source": "https://www.anthropic.com/news/claude-opus-4-7"
+        }
+      ],
+      "notes": "legacy 仍在服务，退役不早于 2027-04-16；知识截止 2026-01。官方称能力弱于同期 Mythos Preview，并加了网络安全高风险请求拦截。",
+      "sources": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://platform.claude.com/docs/en/models/opus-4-7/overview",
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://arena.ai/leaderboard/text"
       ]
     }
   ],

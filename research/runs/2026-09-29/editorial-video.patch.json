@@ -1,0 +1,7 @@
+{
+  "changes": [
+    { "id": "seedance-2-5", "tier": "SSS", "score": 98, "reason": "作者判断：Seedance 2.5 是当前最强视频模型（EDITORIAL 2026-09-29）；证据：Arena 视频编辑第 2（与第 1 统计并列）、Design Arena 多图生视频第 1、30 秒单镜 / 50 份参考" },
+    { "id": "gemini-omni-1-1-flash", "tier": "SS", "score": 96, "reason": "Arena 文生视频第 1 属实但仅 1.8k 票、AA 未收录、仍为 preview；按编辑口径 SSS 只留 Seedance 2.5" },
+    { "id": "minimax-h3", "name": "MiniMax H3", "family": "Hailuo 海螺", "reason": "名称规范：H3 即海螺 Hailuo 3" }
+  ]
+}

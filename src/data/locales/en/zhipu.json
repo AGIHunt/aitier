@@ -23,10 +23,12 @@
         "LMArena Text": "#24 (glm-5.3-max)",
         "LMArena Code": "#18 (glm-5.3-max)",
         "DeepSWE v1.1": "Kimi K3 67.5, Fable 5 69.7",
-        "Terminal-Bench 3.0": "GPT-5.6 Sol 34.6"
+        "Terminal-Bench 3.0": "GPT-5.6 Sol 34.6",
+        "Agent Arena": "#19 (max)"
       },
       "pricing": "$1.40 / $4.40 per 1M tokens",
-      "params": "744B MoE / 40B active"
+      "params": "744B MoE / 40B active",
+      "_zh": "1e9e907c87"
     },
     "glm-5-3-flash": {
       "tagline": "Bargain native multimodal, a local-run favorite",
@@ -48,7 +50,8 @@
         "LMArena Text": "#35"
       },
       "pricing": "$0.15 / $0.50 per 1M tokens (AA basis)",
-      "params": "320B MoE / 18B active"
+      "params": "320B MoE / 18B active",
+      "_zh": "aae3bf61a5"
     },
     "glm-5-2": {
       "tagline": "The last-gen flagship that hit 1M context",
@@ -69,7 +72,8 @@
         "LMArena Text": "#31"
       },
       "pricing": "$1.40 / $4.40 per 1M tokens",
-      "params": "744B MoE / 40B active"
+      "params": "744B MoE / 40B active",
+      "_zh": "3f68575545"
     },
     "glm-5-1": {
       "tagline": "Open-weights veteran, 8 hours autonomous",
@@ -88,7 +92,8 @@
         "SWE-Bench Pro": "#1 open weights at launch",
         "LMArena Code": "#49"
       },
-      "params": "754B MoE / 40B active"
+      "params": "754B MoE / 40B active",
+      "_zh": "6d556f74b5"
     },
     "glm-5": {
       "tagline": "The base model that started the GLM-5 family",
@@ -107,7 +112,8 @@
         "LMArena Text": "#61",
         "LMArena Code": "#72"
       },
-      "params": "744B MoE / 40B active"
+      "params": "744B MoE / 40B active",
+      "_zh": "17655ddfe0"
     },
     "glm-5v-turbo": {
       "tagline": "A screenshot-to-code vision agent, now retired",
@@ -125,7 +131,8 @@
       "bench": {
         "LMArena Code": "#81"
       },
-      "params": "744B (official figure, multimodal)"
+      "params": "744B (official figure, multimodal)",
+      "_zh": "ad1bff4572"
     },
     "glm-image": {
       "tagline": "Open image gen that knows things",
@@ -143,7 +150,8 @@
       "bench": {
         "LMArena Text-to-Image": "#74",
         "Artificial Analysis Text-to-Image": "#104 of 166"
-      }
+      },
+      "_zh": "c90d374d02"
     }
   }
 }

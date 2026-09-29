@@ -1,0 +1,70 @@
+{
+  "add": [
+    {
+      "vendorId": "anthropic",
+      "model": {
+        "id": "claude-opus-4-7",
+        "name": "Claude Opus 4.7",
+        "category": "llm",
+        "family": "Claude 4",
+        "released": "2026-04-16",
+        "status": "released",
+        "openWeights": false,
+        "params": null,
+        "context": "1M",
+        "pricing": "$5 / $25 每百万 token",
+        "tier": "B",
+        "score": 76,
+        "tags": ["编程", "对话", "Agent"],
+        "tagline": "4 代中坚，Text Arena 仍居前五",
+        "highlights": [
+          "2026-09 Text Arena 仍排第 4（1502 分，6.4 万票）",
+          "首个开放 xhigh 档，Claude Code 默认用 xhigh",
+          "CursorBench 70%，较 Opus 4.6 的 58% 大幅跃升",
+          "换新分词器，同样文本约多 0–35% token"
+        ],
+        "benchmarks": [
+          {
+            "name": "LMArena Text",
+            "value": "1502",
+            "note": "第 4（High 档，9/29 快照）",
+            "source": "https://arena.ai/leaderboard/text"
+          },
+          {
+            "name": "Code Arena WebDev",
+            "value": "1557",
+            "note": "第 30（High 档）",
+            "source": "https://arena.ai/leaderboard/code"
+          },
+          {
+            "name": "AA Intelligence Index",
+            "value": "40.7",
+            "note": "max 档，AA 估算值（已被取代）",
+            "source": "https://artificialanalysis.ai/leaderboards/models"
+          },
+          {
+            "name": "CursorBench",
+            "value": "70%",
+            "note": "官方",
+            "source": "https://www.anthropic.com/news/claude-opus-4-7"
+          }
+        ],
+        "notes": "legacy 仍在服务，退役不早于 2027-04-16；知识截止 2026-01。官方称能力弱于同期 Mythos Preview，并加了网络安全高风险请求拦截。",
+        "sources": [
+          "https://www.anthropic.com/news/claude-opus-4-7",
+          "https://platform.claude.com/docs/en/models/opus-4-7/overview",
+          "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "https://arena.ai/leaderboard/text"
+        ]
+      }
+    }
+  ],
+  "changes": [
+    {
+      "id": "claude-opus-4-6",
+      "notes": "聊天偏好榜强，但 Agent/编程已明显落后 5 代；同代 Opus 4.5（2025-11）仍在服务，未单列。",
+      "reason": "Opus 4.7 单列后，删去 notes 里「Opus 4.7 未单列」的说法"
+    }
+  ],
+  "tierRationale": "Opus 4.7 夹在已收录的 Opus 4.6（B 75，Text 第 2）与 Opus 4.8（B 78，AA 41.8、Agent Arena 第 8）之间：Text Arena 第 4（1502，6.4 万票，样本充足）、Code Arena 第 30（1557）、AA 40.7（估算、已被取代），未进 Agent Arena。聊天偏好强、Agent 与编程已落后 5 代，定 B 76。"
+}

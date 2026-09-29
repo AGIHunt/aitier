@@ -22,10 +22,12 @@
         "AA Intelligence Index": "0902 version, #27/216",
         "Code Arena WebDev": "#1 at the early-September launch; passed by Opus 5.5 after 9/23",
         "LMArena Text": "#5 at the August debut",
-        "SWE-Bench Pro": "Initial release, official figure"
+        "SWE-Bench Pro": "Initial release, official figure",
+        "Agent Arena": "#20"
       },
       "pricing": "$2 / $6 per 1M tokens",
-      "params": "2.4T MoE / 95B active"
+      "params": "2.4T MoE / 95B active",
+      "_zh": "f2a96aec2b"
     },
     "qwen3-8-flash-next": {
       "tagline": "An early preview of the Qwen4 architecture",
@@ -49,7 +51,8 @@
       },
       "pricing": "$0.15 / $0.47 per 1M tokens",
       "context": "262K (extendable to 1M via YaRN; API default 1M)",
-      "params": "125B MoE (plus 51B N-gram embeddings) / 6B active"
+      "params": "125B MoE (plus 51B N-gram embeddings) / 6B active",
+      "_zh": "57d2904032"
     },
     "qwen3-8-27b": {
       "tagline": "The default Qwen for local runners",
@@ -71,7 +74,8 @@
       },
       "pricing": "$0.5 / $3 per 1M tokens (Alibaba Cloud API)",
       "context": "262K (extendable to 1M)",
-      "params": "27B dense"
+      "params": "27B dense",
+      "_zh": "e4be610964"
     },
     "qwen3-8-omni-flash": {
       "tagline": "Omnimodal agent that sees, hears, works",
@@ -91,7 +95,8 @@
         "SWE-bench Pro": "Official figure",
         "OmniVideoBench": "Official figure"
       },
-      "pricing": "$0.15 / $0.47 per 1M tokens"
+      "pricing": "$0.15 / $0.47 per 1M tokens",
+      "_zh": "37a4e437f9"
     },
     "qwen3-7-max": {
       "tagline": "The skipped-over closed flagship",
@@ -109,7 +114,8 @@
       "bench": {
         "AA Intelligence Index": "#88/216"
       },
-      "pricing": "$2.5 / $7.5 per 1M tokens"
+      "pricing": "$2.5 / $7.5 per 1M tokens",
+      "_zh": "fcd3da2c88"
     },
     "qwen3-coder-next": {
       "tagline": "A local coding agent with 3B active",
@@ -127,7 +133,8 @@
       "bench": {
         "SWE-bench Verified": "Official figure, SWE-Agent scaffold"
       },
-      "params": "80B MoE / 3B active"
+      "params": "80B MoE / 3B active",
+      "_zh": "d3884e28a5"
     },
     "qwen3-6-35b-a3b": {
       "tagline": "A small MoE that fits on a laptop",
@@ -143,7 +150,8 @@
       ],
       "notes": "The 3.8 generation skipped sizes below 27B and between 27B and 125B, so small-model users are still on 3.6/3.5.",
       "bench": {},
-      "params": "35B MoE / 3B active"
+      "params": "35B MoE / 3B active",
+      "_zh": "5d48541ad2"
     },
     "qwen-image-2-1": {
       "tagline": "The #1 open-weights text-to-image model",
@@ -161,27 +169,13 @@
       ],
       "notes": "The license changed to Qwen Research License, so commercial use needs separate authorization. The community speculates it was distilled from GPT Image 2, with no evidence.",
       "bench": {
-        "LMArena Text-to-Image": "#17 overall, #1 open (preliminary)"
+        "LMArena Text-to-Image": "#17",
+        "LMArena Image Edit": "#16",
+        "AA Text-to-Image": "#18",
+        "AA Image Editing": "#18"
       },
-      "params": "7B generator (DiT)"
-    },
-    "qwen-image-2-1-edit": {
-      "tagline": "A new bar for open-weights image editing",
-      "highlights": [
-        "LMArena Image Edit 1367, #1 open and #16 overall",
-        "Just 3 points behind GPT-Image-1.5-HF, but ~160 behind leader GPT-Image-2.5",
-        "Full character sheets without a LoRA; community face-swap and pose tools followed fast"
-      ],
-      "tags": [
-        "Image editing",
-        "Open weights",
-        "Multi-image reference"
-      ],
-      "notes": "2.1 is a unified generation/editing model; this entry lists the editing side separately. Community consensus: open editing Qwen-Image 2.1 > Flux 2 Klein 9B.",
-      "bench": {
-        "LMArena Image Edit": "#16 overall, #1 open (preliminary)"
-      },
-      "params": "7B generator (same weights as text-to-image)"
+      "params": "7B generator (DiT)",
+      "_zh": "a3959323f4"
     },
     "qwen-image-2-0": {
       "tagline": "The last-gen unified generate-and-edit model",
@@ -197,9 +191,12 @@
       ],
       "notes": "Served through Alibaba Cloud Model Studio API. No confirmed word on open weights, so treated as closed.",
       "bench": {
-        "LMArena Text-to-Image": "Pro version once ranked #9 (claimed by Alibaba, since slipped)"
+        "LMArena Text-to-Image": "#19 (Pro, 2026-06-22)",
+        "LMArena Image Edit": "#22 (Pro, 2026-06-22)",
+        "AA Text-to-Image": "#20 (Pro, 2026-04-22)"
       },
-      "params": "7B diffusion decoder + 8B Qwen3-VL encoder"
+      "params": "7B diffusion decoder + 8B Qwen3-VL encoder",
+      "_zh": "460359cdd5"
     },
     "wan-3-0": {
       "tagline": "Drop in a slide deck, get a 30-second film",
@@ -220,15 +217,19 @@
         "AA Text-to-Video（无音频）": "#1",
         "AA Text-to-Video（带音频）": "#2",
         "AA Image-to-Video（无音频）": "#3",
-        "Video Edit Arena（带音频）": "#1 in August"
+        "AA Video Editing（带音频）": "#1, 56 points ahead of #2",
+        "Arena Video Edit": "#1 (rank range 1–3)",
+        "LMArena Image-to-Video": "#3",
+        "LMArena Text-to-Video": "#6"
       },
       "pricing": "$0.05–0.20/sec (480p–1080p)",
       "benchName": {
         "AA Text-to-Video（无音频）": "AA Text-to-Video (no audio)",
         "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
         "AA Image-to-Video（无音频）": "AA Image-to-Video (no audio)",
-        "Video Edit Arena（带音频）": "Video Edit Arena (with audio)"
-      }
+        "AA Video Editing（带音频）": "AA Video Editing (with audio)"
+      },
+      "_zh": "ae2b43fdb7"
     },
     "wan-2-7": {
       "tagline": "Four-in-one with first/last-frame control",
@@ -249,7 +250,8 @@
       },
       "benchName": {
         "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)"
-      }
+      },
+      "_zh": "e18fb39b58"
     },
     "happyhorse-1-1": {
       "tagline": "Alibaba's dark horse from anonymous leaderboards",
@@ -265,12 +267,17 @@
       ],
       "notes": "Built by Alibaba's ATH AI Innovation unit, not the Wan team. Version 1.0 topped the video leaderboard anonymously in April before its origin was revealed.",
       "bench": {
-        "AA Text-to-Video（带音频）": "#8"
+        "AA Text-to-Video（带音频）": "#8",
+        "AA Text-to-Video（无音频）": "#5",
+        "AA Image-to-Video（带音频）": "#7"
       },
       "pricing": "¥0.9–1.6/sec (720p–1080p)",
       "benchName": {
-        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)"
-      }
+        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
+        "AA Text-to-Video（无音频）": "AA Text-to-Video (no audio)",
+        "AA Image-to-Video（带音频）": "AA Image-to-Video (with audio)"
+      },
+      "_zh": "ca47e25981"
     },
     "wan-2-2": {
       "tagline": "The last open-weights Wan",
@@ -287,7 +294,51 @@
       ],
       "notes": "Community tests rank open image-to-video as MiniMax H3 > LTX-2.5 > Wan2.2; newer open models have overtaken it.",
       "bench": {},
-      "params": "27B MoE (high/low-noise dual experts); also a dense TI2V-5B"
+      "params": "27B MoE (high/low-noise dual experts); also a dense TI2V-5B",
+      "_zh": "c6c292fe4f"
+    },
+    "qwen-image-3-0-pro": {
+      "tagline": "Alibaba's closed flagship, a newspaper in one go",
+      "highlights": [
+        "LMArena Text-to-Image 1256, #11, tied with Seedream 5.0 Pro",
+        "AA Text-to-Image #14 (1088), AA Image Editing #17 (1077)",
+        "~4.5K-token prompts render whole newspapers, storyboards and infographics in one pass",
+        "Alibaba claims text rendering in 12 languages, down to roughly 10px"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing",
+        "Chinese typography",
+        "Multilingual text"
+      ],
+      "notes": "Launched 7/21 as an invite-only API and opened up fully in early August. Unlike 2.x, no open weights, tech report or official benchmarks. Not in LMArena's top 25 for editing.",
+      "bench": {
+        "LMArena Text-to-Image": "#11",
+        "AA Text-to-Image": "#14",
+        "AA Image Editing": "#17"
+      },
+      "pricing": "$0.04/image (1K), $0.075/image (2K)",
+      "context": "2K (512–2048px, 1:8 to 8:1)",
+      "_zh": "4242afe86b"
+    },
+    "qwen-image-3-0": {
+      "tagline": "The high-volume standard tier of 3.0",
+      "highlights": [
+        "AA Text-to-Image #16 (1074), above Qwen-Image-2.1",
+        "AA Image Editing #24 (1053)",
+        "Flat $0.03/image and 20 RPM, 4x Pro's rate limit"
+      ],
+      "tags": [
+        "Text-to-image",
+        "Image editing"
+      ],
+      "notes": "Same as Qwen-Image-3.0-Standard; not in LMArena's top 25. Closed API.",
+      "bench": {
+        "AA Text-to-Image": "#16",
+        "AA Image Editing": "#24"
+      },
+      "pricing": "$0.03/image (1K/2K)",
+      "_zh": "bbdf9b5714"
     }
   }
 }

@@ -17,7 +17,8 @@
         "Personalized"
       ],
       "notes": "No API. Neither LMArena nor AA lists V8 (AA only has V6.1 from two years ago). The tier is based on community word of mouth, not leaderboards, so confidence is low.",
-      "pricing": "Subscription only (from $10/mo Basic)"
+      "pricing": "Subscription only (from $10/mo Basic)",
+      "_zh": "ce14c4a114"
     }
   }
 }

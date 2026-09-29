@@ -21,7 +21,8 @@
         "AA Image-to-Video": "~#15",
         "AA Text-to-Video": "~#21"
       },
-      "pricing": "~$0.115/sec"
+      "pricing": "~$0.115/sec",
+      "_zh": "6b359cd0ef"
     },
     "pixverse-v5.6": {
       "tagline": "Last-gen workhorse with tons of LMArena votes",
@@ -36,7 +37,8 @@
       "bench": {
         "LMArena Image-to-Video": "~#25"
       },
-      "pricing": "~$0.072/sec"
+      "pricing": "~$0.072/sec",
+      "_zh": "363626830c"
     }
   }
 }
