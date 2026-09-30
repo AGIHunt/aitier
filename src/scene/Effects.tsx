@@ -37,7 +37,8 @@ export function Effects({ quality }: { quality: 'high' | 'low' }) {
         luminanceThreshold={0.3}
         luminanceSmoothing={0.3}
         radius={0.78}
-        levels={quality === 'high' ? 8 : 5}
+        levels={quality === 'high' ? 6 : 4}
+        resolutionScale={0.5}
       />
       <ChromaticAberration
         ref={chroma}

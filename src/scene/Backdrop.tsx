@@ -1,20 +1,20 @@
 import { Stars } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
-import { useMemo, useRef } from 'react'
+import { useFrame, useThree } from '@react-three/fiber'
+import { useEffect, useMemo } from 'react'
 import * as THREE from 'three'
 import { TOWER_TOP } from '../data/tiers'
-import { getGlowTexture } from './cardTexture'
 
+// 星云只在启动时往一张等距柱状贴图里烘焙一次，之后当天空背景用（每帧只采样一次贴图）
 const nebulaVert = /* glsl */ `
-varying vec3 vDir;
+varying vec2 vUv;
 void main() {
-  vDir = normalize(position);
-  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  vUv = uv;
+  gl_Position = vec4(position.xy, 0.0, 1.0);
 }`
 
 const nebulaFrag = /* glsl */ `
 uniform float uTime;
-varying vec3 vDir;
+varying vec2 vUv;
 float hash(vec3 p) { return fract(sin(dot(p, vec3(12.9898, 78.233, 45.164))) * 43758.5453); }
 float noise(vec3 p) {
   vec3 i = floor(p); vec3 f = fract(p);
@@ -24,7 +24,10 @@ float noise(vec3 p) {
 }
 float fbm(vec3 p) { float v = 0.0; float a = 0.5; for (int i = 0; i < 5; i++) { v += a * noise(p); p *= 2.03; a *= 0.5; } return v; }
 void main() {
-  vec3 d = normalize(vDir);
+  // 逐像素把 uv 还原成方向，与 three 的 equirect 背景采样（atan(z, x) / asin(y)）互逆
+  float lon = (vUv.x - 0.5) * 6.28318530718;
+  float lat = (vUv.y - 0.5) * 3.14159265359;
+  vec3 d = vec3(cos(lat) * cos(lon), sin(lat), cos(lat) * sin(lon));
   float h = d.y;
   vec3 top = vec3(0.10, 0.03, 0.20);
   vec3 mid = vec3(0.012, 0.014, 0.04);
@@ -39,34 +42,77 @@ void main() {
   gl_FragColor = vec4(col, 1.0);
 }`
 
+function useBakedNebula() {
+  const gl = useThree((st) => st.gl)
+  const target = useMemo(() => {
+    const rt = new THREE.WebGLRenderTarget(2048, 1024, { type: THREE.HalfFloatType, depthBuffer: false })
+    const mat = new THREE.ShaderMaterial({ vertexShader: nebulaVert, fragmentShader: nebulaFrag, uniforms: { uTime: { value: 0 } } })
+    const quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), mat)
+    const scene = new THREE.Scene()
+    scene.add(quad)
+    const prev = gl.getRenderTarget()
+    gl.setRenderTarget(rt)
+    gl.render(scene, new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1))
+    gl.setRenderTarget(prev)
+    mat.dispose()
+    quad.geometry.dispose()
+    rt.texture.mapping = THREE.EquirectangularReflectionMapping
+    return rt
+  }, [gl])
+  useEffect(() => () => target.dispose(), [target])
+  return target.texture
+}
+
 export function Backdrop() {
-  const mat = useMemo(
-    () =>
-      new THREE.ShaderMaterial({
-        vertexShader: nebulaVert,
-        fragmentShader: nebulaFrag,
-        side: THREE.BackSide,
-        depthWrite: false,
-        uniforms: { uTime: { value: 0 } },
-      }),
-    [],
-  )
-  useFrame((s) => (mat.uniforms.uTime.value = s.clock.elapsedTime))
+  const scene = useThree((st) => st.scene)
+  const sky = useBakedNebula()
+  useEffect(() => {
+    scene.background = sky
+    return () => {
+      scene.background = null
+    }
+  }, [scene, sky])
+  // 星云缓慢自转，代替原来逐帧重算噪声
+  useFrame((st) => {
+    scene.backgroundRotation.y = st.clock.elapsedTime * 0.004
+  })
   return (
     <>
-      <mesh material={mat} renderOrder={-10}>
-        <sphereGeometry args={[480, 48, 32]} />
-      </mesh>
-      <Stars radius={220} depth={120} count={5000} factor={5} saturation={0.6} fade speed={0.6} />
+      <Stars radius={220} depth={120} count={4000} factor={5} saturation={0.6} fade speed={0.6} />
       <RisingMotes />
     </>
   )
 }
 
-/** 沿塔身缓缓上升的光尘 */
+/** 沿塔身缓缓上升的光尘：位移全在顶点着色器里算，CPU 每帧只更新一个时间 uniform */
+const moteVert = /* glsl */ `
+attribute float aSpeed;
+attribute vec3 aColor;
+uniform float uTime;
+uniform float uRange;
+uniform float uPx;
+varying vec3 vColor;
+void main() {
+  vec3 p = position;
+  p.y = -12.0 + mod(p.y + 12.0 + uTime * aSpeed, uRange);
+  vec4 mv = modelViewMatrix * vec4(p, 1.0);
+  gl_Position = projectionMatrix * mv;
+  gl_PointSize = 0.28 * uPx / -mv.z;
+  vColor = aColor;
+}`
+const moteFrag = /* glsl */ `
+varying vec3 vColor;
+void main() {
+  float d = length(gl_PointCoord - 0.5);
+  float a = smoothstep(0.5, 0.0, d);
+  a *= a;
+  gl_FragColor = vec4(vColor * a * 0.85, a * 0.85);
+}`
+
 function RisingMotes({ count = 1400 }) {
-  const ref = useRef<THREE.Points>(null!)
-  const { geo, speeds } = useMemo(() => {
+  const size = useThree((st) => st.size)
+  const dpr = useThree((st) => st.viewport.dpr)
+  const { geo, mat } = useMemo(() => {
     const pos = new Float32Array(count * 3)
     const col = new Float32Array(count * 3)
     const speeds = new Float32Array(count)
@@ -83,33 +129,29 @@ function RisingMotes({ count = 1400 }) {
     }
     const geo = new THREE.BufferGeometry()
     geo.setAttribute('position', new THREE.BufferAttribute(pos, 3))
-    geo.setAttribute('color', new THREE.BufferAttribute(col, 3))
-    return { geo, speeds }
+    geo.setAttribute('aColor', new THREE.BufferAttribute(col, 3))
+    geo.setAttribute('aSpeed', new THREE.BufferAttribute(speeds, 1))
+    // 粒子在动，包围球要足够大，避免被错误剔除
+    geo.boundingSphere = new THREE.Sphere(new THREE.Vector3(0, TOWER_TOP / 2, 0), 200)
+    const mat = new THREE.ShaderMaterial({
+      vertexShader: moteVert,
+      fragmentShader: moteFrag,
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      uniforms: { uTime: { value: 0 }, uRange: { value: TOWER_TOP + 34 }, uPx: { value: 800 } },
+    })
+    return { geo, mat }
   }, [count])
-
-  useFrame((_, dt) => {
-    const p = geo.attributes.position as THREE.BufferAttribute
-    const arr = p.array as Float32Array
-    for (let i = 0; i < count; i++) {
-      arr[i * 3 + 1] += speeds[i] * dt
-      if (arr[i * 3 + 1] > TOWER_TOP + 22) arr[i * 3 + 1] = -12
-    }
-    p.needsUpdate = true
-  })
-
-  return (
-    <points ref={ref} geometry={geo}>
-      <pointsMaterial
-        size={0.28}
-        map={getGlowTexture()}
-        vertexColors
-        transparent
-        opacity={0.85}
-        depthWrite={false}
-        blending={THREE.AdditiveBlending}
-        sizeAttenuation
-        toneMapped={false}
-      />
-    </points>
+  useEffect(
+    () => () => {
+      geo.dispose()
+      mat.dispose()
+    },
+    [geo, mat],
   )
+  // 与 sizeAttenuation 的 PointsMaterial 相同的屏幕尺寸换算
+  mat.uniforms.uPx.value = (size.height * dpr) / 2
+  useFrame((st) => (mat.uniforms.uTime.value = st.clock.elapsedTime))
+  return <points geometry={geo} material={mat} />
 }

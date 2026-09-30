@@ -141,7 +141,10 @@ export function ModelCard({ model, position, index, active }: Props) {
     u.uHover.value = hoverAmt.current
     u.uOpacity.value = THREE.MathUtils.damp(u.uOpacity.value, a * targetOpacity, 8, dt)
     const baseGlow = tier.level <= 1 ? 0.55 : tier.level === 2 ? 0.3 : 0.0
-    ;(glow.current.material as THREE.SpriteMaterial).opacity = (baseGlow + hoverAmt.current * 0.28) * u.uOpacity.value
+    const go = (baseGlow + hoverAmt.current * 0.28) * u.uOpacity.value
+    ;(glow.current.material as THREE.SpriteMaterial).opacity = go
+    // 不可见的光晕不画，省掉大量叠加混合的过度绘制
+    glow.current.visible = go > 0.01
   })
 
   return (

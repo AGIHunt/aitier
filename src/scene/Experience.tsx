@@ -1,6 +1,5 @@
-import { AdaptiveDpr, PerformanceMonitor } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
-import { useMemo, useState } from 'react'
+import { Canvas, useThree } from '@react-three/fiber'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { MODELS_BY_CATEGORY } from '../data'
 import { useStore } from '../store'
 import { Backdrop } from './Backdrop'
@@ -31,11 +30,64 @@ function Tower() {
   )
 }
 
+/**
+ * 自己驱动渲染循环，按场景需要限帧：
+ * - 开场 / 正在交互 / 有选中：60fps（高刷屏上默认会跑到 120，白白翻倍）
+ * - 闲置（只有自动旋转）：30fps
+ * - 窗口失焦：15fps；标签页隐藏：完全停
+ */
+function FrameLimiter({ onSlow }: { onSlow: () => void }) {
+  const advance = useThree((s) => s.advance)
+  useEffect(() => {
+    let raf = 0
+    let last = 0
+    // 只在「应当跑 60fps」的活跃时段测实际帧间隔；连续 3 秒平均低于 ~40fps 才降画质
+    let slowSince = 0
+    let avg = 16.7
+    let degraded = false
+    const touch = () => (runtime.lastInteract = performance.now())
+    window.addEventListener('pointermove', touch, { passive: true })
+    const loop = (t: number) => {
+      raf = requestAnimationFrame(loop)
+      if (document.hidden) return
+      const s = useStore.getState()
+      const active = s.intro || !!s.selectedId || !!s.vs || performance.now() - runtime.lastInteract < 2500
+      const fps = !document.hasFocus() ? 15 : active ? 60 : 30
+      if (t - last < 1000 / fps - 2) return
+      const dt = t - last
+      last = t
+      if (fps === 60 && dt < 200 && !degraded) {
+        avg = avg * 0.9 + dt * 0.1
+        if (avg > 25) {
+          if (!slowSince) slowSince = t
+          else if (t - slowSince > 3000) {
+            degraded = true
+            onSlow()
+          }
+        } else slowSince = 0
+      }
+      advance(t)
+    }
+    raf = requestAnimationFrame(loop)
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('pointermove', touch)
+    }
+  }, [advance, onSlow])
+  return null
+}
+
+const MAX_DPR = 1.5
+
 export function Experience() {
   const [quality, setQuality] = useState<'high' | 'low'>('high')
+  const onSlow = useCallback(() => setQuality('low'), [])
+  // 性能不够时整体降一档：分辨率降到 1、Bloom 层数减少
+  const dpr = quality === 'high' ? Math.min(MAX_DPR, window.devicePixelRatio || 1) : 1
   return (
     <Canvas
-      dpr={[1, typeof window !== 'undefined' && window.innerWidth < 760 ? 1.5 : 1.75]}
+      frameloop="never"
+      dpr={dpr}
       gl={{ antialias: false, powerPreference: 'high-performance', stencil: false }}
       camera={{ fov: 50, near: 0.1, far: 1500, position: [0, -14, 40] }}
       onPointerMissed={() => {
@@ -44,9 +96,7 @@ export function Experience() {
         if (s.selectedId) s.select(null)
       }}
     >
-      <color attach="background" args={['#020208']} />
-      <PerformanceMonitor onDecline={() => setQuality('low')} />
-      <AdaptiveDpr pixelated={false} />
+      <FrameLimiter onSlow={onSlow} />
       <Backdrop />
       <Beam />
       <Tower />
