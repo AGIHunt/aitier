@@ -38,6 +38,8 @@ function Tower() {
  */
 function FrameLimiter({ onSlow }: { onSlow: () => void }) {
   const advance = useThree((s) => s.advance)
+  const get = useThree((s) => s.get)
+  if (import.meta.env.DEV) (window as unknown as { __r3f: typeof get }).__r3f = get
   useEffect(() => {
     let raf = 0
     let last = 0
@@ -66,7 +68,8 @@ function FrameLimiter({ onSlow }: { onSlow: () => void }) {
           }
         } else slowSince = 0
       }
-      advance(t)
+      // frameloop="never" 时 R3F 的 advance 以「秒」计时（毫秒会让所有动画快 1000 倍而狂抖）
+      advance(t / 1000)
     }
     raf = requestAnimationFrame(loop)
     return () => {
