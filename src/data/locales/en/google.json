@@ -1,38 +1,15 @@
 {
   "vendor": {
-    "blurb": "Pro line stuck at 3.1, carried by 3-weekly Flash and Omni video; Gemini 4 Pro in stealth."
+    "blurb": "Gemini 4 Argon is back in the top tier but invite-only; Flash and Omni do the daily work"
   },
   "models": {
-    "gemini-4-pro": {
-      "tagline": "Google's comeback card, in stealth on Arena",
-      "highlights": [
-        "Suspected to be testing blind on Arena as 3.8 Flash, codename Barium-B",
-        "Leaked DeepSWE v1.1 88.7%, above Astra's 86.9%",
-        "Rumored price about 1/5 of Astra's, 2M context",
-        "Community says early October launch; not confirmed by Google"
-      ],
-      "tags": [
-        "Agents",
-        "Coding",
-        "Frontend generation"
-      ],
-      "notes": "All from stealth tests and leaks. One tester says it nears but doesn't reach Opus 5.5; others think the leaked table is fake. Placed at S as a placeholder, to be re-rated at launch.",
-      "bench": {
-        "DeepSWE v1.1": "Leaked, unconfirmed",
-        "Terminal-bench 2.1": "Leaked, unconfirmed",
-        "GDPval-AA v2": "Leaked, unconfirmed"
-      },
-      "pricing": "Rumored $2.25 / $11.25 per 1M tokens",
-      "context": "2M (rumored)",
-      "_zh": "4fc4ed02bc"
-    },
     "gemini-3-8-flash": {
-      "tagline": "Google's best live model at Flash prices",
+      "tagline": "Google's best public model at Flash prices",
       "highlights": [
-        "LMArena Text 1492, #10, above Opus 5",
+        "LMArena Text 1494, #11, still above Opus 5",
         "DeepSWE v1.1 73.7%, just 0.3 points below Opus 5",
         "AA Intelligence Index 41, output ~239 tokens/s",
-        "Third Flash in six weeks; also a cybersecurity edition, 3.8 Flash Cyber"
+        "Gemini 4 Argon isn't public yet; this is still the best Gemini you can call"
       ],
       "tags": [
         "Coding",
@@ -42,15 +19,15 @@
       ],
       "notes": "low/medium/high levels merged. OSWorld-2.0 59% trails Opus 5's 75.4%; still weak on long-horizon agents.",
       "bench": {
-        "LMArena Text": "#10 (high)",
+        "LMArena Text": "#11 (high, 24,828 votes, 9/30 board)",
         "AA Intelligence Index": "high",
         "DeepSWE v1.1": "Opus 5 at 74.0%",
         "HLE-Verified": "Official",
-        "Code Arena WebDev": "#28 (high)",
-        "Agent Arena": "#18 (high)"
+        "Code Arena WebDev": "#28 (high, 8,357 votes)",
+        "Agent Arena": "#19 (high)"
       },
       "pricing": "$0.75 / $3.75 per 1M tokens (promo through year-end; $1.5 / $7.5 from 2027)",
-      "_zh": "4e5fbd8f45"
+      "_zh": "1aaa3a5614"
     },
     "gemini-3-7-flash": {
       "tagline": "The coding workhorse replaced in three weeks",
@@ -149,14 +126,14 @@
         "Multimodal",
         "Long context"
       ],
-      "notes": "Still gemini-3.1-pro-preview in the API. Gemini 3.5 Pro is rumored canceled; the Pro line waits for Gemini 4.",
+      "notes": "Still gemini-3.1-pro-preview in the API. Gemini 3.5 Pro is rumored canceled; Gemini 4 Argon was announced 9/30 but is not public, so 3.1 Pro remains the only Pro you can call for now.",
       "bench": {
         "LMArena Text": "#17",
         "ARC-AGI-2": "Official, 2026-02",
         "GPQA Diamond": "Official, 2026-02"
       },
       "pricing": "$2 / $12 per 1M tokens",
-      "_zh": "609fa20b23"
+      "_zh": "20c767da10"
     },
     "gemma-4-31b": {
       "tagline": "The US open-weights bar that fits on one GPU",
@@ -310,15 +287,14 @@
       "tagline": "The next image model spotted in Flow's code",
       "highlights": [
         "TestingCatalog found NB 2.1 strings in a Flow build",
-        "Originally referenced as Nano Banana 2.5 Flash; the rename reads like a point update",
-        "Some guess it ships the same week as Gemini 4 Pro"
+        "Originally referenced as Nano Banana 2.5 Flash; the rename reads like a point update"
       ],
       "tags": [
         "Text-to-image",
         "Image editing"
       ],
       "notes": "Code traces only, no hands-on tests yet. Score is a placeholder based on Nano Banana 2, to be re-rated at launch.",
-      "_zh": "cfc9d82a51"
+      "_zh": "224ebdb2e1"
     },
     "nano-banana": {
       "tagline": "The original that sparked the banana-edit craze",
@@ -471,6 +447,35 @@
       "notes": "World models have no leaderboard comparable to video generation; tier reflects uniqueness and influence. No reliable news on Genie 4 found.",
       "context": "720p · 24fps, interactive for several minutes",
       "_zh": "6efc3c0a2f"
+    },
+    "gemini-4-argon": {
+      "tagline": "Google's back in the top tier, but not open yet",
+      "highlights": [
+        "LMArena Text 1525, #1 at debut, 20 points clear of #2 (only 4,942 votes)",
+        "AA Intelligence Index 53, level with Fable 5.1 and GPT-6 Astra, below Opus 5.5 at 58",
+        "Vals Index 68.9%, #1; official DeepSWE v1.1 77.9%",
+        "Only #8 on both WebDev and Agent Arena; Fairwind trusted testers only"
+      ],
+      "tags": [
+        "Reasoning",
+        "Enterprise work",
+        "Cybersecurity",
+        "Long output"
+      ],
+      "notes": "Only a High reasoning level is visible, with no Pro/Flash suffix, and the API model ID is unannounced. Access goes first to the US government and Fairwind cyber defenders, then paid API and AI Ultra. Bloomberg reports internal doubts about real-world coding.",
+      "bench": {
+        "LMArena Text": "#1 (High, ±9, only 4,942 votes; #2 is Opus 4.6 High at 1505, 9/30 board)",
+        "AA Intelligence Index": "High; row 8 of 223 on the board; tied #3–5 after per-model dedup (behind Opus 5.5 at 58 and Sonnet 5.5 at 56, level with Fable 5.1 and Astra)",
+        "Code Arena WebDev": "#8 (High, ±14, 2,184 votes; leader Opus 5.5 Max at 1818)",
+        "Agent Arena": "#8 (High, 3,417 sessions, preliminary per Arena; $0.63/task)",
+        "Vals AI Index": "#1 (Sonnet 5.5 at 67.04%, Opus 5.5 at 66.97%; standard error ~±0.9)",
+        "Terminal-Bench 4.0": "AA-measured; below Sonnet 5.5 at 64%, Opus 5.5 at 60%, Astra at 59%",
+        "AutomationBench-AA": "AA-measured #1 (Sonnet 5.5 max at 71.3%); 51.3% on the official AutomationBench basis",
+        "DeepSWE v1.1": "Official, claimed SOTA"
+      },
+      "pricing": "$2 / $10 per 1M tokens (introductory; $4 / $20 afterward)",
+      "context": "1M (1M output cap)",
+      "_zh": "55bd3bc7b6"
     }
   }
 }

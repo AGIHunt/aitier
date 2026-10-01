@@ -637,6 +637,648 @@
           48
         ]
       }
+    },
+    {
+      "id": "2026-10-01",
+      "issue": 2,
+      "tiers": {
+        "qwen3-8-max": [
+          "A",
+          85
+        ],
+        "qwen3-8-flash-next": [
+          "B",
+          78
+        ],
+        "qwen3-8-27b": [
+          "C",
+          70
+        ],
+        "qwen3-8-omni-flash": [
+          "B",
+          73
+        ],
+        "qwen3-7-max": [
+          "C",
+          65
+        ],
+        "qwen3-coder-next": [
+          "D",
+          60
+        ],
+        "qwen3-6-35b-a3b": [
+          "D",
+          57
+        ],
+        "qwen-image-2-1": [
+          "B",
+          77
+        ],
+        "qwen-image-2-0": [
+          "C",
+          70
+        ],
+        "wan-3-0": [
+          "SS",
+          94
+        ],
+        "wan-2-7": [
+          "A",
+          81
+        ],
+        "happyhorse-1-1": [
+          "A",
+          83
+        ],
+        "wan-2-2": [
+          "C",
+          64
+        ],
+        "qwen-image-3-0-pro": [
+          "A",
+          83
+        ],
+        "qwen-image-3-0": [
+          "B",
+          78
+        ],
+        "claude-opus-5-5": [
+          "SSS",
+          98
+        ],
+        "claude-sonnet-5-5": [
+          "S",
+          92
+        ],
+        "claude-fable-5-1": [
+          "SS",
+          94
+        ],
+        "claude-opus-5": [
+          "S",
+          89
+        ],
+        "claude-fable-5": [
+          "A",
+          87
+        ],
+        "claude-sonnet-5": [
+          "B",
+          74
+        ],
+        "claude-opus-4-8": [
+          "B",
+          78
+        ],
+        "claude-opus-4-6": [
+          "B",
+          75
+        ],
+        "claude-mythos-preview": [
+          "B",
+          78
+        ],
+        "claude-sonnet-4-6": [
+          "C",
+          66
+        ],
+        "claude-haiku-4-5": [
+          "E",
+          54
+        ],
+        "claude-haiku-5-5": [
+          "C",
+          70
+        ],
+        "claude-opus-4-7": [
+          "B",
+          76
+        ],
+        "flux-3-video": [
+          "S",
+          88
+        ],
+        "flux-2-max": [
+          "C",
+          68
+        ],
+        "flux-2-klein": [
+          "D",
+          60
+        ],
+        "doubao-seed-2-1-pro": [
+          "B",
+          76
+        ],
+        "doubao-seed-2-1-turbo": [
+          "B",
+          72
+        ],
+        "doubao-seed-2-0-pro": [
+          "C",
+          68
+        ],
+        "doubao-seed-2-0-lite": [
+          "D",
+          62
+        ],
+        "seed-oss-36b": [
+          "E",
+          52
+        ],
+        "seedream-5-0-pro": [
+          "A",
+          84
+        ],
+        "seedream-5-0-lite": [
+          "C",
+          65
+        ],
+        "seedream-4-5": [
+          "C",
+          67
+        ],
+        "seedance-2-5": [
+          "SSS",
+          98
+        ],
+        "seedance-2-0": [
+          "S",
+          89
+        ],
+        "seedance-1-5-pro": [
+          "C",
+          66
+        ],
+        "deepseek-v4-1-flash": [
+          "A",
+          83
+        ],
+        "deepseek-v4-pro": [
+          "B",
+          76
+        ],
+        "deepseek-v4-flash": [
+          "C",
+          68
+        ],
+        "deepseek-v3-2": [
+          "D",
+          60
+        ],
+        "deepseek-v4-1-pro": [
+          "C",
+          70
+        ],
+        "gemini-3-8-flash": [
+          "A",
+          84
+        ],
+        "gemini-3-7-flash": [
+          "B",
+          78
+        ],
+        "gemini-3-6-flash": [
+          "B",
+          74
+        ],
+        "gemini-3-5-flash": [
+          "C",
+          70
+        ],
+        "gemini-3-5-flash-lite": [
+          "C",
+          65
+        ],
+        "gemini-3-1-pro": [
+          "B",
+          73
+        ],
+        "gemma-4-31b": [
+          "C",
+          65
+        ],
+        "gemma-4-26b-a4b": [
+          "D",
+          60
+        ],
+        "gemma-4-12b-unified": [
+          "D",
+          56
+        ],
+        "gemma-4-e4b": [
+          "E",
+          45
+        ],
+        "nano-banana-2": [
+          "A",
+          86
+        ],
+        "nano-banana-pro": [
+          "A",
+          84
+        ],
+        "nano-banana-2-lite": [
+          "B",
+          79
+        ],
+        "nano-banana-2-1": [
+          "C",
+          64
+        ],
+        "nano-banana": [
+          "C",
+          66
+        ],
+        "imagen-4": [
+          "D",
+          60
+        ],
+        "gemini-omni-1-1-flash": [
+          "SS",
+          96
+        ],
+        "gemini-omni-flash": [
+          "S",
+          92
+        ],
+        "veo-3-1": [
+          "B",
+          76
+        ],
+        "veo-3-1-lite": [
+          "B",
+          73
+        ],
+        "genie-3": [
+          "B",
+          74
+        ],
+        "gemini-4-argon": [
+          "S",
+          92
+        ],
+        "hidream-o1-video-1.0": [
+          "S",
+          88
+        ],
+        "hidream-o1-image-1.5": [
+          "C",
+          66
+        ],
+        "kling-4.0": [
+          "B",
+          78
+        ],
+        "kling-4.0-flash": [
+          "B",
+          75
+        ],
+        "kling-3.0": [
+          "B",
+          72
+        ],
+        "kling-image-3.0": [
+          "C",
+          64
+        ],
+        "muse-spark-1-3": [
+          "A",
+          87
+        ],
+        "muse-spark-1-2": [
+          "B",
+          76
+        ],
+        "muse-spark-1-1": [
+          "C",
+          68
+        ],
+        "muse-glimmer": [
+          "D",
+          60
+        ],
+        "llama-4-maverick": [
+          "E",
+          45
+        ],
+        "muse-image": [
+          "S",
+          89
+        ],
+        "muse-video": [
+          "A",
+          84
+        ],
+        "mai-image-2.6": [
+          "S",
+          92
+        ],
+        "mai-image-2.6-flash": [
+          "A",
+          84
+        ],
+        "mai-image-2.5": [
+          "A",
+          85
+        ],
+        "mai-image-2.5-pro": [
+          "A",
+          82
+        ],
+        "mai-image-2.5-flash": [
+          "B",
+          75
+        ],
+        "mai-image-2": [
+          "C",
+          70
+        ],
+        "mai-thinking-1": [
+          "C",
+          67
+        ],
+        "mai-code-1.1-flash": [
+          "D",
+          57
+        ],
+        "midjourney-v8.2": [
+          "B",
+          74
+        ],
+        "minimax-m3-1-flash-preview": [
+          "B",
+          73
+        ],
+        "minimax-m3": [
+          "C",
+          68
+        ],
+        "minimax-m2-7": [
+          "D",
+          60
+        ],
+        "minimax-m2-5": [
+          "D",
+          59
+        ],
+        "minimax-h3": [
+          "SS",
+          95
+        ],
+        "hailuo-2-3": [
+          "D",
+          58
+        ],
+        "minimax-image-01": [
+          "E",
+          42
+        ],
+        "mistral-medium-3-5": [
+          "E",
+          53
+        ],
+        "mistral-small-4": [
+          "E",
+          48
+        ],
+        "mistral-large-3": [
+          "E",
+          44
+        ],
+        "devstral-2": [
+          "E",
+          42
+        ],
+        "ministral-3": [
+          "E",
+          35
+        ],
+        "kimi-k3": [
+          "A",
+          86
+        ],
+        "kimi-k2-6": [
+          "B",
+          76
+        ],
+        "kimi-k2-7-code": [
+          "B",
+          73
+        ],
+        "kimi-k2-5": [
+          "C",
+          66
+        ],
+        "gpt-6-astra": [
+          "SS",
+          94
+        ],
+        "gpt-6-sol": [
+          "A",
+          87
+        ],
+        "gpt-6-luna": [
+          "B",
+          79
+        ],
+        "gpt-5-6-sol": [
+          "A",
+          85
+        ],
+        "gpt-5-6-terra": [
+          "B",
+          76
+        ],
+        "gpt-5-6-luna": [
+          "C",
+          68
+        ],
+        "gpt-5-5": [
+          "B",
+          73
+        ],
+        "gpt-oss-120b": [
+          "D",
+          58
+        ],
+        "gpt-image-2-5-sunburst": [
+          "SSS",
+          98
+        ],
+        "gpt-image-2-5-flare": [
+          "SS",
+          96
+        ],
+        "gpt-image-2": [
+          "SS",
+          93
+        ],
+        "gpt-image-1-5": [
+          "A",
+          81
+        ],
+        "sora-2-pro": [
+          "C",
+          66
+        ],
+        "sora-2": [
+          "D",
+          61
+        ],
+        "gpt-6-1-sol": [
+          "S",
+          91
+        ],
+        "pixverse-v6": [
+          "C",
+          70
+        ],
+        "pixverse-v5.6": [
+          "D",
+          60
+        ],
+        "reve-2.1": [
+          "S",
+          88
+        ],
+        "reve-2.0": [
+          "A",
+          82
+        ],
+        "runway-gen-4.5": [
+          "D",
+          58
+        ],
+        "magi-2-preview": [
+          "B",
+          78
+        ],
+        "vidu-q3-pro": [
+          "C",
+          70
+        ],
+        "vidu-q3-turbo": [
+          "D",
+          62
+        ],
+        "skyreels-v4": [
+          "B",
+          76
+        ],
+        "step-5-preview": [
+          "A",
+          80
+        ],
+        "step-3-7-flash": [
+          "D",
+          62
+        ],
+        "hy4-preview": [
+          "A",
+          84
+        ],
+        "hy3": [
+          "C",
+          66
+        ],
+        "hy3-preview": [
+          "D",
+          57
+        ],
+        "hy-image-3.5-preview": [
+          "B",
+          76
+        ],
+        "hunyuanimage-3.0": [
+          "C",
+          66
+        ],
+        "hunyuanvideo-1.5": [
+          "D",
+          55
+        ],
+        "grok-4-7": [
+          "A",
+          84
+        ],
+        "grok-4-6": [
+          "A",
+          81
+        ],
+        "grok-4-5": [
+          "C",
+          70
+        ],
+        "grok-4-3": [
+          "D",
+          62
+        ],
+        "grok-4-20": [
+          "D",
+          60
+        ],
+        "grok-build-0-1": [
+          "D",
+          58
+        ],
+        "grok-imagine-image-2": [
+          "S",
+          91
+        ],
+        "grok-imagine-image": [
+          "B",
+          75
+        ],
+        "grok-imagine-video-1-5": [
+          "A",
+          86
+        ],
+        "grok-imagine-video": [
+          "B",
+          74
+        ],
+        "mimo-v2.6-pro": [
+          "A",
+          85
+        ],
+        "mimo-v2.6-flash": [
+          "B",
+          78
+        ],
+        "mimo-v2.5-pro": [
+          "C",
+          66
+        ],
+        "glm-5-3": [
+          "A",
+          85
+        ],
+        "glm-5-3-flash": [
+          "B",
+          79
+        ],
+        "glm-5-2": [
+          "B",
+          77
+        ],
+        "glm-5-1": [
+          "C",
+          70
+        ],
+        "glm-5": [
+          "C",
+          64
+        ],
+        "glm-5v-turbo": [
+          "D",
+          58
+        ],
+        "glm-image": [
+          "E",
+          48
+        ]
+      }
     }
   ]
 }

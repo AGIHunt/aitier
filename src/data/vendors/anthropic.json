@@ -31,34 +31,34 @@
       ],
       "tagline": "Fable 级智力，Opus 价格再砍四成",
       "highlights": [
-        "LMArena Text Arena 1509 分第一（仅 2307 票，名次区间 1–10）",
-        "Code Arena WebDev 1827 分第一，领先 GPT-6 Astra 35 分",
-        "AA 智能指数 57.6 第一，领先 Fable 5.1 与 GPT-6 Astra 约 4–5 分",
+        "LMArena Text Arena 1504 分第 4（3932 票，区间 2–14），与前排统计并列",
+        "Code Arena WebDev 1818 分第一，领先 GPT-6 Astra 29 分",
+        "AA 智能指数 58 第一，领先 Fable 5.1 与 GPT-6 Astra 约 5 分",
         "官方称典型负载成本比 Opus 5 低 40%，输出快 30% 以上"
       ],
       "benchmarks": [
         {
           "name": "LMArena Text",
-          "value": "1509",
-          "note": "第 1（High 档；仅 2307 票，名次区间 1–10，9/29 抓取）",
+          "value": "1504",
+          "note": "第 4（High 档，±10，3932 票，名次区间 2–14，9/30 抓取）；Gemini 4 Argon High 1525 居首",
           "source": "https://arena.ai/leaderboard/text"
         },
         {
           "name": "Code Arena WebDev",
-          "value": "1827",
-          "note": "第 1（Max 档，领先 GPT-6 Astra 35 分，9/29 抓取）",
+          "value": "1818",
+          "note": "第 1（Max 档，±17，1976 票，领先 GPT-6 Astra 29 分，9/30 抓取）",
           "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "Agent Arena",
-          "value": "+11.8%",
-          "note": "第 2（High 档），仅次 Fable 5.1 Max（9/29 抓取）",
+          "value": "+13.78%",
+          "note": "第 2（High 档），仅次 Fable 5.1 Max 的 +14.55%（9/30 抓取）",
           "source": "https://arena.ai/leaderboard/agent"
         },
         {
           "name": "AA Intelligence Index",
-          "value": "57.6",
-          "note": "第 1（max 档，9/29 抓取）",
+          "value": "58",
+          "note": "第 1（max 档，10/1 复核；页面取整显示）",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
@@ -123,8 +123,14 @@
         {
           "name": "AA Intelligence Index",
           "value": "56.0",
-          "note": "第 2（max 档）；LMArena 尚未入榜",
+          "note": "第 2（max 档 56，仅次 Opus 5.5 max 的 58；10/1 复核）",
           "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1709",
+          "note": "第 5（High 档，±16，1810 票，9/30 抓取）；落后 Fable 5.1 Max 42 分",
+          "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "Terminal-Bench 4.0",
@@ -151,7 +157,7 @@
           "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
-      "notes": "五档 effort 已合并。max 档单任务约 19.3 万输出 token、$7.60/任务，AA 测到的最高耗 token；AA 评测基于预发布版。LMArena 名次待出，有望冲 SS。",
+      "notes": "五档 effort 已合并。max 档单任务约 19.3 万输出 token、$7.60/任务，AA 测到的最高耗 token。Code Arena 首秀第 5，Text / Agent Arena 截至 9/30 未入榜，维持 S。",
       "sources": [
         "https://www.anthropic.com/claude-sonnet-5-5",
         "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",

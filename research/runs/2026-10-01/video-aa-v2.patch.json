@@ -1,0 +1,8 @@
+{
+  "changes": [
+    { "id": "flux-3-video", "tier": "S", "score": 88, "reason": "AA 文生视频 v2.0 第 5 + Arena 文生视频第 3，两榜都在头部；图生视频仅第 9，放 S 底" },
+    { "id": "grok-imagine-video-1-5", "tier": "A", "score": 86, "reason": "AA 文生视频 v2.0 仅第 11（1046）、AA 图生第 8；Arena 文生第 4 是小样本 agent 版。两榜分歧大，S 偏高" },
+    { "id": "skyreels-v4", "score": 76, "reason": "AA 文生视频 v2.0 第 8（1074），高于 HappyHorse-1.1 与 Grok 1.5；但 AA 图生仅第 16、Arena 未见，B 档内上调" },
+    { "id": "magi-2-preview", "tier": "B", "score": 78, "reason": "AA 文生视频 v2.0 第 18（964），低于 Kling 3.0；图生视频第 9。A 档偏高" }
+  ]
+}

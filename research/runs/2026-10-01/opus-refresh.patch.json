@@ -1,0 +1,29 @@
+{
+  "changes": [
+    {
+      "id": "claude-opus-5-5",
+      "highlights": [
+        "AA 智能指数 57.6 第一，领先 Fable 5.1 / GPT-6 Astra / Gemini 4 Argon 约 4–5 分",
+        "Code Arena WebDev 1818 分第一，Agent Arena +13.78% 第二",
+        "LMArena Text 1504 分第 4，榜首 9/30 被 Gemini 4 Argon（1525）拿走",
+        "官方称典型负载成本比 Opus 5 低 40%，输出快 30% 以上"
+      ],
+      "reason": "按 10/1 抓取刷新榜单数字；Text 榜首易主但 AA、WebDev 仍第 1，SSS 依据不变"
+    }
+  ],
+  "benchmarkUpdates": [
+    {
+      "id": "claude-opus-5-5",
+      "benchmarks": [
+        {"name": "AA Intelligence Index", "value": "57.6", "note": "第 1（max 档）", "source": "https://artificialanalysis.ai/"},
+        {"name": "Code Arena WebDev", "value": "1818", "note": "第 1（Max 档，10/1 抓取）", "source": "https://arena.ai/leaderboard/webdev"},
+        {"name": "Agent Arena", "value": "+13.78%", "note": "第 2，仅次 Fable 5.1 Max（10/1 抓取）", "source": "https://arena.ai/leaderboard/agent"},
+        {"name": "LMArena Text", "value": "1504", "note": "第 4（3,932 票，10/1 抓取）；第 1 为 Gemini 4 Argon 1525", "source": "https://arena.ai/leaderboard/text"},
+        {"name": "Terminal-Bench 4.0", "value": "66.4%", "note": "官方；GPT-6 Astra 57.9%"},
+        {"name": "SimpleBench", "value": "88.4%", "note": "第 1"},
+        {"name": "Vals AI Index", "value": "66.97%", "note": "第 3（10/1 抓取，指数疑似换版；第 1 为 Gemini 4 Argon 68.9%）"},
+        {"name": "AA Coding Agent Index", "value": "66.0", "note": "第 2（Claude Code，max），仅次 Sonnet 5.5"}
+      ]
+    }
+  ]
+}

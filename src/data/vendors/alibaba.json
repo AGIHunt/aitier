@@ -463,7 +463,7 @@
       "tagline": "丢个 PPT 就能出 30 秒片子",
       "highlights": [
         "AA 文生视频（无音频）榜第 1，Elo 1335",
-        "AA 文生视频（带音频）第 2，仅落后 Gemini Omni Flash 4 分",
+        "AA 文生视频 v2.0（带音频）第 1，Elo 1157，20 个分项榜 10 个第一",
         "单次最长 30 秒，是 Wan2.7 的两倍；可直接读 PDF/PPT/Excel",
         "8 月登顶带音频视频编辑榜（Elo 1189）"
       ],
@@ -471,13 +471,13 @@
         {
           "name": "AA Text-to-Video（无音频）",
           "value": "1335",
-          "note": "第 1",
+          "note": "第 1（v1 旧口径）",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
         },
         {
-          "name": "AA Text-to-Video（带音频）",
-          "value": "1229",
-          "note": "第 2",
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1157",
+          "note": "第 1（6391 样本，CI 1147–1167）；20 个分项榜拿下 10 个第 1",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
         },
         {

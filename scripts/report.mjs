@@ -19,9 +19,10 @@ for (const c of cats.length ? cats : CATS) {
     const b = withBench ? ' | ' + m.benchmarks.map((x) => `${x.name}=${x.value}${x.note ? `(${x.note})` : ''}`).join('; ') : ''
     console.log(`${String(i + 1).padStart(3)}. ${m.tier.padEnd(3)} ${String(m.score).padStart(5)}  ${m.name}  [${m.vendorId}/${m.id}] ${m.status}${m.released ? ' ' + m.released : ''}${mv}${b}`)
   })
-  if (prev) {
-    const gone = Object.keys(prev.tiers).filter((id) => !allModels().some((m) => m.id === id))
-    if (gone.length) console.log(`  已移除：${gone.join(', ')}`)
-  }
   console.log()
+}
+if (prev) {
+  const all = allModels()
+  const gone = Object.keys(prev.tiers).filter((id) => !all.some((m) => m.id === id))
+  if (gone.length) console.log(`已移除：${gone.join(', ')}`)
 }

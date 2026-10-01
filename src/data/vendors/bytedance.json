@@ -393,6 +393,12 @@
       ],
       "benchmarks": [
         {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1143",
+          "note": "第 3（6375 样本，CI 1133–1153）；人体结构、对话口型两项第 1；$34.12/分钟为前十最贵",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
           "name": "Arena Video Edit",
           "value": "1410",
           "note": "第 2（名次区间 1–3，与 Wan3.0 1414 统计并列；429 票）",
@@ -417,7 +423,7 @@
           "source": "https://x.com/DesignArena/status/2089139856660476065"
         }
       ],
-      "notes": "6/23 FORCE 大会亮相，7/31 上线即梦/豆包；社区口碑常称其为视频王者，但尚未进入 AA 视频榜",
+      "notes": "6/23 FORCE 大会亮相，7/31 上线即梦/豆包；社区口碑常称其为视频王者。9/30 首次进入 AA 文生视频 v2.0 榜，排第 3，与榜首 Wan 3.0 差 14 分",
       "sources": [
         "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
         "https://arena.ai/leaderboard/text-to-video",

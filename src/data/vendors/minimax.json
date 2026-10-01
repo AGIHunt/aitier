@@ -220,7 +220,7 @@
       "tagline": "开源的全模态视频模型，图生视频榜第一",
       "highlights": [
         "LMArena 图生视频 1495 排第 1，文生视频 1460 排第 8",
-        "AA 文生视频（带音频）第 4，图生视频第 2，均为开源第一",
+        "AA 文生视频 v2.0 第 4（1138），图生视频第 2，均为开源第一",
         "原生立体声，2K 分辨率，单条 4–15 秒",
         "单次可参考 9 张图、3 段视频、3 段音频"
       ],
@@ -244,9 +244,9 @@
           "source": "https://arena.ai/leaderboard/video-edit"
         },
         {
-          "name": "Artificial Analysis Text-to-Video（带音频）",
-          "value": "1220",
-          "note": "第 4；fal 后训练版 H3 Max 1227 第 3",
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1138",
+          "note": "第 4（768p，6343 样本，与 Seedance 2.5 统计并列）；基于 H3 后训练的 Utopai X 1150 第 2",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
         },
         {
@@ -258,11 +258,11 @@
         {
           "name": "Artificial Analysis Text-to-Video（无音频）",
           "value": "1302",
-          "note": "第 3",
+          "note": "第 3（v1 旧口径，v2.0 无音频榜未核到）",
           "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
         }
       ],
-      "notes": "用户说的「H3」即此款，官方名 MiniMax H3，品牌名海螺 3（Hailuo 3.0）。WAIC 7/17 亮相，8/3 开源，许可排除美、欧、英、韩。",
+      "notes": "用户说的「H3」即此款，官方名 MiniMax H3，品牌名海螺 3。8/3 开源，许可排除美、欧、英、韩。衍生后训练版：fal 的 H3 Max、Utopai X（仅 PAI 平台内可用），均不单列。",
       "sources": [
         "https://www.minimax.io/blog/minimax-h3",
         "https://huggingface.co/MiniMaxAI/MiniMax-H3",

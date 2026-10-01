@@ -202,7 +202,7 @@
       "tagline": "Drop in a slide deck, get a 30-second film",
       "highlights": [
         "#1 on AA text-to-video (no audio), Elo 1335",
-        "#2 on AA text-to-video (with audio), just 4 points behind Gemini Omni Flash",
+        "#1 on AA text-to-video v2.0 (with audio), Elo 1157; tops 10 of 20 sub-leaderboards",
         "Up to 30s per generation, twice Wan2.7; reads PDF/PPT/Excel directly",
         "Topped the with-audio video editing arena in August (Elo 1189)"
       ],
@@ -214,8 +214,8 @@
       ],
       "notes": "Public beta from 8/6, formally launched 8/24. Wan's first fully closed flagship, with no weights released. Alibaba admits audio quality and in-frame text rendering still need work.",
       "bench": {
-        "AA Text-to-Video（无音频）": "#1",
-        "AA Text-to-Video（带音频）": "#2",
+        "AA Text-to-Video（无音频）": "#1 (legacy v1 basis)",
+        "AA Text-to-Video v2.0（带音频）": "#1 (6,391 samples, CI 1147–1167); #1 on 10 of 20 sub-leaderboards",
         "AA Image-to-Video（无音频）": "#3",
         "AA Video Editing（带音频）": "#1, 56 points ahead of #2",
         "Arena Video Edit": "#1 (rank range 1–3)",
@@ -225,11 +225,11 @@
       "pricing": "$0.05–0.20/sec (480p–1080p)",
       "benchName": {
         "AA Text-to-Video（无音频）": "AA Text-to-Video (no audio)",
-        "AA Text-to-Video（带音频）": "AA Text-to-Video (with audio)",
+        "AA Text-to-Video v2.0（带音频）": "AA Text-to-Video v2.0 (with audio)",
         "AA Image-to-Video（无音频）": "AA Image-to-Video (no audio)",
         "AA Video Editing（带音频）": "AA Video Editing (with audio)"
       },
-      "_zh": "ae2b43fdb7"
+      "_zh": "93f9fa8fb8"
     },
     "wan-2-7": {
       "tagline": "Four-in-one with first/last-frame control",

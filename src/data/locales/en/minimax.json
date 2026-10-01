@@ -91,7 +91,7 @@
       "tagline": "Open-weights omni video, #1 on image-to-video",
       "highlights": [
         "LMArena Image-to-Video 1495, #1; Text-to-Video 1460, #8",
-        "AA Text-to-Video (with audio) #4, Image-to-Video #2, both #1 among open models",
+        "AA Text-to-Video v2.0 #4 (1138), Image-to-Video #2, both #1 among open models",
         "Native stereo audio, 2K resolution, 4–15s per clip",
         "References up to 9 images, 3 videos and 3 audio clips per generation"
       ],
@@ -101,23 +101,23 @@
         "Open weights",
         "Multi-reference"
       ],
-      "notes": "\"H3\" refers to this model: official name MiniMax H3, brand name Hailuo 3 (Hailuo 3.0). Shown at WAIC on 7/17 and open-sourced 8/3, under a license that excludes the US, EU, UK and South Korea.",
+      "notes": "\"H3\" refers to this model: official name MiniMax H3, brand name Hailuo 3. Open-sourced 8/3 under a license that excludes the US, EU, UK and South Korea. Post-trained derivatives (fal's H3 Max, Utopai X, available only inside PAI) are not listed separately.",
       "bench": {
         "LMArena Image-to-Video": "#1 (57k votes, ±5)",
         "LMArena Text-to-Video": "#8",
-        "Artificial Analysis Text-to-Video（带音频）": "#4; fal's post-trained H3 Max (1227) is #3",
+        "AA Text-to-Video v2.0（带音频）": "#4 (768p, 6,343 samples, statistically tied with Seedance 2.5); Utopai X, post-trained from H3, is #2 at 1150",
         "Artificial Analysis Image-to-Video（带音频）": "#2; H3 Max (fal) at 1194 is #1",
         "Arena Video Edit": "#3",
-        "Artificial Analysis Text-to-Video（无音频）": "#3"
+        "Artificial Analysis Text-to-Video（无音频）": "#3 (legacy v1 basis; not verified on the v2.0 no-audio board)"
       },
       "pricing": "~$0.13/sec (2K, third-party figure)",
       "params": "33B dense (~20B active at inference)",
       "benchName": {
-        "Artificial Analysis Text-to-Video（带音频）": "Artificial Analysis Text-to-Video (with audio)",
+        "AA Text-to-Video v2.0（带音频）": "AA Text-to-Video v2.0 (with audio)",
         "Artificial Analysis Image-to-Video（带音频）": "Artificial Analysis Image-to-Video (with audio)",
         "Artificial Analysis Text-to-Video（无音频）": "Artificial Analysis Text-to-Video (no audio)"
       },
-      "_zh": "14dfa69bd4"
+      "_zh": "9a4d59d478"
     },
     "hailuo-2-3": {
       "tagline": "Last-gen Hailuo, fully superseded by H3",

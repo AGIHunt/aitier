@@ -1,0 +1,326 @@
+{
+  "changes": [
+    {
+      "id": "claude-sonnet-5-5",
+      "notes": "五档 effort 已合并。max 档单任务约 19.3 万输出 token、$7.60/任务，AA 测到的最高耗 token。Code Arena 首秀第 5，Text / Agent Arena 截至 9/30 未入榜，维持 S。",
+      "reason": "LMArena 首批成绩（WebDev 第 5）不支持升 SS，维持 S 92，仅更新备注",
+      "evidence": [
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    {
+      "id": "claude-opus-5-5",
+      "highlights": [
+        "LMArena Text Arena 1504 分第 4（3932 票，区间 2–14），与前排统计并列",
+        "Code Arena WebDev 1818 分第一，领先 GPT-6 Astra 29 分",
+        "AA 智能指数 58 第一，领先 Fable 5.1 与 GPT-6 Astra 约 5 分",
+        "官方称典型负载成本比 Opus 5 低 40%，输出快 30% 以上"
+      ],
+      "reason": "榜单数字刷新：Text Arena 被 Gemini 4 Argon 超过，掉到第 4；档位不动，是否仍独占 SSS 由主 agent 结合 Gemini 4 结论判断",
+      "evidence": [
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard/code",
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "highlights": [
+        "LMArena 图生视频 1495 排第 1，文生视频 1460 排第 8",
+        "AA 文生视频 v2.0 第 4（1138），图生视频第 2，均为开源第一",
+        "原生立体声，2K 分辨率，单条 4–15 秒",
+        "单次可参考 9 张图、3 段视频、3 段音频"
+      ],
+      "notes": "用户说的「H3」即此款，官方名 MiniMax H3，品牌名海螺 3。8/3 开源，许可排除美、欧、英、韩。衍生后训练版：fal 的 H3 Max、Utopai X（仅 PAI 平台内可用），均不单列。",
+      "reason": "AA 文生视频榜换成 v2.0 新口径；Utopai X 作为 H3 衍生版记在备注，不单独收录",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0f28e0646a5d02936d63bc93c"
+      ]
+    },
+    {
+      "id": "seedance-2-5",
+      "notes": "6/23 FORCE 大会亮相，7/31 上线即梦/豆包；社区口碑常称其为视频王者。9/30 首次进入 AA 文生视频 v2.0 榜，排第 3，与榜首 Wan 3.0 差 14 分",
+      "reason": "Seedance 2.5 已进 AA 榜（原备注写未收录）；SSS 是作者口径，不动",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0f28e0646a5d02936d63bc93c"
+      ]
+    },
+    {
+      "id": "wan-3-0",
+      "highlights": [
+        "AA 文生视频（无音频）榜第 1，Elo 1335",
+        "AA 文生视频 v2.0（带音频）第 1，Elo 1157，20 个分项榜 10 个第一",
+        "单次最长 30 秒，是 Wan2.7 的两倍；可直接读 PDF/PPT/Excel",
+        "8 月登顶带音频视频编辑榜（Elo 1189）"
+      ],
+      "reason": "AA 文生视频 v2.0 新口径下升到第 1；档位 SS 94 不动",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0f28e0646a5d02936d63bc93c"
+      ]
+    },
+    {
+      "id": "flux-3-video",
+      "notes": "7/23 发布，8/4 API 全量开放，官方称胜过 Seedance 2.0。9/30 进入 AA 文生视频 v2.0 榜第 5。同一底座还衍生出 7B 开源机器人模型 FLUX 3 Action。",
+      "reason": "已进 AA v2.0 榜（原备注写未收录）；档位暂不动，见报告",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+      ]
+    },
+    {
+      "id": "kling-4.0",
+      "notes": "9/28 官宣，完整版 10 月上线，目前内测中。截至 10/1 AA 与 Arena 视频榜均未收录，AA 匿名模型 Cello 是否为它仍无官方确认。定档是暂定。",
+      "reason": "10/1 复核：仍无任何榜单成绩，Cello 身份未确认，维持 B 78",
+      "evidence": [
+        "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+        "https://arena.ai/leaderboard/text-to-video",
+        "https://agihunt.info/e/1a0dd81448059859b56f6edaf6d"
+      ]
+    }
+  ],
+  "benchmarkUpdates": [
+    {
+      "id": "claude-sonnet-5-5",
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "56.0",
+          "note": "第 2（max 档 56，仅次 Opus 5.5 max 的 58；10/1 复核）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1709",
+          "note": "第 5（High 档，±16，1810 票，9/30 抓取）；落后 Fable 5.1 Max 42 分",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "70.6%",
+          "note": "官方；AA 实测 64%",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "GDPval-AA v2.1",
+          "value": "1844",
+          "note": "Opus 5.5 为 1846",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "OSWorld 2.1",
+          "value": "80.1%",
+          "note": "partial",
+          "source": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "68.4",
+          "note": "第 1（Claude Code + max）",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-5-5",
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1504",
+          "note": "第 4（High 档，±10，3932 票，名次区间 2–14，9/30 抓取）；Gemini 4 Argon High 1525 居首",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1818",
+          "note": "第 1（Max 档，±17，1976 票，领先 GPT-6 Astra 29 分，9/30 抓取）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+13.78%",
+          "note": "第 2（High 档），仅次 Fable 5.1 Max 的 +14.55%（9/30 抓取）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "58",
+          "note": "第 1（max 档，10/1 复核；页面取整显示）",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "66.4%",
+          "note": "官方；GPT-6 Astra 57.9%",
+          "source": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+          "name": "SimpleBench",
+          "value": "88.4%",
+          "note": "第 1",
+          "source": "https://agihunt.info/e/1a0d47069a370628d4c7cddb80e"
+        },
+        {
+          "name": "Vals AI Index",
+          "value": "69.69%",
+          "note": "第 1",
+          "source": "https://www.deeplearning.ai/the-batch/claude-opus-5-5-leaps-forward"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "66.0",
+          "note": "第 2（Claude Code，max），仅次 Sonnet 5.5",
+          "source": "https://artificialanalysis.ai/#coding-agents"
+        }
+      ]
+    },
+    {
+      "id": "minimax-h3",
+      "benchmarks": [
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1495",
+          "note": "第 1（57k 票 ±5）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1460",
+          "note": "第 8",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1392",
+          "note": "第 3",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1138",
+          "note": "第 4（768p，6343 样本，与 Seedance 2.5 统计并列）；基于 H3 后训练的 Utopai X 1150 第 2",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "Artificial Analysis Image-to-Video（带音频）",
+          "value": "1181",
+          "note": "第 2；H3 Max（fal）1194 第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "Artificial Analysis Text-to-Video（无音频）",
+          "value": "1302",
+          "note": "第 3（v1 旧口径，v2.0 无音频榜未核到）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        }
+      ]
+    },
+    {
+      "id": "seedance-2-5",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1143",
+          "note": "第 3（6375 样本，CI 1133–1153）；人体结构、对话口型两项第 1；$34.12/分钟为前十最贵",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1410",
+          "note": "第 2（名次区间 1–3，与 Wan3.0 1414 统计并列；429 票）",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1477",
+          "note": "第 4（名次区间 2–6；15.7k 票）",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1474",
+          "note": "第 7（名次区间 3–9；8k 票）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "Design Arena Multi-Image-to-Video",
+          "value": "1400",
+          "note": "第 1（8/16 快照，H3 1355 第 2）",
+          "source": "https://x.com/DesignArena/status/2089139856660476065"
+        }
+      ]
+    },
+    {
+      "id": "wan-3-0",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video（无音频）",
+          "value": "1335",
+          "note": "第 1（v1 旧口径）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1157",
+          "note": "第 1（6391 样本，CI 1147–1167）；20 个分项榜拿下 10 个第 1",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "AA Image-to-Video（无音频）",
+          "value": "1362",
+          "note": "第 3",
+          "source": "https://artificialanalysis.ai/video/leaderboard/image-to-video"
+        },
+        {
+          "name": "AA Video Editing（带音频）",
+          "value": "1188",
+          "note": "第 1（领先第 2 名 56 分）",
+          "source": "https://artificialanalysis.ai/video/leaderboard/video-editing"
+        },
+        {
+          "name": "Arena Video Edit",
+          "value": "1414",
+          "note": "第 1（名次区间 1–3）",
+          "source": "https://arena.ai/leaderboard/video-edit"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1480",
+          "note": "第 3",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1476",
+          "note": "第 6",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        }
+      ]
+    },
+    {
+      "id": "flux-3-video",
+      "benchmarks": [
+        {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1129",
+          "note": "第 5（5628 样本）；高于 Gemini Omni Flash 1.1 的 1120",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Text-to-Video",
+          "value": "1493",
+          "note": "第 3（票数约 1300，误差 ±17）",
+          "source": "https://arena.ai/leaderboard/text-to-video"
+        },
+        {
+          "name": "LMArena Image-to-Video",
+          "value": "1449",
+          "note": "约第 9",
+          "source": "https://arena.ai/leaderboard/image-to-video"
+        }
+      ]
+    }
+  ]
+}

@@ -17,13 +17,17 @@
         "Native audio",
         "Text rendering"
       ],
-      "notes": "Released 7/23, API fully open 8/4; BFL claims it beats Seedance 2.0. Not yet in the AA video top 30. The same base also spawned FLUX 3 Action, a 7B open robotics model.",
+      "notes": "Released 7/23, API fully open 8/4; BFL claims it beats Seedance 2.0. Entered the AA text-to-video v2.0 leaderboard at #5 on 9/30. The same base also spawned FLUX 3 Action, a 7B open robotics model.",
       "bench": {
+        "AA Text-to-Video v2.0（带音频）": "#5 (5,628 samples); ahead of Gemini Omni Flash 1.1's 1120",
         "LMArena Text-to-Video": "#3 (~1,300 votes, ±17)",
         "LMArena Image-to-Video": "~#9"
       },
       "pricing": "2K $0.40/sec, 4K $0.80/sec",
-      "_zh": "34d854a35c"
+      "_zh": "817edc1137",
+      "benchName": {
+        "AA Text-to-Video v2.0（带音频）": "AA Text-to-Video v2.0 (with audio)"
+      }
     },
     "flux-2-max": {
       "tagline": "FLUX.2's top-quality tier, a developer favorite",

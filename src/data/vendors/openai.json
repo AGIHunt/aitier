@@ -20,7 +20,7 @@
       "openWeights": false,
       "params": null,
       "context": "1M",
-      "pricing": "$10 / $50 每百万 token（缓存输入 $1，Fast 模式 2 倍价）",
+      "pricing": "$10 / $50 每百万 token（缓存输入 $1，Fast 模式 2 倍价，Ultrafast 6 倍价）",
       "tier": "SS",
       "score": 94,
       "tags": [
@@ -39,20 +39,20 @@
       "benchmarks": [
         {
           "name": "Artificial Analysis Intelligence Index",
-          "value": "52.7",
-          "note": "max 档；按模型去重排第 4（Opus 5.5 57.6 / Sonnet 5.5 56.0 / Fable 5.1 53.4 之后）",
+          "value": "53",
+          "note": "max 档；按模型去重并列第 3（Opus 5.5 58 / Sonnet 5.5 56 之后，与 Fable 5.1、Gemini 4 Argon 同为 53；10/1 抓取）",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "LMArena Code (WebDev)",
-          "value": "1792",
-          "note": "第 2（max 档）",
+          "value": "1789",
+          "note": "第 2（max 档，5,918 票；Opus 5.5 1818，9/30 榜）",
           "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "LMArena Text",
-          "value": "1478",
-          "note": "第 26（max 档）",
+          "value": "1476",
+          "note": "第 30（max 档，9/30 榜）",
           "source": "https://arena.ai/leaderboard/text"
         },
         {
@@ -75,8 +75,8 @@
         },
         {
           "name": "Agent Arena",
-          "value": "+10.4%",
-          "note": "第 3（max 档）",
+          "value": "+12.18%",
+          "note": "第 3（max 档，9/30 榜）",
           "source": "https://arena.ai/leaderboard/agent"
         },
         {
@@ -86,7 +86,7 @@
           "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
-      "notes": "推理档位 low–max 合并。文本对话竞技场排名偏后（第 26），强项集中在 Agent/编程/网安；HLE(带工具) 57.2% 落后 Fable 5.1。",
+      "notes": "推理档位 low–max 合并。DevDay 新增 Ultrafast 速度档（最高 300 token/s，6 倍价）。Text Arena 仅第 30，强项在 Agent/编程；6.1 Astra 已取消。",
       "sources": [
         "https://openai.com/index/gpt-6-astra/",
         "https://www.datacamp.com/blog/gpt-6-astra",
@@ -105,8 +105,8 @@
       "params": null,
       "context": "1.05M",
       "pricing": "$2 / $10 每百万 token（缓存输入 $0.20）",
-      "tier": "S",
-      "score": 88,
+      "tier": "A",
+      "score": 87,
       "tags": [
         "编程",
         "Agent",
@@ -122,20 +122,20 @@
       "benchmarks": [
         {
           "name": "Artificial Analysis Intelligence Index",
-          "value": "47.5",
-          "note": "max 档；按模型去重第 8",
+          "value": "48",
+          "note": "max 档；上线 7 天即被 GPT-6.1 Sol（52）取代",
           "source": "https://artificialanalysis.ai/leaderboards/models"
         },
         {
           "name": "LMArena Code (WebDev)",
-          "value": "1681",
-          "note": "第 5",
+          "value": "1689",
+          "note": "第 7（max 档，9/30 榜；6.1 Sol 为 1759）",
           "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "LMArena Text",
-          "value": "1457",
-          "note": "第 60（max 档）",
+          "value": "1456",
+          "note": "第 66（max 档，9/30 榜）",
           "source": "https://arena.ai/leaderboard/text"
         },
         {
@@ -152,8 +152,8 @@
         },
         {
           "name": "Agent Arena",
-          "value": "+8.8%",
-          "note": "第 6（max 档）",
+          "value": "+10.65%",
+          "note": "第 4（max 档，9/30 榜）",
           "source": "https://arena.ai/leaderboard/agent"
         },
         {
@@ -163,7 +163,7 @@
           "source": "https://artificialanalysis.ai/#coding-agents"
         }
       ],
-      "notes": "推理档位 none–max 合并。首发有图像理解降级 bug，周末已修复；有实测称 DeepSWE 略低于 5.6 Sol。",
+      "notes": "推理档位 none–max 合并。上线 7 天即被同价的 GPT-6.1 Sol 取代（未见下线公告）；写作盲评反而好于 6.1 Sol。",
       "sources": [
         "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
         "https://www.vellum.ai/blog/gpt-6-sol-and-luna-benchmarks-explained",
@@ -752,6 +752,88 @@
         "https://arena.ai/leaderboard/text-to-video",
         "https://agihunt.info/e/1a0e85651908a7c10e95d1ad50c",
         "https://agihunt.info/e/1a0d08ff52d8259a4b323ac2c8c"
+      ]
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "name": "GPT-6.1 Sol",
+      "category": "llm",
+      "family": "GPT-6",
+      "released": "2026-09-29",
+      "status": "released",
+      "openWeights": false,
+      "params": null,
+      "context": "1.05M",
+      "pricing": "$2 / $10 每百万 token（缓存输入 $0.10，Fast 模式 2 倍价）",
+      "tier": "S",
+      "score": 91,
+      "tags": [
+        "编程",
+        "Agent",
+        "电脑操作",
+        "性价比"
+      ],
+      "tagline": "五分之一价格的 Astra，干活特化",
+      "highlights": [
+        "AA 智能指数 52，距 GPT-6 Astra 仅 1 分，单任务成本不到其 1/4",
+        "Code Arena WebDev 1759 分排第 3，高于 Fable 5.1",
+        "官方：DeepSWE v1.1 打平 Astra，OSWorld 2.0 只差 2.1 分",
+        "$2/$10 与 GPT-6 Sol 同价，缓存输入降到 $0.10"
+      ],
+      "benchmarks": [
+        {
+          "name": "AA Intelligence Index",
+          "value": "52",
+          "note": "max 档；按模型去重第 6（Opus 5.5 58 / Sonnet 5.5 56 / Fable 5.1、Astra、Gemini 4 Argon 53）；low 42 / medium 48 / high 50 / xhigh 51",
+          "source": "https://artificialanalysis.ai/leaderboards/models"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1759",
+          "note": "第 3（max 档，仅 1,264 票；Opus 5.5 1818、Astra 1789、Fable 5.1 1751，9/30 榜）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "AA Coding Agent Index",
+          "value": "≈60",
+          "note": "AA 口径：max 档比 GPT-6 Sol 高 3 分、比 Astra 低 2 分（具体数值未在榜单页看到）",
+          "source": "https://x.com/ArtificialAnlys/status/2105025585332605357"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "+12 分",
+          "note": "AA 实测相对 GPT-6 Sol 的提升；绝对值未查到",
+          "source": "https://x.com/ArtificialAnlys/status/2105025585332605357"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "打平 Astra",
+          "note": "官方数据，比 GPT-6 Sol 高 6.4 分，成本约 Astra 1/5",
+          "source": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "name": "OSWorld 2.0",
+          "value": "Astra −2.1",
+          "note": "官方数据，比 GPT-6 Sol 高约 7 分，单任务成本约 Astra 1/7",
+          "source": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "name": "AutomationBench",
+          "value": "Opus 5.5 +2.2",
+          "note": "官方数据，medium 档，成本约 Opus 5.5 的 1/3",
+          "source": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        }
+      ],
+      "notes": "档位 low–max 合并；Ultrafast 是速度档不是型号，6.1 Sol 版待上。Text / Agent Arena 未入榜；写作与前端口碑不及 Claude 5.5。",
+      "sources": [
+        "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "https://x.com/ArtificialAnlys/status/2105025585332605357",
+        "https://artificialanalysis.ai/models/gpt-6-1-sol",
+        "https://x.com/arena/status/2105367595193172084",
+        "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+        "https://agihunt.info/e/1a0ee2621ab01d4b3c5e7d3fb44",
+        "https://agihunt.info/e/1a0ee7b52ec8e6eb3f0f73d0d54"
       ]
     }
   ],

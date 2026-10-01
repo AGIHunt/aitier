@@ -21,8 +21,8 @@
       "params": null,
       "context": "4K·20s",
       "pricing": "2K $0.40/秒，4K $0.80/秒",
-      "tier": "A",
-      "score": 87,
+      "tier": "S",
+      "score": 88,
       "tags": [
         "文生视频",
         "图生视频",
@@ -38,6 +38,12 @@
       ],
       "benchmarks": [
         {
+          "name": "AA Text-to-Video v2.0（带音频）",
+          "value": "1129",
+          "note": "第 5（5628 样本）；高于 Gemini Omni Flash 1.1 的 1120",
+          "source": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+        },
+        {
           "name": "LMArena Text-to-Video",
           "value": "1493",
           "note": "第 3（票数约 1300，误差 ±17）",
@@ -50,7 +56,7 @@
           "source": "https://arena.ai/leaderboard/image-to-video"
         }
       ],
-      "notes": "7/23 发布，8/4 API 全量开放，官方称胜过 Seedance 2.0。AA 视频榜前 30 暂未收录。同一底座还衍生出 7B 开源机器人模型 FLUX 3 Action。",
+      "notes": "7/23 发布，8/4 API 全量开放，官方称胜过 Seedance 2.0。9/30 进入 AA 文生视频 v2.0 榜第 5。同一底座还衍生出 7B 开源机器人模型 FLUX 3 Action。",
       "sources": [
         "https://docs.bfl.ml/release-notes",
         "https://bfl.ai/blog/flux-3-video",

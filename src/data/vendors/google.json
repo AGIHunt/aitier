@@ -7,62 +7,9 @@
     "color": "#4285F4",
     "accent": "#FBBC05",
     "monogram": "G",
-    "blurb": "Pro 线停在 3.1，靠三周一更的 Flash 和 Omni 视频撑场，Gemini 4 Pro 暗测中"
+    "blurb": "Gemini 4 Argon 重回第一梯队但仍限量内测，日常主力还是 Flash 和 Omni"
   },
   "models": [
-    {
-      "id": "gemini-4-pro",
-      "name": "Gemini 4 Pro",
-      "category": "llm",
-      "family": "Gemini 4",
-      "released": null,
-      "status": "rumored",
-      "openWeights": false,
-      "params": null,
-      "context": "2M（传闻）",
-      "pricing": "传闻 $2.25 / $11.25 每百万 token",
-      "tier": "C",
-      "score": 70,
-      "tags": [
-        "Agent",
-        "编程",
-        "前端生成"
-      ],
-      "tagline": "Arena 暗测中的谷歌翻身牌",
-      "highlights": [
-        "疑挂 3.8 Flash 名在 Arena 盲测，代号 Barium-B",
-        "泄露 DeepSWE v1.1 88.7%，高于 Astra 的 86.9%",
-        "传闻定价约为 Astra 的 1/5，上下文 2M",
-        "社区传 10 月初发布，官方未确认"
-      ],
-      "benchmarks": [
-        {
-          "name": "DeepSWE v1.1",
-          "value": "88.7%",
-          "note": "泄露，未证实",
-          "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"
-        },
-        {
-          "name": "Terminal-bench 2.1",
-          "value": "95.3%",
-          "note": "泄露，未证实",
-          "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"
-        },
-        {
-          "name": "GDPval-AA v2",
-          "value": "2064 Elo",
-          "note": "泄露，未证实",
-          "source": "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa"
-        }
-      ],
-      "notes": "全部为暗测与泄露信息；有实测者称已逼近但未达 Opus 5.5，也有人认为泄露表是假的。先按 S 占位，发布后重评。",
-      "sources": [
-        "https://agihunt.info/e/1a0d9628023276a889ff0730401",
-        "https://agihunt.info/p/1a0df50f7771fab97f6a8e80aaa",
-        "https://agihunt.info/e/1a0ecefb284ccb9e1aa5328c355",
-        "https://agihunt.info/e/1a0e6caeb6b4a3541a41156726f"
-      ]
-    },
     {
       "id": "gemini-3-8-flash",
       "name": "Gemini 3.8 Flash",
@@ -82,18 +29,18 @@
         "性价比",
         "多模态"
       ],
-      "tagline": "谷歌现役最强，Flash 价格打旗舰",
+      "tagline": "谷歌公开可用的最强款，Flash 价打旗舰",
       "highlights": [
-        "LMArena Text 1492 分排第 10，高于 Opus 5",
+        "LMArena Text 1494 分排第 11，仍高于 Opus 5",
         "DeepSWE v1.1 73.7%，只比 Opus 5 低 0.3 个点",
         "AA 智能指数 41，输出约 239 token/s",
-        "六周内第三个 Flash，另有网络安全专版 3.8 Flash Cyber"
+        "Gemini 4 Argon 尚未公开，它仍是能直接调用的最强 Gemini"
       ],
       "benchmarks": [
         {
           "name": "LMArena Text",
-          "value": "1492",
-          "note": "第 10（high 档）",
+          "value": "1494",
+          "note": "第 11（high 档，24,828 票，9/30 榜）",
           "source": "https://arena.ai/leaderboard/text"
         },
         {
@@ -116,14 +63,14 @@
         },
         {
           "name": "Code Arena WebDev",
-          "value": "1580",
-          "note": "第 28（high 档）",
+          "value": "1583",
+          "note": "第 28（high 档，8,357 票）",
           "source": "https://arena.ai/leaderboard/code"
         },
         {
           "name": "Agent Arena",
-          "value": "+3.8%",
-          "note": "第 18（high 档）",
+          "value": "+2.96%",
+          "note": "第 19（high 档）",
           "source": "https://arena.ai/leaderboard/agent"
         }
       ],
@@ -382,7 +329,7 @@
           "source": "https://deepmind.google/models/model-cards/gemini-3-1-pro/"
         }
       ],
-      "notes": "API 里仍是 gemini-3.1-pro-preview。Gemini 3.5 Pro 据传已取消，Pro 线等 Gemini 4 接班。",
+      "notes": "API 里仍是 gemini-3.1-pro-preview。Gemini 3.5 Pro 据传已取消；Gemini 4 Argon 已于 9/30 官宣但未公开，3.1 Pro 暂时还是唯一能调用的 Pro。",
       "sources": [
         "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
         "https://smartchunks.com/gemini-3-1-pro-benchmarks-gpqa-hle-lmsys-frontiermath/",
@@ -757,8 +704,7 @@
       "tagline": "Flow 代码里露头的下一版生图",
       "highlights": [
         "TestingCatalog 在 Flow 构建里发现 NB 2.1 字样",
-        "原引用名是 Nano Banana 2.5 Flash，改名后更像小版本迭代",
-        "有人推测会和 Gemini 4 Pro 同周发布"
+        "原引用名是 Nano Banana 2.5 Flash，改名后更像小版本迭代"
       ],
       "benchmarks": [],
       "notes": "只有代码痕迹，暂时没有实测。分数按 Nano Banana 2 占位，发布后重评。",
@@ -1081,7 +1027,95 @@
         "https://go.theregister.com/feed/www.theregister.com/2026/01/29/googles_project_genie_ai/",
         "https://www.pymnts.com/google/2026/google-deepmind-introduces-project-genie-for-interactive-ai-world-building/"
       ]
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "category": "llm",
+      "family": "Gemini 4",
+      "released": "2026-09-30",
+      "status": "preview",
+      "openWeights": false,
+      "params": null,
+      "context": "1M（输出上限 1M）",
+      "pricing": "$2 / $10 每百万 token（介绍价，之后 $4 / $20）",
+      "tier": "S",
+      "score": 92,
+      "tags": [
+        "推理",
+        "企业知识工作",
+        "网络安全",
+        "长输出"
+      ],
+      "tagline": "谷歌重回第一梯队，但还没开放",
+      "highlights": [
+        "LMArena Text 1525 分首发第 1，领先第 2 名 20 分（仅 4,942 票）",
+        "AA 智能指数 53，与 Fable 5.1、GPT-6 Astra 同分，低于 Opus 5.5 的 58",
+        "Vals Index 68.9% 第 1，官方 DeepSWE v1.1 77.9%",
+        "WebDev 与 Agent Arena 都只排第 8，仅 Fairwind 受信测试者可用"
+      ],
+      "benchmarks": [
+        {
+          "name": "LMArena Text",
+          "value": "1525",
+          "note": "第 1（High 档，±9，仅 4,942 票；第 2 名 Opus 4.6 High 1505，9/30 榜）",
+          "source": "https://arena.ai/leaderboard/text"
+        },
+        {
+          "name": "AA Intelligence Index",
+          "value": "53",
+          "note": "High 档，榜单行第 8/223；按模型去重并列第 3–5（Opus 5.5 58、Sonnet 5.5 56 之后，与 Fable 5.1、Astra 同分）",
+          "source": "https://artificialanalysis.ai/models/gemini-4-argon"
+        },
+        {
+          "name": "Code Arena WebDev",
+          "value": "1679",
+          "note": "第 8（High 档，±14，2,184 票；榜首 Opus 5.5 Max 1818）",
+          "source": "https://arena.ai/leaderboard/code"
+        },
+        {
+          "name": "Agent Arena",
+          "value": "+7.92%",
+          "note": "第 8（High 档，3,417 会话，Arena 自称初步结果；$0.63/任务）",
+          "source": "https://arena.ai/leaderboard/agent"
+        },
+        {
+          "name": "Vals AI Index",
+          "value": "68.90%",
+          "note": "第 1（Sonnet 5.5 67.04%、Opus 5.5 66.97%，标准误约 ±0.9）",
+          "source": "https://www.vals.ai/benchmarks/vals_index"
+        },
+        {
+          "name": "Terminal-Bench 4.0",
+          "value": "57%",
+          "note": "AA 实测；低于 Sonnet 5.5 64%、Opus 5.5 60%、Astra 59%",
+          "source": "https://x.com/ArtificialAnlys/status/2105392630989504675"
+        },
+        {
+          "name": "AutomationBench-AA",
+          "value": "77.5%",
+          "note": "AA 实测第 1（Sonnet 5.5 max 71.3%）；官方 AutomationBench 口径为 51.3%",
+          "source": "https://x.com/ArtificialAnlys/status/2105392630989504675"
+        },
+        {
+          "name": "DeepSWE v1.1",
+          "value": "77.9%",
+          "note": "官方，自称 SOTA",
+          "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        }
+      ],
+      "notes": "只见 High 一个推理档，无 Pro / Flash 后缀，API model id 未公布。先给美国政府和 Fairwind 网络防御者，之后是付费 API 和 AI Ultra。彭博称内部对实战编程有疑虑。",
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "https://x.com/sundarpichai/status/2105387952478277979",
+        "https://x.com/GoogleDeepMind/status/2105388084154056939",
+        "https://x.com/OfficialLoganK/status/2105388054274080946",
+        "https://artificialanalysis.ai/models/gemini-4-argon",
+        "https://x.com/arena/status/2105411271525052418",
+        "https://agihunt.info/e/1a0f3ee783e531bf03497d53bf0",
+        "https://agihunt.info/e/1a0f3f4ead410f0a1eafc3be9d6"
+      ]
     }
   ],
-  "tierRationale": "LLM 以 LMArena Text、Artificial Analysis 智能指数和官方编程/Agent 基准为主。Gemini 3.8 Flash 在 LMArena 排第 10（1492），AA 指数 41，DeepSWE 和 Opus 5 基本持平，定 A。日本天梯图把 Gemini 单列一排、没有进主梯队，这里按榜单数据归档。Google 已没有现役 Pro 旗舰：3.1 Pro 的 AA 指数只有 30，3.5 Pro 据传被砍，所以 LLM 最高只到 A，传闻中的 Gemini 4 Pro 以 S 占位。Gemma 4 在开源阵营中尺寸偏小（最大 31B），AA 指数 19，放在 C 到 E。图像按 LMArena 文生图和图像编辑：第一是 gpt-image-2.5（1424），NB2 1261、NB Pro 1247，差距约 160 分，所以最高只到 A。视频按 LMArena 文生视频/图生视频和 AA 视频榜：Gemini Omni 1.1 Flash 在 LMArena 文生视频第一、图生视频第二，Omni Flash 在 AA 含音频榜第一，定 SSS 和 SS；Veo 3.1 已落到十几名，定 B。"
+  "tierRationale": "LLM 以 LMArena Text、Artificial Analysis 智能指数和官方编程/Agent 基准为主。Gemini 3.8 Flash 在 LMArena 排第 10（1492），AA 指数 41，DeepSWE 和 Opus 5 基本持平，定 A。日本天梯图把 Gemini 单列一排、没有进主梯队，这里按榜单数据归档。Google 已没有现役 Pro 旗舰：3.1 Pro 的 AA 指数只有 30，3.5 Pro 据传被砍，所以 LLM 最高只到 A，传闻中的 Gemini 4 Pro 以 S 占位。Gemma 4 在开源阵营中尺寸偏小（最大 31B），AA 指数 19，放在 C 到 E。图像按 LMArena 文生图和图像编辑：第一是 gpt-image-2.5（1424），NB2 1261、NB Pro 1247，差距约 160 分，所以最高只到 A。视频按 LMArena 文生视频/图生视频和 AA 视频榜：Gemini Omni 1.1 Flash 在 LMArena 文生视频第一、图生视频第二，Omni Flash 在 AA 含音频榜第一，定 SSS 和 SS；Veo 3.1 已落到十几名，定 B。 【第 2 期】Gemini 4 Argon（9/30 官宣，仅 Fairwind 可用）Text Arena 第 1、AA 53 并列第 3–5、WebDev / Agent Arena 第 8，定 S 92；公开可用的最高仍是 3.8 Flash（A）。"
 }

@@ -17,19 +17,19 @@
         "Computer use",
         "Math"
       ],
-      "notes": "Reasoning levels low to max merged. Ranks poorly on the text arena (#26); strengths cluster in agents, coding and cybersecurity. HLE (with tools) 57.2% trails Fable 5.1.",
+      "notes": "Reasoning levels low to max merged. DevDay added an Ultrafast speed tier (up to 300 tokens/s, 6x price). Only #30 on the Text Arena; strengths are agents and coding. 6.1 Astra has been canceled.",
       "bench": {
-        "Artificial Analysis Intelligence Index": "max; #4 after per-model dedup (behind Opus 5.5 at 57.6, Sonnet 5.5 at 56.0 and Fable 5.1 at 53.4)",
-        "LMArena Code (WebDev)": "#2 (max)",
-        "LMArena Text": "#26 (max)",
+        "Artificial Analysis Intelligence Index": "max; tied #3 after per-model dedup (behind Opus 5.5 at 58 and Sonnet 5.5 at 56; level with Fable 5.1 and Gemini 4 Argon at 53; pulled 10/1)",
+        "LMArena Code (WebDev)": "#2 (max, 5,918 votes; Opus 5.5 at 1818, 9/30 board)",
+        "LMArena Text": "#30 (max, 9/30 board)",
         "Bug Hunt Bench": "#1 (max, n=3)",
         "Terminal-Bench 4.0": "Official; Fable 5.1 at 55.8%",
         "OSWorld 2.0": "Official",
-        "Agent Arena": "#3 (max)",
+        "Agent Arena": "#3 (max, 9/30 board)",
         "AA Coding Agent Index": "Codex + max, 6th row"
       },
-      "pricing": "$10 / $50 per 1M tokens (cached input $1; Fast mode at 2x)",
-      "_zh": "4a3881c4a7"
+      "pricing": "$10 / $50 per 1M tokens (cached input $1; Fast mode at 2x, Ultrafast at 6x)",
+      "_zh": "2ece06fc62"
     },
     "gpt-6-sol": {
       "tagline": "Astra's training recipe, at half the price",
@@ -44,18 +44,18 @@
         "Agents",
         "Value"
       ],
-      "notes": "Reasoning levels none to max merged. Launched with an image-understanding regression, fixed over the weekend; one test reports DeepSWE slightly below 5.6 Sol.",
+      "notes": "Reasoning levels none to max merged. Replaced by the same-priced GPT-6.1 Sol 7 days after launch (no retirement notice seen); its writing blind-test results are actually better than 6.1 Sol.",
       "bench": {
-        "Artificial Analysis Intelligence Index": "max; #8 after per-model dedup",
-        "LMArena Code (WebDev)": "#5",
-        "LMArena Text": "#60 (max)",
+        "Artificial Analysis Intelligence Index": "max; replaced by GPT-6.1 Sol (52) just 7 days after launch",
+        "LMArena Code (WebDev)": "#7 (max, 9/30 board; 6.1 Sol at 1759)",
+        "LMArena Text": "#66 (max, 9/30 board)",
         "DeepSWE v1.1": "max, official",
         "AutomationBench 1.0.6": "xhigh, official",
-        "Agent Arena": "#6 (max)",
+        "Agent Arena": "#4 (max, 9/30 board)",
         "AA Coding Agent Index": "Codex + max"
       },
       "pricing": "$2 / $10 per 1M tokens (cached input $0.20)",
-      "_zh": "09188b6172"
+      "_zh": "126d4e981b"
     },
     "gpt-6-luna": {
       "tagline": "A dime per million tokens: the volume workhorse",
@@ -296,6 +296,37 @@
         "LMArena Text-to-Video": "#17"
       },
       "_zh": "2f859cf2d6"
+    },
+    "gpt-6-1-sol": {
+      "tagline": "Astra-class work at one-fifth the price",
+      "highlights": [
+        "AA Intelligence Index 52, 1 point behind GPT-6 Astra at under 1/4 the cost per task",
+        "Code Arena WebDev 1759, #3, above Fable 5.1",
+        "Official: DeepSWE v1.1 level with Astra, OSWorld 2.0 just 2.1 points behind",
+        "$2/$10, same as GPT-6 Sol, with cached input cut to $0.10"
+      ],
+      "tags": [
+        "Coding",
+        "Agents",
+        "Computer use",
+        "Value"
+      ],
+      "notes": "Levels low to max merged; Ultrafast is a speed tier, not a model, and a 6.1 Sol version is still to come. Not on the Text or Agent Arena; writing and front-end reputation trail Claude 5.5.",
+      "bench": {
+        "AA Intelligence Index": "max; #6 after per-model dedup (Opus 5.5 at 58, Sonnet 5.5 at 56, Fable 5.1, Astra and Gemini 4 Argon at 53); low 42 / medium 48 / high 50 / xhigh 51",
+        "Code Arena WebDev": "#3 (max, only 1,264 votes; Opus 5.5 at 1818, Astra at 1789, Fable 5.1 at 1751, 9/30 board)",
+        "AA Coding Agent Index": "AA's figure: at max, 3 points above GPT-6 Sol and 2 below Astra (exact value not seen on the leaderboard page)",
+        "Terminal-Bench 4.0": "AA-measured gain over GPT-6 Sol; absolute score not found",
+        "DeepSWE v1.1": "Official; 6.4 points above GPT-6 Sol at about 1/5 the cost of Astra",
+        "OSWorld 2.0": "Official; about 7 points above GPT-6 Sol at about 1/7 the cost per task of Astra",
+        "AutomationBench": "Official, medium level, at about 1/3 the cost of Opus 5.5"
+      },
+      "pricing": "$2 / $10 per 1M tokens (cached input $0.10; Fast mode at 2x)",
+      "benchValue": {
+        "Terminal-Bench 4.0": "+12 pts",
+        "DeepSWE v1.1": "Matches Astra"
+      },
+      "_zh": "f348894c3b"
     }
   }
 }

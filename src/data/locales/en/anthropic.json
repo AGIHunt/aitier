@@ -6,9 +6,9 @@
     "claude-opus-5-5": {
       "tagline": "Fable-class smarts, Opus price cut by 40%",
       "highlights": [
-        "LMArena Text Arena #1 at 1509 (only 2,307 votes; rank range 1–10)",
-        "#1 on Code Arena WebDev at 1827, 35 points ahead of GPT-6 Astra",
-        "#1 on AA Intelligence Index at 57.6, ~4–5 points above Fable 5.1 and GPT-6 Astra",
+        "LMArena Text Arena 1504, #4 (3,932 votes, rank range 2–14), tied with the leaders",
+        "#1 on Code Arena WebDev at 1818, 29 points ahead of GPT-6 Astra",
+        "#1 on AA Intelligence Index at 58, ~5 points above Fable 5.1 and GPT-6 Astra",
         "Anthropic says typical workloads cost 40% less than Opus 5, output 30%+ faster"
       ],
       "tags": [
@@ -19,17 +19,17 @@
       ],
       "notes": "Effort levels low/medium (default)/high/xhigh/max, merged here; Fast mode $8/$40. Still rated behind Astra on writing, and some developers think it trails Fable 5.1 on hardcore coding.",
       "bench": {
-        "LMArena Text": "#1 (High; only 2,307 votes, rank range 1–10, pulled 9/29)",
-        "Code Arena WebDev": "#1 (Max), 35 points ahead of GPT-6 Astra (pulled 9/29)",
-        "Agent Arena": "#2 (High), behind only Fable 5.1 Max (pulled 9/29)",
-        "AA Intelligence Index": "#1 (max, pulled 9/29)",
+        "LMArena Text": "#4 (High, ±10, 3,932 votes, rank range 2–14, pulled 9/30); Gemini 4 Argon High leads at 1525",
+        "Code Arena WebDev": "#1 (Max, ±17, 1,976 votes), 29 points ahead of GPT-6 Astra (pulled 9/30)",
+        "Agent Arena": "#2 (High), behind only Fable 5.1 Max's +14.55% (pulled 9/30)",
+        "AA Intelligence Index": "#1 (max, rechecked 10/1; page shows rounded value)",
         "Terminal-Bench 4.0": "Official; GPT-6 Astra 57.9%",
         "SimpleBench": "#1",
         "Vals AI Index": "#1",
         "AA Coding Agent Index": "#2 (Claude Code, max), behind only Sonnet 5.5"
       },
       "pricing": "$4 / $20 per 1M tokens (cache read $0.20)",
-      "_zh": "28db21b93e"
+      "_zh": "faeee77148"
     },
     "claude-sonnet-5-5": {
       "tagline": "Half the price of Opus, two points behind",
@@ -44,16 +44,17 @@
         "Agents",
         "Value"
       ],
-      "notes": "Five effort levels merged. At max, about 193K output tokens and $7.60 per task, the highest token burn AA measured; AA tested a pre-release build. LMArena rank pending, with a shot at SS.",
+      "notes": "Five effort levels merged. At max, about 193K output tokens and $7.60 per task, the highest token burn AA measured. First Code Arena appearance lands at #5; not yet on the Text or Agent Arena as of 9/30, so it stays at S.",
       "bench": {
-        "AA Intelligence Index": "#2 (max); not yet on LMArena",
+        "AA Intelligence Index": "#2 (max 56, behind only Opus 5.5 max at 58; rechecked 10/1)",
+        "Code Arena WebDev": "#5 (High, ±16, 1,810 votes, pulled 9/30); 42 points behind Fable 5.1 Max",
         "Terminal-Bench 4.0": "Official; AA measured 64%",
         "GDPval-AA v2.1": "Opus 5.5 at 1846",
         "OSWorld 2.1": "partial",
         "AA Coding Agent Index": "#1 (Claude Code + max)"
       },
       "pricing": "$2 / $10 per 1M tokens",
-      "_zh": "70d26a377c"
+      "_zh": "0f8aa00126"
     },
     "claude-fable-5-1": {
       "tagline": "The public version of a Mythos-class brain",
